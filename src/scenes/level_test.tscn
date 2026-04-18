@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://oghlab6pqruj"]
+
+[sub_resource type="Gradient" id="Gradient_x8dl8"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.20481928, 0.39759037, 0.6204819, 0.79518074)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5v5fa"]
+gradient = SubResource("Gradient_x8dl8")
+width = 720
+height = 1080
+
+[node name="LevelTest" type="Node2D" unique_id=1022691104]
+
+[node name="bkgd" type="Sprite2D" parent="." unique_id=278162803]
+position = Vector2(957, 538)
+texture = SubResource("GradientTexture2D_5v5fa")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=361389988]
+position = Vector2(957, 538)
