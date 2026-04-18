@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dx4d4gxuj2kmt"]
+
+[ext_resource type="Script" uid="uid://5niaj8m7teeo" path="res://src/faye_test/faye_test.gd" id="1_lp6lb"]
+
+[node name="FayeTest" type="Node2D" unique_id=1629238768]
+script = ExtResource("1_lp6lb")
+level_json = "res://levels/example/example.json"
+
+[node name="StartText" type="Label" parent="." unique_id=1470262212]
+offset_left = 741.0
+offset_top = 252.0
+offset_right = 1208.0
+offset_bottom = 351.0
+theme_override_font_sizes/font_size = 64
+text = "Get Ready..."

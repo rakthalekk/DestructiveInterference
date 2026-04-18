@@ -1,0 +1,69 @@
+{
+	"metadata": {
+		"title": "str",
+		"bpm": 120.0,
+		"beats_per_measure": 4,
+		"subdivisions_per_beat": 4,
+		"view_range": 4.4,
+		"warmup_time": 6.0,
+		"instruments": [
+			{
+				"name": "square1",
+				"type": "square",
+				"color": "#FFFFFF",
+				"goal": 50
+			}
+		]
+	},
+	"notes": [
+		{
+			"name": "square1",
+			"start": 1.0,
+			"band": 1,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+		{
+			"name": "square1",
+			"start": 3.0,
+			"band": 2,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+		{
+			"name": "square1",
+			"start": 4.0,
+			"band": 2,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+		{
+			"name": "square1",
+			"start": 4.0,
+			"band": 3,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+		{
+			"name": "square1",
+			"start": 6.0,
+			"band": 4,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+				{
+			"name": "square1",
+			"start": 7.0,
+			"band": 4,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+				{
+			"name": "square1",
+			"start": 7.0,
+			"band": 4,
+			"jumpable": false,
+			"pitch": 1.2,
+		},
+	]
+}
