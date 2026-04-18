@@ -4,7 +4,7 @@
 		"bpm": 120.0,
 		"beats_per_measure": 4,
 		"subdivisions_per_beat": 4,
-		"view_range": 4.4,
+		"view_range": 4,
 		"warmup_time": 6.0,
 		"instruments": [
 			{
