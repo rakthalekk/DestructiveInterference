@@ -1,9 +1,10 @@
 extends Node2D
 
 
-const BEAT_TEST = preload("res://src/faye_test/beat_test.tscn")
-
 @export_file_path var level_json
+
+
+@onready var beatmap: BeatMap = $BeatMap
 
 
 func _ready() -> void:
@@ -12,6 +13,8 @@ func _ready() -> void:
 	
 	LevelManager.warmup_finished.connect(hide_start_text)
 	LevelManager.send_note.connect(_create_beat)
+	
+	beatmap.current_lookahead_time_seconds = LevelManager.view_range
 
 
 func hide_start_text():
@@ -19,8 +22,4 @@ func hide_start_text():
 
 
 func _create_beat(note: Note):
-	var randx = randi_range(100, 1820)
-	var beat = BEAT_TEST.instantiate() as BeatTest
-	beat.load_data(note)
-	beat.position = Vector2(randx, -32)
-	add_child(beat)
+	beatmap.spawn_beat(note.band)

@@ -45,6 +45,7 @@ func spawn_beat(lane_idx: int):
 	
 	lanes[lane_idx].add_child(beat)
 	beat.progress_ratio = 0.0
+	beat.dispatch_beat(current_lookahead_time_seconds)
 
 
 func get_player_position_for_lane(in_lane_idx: int):

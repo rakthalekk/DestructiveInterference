@@ -8,17 +8,12 @@ const SCREEN_HEIGHT = 1080
 var speed = 10
 
 
-
-
 func _physics_process(_delta: float) -> void:
-	progress += speed
+	progress += speed * _delta
 
 
 func dispatch_beat(in_lookahead_time_seconds: float):
 	speed = SCREEN_HEIGHT / in_lookahead_time_seconds
-
-
-
 
 
 ## kill thyself
