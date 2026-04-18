@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://poek7io7bcrd"]
+
+[ext_resource type="Script" uid="uid://dao5f8m6uwrsw" path="res://src/managers/player_manager.gd" id="1_lhic2"]
+
+[node name="PlayerManager" type="Node" unique_id=772739510]
+script = ExtResource("1_lhic2")
+
+[node name="DodgeCooldown" type="Timer" parent="." unique_id=827723703]
+wait_time = 0.05
+one_shot = true
+
+[node name="MoveCooldown" type="Timer" parent="." unique_id=310162371]
+wait_time = 0.15
+one_shot = true
+
+[node name="DodgeTimer" type="Timer" parent="." unique_id=9815859]
+wait_time = 0.4
+one_shot = true
+
+[node name="BufferTimer" type="Timer" parent="." unique_id=1084585722]
+wait_time = 0.15
+one_shot = true
+
+[connection signal="timeout" from="DodgeTimer" to="." method="_on_dodge_timer_timeout"]
+[connection signal="timeout" from="BufferTimer" to="." method="_on_buffer_timer_timeout"]
