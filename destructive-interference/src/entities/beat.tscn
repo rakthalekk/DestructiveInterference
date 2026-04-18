@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d3570u27thlk2"]
+
+[ext_resource type="Texture2D" uid="uid://dt4edkn6codtp" path="res://icon.svg" id="1_grwxu"]
+[ext_resource type="Script" uid="uid://c3rbjncgal3gq" path="res://src/entities/beat.gd" id="1_xrhn5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhn5"]
+size = Vector2(128, 128)
+
+[node name="Beat" type="PathFollow2D" unique_id=479963804]
+progress = 220.69452
+h_offset = 0.15
+rotates = false
+script = ExtResource("1_xrhn5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1509422566]
+texture = ExtResource("1_grwxu")
+
+[node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=1670048198]
+shape = SubResource("RectangleShape2D_xrhn5")
+
+[connection signal="area_entered" from="DespawnBox" to="." method="_on_despawn_box_area_entered"]
+[connection signal="area_exited" from="DespawnBox" to="." method="_on_despawn_box_area_exited"]

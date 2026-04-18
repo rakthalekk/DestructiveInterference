@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://oghlab6pqruj"]
+
+[ext_resource type="Script" uid="uid://cqulc4ml0j2sg" path="res://src/scenes/beat_map.gd" id="1_t435w"]
+[ext_resource type="PackedScene" uid="uid://d3570u27thlk2" path="res://src/entities/beat.tscn" id="2_p61wa"]
+[ext_resource type="PackedScene" uid="uid://cll2il63rnafb" path="res://src/entities/player_2d.tscn" id="4_43db8"]
+
+[sub_resource type="Gradient" id="Gradient_x8dl8"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.20481928, 0.39759037, 0.6, 0.79518074)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5v5fa"]
+gradient = SubResource("Gradient_x8dl8")
+width = 720
+height = 1080
+
+[sub_resource type="Curve2D" id="Curve2D_t435w"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, -38, 0, 0, 0, 0, 0, 1169)
+}
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t435w"]
+size = Vector2(761, 171)
+
+[node name="BeatMap" type="Node2D" unique_id=1022691104]
+script = ExtResource("1_t435w")
+
+[node name="bkgd" type="Sprite2D" parent="." unique_id=278162803]
+position = Vector2(957, 538)
+texture = SubResource("GradientTexture2D_5v5fa")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=361389988]
+position = Vector2(960, 540)
+
+[node name="Player2D" parent="." unique_id=78814872 instance=ExtResource("4_43db8")]
+position = Vector2(958, 1000)
+
+[node name="LaneContainer" type="Node2D" parent="." unique_id=2078129335]
+unique_name_in_owner = true
+
+[node name="Lane1" type="Path2D" parent="LaneContainer" unique_id=210007051]
+position = Vector2(669, 0)
+curve = SubResource("Curve2D_t435w")
+
+[node name="Beat" parent="LaneContainer/Lane1" unique_id=479963804 instance=ExtResource("2_p61wa")]
+position = Vector2(0.15, 1146.113)
+progress = 1184.0668
+
+[node name="Lane2" type="Path2D" parent="LaneContainer" unique_id=1312751122]
+position = Vector2(812, 0)
+curve = SubResource("Curve2D_t435w")
+
+[node name="Lane3" type="Path2D" parent="LaneContainer" unique_id=2022381405]
+position = Vector2(960, 0)
+curve = SubResource("Curve2D_t435w")
+
+[node name="Lane4" type="Path2D" parent="LaneContainer" unique_id=860603514]
+position = Vector2(1100, 0)
+curve = SubResource("Curve2D_t435w")
+
+[node name="Lane5" type="Path2D" parent="LaneContainer" unique_id=584336468]
+position = Vector2(1245, 0)
+curve = SubResource("Curve2D_t435w")
+
+[node name="Timer" type="Timer" parent="." unique_id=1240374801]
+wait_time = 0.5
+autostart = true
+
+[node name="DespawnBox" type="Area2D" parent="." unique_id=55838554]
+position = Vector2(960, 1130)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=978347010]
+position = Vector2(-1.5, 161)
+shape = SubResource("RectangleShape2D_t435w")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
