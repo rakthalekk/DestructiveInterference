@@ -36,12 +36,16 @@ func _ready() -> void:
 	player_2d.initialize_from_beatmap(self, 2, get_player_position_for_lane(2))
 
 
-func spawn_beat(lane_idx: int, wave_type: GameManager.WAVE_TYPE):
+func spawn_beat(note: Note, wave_type: GameManager.WAVE_TYPE):
+	var lane_idx = note.band_start
+	var beat_width = note.band_end - note.band_start + 1
+	
 	if !is_valid_lane(lane_idx):
 		push_warning("lane idx ", lane_idx, " out of bounds")
 		return
 	
 	var beat := BEAT_SCENE.instantiate() as Beat
+	beat.width = beat_width
 	
 	lanes[lane_idx].add_child(beat)
 	beat.progress_ratio = 0.0

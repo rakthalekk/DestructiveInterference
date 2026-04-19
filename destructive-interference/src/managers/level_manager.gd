@@ -71,9 +71,14 @@ func load_data_from_json(level_json: String):
 		var note = Note.new()
 		note.instrument = instruments[data.name]
 		note.start_time = data.start
-		note.band = data.band
 		note.jumpable = data.jumpable
 		note.pitch = data.pitch
+		if data.band is float:
+			note.band_start = data.band
+			note.band_end = data.band
+		elif data.band is Dictionary:
+			note.band_start = data.band.start
+			note.band_end = data.band.end
 		notes.append(note)
 
 
