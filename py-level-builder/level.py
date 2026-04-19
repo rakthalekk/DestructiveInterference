@@ -182,7 +182,7 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
             end=end_time,
             pitch=ratio_to_A4(midi_note.pitch),
             pitch_str=display_name(midi_note.pitch),
-            idx=len(notes)+1,
+            idx=len(notes),
         ))
         # print(midi_note.start)
 
