@@ -1,6 +1,7 @@
 from typing import Callable
 
 
+MIDI_PITCH_C4 = 60
 MIDI_PITCH_A4 = 69 # nice
 STEP_RATIO = 2 ** (1/12)
 
@@ -30,3 +31,12 @@ def ratio_to_A4(midi_note_num: int) -> float:
     pitch_diff = midi_note_num - MIDI_PITCH_A4
     freq_ratio = STEP_RATIO ** pitch_diff
     return freq_ratio
+
+NOTE_NAMES = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"]
+
+def display_name(midi_note_num:  int) -> str:
+    pitch_octave = (midi_note_num // 12) - 1 # middle C4 = 60, so need to subtract 1 octave
+    pitch_class = midi_note_num % 12 # middle C4 = 60, we'll treat C as pitch_class 0
+    note_letter = NOTE_NAMES[pitch_class]
+    return f"{note_letter}{pitch_octave}"
+
