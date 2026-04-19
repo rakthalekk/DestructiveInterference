@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://oghlab6pqruj"]
 
 [ext_resource type="Script" uid="uid://cqulc4ml0j2sg" path="res://src/scenes/beat_map.gd" id="1_t435w"]
+[ext_resource type="Texture2D" uid="uid://40xu17tul1cg" path="res://assets/track.png" id="2_p61wa"]
 [ext_resource type="PackedScene" uid="uid://cll2il63rnafb" path="res://src/entities/player_2d.tscn" id="4_43db8"]
 
 [sub_resource type="Gradient" id="Gradient_x8dl8"]
@@ -27,8 +28,14 @@ size = Vector2(761, 227.5)
 script = ExtResource("1_t435w")
 
 [node name="bkgd" type="Sprite2D" parent="." unique_id=278162803]
+visible = false
 position = Vector2(957, 538)
 texture = SubResource("GradientTexture2D_5v5fa")
+
+[node name="Track" type="Sprite2D" parent="." unique_id=1073369978]
+position = Vector2(958.00006, 538)
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("2_p61wa")
 
 [node name="Lines" type="Node2D" parent="." unique_id=903762524]
 
@@ -42,11 +49,11 @@ position = Vector2(957, 960)
 unique_name_in_owner = true
 
 [node name="Lane1" type="Path2D" parent="LaneContainer" unique_id=210007051]
-position = Vector2(669, 0)
+position = Vector2(818, 0)
 curve = SubResource("Curve2D_t435w")
 
 [node name="Lane2" type="Path2D" parent="LaneContainer" unique_id=1312751122]
-position = Vector2(812, 0)
+position = Vector2(889, 0)
 curve = SubResource("Curve2D_t435w")
 
 [node name="Lane3" type="Path2D" parent="LaneContainer" unique_id=2022381405]
@@ -54,11 +61,11 @@ position = Vector2(960, 0)
 curve = SubResource("Curve2D_t435w")
 
 [node name="Lane4" type="Path2D" parent="LaneContainer" unique_id=860603514]
-position = Vector2(1100, 0)
+position = Vector2(1031, 0)
 curve = SubResource("Curve2D_t435w")
 
 [node name="Lane5" type="Path2D" parent="LaneContainer" unique_id=584336468]
-position = Vector2(1245, 0)
+position = Vector2(1102, 0)
 curve = SubResource("Curve2D_t435w")
 
 [node name="Timer" type="Timer" parent="." unique_id=1240374801]
@@ -76,8 +83,29 @@ shape = SubResource("RectangleShape2D_t435w")
 
 [node name="Zero" type="Line2D" parent="." unique_id=348577242]
 position = Vector2(0, 980)
-points = PackedVector2Array(597, 0, 1317, 0)
-width = 20.0
-default_color = Color(1, 0.95686275, 0.3764706, 1)
+points = PackedVector2Array(816, 0, 1100, 0)
+width = 8.0
+
+[node name="TrackLines" type="Node2D" parent="." unique_id=2109694386]
+
+[node name="Track1" type="Line2D" parent="TrackLines" unique_id=62865726]
+points = PackedVector2Array(818, 0, 818, 1080)
+width = 6.0
+
+[node name="Track2" type="Line2D" parent="TrackLines" unique_id=864968670]
+points = PackedVector2Array(889, 0, 889, 1080)
+width = 6.0
+
+[node name="Track3" type="Line2D" parent="TrackLines" unique_id=1822679821]
+points = PackedVector2Array(960, 0, 960, 1080)
+width = 6.0
+
+[node name="Track4" type="Line2D" parent="TrackLines" unique_id=899534155]
+points = PackedVector2Array(1031, 0, 1031, 1080)
+width = 6.0
+
+[node name="Track5" type="Line2D" parent="TrackLines" unique_id=1578079987]
+points = PackedVector2Array(1102, 0, 1102, 1080)
+width = 6.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

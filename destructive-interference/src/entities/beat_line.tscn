@@ -3,6 +3,6 @@
 [ext_resource type="Script" uid="uid://b8348deiy0xwe" path="res://src/entities/beat_line.gd" id="1_jks1v"]
 
 [node name="BeatLine" type="Line2D" unique_id=46536221]
-points = PackedVector2Array(597, 0, 1317, 0)
-default_color = Color(0.6830772, 0.6830774, 0.6830771, 1)
+points = PackedVector2Array(816, 0, 1100, 0)
+default_color = Color(1, 1, 1, 0.7294118)
 script = ExtResource("1_jks1v")

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b0dipsnd8iv5k" path="res://assets/dev_waveforms/wave_forms.png" id="2_xrhn5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhn5"]
-size = Vector2(136.947, 20)
+size = Vector2(59.914146, 20)
 
 [sub_resource type="Gradient" id="Gradient_3r3dn"]
 interpolation_mode = 1
@@ -12,7 +12,7 @@ colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_xrhn5"]
 gradient = SubResource("Gradient_3r3dn")
-width = 128
+width = 56
 height = 20
 fill = 2
 fill_from = Vector2(0.5, 0.5)
@@ -126,7 +126,7 @@ collision_layer = 2
 collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=1670048198]
-position = Vector2(0, 38)
+position = Vector2(-9.536743e-07, 38)
 scale = Vector2(0.9346707, 1.0278862)
 shape = SubResource("RectangleShape2D_xrhn5")
 
