@@ -7,7 +7,7 @@ extends Node
 ###############################
 
 ## maximum allowed decay
-const MAX_GAIN = 5
+const MAX_GAIN = 100
 
 ## amount gain decays over time per second
 const GAIN_DECAY_RATE = 2.5
