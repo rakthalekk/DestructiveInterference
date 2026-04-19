@@ -320,7 +320,7 @@ def build(
     output_beatmap = output_dir / f"{level_name}.json"
     with open(output_beatmap, 'w') as f:
         f.write(json.dumps(level_dict, indent='  ' if PRETTY_JSON else None))
-    print(f"Wrote output level JSON file to {output_beatmap.resolve()}")
+    print(f"Wrote output level JSON file\n    to {output_beatmap.resolve()}")
 
     # copy level_dir/*.mp3 if it exists
     raw_mp3_files = list(level_dir.glob("*.mp3"))
