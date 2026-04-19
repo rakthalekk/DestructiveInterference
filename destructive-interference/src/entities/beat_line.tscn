@@ -4,5 +4,5 @@
 
 [node name="BeatLine" type="Line2D" unique_id=46536221]
 points = PackedVector2Array(597, 0, 1317, 0)
-default_color = Color(0.59475034, 0.59475, 0.5947499, 1)
+default_color = Color(0.90359825, 0.90359825, 0.9035982, 1)
 script = ExtResource("1_jks1v")

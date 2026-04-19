@@ -5,6 +5,8 @@ signal send_note(note: Note)
 signal game_over(is_win: bool)
 signal create_subdivision_line(width: float)
 
+var current_level_json_file: String
+
 var level_title: String
 var bpm: float = 120.0
 var beats_per_measure: float = 4.0
@@ -42,8 +44,11 @@ func start_level(skip_warmup := false):
 	current_note_idx = 0
 	time_to_next_beat = 60.0 / bpm / subdivisions_per_beat
 	
-	warmup_timer.wait_time = warmup_time
-	warmup_timer.start()
+	if !skip_warmup:
+		warmup_timer.wait_time = warmup_time
+		warmup_timer.start()
+	else:
+		AudioManager.loop_level_song()
 
 
 func _on_warmup_timer_timeout():
@@ -57,6 +62,8 @@ func load_data_from_json(level_json: String):
 	
 	var beat_map: BeatMap = get_tree().get_first_node_in_group("beat_map") as BeatMap
 	beat_map.clear_notes_and_lines()
+	
+	current_level_json_file = level_json
 	
 	var json_as_text = FileAccess.get_file_as_string(level_json)
 	var level_data: Dictionary = JSON.parse_string(json_as_text)
