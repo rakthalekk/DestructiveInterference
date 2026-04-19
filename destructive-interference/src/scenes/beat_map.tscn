@@ -36,7 +36,7 @@ texture = SubResource("GradientTexture2D_5v5fa")
 position = Vector2(960, 540)
 
 [node name="Player2D" parent="." unique_id=78814872 instance=ExtResource("4_43db8")]
-position = Vector2(958, 1000)
+position = Vector2(957, 960)
 
 [node name="LaneContainer" type="Node2D" parent="." unique_id=2078129335]
 unique_name_in_owner = true
@@ -73,5 +73,11 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=978347010]
 position = Vector2(-1.5, 132.75)
 shape = SubResource("RectangleShape2D_t435w")
+
+[node name="Zero" type="Line2D" parent="." unique_id=348577242]
+position = Vector2(0, 980)
+points = PackedVector2Array(597, 0, 1317, 0)
+width = 20.0
+default_color = Color(1, 0.95686275, 0.3764706, 1)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c7ue2wk7jxw17" path="res://src/entities/interfere_box.tscn" id="3_2ep6d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ep6d"]
-size = Vector2(128, 47)
+size = Vector2(128, 7)
 
 [node name="Player2D" type="Node2D" unique_id=78814872]
 script = ExtResource("1_gptfg")
@@ -16,12 +16,13 @@ modulate = Color(0, 0.32156864, 1, 1)
 texture = ExtResource("2_jox5q")
 
 [node name="HurtBox" type="Area2D" parent="." unique_id=1853254392]
+position = Vector2(0, 20)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=310482770]
-position = Vector2(0, 40.5)
+position = Vector2(0, 32.5)
 shape = SubResource("RectangleShape2D_2ep6d")
 
 [node name="InterfereBox" parent="." unique_id=1086371767 instance=ExtResource("3_2ep6d")]
 z_index = 1
-position = Vector2(0, -96)
+position = Vector2(0, 14)

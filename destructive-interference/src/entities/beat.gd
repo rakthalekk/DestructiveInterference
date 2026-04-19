@@ -2,7 +2,7 @@ class_name Beat
 extends PathFollow2D
 
 ## Const ref of screen height
-const SCREEN_HEIGHT = 1080
+const SCREEN_HEIGHT = 980
 
 
 ## Wave type for this beat

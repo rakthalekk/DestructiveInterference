@@ -2,7 +2,7 @@ extends Line2D
 
 
 ## Const ref of screen height
-const SCREEN_HEIGHT = 1080
+const SCREEN_HEIGHT = 980
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
