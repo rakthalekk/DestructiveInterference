@@ -52,6 +52,7 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	note_data = note
 	wave_type = note.instrument.type
 	icon.frame = int(wave_type)
+	$Icon/Bkgd.modulate = wave_colors[wave_type]
 	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
 
 
