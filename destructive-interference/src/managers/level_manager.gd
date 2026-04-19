@@ -149,7 +149,6 @@ func _process(delta: float) -> void:
 	
 	var current_note = notes[current_note_idx]
 	
-	
 	while current_time >= current_note.start_time - view_range:
 		send_note.emit(current_note)
 		current_note_idx += 1
@@ -157,7 +156,6 @@ func _process(delta: float) -> void:
 			current_note = notes[current_note_idx]
 		else:
 			print("no more notes!")
-			start_level(true)
 			break
 	
 	current_time += delta

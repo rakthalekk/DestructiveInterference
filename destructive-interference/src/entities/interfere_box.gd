@@ -2,15 +2,30 @@ class_name InterfereBox
 extends Area2D
 
 
+enum STATE {
+	RELEASED,
+	HOLDING,
+	TAPPED
+}
+
+var current_state := STATE.RELEASED
+
 var interfere_type: GameManager.WAVE_TYPE = GameManager.WAVE_TYPE.NONE
 
 
+var required_hold_type := 0.0
+
+
+## its a timer. it times things
 @onready var timer := $Timer as Timer
 
+## when the collision is boxing it straight up
 @onready var collision_box := $CollisionShape2D as CollisionShape2D
 
+## icon i hardly nikon
 @onready var icon := $Icon as Node2D
 
+## preview icon icon
 @onready var preview := $Icon/Icon as Sprite2D
 
 
@@ -35,7 +50,19 @@ func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	preview.frame = int(in_interfere_type)
 	icon.visible = true
 	
+	current_state = STATE.TAPPED
+	
 	timer.start()
+
+
+func interfere_hold(in_interfere_type: GameManager.WAVE_TYPE):
+	if current_state != STATE.TAPPED:
+		current_state = STATE.HOLDING
+		interfere_type = in_interfere_type
+
+
+func interfere_release():
+	end_interfere()
 
 
 ## If detects collision w/ a beat, take dmg or nah & end interference
@@ -58,10 +85,11 @@ func _on_area_entered(area: Area2D) -> void:
 
 ## Ends interference when timer times out
 func _on_timer_timeout() -> void:
-	end_interfere()
+	current_state = STATE.HOLDING
 
 
 ## Ends interference 
 func end_interfere():
+	current_state = STATE.RELEASED
 	collision_box.set_deferred("disabled", true)
 	icon.visible = false

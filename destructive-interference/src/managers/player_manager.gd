@@ -2,6 +2,10 @@
 extends Node
 
 
+signal switched_lane(lane_to: int)
+signal interfere_released()
+
+
 ###############################
 ##      CLASS CONSTANTS      ##           
 ###############################
@@ -110,15 +114,31 @@ func _process_interfere_inputs():
 	
 	if Input.is_action_just_pressed("interfere_triangle"):
 		_interfere(GameManager.WAVE_TYPE.TRIANGLE)
+	elif Input.is_action_pressed("interfere_triangle"):
+		_interfere_hold(GameManager.WAVE_TYPE.TRIANGLE)
+	elif Input.is_action_just_released("interfere_triangle"):
+		_interfere_release()
 	
 	if Input.is_action_just_pressed("interfere_square"):
 		_interfere(GameManager.WAVE_TYPE.SQUARE)
+	elif Input.is_action_pressed("interfere_square"):
+		_interfere_hold(GameManager.WAVE_TYPE.SQUARE)
+	elif Input.is_action_just_released("interfere_square"):
+		_interfere_release()
 	
 	if Input.is_action_just_pressed("interfere_saw"):
 		_interfere(GameManager.WAVE_TYPE.SAW)
+	elif Input.is_action_pressed("interfere_saw"):
+		_interfere_hold(GameManager.WAVE_TYPE.SAW)
+	elif Input.is_action_just_released("interfere_saw"):
+		_interfere_release()
 		
 	if Input.is_action_just_pressed("interfere_sine"):
 		_interfere(GameManager.WAVE_TYPE.SINE)
+	elif Input.is_action_pressed("interfere_sine"):
+		_interfere_hold(GameManager.WAVE_TYPE.SINE)
+	elif Input.is_action_just_released("interfere_sine"):
+		_interfere_release()
 
 
 ## Change lane wahoopo
@@ -174,6 +194,26 @@ func _interfere(in_interfere_type: GameManager.WAVE_TYPE, force := false):
 	
 	if is_instance_valid(player_3d):
 		player_3d.interfere(in_interfere_type)
+	
+	interfere_cooldown.start()
+
+
+func _interfere_hold(in_interfere_type: GameManager.WAVE_TYPE, force := false):
+	if is_instance_valid(player_2d):
+		player_2d.interfere_hold(in_interfere_type)
+	
+	if is_instance_valid(player_3d):
+		player_3d.interfere_hold(in_interfere_type)
+	
+	interfere_cooldown.start()
+
+
+func _interfere_release():
+	if is_instance_valid(player_2d):
+		player_2d.interfere_release()
+	
+	if is_instance_valid(player_3d):
+		player_3d.interfere_release()
 	
 	interfere_cooldown.start()
 

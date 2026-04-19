@@ -60,5 +60,13 @@ func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	interfere_box.interfere(in_interfere_type)
 
 
+func interfere_hold(in_interfere_type: GameManager.WAVE_TYPE):
+	interfere_box.interfere_hold(in_interfere_type)
+
+
+func interfere_release():
+	interfere_box.interfere_release()
+
+
 func on_take_damage():
 	pass

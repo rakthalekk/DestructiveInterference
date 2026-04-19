@@ -57,6 +57,11 @@ func spawn_beat(note: Note):
 	var beat := BEAT_SCENE.instantiate() as Beat
 	beat.width = beat_width
 	
+	#var subd = LevelManager.subdivisions_per_beat
+	#var bpm = LevelManager.bpm 
+	#var note_length = note.end_time - note.start_time
+	
+	
 	lanes[lane_idx].add_child(beat)
 	beat.progress_ratio = 0.0
 	beat.dispatch_beat(note, LevelManager.view_range)

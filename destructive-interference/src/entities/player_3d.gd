@@ -65,6 +65,14 @@ func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	pass
 
 
+func interfere_hold(in_interfere_type: GameManager.WAVE_TYPE):
+	pass
+
+
+func interfere_release():
+	pass
+
+
 func on_take_damage():
 	damage_anim.stop()
 	damage_anim.play("take_damage")
