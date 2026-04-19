@@ -4,7 +4,9 @@ from miditoolkit import MidiFile
 import re
 import json
 from dataclasses import asdict
+from dacite import from_dict, Config
 import shutil
+from copy import deepcopy
 
 from utils import *
 from models import *
@@ -34,7 +36,7 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
         for inst_name, inst_notes in level_dict["notes_by_instrument"].items():
             if inst_name not in tuning_dict["notes_by_instrument"]:
                 print(f"INFO: copying notes_by_instrument for {inst_name}")
-                tuning_dict["notes_by_instrument"][inst_name] = inst_notes
+                tuning_dict["notes_by_instrument"][inst_name] = deepcopy(inst_notes)
     elif len(level_dict["notes_by_instrument"]) < len(tuning_dict["notes_by_instrument"]):
         raise ValueError("ERROR: Tuning file notes_by_instrument has more instruments than actual midi files parsed. Problem, go fix it manually.")
     # assert len(level_dict["metadata"]["instruments"]) == len(tuning_dict["metadata"]["instruments"]), f"expected tuning.json file to have same number of instruments in metadata as generated from midi files, but didn't match. {len(level_dict["metadata"]["instruments"])=}, {len(tuning_dict["metadata"]["instruments"])=}. consider using --ignore-checks=instruments to copy new instruments into the tuning.json file."
@@ -46,8 +48,8 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
     for key, value in level_dict["metadata"].items():
         if key not in tuning_dict["metadata"]:
             # print(f"copying {key} from level_dict to tuning_dict")
-            tuning_dict["metadata"][key] = value
-    level_dict["metadata"] = tuning_dict["metadata"]
+            tuning_dict["metadata"][key] = deepcopy(value)
+    level_dict["metadata"] = deepcopy(tuning_dict["metadata"])
     # print(f"{level_dict["metadata"]=}")
 
     for inst_name in level_dict["notes_by_instrument"].keys():
@@ -75,23 +77,27 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
                         tuning_note[key] = value
 
             # check if the notes are equal
-            DEFAULT_EQ_KEYS = ["name", "start", "pitch"]
+            DEFAULT_EQ_KEYS = ["name", "start_beat", "pitch_str"]
+            ALWAYS_COPIED_FROM_LEVEL_DICT = ["start", "end", "pitch"]
             eq_keys = list([n for n in DEFAULT_EQ_KEYS if n not in force_update_note_props])
             if level_note and tuning_note and eq_by_keys(level_note, tuning_note, eq_keys):
                 # same note in tuning and level
                 # force-update any props requested by the user
                 for prop_name in force_update_note_props:
                     tuning_note[prop_name] = level_note[prop_name]
+                # force-update props always taken from midi parse
+                for prop_name in ALWAYS_COPIED_FROM_LEVEL_DICT:
+                    tuning_note[prop_name] = level_note[prop_name]
                 # copy over other properties
-                for prop_name in [n for n in tuning_note.keys() if n not in DEFAULT_EQ_KEYS]:
+                for prop_name in [n for n in tuning_note.keys() if n not in DEFAULT_EQ_KEYS and n not in ALWAYS_COPIED_FROM_LEVEL_DICT]:
                     level_note[prop_name] = tuning_note[prop_name]
 
             elif merging_different_lengths:
-                if level_note is not None and (tuning_note is None or (level_note["start"], level_note["name"]) < (tuning_note["start"], level_note["name"])):
+                if level_note is not None and (tuning_note is None or (level_note["start_beat"], level_note["name"]) < (tuning_note["start_beat"], level_note["name"])):
                     # new note from parsed Midi files. add to tuning
                     print(f"INFO: copying new Note into tuning file (name={level_note["name"]}, start_beat={level_note["start_beat"]})")
                     tuning_inst_notes.insert(tuning_idx, level_note)
-                elif tuning_note is not None and (level_note is None or (tuning_note["start"], tuning_note["name"]) < (level_note["start"], level_note["name"])):
+                elif tuning_note is not None and (level_note is None or (tuning_note["start_beat"], tuning_note["name"]) < (level_note["start_beat"], level_note["name"])):
                     # tuning file has an extra note that's no longer in the Midi sources. warn, and maybe drop it.
                     raise ValueError(f"TODO handle nicer. Tuning file has an extra note that the Midi source files don't have. "
                                     f"{tuning_idx=}, {level_idx=}\n{tuning_note=}\n {level_note=}\n"
@@ -180,6 +186,7 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
             start=start_time,
             start_beat=(midi_note.start / midi_obj.ticks_per_beat) + 1,
             end=end_time,
+            end_beat=(midi_note.end / midi_obj.ticks_per_beat) + 1,
             pitch=ratio_to_A4(midi_note.pitch),
             pitch_str=display_name(midi_note.pitch),
             idx=len(notes),
@@ -241,6 +248,7 @@ def build(
     # parse raw level data
     level = parse_level_dir(level_dir, min_hold_duration)
     level_dict = asdict(level)
+    # print(level_dict)
     # remove sort_index from notes
     for inst_note_list in level_dict["notes_by_instrument"].values():
         for note_dict in inst_note_list:
@@ -255,14 +263,19 @@ def build(
         # load it and overwrite level data
         with open(level_tuning_file, 'r') as f:
             tuning_dict = json.load(f)
+        # round-trip the tuning dict to fill in empty fields and restore ordering
+        tuning_dict = asdict(
+            from_dict(
+                data_class=Level,
+                data=tuning_dict,
+                config=Config(
+                    type_hooks={Waveform: Waveform})))
         merge_tuning(level_dict, tuning_dict, force_update_note_props)
         # write back any modifications made
-        with open(level_tuning_file, 'w') as f:
-            json.dump(tuning_dict, fp=f, indent='  ')
+        write_tuning_file(tuning_dict, level_tuning_file)
     else:
         # create a dummy version for the user to edit
-        with open(level_tuning_file, 'w') as f:
-            f.write(json.dumps(level_dict, indent='  '))
+        write_tuning_file(level_dict, level_tuning_file)
     print("Tuning file updated!")
 
     # prepare the output level_dict
@@ -271,7 +284,7 @@ def build(
     for inst_note_list in level_dict["notes_by_instrument"].values():
         for note_dict in inst_note_list:
             all_notes.append(note_dict)
-    all_notes = sorted(all_notes, key=lambda note_dict: (note_dict["start"], note_dict["name"]))
+    all_notes = sorted(all_notes, key=lambda note_dict: (note_dict["start_beat"], note_dict["name"]))
     level_dict["notes"] = all_notes
     # convert "beat" units to seconds
     if level_dict["metadata"]["song_end"] is None:
@@ -293,6 +306,10 @@ def build(
             level_dict["metadata"]["view_range"] = view_range_sec # 1.84615385
         else:
             print("WARN: metadata view_range is empty. I can fill it in from view_range_beats and bpm, but at least one of those is misisng. Please fill them in!")
+    # drop useless fields
+    for note in level_dict["notes"]:
+        del note["idx"]
+        del note["sort_index"]
 
 
     # make level_dir in output_levels if not yet
@@ -393,6 +410,20 @@ def display_level(level_dict: dict) -> None:
     for line in reversed(lines):
         print(line)
 
+
+def write_tuning_file(tuning_dict: dict, tuning_filepath: pathlib.Path) -> None:
+    # delete unwanted fields
+    del tuning_dict["notes"]
+    del tuning_dict["metadata"]["view_range"]
+    del tuning_dict["metadata"]["song_end"]
+    for inst_name, inst_notes in tuning_dict["notes_by_instrument"].items():
+        for note in inst_notes:
+            del note["sort_index"]
+            del note["pitch"]
+            del note["start"]
+            del note["end"]
+    with open(tuning_filepath, 'w') as f:
+        json.dump(tuning_dict, fp=f, indent='  ')
 
 
 if __name__ == '__main__':

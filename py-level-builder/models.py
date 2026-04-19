@@ -23,11 +23,11 @@ class LeveLMetadata:
     instruments: list[Instrument]
     title: Optional[str] = None
     bpm: Optional[float] = None
+    beats_per_measure: int = 4
+    subdivisions_per_beat: int = 4
     view_range: Optional[float] = None # only present in output file, computed from view_range_beats and bpm
     view_range_beats: Optional[float] = None # only present in tuning file
     warmup_time: float = 3.0
-    beats_per_measure: int = 4
-    subdivisions_per_beat: int = 4
     song_end: Optional[float] = None # base
     song_end_beat: Optional[float] = None
 
@@ -60,21 +60,22 @@ class Instrument:
 
 @dataclass(order=True)
 class Note:
-    sort_index: tuple = field(init=False, repr=False)
-    name: str # instrument name
-    start: float # note start time
-    start_beat: float # start time expressed in beat count. mostly for making beatmaps easier
+    sort_index: list = field(init=False, repr=False)
+    idx: Optional[int] = None
+    name: Optional[str] = None # instrument name
+    start: Optional[float] = None # note start time
+    start_beat: Optional[float] = None # start time expressed in beat count. mostly for making beatmaps easier
     end: Optional[float] = None
-    band: Optional[Union[float, NoteBand]] = None
-    jumpable: bool = False
+    end_beat: Optional[float] = None
     pitch: Optional[float] = None
     pitch_str: Optional[str] = None
-    idx: Optional[int] = None
-    slide: Optional[list[NoteSlide]] = None
+    band: Optional[Union[float, NoteBand]] = None
+    jumpable: bool = False
+    # slide: Optional[list[NoteSlide]] = None
 
     def __post_init__(self):
         # sort by start time, then instrument name
-        self.sort_index = (self.start, self.name)
+        self.sort_index = [self.start, self.name]
 
 
 
