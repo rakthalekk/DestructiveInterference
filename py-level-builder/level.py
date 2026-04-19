@@ -4,6 +4,7 @@ from miditoolkit import MidiFile
 import re
 import json
 from dataclasses import asdict
+import shutil
 
 from utils import *
 from models import *
@@ -11,7 +12,10 @@ from models import *
 MINIMUM_DURATION_FOR_HOLD_NOTE_DEFAULT = 0.2
 PRETTY_JSON = True
 
-# TODO: copy top-level mp3 and instrument sample mp3s into output folder
+
+# TODO: copy instrument sample mp3 files into output folder
+# TODO: allow audio to start before first midi note
+# TODO: allow each instrument to set its reference pitch
 
 
 def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: list[str], ignore_checks: list[str]) -> dict:
@@ -273,6 +277,15 @@ def build(
     output_beatmap = output_dir / f"{level_name}.json"
     with open(output_beatmap, 'w') as f:
         f.write(json.dumps(level_dict, indent='  ' if PRETTY_JSON else None))
+
+    # copy raw/*.mp3 if it exists
+    raw_mp3_files = list(raw_dir.glob("*.mp3"))
+    if len(raw_mp3_files) > 1:
+        print(f"WARN: Multiple mp3 files seen in {raw_dir}: {raw_mp3_files}. Please include only one top-level mp3 file; this will be used as the master recording played during the level.")
+    elif len(raw_mp3_files) == 1:
+        master_audio_from_raw = raw_mp3_files[0]
+        shutil.copy2(master_audio_from_raw, output_dir / f"{master_audio_from_raw.stem}.mp3")
+
 
     # pretty display the beat map
     lines: list[str] = []
