@@ -6,15 +6,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jox5q"]
 size = Vector2(128, 57)
 
-[sub_resource type="Gradient" id="Gradient_3r3dn"]
+[sub_resource type="Gradient" id="Gradient_fx8te"]
 interpolation_mode = 1
-offsets = PackedFloat32Array(0.5140562, 1)
-colors = PackedColorArray(0.20871013, 0.20871016, 0.20871013, 1, 1, 1, 1, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_7l8ip"]
-gradient = SubResource("Gradient_3r3dn")
+gradient = SubResource("Gradient_fx8te")
 width = 128
-height = 128
+height = 60
 fill = 2
 fill_from = Vector2(0.5, 0.5)
 metadata/_snap_enabled = true
@@ -30,14 +29,12 @@ shape = SubResource("RectangleShape2D_jox5q")
 disabled = true
 
 [node name="Icon" type="Node2D" parent="." unique_id=1594390900]
-position = Vector2(0, -116)
 
 [node name="Bkgd" type="Sprite2D" parent="Icon" unique_id=966165949]
-position = Vector2(0, 0.5000019)
-scale = Vector2(1, 0.44531253)
 texture = SubResource("GradientTexture2D_7l8ip")
 
 [node name="Icon" type="Sprite2D" parent="Icon" unique_id=168413470]
+visible = false
 scale = Vector2(0.44531253, 0.44531253)
 texture = ExtResource("2_fx8te")
 hframes = 4

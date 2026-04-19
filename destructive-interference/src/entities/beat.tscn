@@ -8,7 +8,7 @@ size = Vector2(136.947, 20)
 
 [sub_resource type="Gradient" id="Gradient_3r3dn"]
 interpolation_mode = 1
-colors = PackedColorArray(0.8784314, 0.30588236, 0.30588236, 1, 1, 1, 1, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_xrhn5"]
 gradient = SubResource("Gradient_3r3dn")
@@ -137,9 +137,11 @@ position = Vector2(0, 38)
 texture = SubResource("GradientTexture2D_xrhn5")
 
 [node name="Icon" type="Sprite2D" parent="Icon" unique_id=1718302155]
-position = Vector2(0, -44)
+visible = false
+position = Vector2(0, -26)
 texture = ExtResource("2_xrhn5")
 hframes = 4
+frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=680761029]
 libraries/ = SubResource("AnimationLibrary_4troy")

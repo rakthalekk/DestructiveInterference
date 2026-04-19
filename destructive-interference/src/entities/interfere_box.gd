@@ -14,6 +14,14 @@ var interfere_type: GameManager.WAVE_TYPE = GameManager.WAVE_TYPE.NONE
 @onready var preview := $Icon/Icon as Sprite2D
 
 
+var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
+	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
+	GameManager.WAVE_TYPE.SQUARE: Color("40ba22"),
+	GameManager.WAVE_TYPE.SAW: Color("ba228c"),
+	GameManager.WAVE_TYPE.SINE: Color("2250ba"),
+	GameManager.WAVE_TYPE.NOISE: Color("ffffff")
+}
+
 
 func _ready() -> void:
 	end_interfere()
@@ -23,6 +31,7 @@ func _ready() -> void:
 func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	interfere_type = in_interfere_type
 	collision_box.disabled = false
+	$Icon/Bkgd.modulate = wave_colors[in_interfere_type]
 	preview.frame = int(in_interfere_type)
 	icon.visible = true
 	
