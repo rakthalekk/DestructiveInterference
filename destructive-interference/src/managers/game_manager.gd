@@ -84,19 +84,23 @@ func transition_to(to_game_state: GAME_STATE):
 		return
 	
 	var old_game_state = current_game_state
+	current_game_state = to_game_state
 	
 	if is_instance_valid(current_hud):
 		current_hud.transition_out()
 		await current_hud.transition_complete
 	
-	current_game_state = to_game_state
 	current_hud = GAME_STATE_SCENES[current_game_state].instantiate() # anim player should auto-play in-transition
 	ui_canvas.add_child(current_hud)
 	
 	transitioned_game_state.emit(old_game_state, current_game_state)
+	
+	if [GAME_STATE.MAIN_MENU, GAME_STATE.LEVEL_SELECT].has(to_game_state):
+		AudioManager.switch_to_menu_song()
 
 
 func start_level_sequence(in_level_file: String):
 	LevelManager.load_data_from_json(in_level_file)
 	transition_to(GAME_STATE.IN_GAME)
 	LevelManager.start_level()
+	AudioManager.fade_menu_song_out()

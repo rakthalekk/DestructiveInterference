@@ -1,0 +1,131 @@
+extends Node2D
+
+
+
+var JSON_SONGS: Dictionary[String, AudioStream] = {
+	"res://levels/example/example.json": preload("res://levels/example/city.wav"),
+	"res://levels/challenge1/challenge1.json": preload("res://levels/challenge1/challenge1.mp3")
+}
+
+
+var master_volume_linear = 1.0
+
+
+var active_player: AudioStreamPlayer
+
+
+## Player used for menu song
+@onready var menu_song_player := $MenuPlayer as AudioStreamPlayer
+
+## Player used for level songs
+@onready var level_song_player := $SongPlayer as AudioStreamPlayer
+
+## Timer for crossfade
+@onready var fade_timer := $FadeTimer as Timer
+
+
+
+## connect transition state signal for pause effect
+func _ready() -> void:
+	GameManager.transitioned_game_state.connect(_on_game_state_transition)
+	LevelManager.warmup_finished.connect(_on_warmup_end)
+
+
+## men u 
+func switch_to_menu_song():
+	if menu_song_player != active_player:
+		fade_between_tracks(menu_song_player, menu_song_player.stream, level_song_player)
+
+
+func fade_menu_song_out():
+	fade_out(menu_song_player)
+
+
+## switch to level son g
+func switch_to_level_song(json_path: String):
+	if !JSON_SONGS.has(json_path):
+		return
+	
+	fade_between_tracks(level_song_player, JSON_SONGS[json_path], menu_song_player)
+
+
+## fade between tracks
+func fade_between_tracks(in_track: AudioStreamPlayer, in_stream: AudioStream, out_track: AudioStreamPlayer):
+	if out_track != in_track:
+		fade_out(out_track)
+	
+	fade_in(in_track, in_stream)
+
+
+## fade in a track with a stream
+func fade_in(player: AudioStreamPlayer, stream: AudioStream = null):
+	if !stream:
+		stream = player.stream
+	
+	player.stream = stream
+	player.play()
+	player.volume_linear = 0
+	
+	active_player = player
+	
+	var tween := get_tree().create_tween()
+	tween.tween_property(player, "volume_linear", 1 * master_volume_linear, .1)
+
+
+## fade a track out
+func fade_out(player: AudioStreamPlayer):
+	if !is_instance_valid(player):
+		return
+	
+	var tween := get_tree().create_tween()
+	tween.tween_property(player, "volume_linear", 0, .1)
+	tween.tween_callback(player.stop)
+
+
+func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
+	AudioServer.set_bus_effect_enabled(0, 0, [GameManager.GAME_STATE.PAUSED, GameManager.GAME_STATE.GAME_OVER].has(to))
+	
+	if from == GameManager.GAME_STATE.PAUSED && to == GameManager.GAME_STATE.IN_GAME:
+		level_song_player.stream_paused = false
+		fade_out(menu_song_player)
+	elif from == GameManager.GAME_STATE.IN_GAME && to == GameManager.GAME_STATE.PAUSED:
+		level_song_player.stream_paused = true
+		fade_in(menu_song_player)
+
+
+func _on_warmup_end():
+	switch_to_level_song(LevelManager.current_level_json_file)
+
+
+func _on_song_player_finished() -> void:
+	#_loop_player(level_song_player)
+	pass
+
+
+func _on_menu_player_finished() -> void:
+	#_loop_player(menu_song_player)
+	pass
+
+
+func loop_level_song():
+	_loop_player(level_song_player)
+
+
+func _loop_player(in_player: AudioStreamPlayer):
+	if in_player != active_player:
+		return
+	
+	in_player.stop()
+	in_player.play()
+
+
+## one shot helper function used to play SFX
+func _sfx_one_shot(in_stream: AudioStream, volume_mod := 1.0, pitch_mod := 1.0):
+	var sfx_player := AudioStreamPlayer.new()
+	get_tree().root.add_child(sfx_player)
+	sfx_player.stream = in_stream
+	sfx_player.bus = "SFX"
+	sfx_player.volume_linear = 1 * master_volume_linear * volume_mod
+	sfx_player.pitch_scale = pitch_mod
+	sfx_player.play()
+	sfx_player.finished.connect(sfx_player.queue_free)

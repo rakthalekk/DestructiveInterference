@@ -6,7 +6,7 @@
 [sub_resource type="Gradient" id="Gradient_x8dl8"]
 interpolation_mode = 1
 offsets = PackedFloat32Array(0, 0.20481928, 0.39759037, 0.6, 0.79518074)
-colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+colors = PackedColorArray(0.19076231, 0.19076234, 0.19076231, 1, 0.44291073, 0.4429108, 0.4429106, 1, 0.19215687, 0.19215687, 0.19215687, 1, 0.44313726, 0.44313726, 0.44313726, 1, 0.19215687, 0.19215687, 0.19215687, 1)
 metadata/_snap_enabled = true
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_5v5fa"]
