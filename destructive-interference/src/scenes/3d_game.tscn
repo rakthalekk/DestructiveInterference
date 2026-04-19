@@ -51,11 +51,11 @@ size = Vector2i(1920, 1080)
 unique_name_in_owner = true
 
 [node name="Player3D" parent="." unique_id=476955916 node_paths=PackedStringArray("lane_container") instance=ExtResource("2_b16rg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022, -1.7123582, -5.553591)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022, -1.5216575, -5.553591)
 lane_container = NodePath("../LanePositions")
 
 [node name="LanePositions" type="Node3D" parent="." unique_id=2043431879]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59364176, -0.7615907)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7796494, -0.7615907)
 visible = false
 
 [node name="Lane1" type="Node3D" parent="LanePositions" unique_id=1133258251]

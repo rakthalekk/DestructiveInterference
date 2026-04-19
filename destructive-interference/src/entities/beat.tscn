@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b0dipsnd8iv5k" path="res://assets/dev_waveforms/wave_forms.png" id="2_xrhn5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhn5"]
-size = Vector2(136.94662, 31.131855)
+size = Vector2(136.947, 20)
 
 [sub_resource type="Gradient" id="Gradient_3r3dn"]
 interpolation_mode = 1
@@ -13,7 +13,7 @@ colors = PackedColorArray(0.8784314, 0.30588236, 0.30588236, 1, 1, 1, 1, 1)
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_xrhn5"]
 gradient = SubResource("Gradient_3r3dn")
 width = 128
-height = 32
+height = 20
 fill = 2
 fill_from = Vector2(0.5, 0.5)
 metadata/_snap_enabled = true
