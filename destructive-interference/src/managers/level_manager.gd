@@ -75,7 +75,7 @@ func load_data_from_json(level_json: String):
 	for data in instrument_data:
 		var instrument = Instrument.new(data.name, data.type, Color(data.color), data.goal)
 		instruments[data.name] = instrument
-		var type = GameManager.STRING_TO_WAVE_TYPE[instrument.type]
+		var type = instrument.type
 		wave_goals[type] = instrument.goal
 		wave_interferences[type] = 0
 	
