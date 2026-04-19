@@ -272,6 +272,12 @@ def build(
                 data=tuning_dict,
                 config=Config(
                     type_hooks={Waveform: Waveform})))
+        # if any instrument has default_band set, fill in any missing notes.band values
+        for inst in tuning_dict["metadata"]["instruments"]:
+            if inst["default_band"] != None:
+                for note in tuning_dict["notes_by_instrument"][inst["name"]]:
+                    if note["band"] is None:
+                        note["band"] = inst["default_band"]
         merge_tuning(level_dict, tuning_dict, force_update_note_props)
         # write back any modifications made
         write_tuning_file(tuning_dict, level_tuning_file)
@@ -309,6 +315,8 @@ def build(
         else:
             print("WARN: metadata view_range is empty. I can fill it in from view_range_beats and bpm, but at least one of those is misisng. Please fill them in!")
     # drop useless fields
+    for inst in level_dict["metadata"]["instruments"]:
+        del inst["default_band"]
     for note in level_dict["notes"]:
         del note["idx"]
         del note["sort_index"]

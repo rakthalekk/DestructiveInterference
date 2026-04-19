@@ -38,6 +38,7 @@ class Instrument:
     type: Optional[Waveform] = None
     color: Optional[str] = None
     goal: Optional[int] = None
+    default_band: Optional[int] = None # if present, auto-fills any "null" band to this value
 
     @staticmethod
     def from_midi_filename(filename: str) -> Instrument:
