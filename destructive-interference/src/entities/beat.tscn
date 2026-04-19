@@ -126,17 +126,18 @@ collision_layer = 2
 collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=1670048198]
-position = Vector2(-7.4505806e-07, -7.1525574e-07)
+position = Vector2(0, 38)
 scale = Vector2(0.9346707, 1.0278862)
 shape = SubResource("RectangleShape2D_xrhn5")
 
 [node name="Icon" type="Node2D" parent="." unique_id=1154701175]
 
 [node name="Bkgd" type="Sprite2D" parent="Icon" unique_id=1509422566]
+position = Vector2(0, 38)
 texture = SubResource("GradientTexture2D_xrhn5")
 
 [node name="Icon" type="Sprite2D" parent="Icon" unique_id=1718302155]
-position = Vector2(0, -82)
+position = Vector2(0, -44)
 texture = ExtResource("2_xrhn5")
 hframes = 4
 

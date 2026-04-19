@@ -13,6 +13,8 @@ const PLAYER_Y = 1000
 ## beat scene ref
 const BEAT_SCENE = preload("res://src/entities/beat.tscn")
 
+const BEAT_LINE_SCENE = preload("res://src/entities/beat_line.tscn")
+
 
 ##########################
 ##    BEATMAP STATES    ##
@@ -34,6 +36,14 @@ func _ready() -> void:
 		lanes.push_back(child as Path2D)
 	
 	player_2d.initialize_from_beatmap(self, 2, get_player_position_for_lane(2))
+	
+	LevelManager.create_subdivision_line.connect(_on_create_subdivision_line)
+
+
+func _on_create_subdivision_line(width: float):
+	var line = BEAT_LINE_SCENE.instantiate() as Line2D
+	line.width = width
+	$Lines.add_child(line)
 
 
 func spawn_beat(note: Note, wave_type: GameManager.WAVE_TYPE):
@@ -58,7 +68,3 @@ func get_player_position_for_lane(in_lane_idx: int):
 
 func is_valid_lane(in_lane_idx: int):
 	return in_lane_idx >= LANE_MIN && in_lane_idx <= LANE_MAX
-
-
-#func _on_timer_timeout() -> void:
-	#spawn_beat([0, 1, 2, 3, 4].pick_random())

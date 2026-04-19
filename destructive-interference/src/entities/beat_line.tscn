@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://blqfuxwgu5jqa"]
+
+[ext_resource type="Script" uid="uid://b8348deiy0xwe" path="res://src/entities/beat_line.gd" id="1_jks1v"]
+
+[node name="BeatLine" type="Line2D" unique_id=46536221]
+points = PackedVector2Array(597, 0, 1317, 0)
+default_color = Color(0.59475034, 0.59475, 0.5947499, 1)
+script = ExtResource("1_jks1v")

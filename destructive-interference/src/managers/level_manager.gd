@@ -2,6 +2,7 @@ extends Node
 
 signal warmup_finished
 signal send_note(note: Note)
+signal create_subdivision_line(width: float)
 
 var level_title: String
 var bpm: float = 120.0
@@ -16,6 +17,10 @@ var level_active: bool = false
 var instruments: Dictionary[String, Instrument] = {}
 var notes: Array[Note] = []
 var current_note_idx = 0
+
+var time_to_next_beat = 0.0
+var subdivision_num = 1
+var beat_num = 1
 
 var warmup_timer = Timer.new()
 
@@ -38,6 +43,7 @@ func start_level():
 	level_active = true
 	current_time = -warmup_time
 	current_note_idx = 0
+	time_to_next_beat = 60.0 / bpm / subdivisions_per_beat
 	
 	warmup_timer.wait_time = warmup_time
 	warmup_timer.start()
@@ -86,6 +92,28 @@ func load_data_from_json(level_json: String):
 func _process(delta: float) -> void:
 	if !level_active:
 		return
+	
+	# first beat line should be for timestamp 0
+	if current_time + view_range >= 0:
+		if time_to_next_beat <= 0:
+			# at a beat line
+			if subdivision_num == subdivisions_per_beat:
+				# at a measure linea
+				if beat_num == beats_per_measure:
+					beat_num = 1
+					subdivision_num = 1
+					create_subdivision_line.emit(20)
+				else:
+					subdivision_num = 1
+					beat_num += 1
+					create_subdivision_line.emit(10)
+			else:
+				create_subdivision_line.emit(4)
+				subdivision_num += 1
+			
+			time_to_next_beat += 60.0 / bpm / subdivisions_per_beat
+		
+		time_to_next_beat -= delta
 	
 	# we all outta notes
 	if current_note_idx == notes.size():
