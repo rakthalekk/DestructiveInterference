@@ -227,6 +227,9 @@ def build(
     for inst_note_list in level_dict["notes_by_instrument"].values():
         for note_dict in inst_note_list:
             del note_dict["sort_index"]
+    print(f"Raw MIDI files parsed. "
+          f"Total instruments: {len(level_dict["metadata"]["instruments"])} "
+          f"Total notes: {sum((len(notes) for notes in level_dict["notes_by_instrument"].values()))}")
 
     # check for existing level-tuning.json file
     level_tuning_file = level_dir / "tuning.json"
@@ -242,6 +245,7 @@ def build(
         # create a dummy version for the user to edit
         with open(level_tuning_file, 'w') as f:
             f.write(json.dumps(level_dict, indent='  '))
+    print("Tuning file updated!")
 
     # zip all notes together
     all_notes: list[dict] = []
@@ -259,6 +263,7 @@ def build(
     output_beatmap = output_dir / f"{level_name}.json"
     with open(output_beatmap, 'w') as f:
         f.write(json.dumps(level_dict, indent='  ' if PRETTY_JSON else None))
+    print(f"Wrote output level JSON file to {output_beatmap.resolve()}")
 
     # copy level_dir/*.mp3 if it exists
     raw_mp3_files = list(level_dir.glob("*.mp3"))
@@ -266,12 +271,27 @@ def build(
         print(f"WARN: Multiple mp3 files seen in {level_dir}: {raw_mp3_files}. Please include only one top-level mp3 file; this will be used as the master recording played during the level.")
     elif len(raw_mp3_files) == 1:
         master_audio_from_raw = raw_mp3_files[0]
-        shutil.copy2(master_audio_from_raw, output_dir / f"{master_audio_from_raw.stem}.mp3")
+        master_audio_output = output_dir / f"{master_audio_from_raw.stem}.mp3"
+        shutil.copy2(master_audio_from_raw, master_audio_output)
+        print(f"Copied master MP3 file from {master_audio_from_raw} to {master_audio_output}")
 
 
     # pretty display the beat map
+    try:
+        display_level(level_dict)
+    except MissingTuningDataError as e:
+        print("WARN: Can't display beat map due to missing fields in tuning file.\n" + str(e))
+
+class MissingTuningDataError(ValueError): ...
+
+def display_level(level_dict: dict) -> None:
     lines: list[str] = []
     active: dict[str, float] = {}
+    required_props = ("bpm", "subdivisions_per_beat", "beats_per_measure")
+    missing_required_props = [p for p in required_props if level_dict["metadata"][p] == None]
+    if len(missing_required_props) > 0:
+        raise MissingTuningDataError(f"Missing these properties required to display beatmap: {missing_required_props}")
+
     time_per_line: float = (60.0 / level_dict["metadata"]["bpm"]) / level_dict["metadata"]["subdivisions_per_beat"]
     instruments = [inst["name"] for inst in level_dict["metadata"]["instruments"]]
     base_line = "║ " + ' │ '.join(' '*len(instruments) for _ in range(5)) + " ║"
@@ -322,7 +342,6 @@ def build(
     lines.append(cur_line)
     for line in reversed(lines):
         print(line)
-
 
 
 
