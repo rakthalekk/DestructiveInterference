@@ -46,7 +46,7 @@ func _on_create_subdivision_line(width: float):
 	$Lines.add_child(line)
 
 
-func spawn_beat(note: Note, wave_type: GameManager.WAVE_TYPE):
+func spawn_beat(note: Note):
 	var lane_idx = note.band_start
 	var beat_width = note.band_end - note.band_start + 1
 	
@@ -59,7 +59,7 @@ func spawn_beat(note: Note, wave_type: GameManager.WAVE_TYPE):
 	
 	lanes[lane_idx].add_child(beat)
 	beat.progress_ratio = 0.0
-	beat.dispatch_beat(wave_type, LevelManager.view_range)
+	beat.dispatch_beat(note, LevelManager.view_range)
 
 
 func get_player_position_for_lane(in_lane_idx: int):

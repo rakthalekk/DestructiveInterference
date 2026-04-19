@@ -8,3 +8,4 @@ var band_end: int
 var jumpable: bool
 var pitch: float
 var end_time: float
+var is_first := false

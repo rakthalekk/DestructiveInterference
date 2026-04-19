@@ -18,11 +18,17 @@ var width := 1:
 		$Icon.position = Vector2((width - 1) * 72, 0)
 		$DespawnBox.position = Vector2((width - 1) * 72, 0)
 
+
 ## icon used by sprite
 @onready var icon := $Icon/Icon as Sprite2D
 
 ## anim player
 @onready var anim_player := $AnimationPlayer as AnimationPlayer
+
+
+var note_data: Note
+
+var looped_audio = false
 
 
 func _physics_process(delta: float) -> void:
@@ -32,9 +38,11 @@ func _physics_process(delta: float) -> void:
 	progress += speed * delta
 
 
-func dispatch_beat(in_wave_type: GameManager.WAVE_TYPE, in_lookahead_time_seconds: float):
-	wave_type = in_wave_type
-	icon.frame = int(in_wave_type)
+
+func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
+	note_data = note
+	wave_type = note.instrument.type
+	icon.frame = int(wave_type)
 	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
 
 

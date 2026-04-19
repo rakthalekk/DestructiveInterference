@@ -22,4 +22,4 @@ func hide_start_text():
 
 
 func _create_beat(note: Note):
-	beatmap.spawn_beat(note, GameManager.STRING_TO_WAVE_TYPE[note.instrument.type])
+	beatmap.spawn_beat(note)
