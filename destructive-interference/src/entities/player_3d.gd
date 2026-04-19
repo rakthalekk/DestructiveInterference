@@ -1,3 +1,4 @@
+## 3D representation of the player
 class_name Player3D
 extends Node3D
 
@@ -20,6 +21,9 @@ var lane_points: Array[Node3D]
 
 ## animation playin that thanng
 @onready var move_anim := $MoveAnimation as AnimationPlayer
+
+## animation playin that thannnnggg
+@onready var damage_anim := $DamageAnimation as AnimationPlayer
 
 
 func _ready() -> void:
@@ -54,3 +58,12 @@ func change_lane(in_direction: Vector2i):
 ## Dodge function for player
 func dodge_input():
 	dodge_anim.play("dodge")
+
+
+func interfere(in_interfere_type: GameManager.WAVE_TYPE):
+	pass
+
+
+func on_take_damage():
+	damage_anim.stop()
+	damage_anim.play("take_damage")

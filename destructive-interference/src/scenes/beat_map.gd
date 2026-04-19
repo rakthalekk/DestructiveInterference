@@ -36,7 +36,7 @@ func _ready() -> void:
 	player_2d.initialize_from_beatmap(self, 2, get_player_position_for_lane(2))
 
 
-func spawn_beat(lane_idx: int):
+func spawn_beat(lane_idx: int, wave_type: GameManager.WAVE_TYPE):
 	if !is_valid_lane(lane_idx):
 		push_warning("lane idx ", lane_idx, " out of bounds")
 		return
@@ -45,7 +45,7 @@ func spawn_beat(lane_idx: int):
 	
 	lanes[lane_idx].add_child(beat)
 	beat.progress_ratio = 0.0
-	beat.dispatch_beat(current_lookahead_time_seconds)
+	beat.dispatch_beat(wave_type, current_lookahead_time_seconds)
 
 
 func get_player_position_for_lane(in_lane_idx: int):
@@ -56,5 +56,5 @@ func is_valid_lane(in_lane_idx: int):
 	return in_lane_idx >= LANE_MIN && in_lane_idx <= LANE_MAX
 
 
-func _on_timer_timeout() -> void:
-	spawn_beat([0, 1, 2, 3, 4].pick_random())
+#func _on_timer_timeout() -> void:
+	#spawn_beat([0, 1, 2, 3, 4].pick_random())

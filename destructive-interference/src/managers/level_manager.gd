@@ -19,6 +19,14 @@ var current_note_idx = 0
 
 var warmup_timer = Timer.new()
 
+@onready var wave_tolerances: Dictionary[GameManager.WAVE_TYPE, float] = {
+	GameManager.WAVE_TYPE.TRIANGLE: 0.0,
+	GameManager.WAVE_TYPE.SQUARE: 0.0,
+	GameManager.WAVE_TYPE.SAW: 0.0,
+	GameManager.WAVE_TYPE.SINE: 0.0,
+}
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	warmup_timer.one_shot = true
@@ -90,3 +98,7 @@ func _process(delta: float) -> void:
 			break
 	
 	current_time += delta
+
+
+func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 10.0):
+	wave_tolerances[wave_type] += amount

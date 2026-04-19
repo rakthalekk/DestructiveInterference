@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://u61skiajs67l"]
 
+[ext_resource type="Script" uid="uid://b5l622uef10ln" path="res://src/scenes/3d_game.gd" id="1_dcu7v"]
 [ext_resource type="PackedScene" uid="uid://oghlab6pqruj" path="res://src/scenes/beat_map.tscn" id="1_xh7qo"]
 [ext_resource type="PackedScene" uid="uid://g67lg4j8466y" path="res://src/entities/player_3d.tscn" id="2_b16rg"]
 [ext_resource type="Texture2D" uid="uid://dt4edkn6codtp" path="res://icon.svg" id="3_b16rg"]
@@ -29,6 +30,8 @@ shading_mode = 0
 albedo_texture = SubResource("ViewportTexture_f2gxy")
 
 [node name="3DGame" type="Node3D" unique_id=1081359394]
+script = ExtResource("1_dcu7v")
+level_json = "res://levels/example/example.json"
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=941378808]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5514226)
@@ -36,7 +39,7 @@ environment = SubResource("Environment_w0lka")
 near = 0.001
 
 [node name="BeatMapDisplay" type="MeshInstance3D" parent="." unique_id=563929071]
-transform = Transform3D(16, 0, 0, 0, 8.86327, 0.17364818, 0, -1.5628335, 0.9848077, 0, 0.34, -7.551)
+transform = Transform3D(15.999999, 0, 0, 0, 8.164389, 0.4207984, 0, -3.7871861, 0.90715414, 0, 1.2333394, -8.68282)
 mesh = SubResource("QuadMesh_hv5nq")
 surface_material_override/0 = SubResource("StandardMaterial3D_6v5l1")
 
@@ -45,24 +48,25 @@ transparent_bg = true
 size = Vector2i(1920, 1080)
 
 [node name="BeatMap" parent="BeatMapDisplay/SubViewport" unique_id=1022691104 instance=ExtResource("1_xh7qo")]
+unique_name_in_owner = true
 
 [node name="Player3D" parent="." unique_id=476955916 node_paths=PackedStringArray("lane_container") instance=ExtResource("2_b16rg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022, -2.306, -4.792)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022, -1.7123582, -5.553591)
 lane_container = NodePath("../LanePositions")
 
 [node name="LanePositions" type="Node3D" parent="." unique_id=2043431879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59364176, -0.7615907)
+visible = false
 
 [node name="Lane1" type="Node3D" parent="LanePositions" unique_id=1133258251]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.642, -2.306, -4.8532352)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9182642, -2.306, -4.8532352)
 
 [node name="Sprite3D" type="Sprite3D" parent="LanePositions/Lane1" unique_id=1264125121]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 texture = ExtResource("3_b16rg")
 
 [node name="Lane2" type="Node3D" parent="LanePositions" unique_id=1997733843]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.822, -2.306, -4.8532352)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9287708, -2.306, -4.8532352)
 
 [node name="Sprite3D" type="Sprite3D" parent="LanePositions/Lane2" unique_id=1769123622]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
@@ -70,23 +74,20 @@ texture = ExtResource("3_b16rg")
 
 [node name="Lane3" type="Node3D" parent="LanePositions" unique_id=2014476973]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022, -2.306, -4.8532352)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="LanePositions/Lane3" unique_id=1988506827]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 texture = ExtResource("3_b16rg")
 
 [node name="Lane4" type="Node3D" parent="LanePositions" unique_id=1689130412]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.778, -2.306, -4.8532352)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.90620434, -2.306, -4.8532352)
 
 [node name="Sprite3D" type="Sprite3D" parent="LanePositions/Lane4" unique_id=1271148482]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 texture = ExtResource("3_b16rg")
 
 [node name="Lane5" type="Node3D" parent="LanePositions" unique_id=2039308809]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.618, -2.306, -4.8532352)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8695333, -2.306, -4.8532352)
 
 [node name="Sprite3D" type="Sprite3D" parent="LanePositions/Lane5" unique_id=570126563]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)

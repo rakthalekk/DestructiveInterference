@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c7ue2wk7jxw17"]
+
+[ext_resource type="Script" uid="uid://d1f0m1ry5k7ru" path="res://src/entities/interfere_box.gd" id="1_8mpo6"]
+[ext_resource type="Texture2D" uid="uid://b0dipsnd8iv5k" path="res://assets/dev_waveforms/wave_forms.png" id="2_fx8te"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jox5q"]
+size = Vector2(128, 57)
+
+[sub_resource type="Gradient" id="Gradient_3r3dn"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.5140562, 1)
+colors = PackedColorArray(0.20871013, 0.20871016, 0.20871013, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7l8ip"]
+gradient = SubResource("Gradient_3r3dn")
+width = 128
+height = 128
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+metadata/_snap_enabled = true
+
+[node name="InterfereBox" type="Area2D" unique_id=1086371767]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_8mpo6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1049234824]
+shape = SubResource("RectangleShape2D_jox5q")
+disabled = true
+
+[node name="Icon" type="Node2D" parent="." unique_id=1594390900]
+
+[node name="Bkgd" type="Sprite2D" parent="Icon" unique_id=966165949]
+position = Vector2(0, 0.5000019)
+scale = Vector2(1, 0.44531253)
+texture = SubResource("GradientTexture2D_7l8ip")
+
+[node name="Icon" type="Sprite2D" parent="Icon" unique_id=168413470]
+scale = Vector2(0.44531253, 0.44531253)
+texture = ExtResource("2_fx8te")
+hframes = 4
+
+[node name="Timer" type="Timer" parent="." unique_id=685520992]
+wait_time = 0.3
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

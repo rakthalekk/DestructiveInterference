@@ -1,10 +1,10 @@
-extends Node2D
+extends Node3D
 
 
 @export_file_path var level_json
 
 
-@onready var beatmap: BeatMap = $BeatMap
+@onready var beatmap: BeatMap = %BeatMap
 
 
 func _ready() -> void:
@@ -18,7 +18,7 @@ func _ready() -> void:
 
 
 func hide_start_text():
-	$StartText.hide()
+	GameManager.game_hud.start_text.hide()
 
 
 func _create_beat(note: Note):

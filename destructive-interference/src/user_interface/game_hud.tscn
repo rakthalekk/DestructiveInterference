@@ -1,0 +1,224 @@
+[gd_scene format=3 uid="uid://d0tyx2gifpnsd"]
+
+[ext_resource type="Texture2D" uid="uid://dv37rv6tn6f5t" path="res://assets/dev_waveforms/triangle.png" id="1_2alen"]
+[ext_resource type="Script" uid="uid://c417v1wq435f1" path="res://src/user_interface/game_hud.gd" id="1_41fu4"]
+[ext_resource type="Texture2D" uid="uid://c12askjdy8t1h" path="res://assets/dev_waveforms/square.png" id="2_41fu4"]
+[ext_resource type="Texture2D" uid="uid://evwuuyso5upo" path="res://assets/dev_waveforms/saw.png" id="3_1wc61"]
+[ext_resource type="Texture2D" uid="uid://cbase4e6wqcug" path="res://assets/dev_waveforms/sine.png" id="4_ts7hy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_maobv"]
+bg_color = Color(0.5211406, 0.5211406, 0.5211405, 1)
+
+[node name="GameHUD" type="CanvasLayer" unique_id=1140594258]
+script = ExtResource("1_41fu4")
+
+[node name="StartText" type="Label" parent="." unique_id=1131417434]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -233.5
+offset_top = -49.5
+offset_right = 233.5
+offset_bottom = 49.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_maobv")
+text = "Get Ready..."
+horizontal_alignment = 1
+
+[node name="Controls" type="HBoxContainer" parent="." unique_id=1060409292]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -262.0
+offset_top = -220.0
+offset_right = 262.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls" unique_id=97290527]
+layout_mode = 2
+theme_override_constants/separation = -16
+
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer" unique_id=86383994]
+layout_mode = 2
+texture = ExtResource("1_2alen")
+
+[node name="Label" type="Label" parent="Controls/VBoxContainer" unique_id=2100305217]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "H"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Controls" unique_id=1929684916]
+layout_mode = 2
+theme_override_constants/separation = -16
+
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer2" unique_id=129405862]
+layout_mode = 2
+texture = ExtResource("2_41fu4")
+
+[node name="Label" type="Label" parent="Controls/VBoxContainer2" unique_id=521659746]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "J"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Controls" unique_id=1344197718]
+layout_mode = 2
+theme_override_constants/separation = -16
+
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer3" unique_id=281100815]
+layout_mode = 2
+texture = ExtResource("3_1wc61")
+
+[node name="Label" type="Label" parent="Controls/VBoxContainer3" unique_id=254400724]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "K"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Controls" unique_id=1371139538]
+layout_mode = 2
+theme_override_constants/separation = -16
+
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer4" unique_id=360987241]
+layout_mode = 2
+texture = ExtResource("4_ts7hy")
+
+[node name="Label" type="Label" parent="Controls/VBoxContainer4" unique_id=586627205]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerHUD" type="Control" parent="." unique_id=1533138244]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GainMeter" type="ProgressBar" parent="PlayerHUD" unique_id=564719031]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 63.0
+offset_top = -389.0
+offset_right = 174.0
+offset_bottom = 389.0
+grow_vertical = 2
+fill_mode = 3
+show_percentage = false
+
+[node name="GainLabel" type="Label" parent="PlayerHUD" unique_id=1259818867]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 41.0
+offset_top = 392.0
+offset_right = 199.0
+offset_bottom = 480.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "GAIN"
+
+[node name="EnemyHUD" type="Control" parent="." unique_id=1275605333]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBars" type="HBoxContainer" parent="EnemyHUD" unique_id=956369354]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -390.0
+offset_top = -389.0
+offset_right = -79.0
+offset_bottom = 389.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 37
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=591594299]
+layout_mode = 2
+
+[node name="TriProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer" unique_id=1792753130]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 778)
+layout_mode = 2
+size_flags_horizontal = 3
+fill_mode = 3
+show_percentage = false
+
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer" unique_id=484472875]
+layout_mode = 2
+texture = ExtResource("1_2alen")
+expand_mode = 4
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=328357000]
+layout_mode = 2
+
+[node name="SqProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer2" unique_id=1607089844]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 778)
+layout_mode = 2
+size_flags_horizontal = 3
+fill_mode = 3
+show_percentage = false
+
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer2" unique_id=1249489043]
+layout_mode = 2
+texture = ExtResource("2_41fu4")
+expand_mode = 4
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=932916117]
+layout_mode = 2
+
+[node name="SawProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer3" unique_id=454555607]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 778)
+layout_mode = 2
+size_flags_horizontal = 3
+fill_mode = 3
+show_percentage = false
+
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer3" unique_id=1124815689]
+layout_mode = 2
+texture = ExtResource("3_1wc61")
+expand_mode = 4
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=657972328]
+layout_mode = 2
+
+[node name="SinProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer4" unique_id=1279005647]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 778)
+layout_mode = 2
+size_flags_horizontal = 3
+fill_mode = 3
+show_percentage = false
+
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer4" unique_id=762026653]
+layout_mode = 2
+texture = ExtResource("4_ts7hy")
+expand_mode = 4

@@ -20,6 +20,9 @@ var target_position: Vector2
 ## Collision shape used by [member hurt_box]
 @onready var hurt_box_collider := $HurtBox/CollisionShape2D as CollisionShape2D
 
+## Collision box used for interference
+@onready var interfere_box := $InterfereBox as InterfereBox
+
 
 func _ready() -> void:
 	PlayerManager.player_2d = self
@@ -51,3 +54,11 @@ func initialize_from_beatmap(in_beat_map: BeatMap, in_lane_idx: int, in_target_p
 ## Resets collision information
 func on_dodge_timer_timeout():
 	hurt_box_collider.disabled = false
+
+
+func interfere(in_interfere_type: GameManager.WAVE_TYPE):
+	interfere_box.interfere(in_interfere_type)
+
+
+func on_take_damage():
+	pass

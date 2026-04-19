@@ -32,7 +32,5 @@ one_shot = true
 wait_time = 0.4
 one_shot = true
 
-[connection signal="timeout" from="DodgeCooldown" to="." method="_on_dodge_cooldown_timeout"]
 [connection signal="timeout" from="DodgeTimer" to="." method="_on_dodge_timer_timeout"]
-[connection signal="timeout" from="BufferTimer" to="." method="_on_buffer_timer_timeout"]
 [connection signal="timeout" from="InterfereCooldown" to="." method="_on_interfere_cooldown_timeout"]
