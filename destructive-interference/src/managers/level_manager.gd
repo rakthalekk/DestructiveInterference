@@ -43,25 +43,21 @@ func _ready() -> void:
 
 func start_level(skip_warmup := false):
 	level_active = true
-	current_time = 0.0 if skip_warmup else -warmup_time
+	current_time = -view_range if skip_warmup else -warmup_time
 	current_note_idx = 0
 	time_to_next_beat = 60.0 / bpm / subdivisions_per_beat
 	
-	if !skip_warmup:
-		warmup_timer.wait_time = warmup_time
-		warmup_timer.start()
-	else:
-		AudioManager.loop_level_song()
+	warmup_timer.wait_time = view_range if skip_warmup else warmup_time
+	warmup_timer.start()
 
 
 func _on_warmup_timer_timeout():
 	warmup_finished.emit()
+	AudioManager.loop_level_song()
 
 
 func load_data_from_json(level_json: String):
-	notes.clear()
-	wave_goals.clear()
-	wave_interferences.clear()
+	reset()
 	
 	var beat_map: BeatMap = get_tree().get_first_node_in_group("beat_map") as BeatMap
 	beat_map.clear_notes_and_lines()
@@ -102,6 +98,10 @@ func load_data_from_json(level_json: String):
 		elif data.band is Dictionary:
 			note.band_start = data.band.start
 			note.band_end = data.band.end
+		
+		if notes.size() <= 0:
+			note.is_first = true
+		
 		notes.append(note)
 
 
@@ -148,6 +148,8 @@ func _process(delta: float) -> void:
 		return
 	
 	var current_note = notes[current_note_idx]
+	
+	
 	while current_time >= current_note.start_time - view_range:
 		send_note.emit(current_note)
 		current_note_idx += 1
@@ -174,3 +176,13 @@ func win():
 func lose():
 	level_active = false
 	print("Lose :(")
+
+
+func reset():
+	notes.clear()
+	wave_goals.clear()
+	wave_interferences.clear()
+	time_to_next_beat = 0
+	subdivision_num = 1
+	beat_num = 1
+	current_note_idx = 0

@@ -41,4 +41,4 @@ func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAM
 
 
 func _create_beat(note: Note):
-	beatmap.spawn_beat(note, note.instrument.type)
+	beatmap.spawn_beat(note)

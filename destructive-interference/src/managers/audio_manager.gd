@@ -64,7 +64,7 @@ func fade_in(player: AudioStreamPlayer, stream: AudioStream = null):
 	
 	player.stream = stream
 	player.play()
-	player.volume_linear = 0
+	player.volume_linear = 0 if player != level_song_player else 1
 	
 	active_player = player
 	
@@ -88,13 +88,15 @@ func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAM
 	if from == GameManager.GAME_STATE.PAUSED && to == GameManager.GAME_STATE.IN_GAME:
 		level_song_player.stream_paused = false
 		fade_out(menu_song_player)
+		active_player = level_song_player
 	elif from == GameManager.GAME_STATE.IN_GAME && to == GameManager.GAME_STATE.PAUSED:
 		level_song_player.stream_paused = true
 		fade_in(menu_song_player)
 
 
 func _on_warmup_end():
-	switch_to_level_song(LevelManager.current_level_json_file)
+	if active_player != level_song_player:
+		switch_to_level_song(LevelManager.current_level_json_file)
 
 
 func _on_song_player_finished() -> void:
