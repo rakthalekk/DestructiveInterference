@@ -1,6 +1,6 @@
 import unittest
 
-from utils import ratio_to_A4
+from utils import ratio_to_A4, display_name
 
 
 class RatioToA4Test(unittest.TestCase):
@@ -42,6 +42,22 @@ class RatioToA4Test(unittest.TestCase):
         self.assertAlmostEqual(
             ratio_to_A4(24),
             32.7032 / 440.0,
+        )
+
+
+class DisplayNameTest(unittest.TestCase):
+    def test_display_name_cases(self):
+        self.assertEqual(
+            display_name(60),
+            "C4",
+        )
+        self.assertEqual(
+            display_name(69),
+            "A4",
+        )
+        self.assertEqual(
+            display_name(37),
+            "Db2",
         )
 
 

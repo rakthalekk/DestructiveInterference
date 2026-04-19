@@ -40,7 +40,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 1.0
+        "start_beat": 1.0,
+        "pitch_str": "E3",
+        "idx": 1
       },
       {
         "name": "bass",
@@ -50,7 +52,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 1.8125
+        "start_beat": 1.8125,
+        "pitch_str": "E3",
+        "idx": 2
       },
       {
         "name": "bass",
@@ -60,7 +64,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 2.5
+        "start_beat": 2.5,
+        "pitch_str": "E3",
+        "idx": 3
       },
       {
         "name": "bass",
@@ -70,7 +76,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 3.0
+        "start_beat": 3.0,
+        "pitch_str": "G3",
+        "idx": 4
       },
       {
         "name": "bass",
@@ -80,7 +88,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 3.8125
+        "start_beat": 3.8125,
+        "pitch_str": "G3",
+        "idx": 5
       },
       {
         "name": "bass",
@@ -90,7 +100,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 4.5
+        "start_beat": 4.5,
+        "pitch_str": "G3",
+        "idx": 6
       },
       {
         "name": "bass",
@@ -100,7 +112,9 @@
         "jumpable": false,
         "pitch": 0.3337099635425083,
         "slide": null,
-        "start_beat": 5.0
+        "start_beat": 5.0,
+        "pitch_str": "D3",
+        "idx": 7
       },
       {
         "name": "bass",
@@ -110,7 +124,9 @@
         "jumpable": false,
         "pitch": 0.3337099635425083,
         "slide": null,
-        "start_beat": 5.8125
+        "start_beat": 5.8125,
+        "pitch_str": "D3",
+        "idx": 8
       },
       {
         "name": "bass",
@@ -120,7 +136,9 @@
         "jumpable": false,
         "pitch": 0.24999999999999975,
         "slide": null,
-        "start_beat": 6.5
+        "start_beat": 6.5,
+        "pitch_str": "A2",
+        "idx": 9
       },
       {
         "name": "bass",
@@ -130,7 +148,9 @@
         "jumpable": false,
         "pitch": 0.26486577358982355,
         "slide": null,
-        "start_beat": 7.5
+        "start_beat": 7.5,
+        "pitch_str": "Bb2",
+        "idx": 10
       },
       {
         "name": "bass",
@@ -140,7 +160,9 @@
         "jumpable": false,
         "pitch": 0.280615512077343,
         "slide": null,
-        "start_beat": 8.0
+        "start_beat": 8.0,
+        "pitch_str": "B2",
+        "idx": 11
       },
       {
         "name": "bass",
@@ -150,7 +172,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 9.0
+        "start_beat": 9.0,
+        "pitch_str": "E3",
+        "idx": 12
       },
       {
         "name": "bass",
@@ -160,7 +184,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 9.8125
+        "start_beat": 9.8125,
+        "pitch_str": "E3",
+        "idx": 13
       },
       {
         "name": "bass",
@@ -170,7 +196,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 10.5
+        "start_beat": 10.5,
+        "pitch_str": "E3",
+        "idx": 14
       },
       {
         "name": "bass",
@@ -180,7 +208,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 11.0
+        "start_beat": 11.0,
+        "pitch_str": "G3",
+        "idx": 15
       },
       {
         "name": "bass",
@@ -190,7 +220,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 11.8125
+        "start_beat": 11.8125,
+        "pitch_str": "G3",
+        "idx": 16
       },
       {
         "name": "bass",
@@ -200,7 +232,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 12.5
+        "start_beat": 12.5,
+        "pitch_str": "G3",
+        "idx": 17
       },
       {
         "name": "bass",
@@ -210,7 +244,9 @@
         "jumpable": false,
         "pitch": 0.4999999999999997,
         "slide": null,
-        "start_beat": 13.0
+        "start_beat": 13.0,
+        "pitch_str": "A3",
+        "idx": 18
       },
       {
         "name": "bass",
@@ -220,7 +256,9 @@
         "jumpable": false,
         "pitch": 0.4999999999999997,
         "slide": null,
-        "start_beat": 13.3125
+        "start_beat": 13.3125,
+        "pitch_str": "A3",
+        "idx": 19
       },
       {
         "name": "bass",
@@ -230,7 +268,9 @@
         "jumpable": false,
         "pitch": 0.5297315471796474,
         "slide": null,
-        "start_beat": 13.8125
+        "start_beat": 13.8125,
+        "pitch_str": "Bb3",
+        "idx": 20
       },
       {
         "name": "bass",
@@ -240,7 +280,9 @@
         "jumpable": false,
         "pitch": 0.5297315471796474,
         "slide": null,
-        "start_beat": 14.3125
+        "start_beat": 14.3125,
+        "pitch_str": "Bb3",
+        "idx": 21
       },
       {
         "name": "bass",
@@ -250,7 +292,9 @@
         "jumpable": false,
         "pitch": 0.5612310241546863,
         "slide": null,
-        "start_beat": 14.8125
+        "start_beat": 14.8125,
+        "pitch_str": "B3",
+        "idx": 22
       },
       {
         "name": "bass",
@@ -260,7 +304,9 @@
         "jumpable": false,
         "pitch": 0.5612310241546863,
         "slide": null,
-        "start_beat": 15.3125
+        "start_beat": 15.3125,
+        "pitch_str": "B3",
+        "idx": 23
       },
       {
         "name": "bass",
@@ -270,7 +316,9 @@
         "jumpable": false,
         "pitch": 0.6299605249474364,
         "slide": null,
-        "start_beat": 15.5
+        "start_beat": 15.5,
+        "pitch_str": "Db4",
+        "idx": 24
       },
       {
         "name": "bass",
@@ -280,7 +328,9 @@
         "jumpable": false,
         "pitch": 0.667419927085017,
         "slide": null,
-        "start_beat": 16.0
+        "start_beat": 16.0,
+        "pitch_str": "D4",
+        "idx": 25
       },
       {
         "name": "bass",
@@ -290,7 +340,9 @@
         "jumpable": false,
         "pitch": 0.7491535384383405,
         "slide": null,
-        "start_beat": 16.5
+        "start_beat": 16.5,
+        "pitch_str": "E4",
+        "idx": 26
       },
       {
         "name": "bass",
@@ -300,7 +352,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 17.0
+        "start_beat": 17.0,
+        "pitch_str": "E3",
+        "idx": 27
       },
       {
         "name": "bass",
@@ -310,7 +364,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 17.8125
+        "start_beat": 17.8125,
+        "pitch_str": "E3",
+        "idx": 28
       },
       {
         "name": "bass",
@@ -320,7 +376,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 18.5
+        "start_beat": 18.5,
+        "pitch_str": "E3",
+        "idx": 29
       },
       {
         "name": "bass",
@@ -330,7 +388,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 19.0
+        "start_beat": 19.0,
+        "pitch_str": "G3",
+        "idx": 30
       },
       {
         "name": "bass",
@@ -340,7 +400,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 19.8125
+        "start_beat": 19.8125,
+        "pitch_str": "G3",
+        "idx": 31
       },
       {
         "name": "bass",
@@ -350,7 +412,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 20.5
+        "start_beat": 20.5,
+        "pitch_str": "G3",
+        "idx": 32
       },
       {
         "name": "bass",
@@ -360,7 +424,9 @@
         "jumpable": false,
         "pitch": 0.3337099635425083,
         "slide": null,
-        "start_beat": 21.0
+        "start_beat": 21.0,
+        "pitch_str": "D3",
+        "idx": 33
       },
       {
         "name": "bass",
@@ -370,7 +436,9 @@
         "jumpable": false,
         "pitch": 0.3337099635425083,
         "slide": null,
-        "start_beat": 21.8125
+        "start_beat": 21.8125,
+        "pitch_str": "D3",
+        "idx": 34
       },
       {
         "name": "bass",
@@ -380,7 +448,9 @@
         "jumpable": false,
         "pitch": 0.24999999999999975,
         "slide": null,
-        "start_beat": 22.5
+        "start_beat": 22.5,
+        "pitch_str": "A2",
+        "idx": 35
       },
       {
         "name": "bass",
@@ -390,7 +460,9 @@
         "jumpable": false,
         "pitch": 0.26486577358982355,
         "slide": null,
-        "start_beat": 23.5
+        "start_beat": 23.5,
+        "pitch_str": "Bb2",
+        "idx": 36
       },
       {
         "name": "bass",
@@ -400,7 +472,9 @@
         "jumpable": false,
         "pitch": 0.280615512077343,
         "slide": null,
-        "start_beat": 24.0
+        "start_beat": 24.0,
+        "pitch_str": "B2",
+        "idx": 37
       },
       {
         "name": "bass",
@@ -410,7 +484,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 25.0
+        "start_beat": 25.0,
+        "pitch_str": "E3",
+        "idx": 38
       },
       {
         "name": "bass",
@@ -420,7 +496,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 25.8125
+        "start_beat": 25.8125,
+        "pitch_str": "E3",
+        "idx": 39
       },
       {
         "name": "bass",
@@ -430,7 +508,9 @@
         "jumpable": false,
         "pitch": 0.3745767692191701,
         "slide": null,
-        "start_beat": 26.5
+        "start_beat": 26.5,
+        "pitch_str": "E3",
+        "idx": 40
       },
       {
         "name": "bass",
@@ -440,7 +520,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 27.0
+        "start_beat": 27.0,
+        "pitch_str": "G3",
+        "idx": 41
       },
       {
         "name": "bass",
@@ -450,7 +532,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 27.8125
+        "start_beat": 27.8125,
+        "pitch_str": "G3",
+        "idx": 42
       },
       {
         "name": "bass",
@@ -460,7 +544,9 @@
         "jumpable": false,
         "pitch": 0.44544935907016936,
         "slide": null,
-        "start_beat": 28.5
+        "start_beat": 28.5,
+        "pitch_str": "G3",
+        "idx": 43
       },
       {
         "name": "bass",
@@ -470,7 +556,9 @@
         "jumpable": false,
         "pitch": 0.4999999999999997,
         "slide": null,
-        "start_beat": 29.0
+        "start_beat": 29.0,
+        "pitch_str": "A3",
+        "idx": 44
       },
       {
         "name": "bass",
@@ -480,7 +568,9 @@
         "jumpable": false,
         "pitch": 0.5297315471796474,
         "slide": null,
-        "start_beat": 29.8125
+        "start_beat": 29.8125,
+        "pitch_str": "Bb3",
+        "idx": 45
       },
       {
         "name": "bass",
@@ -490,7 +580,9 @@
         "jumpable": false,
         "pitch": 0.5612310241546863,
         "slide": null,
-        "start_beat": 30.5
+        "start_beat": 30.5,
+        "pitch_str": "B3",
+        "idx": 46
       },
       {
         "name": "bass",
@@ -500,7 +592,9 @@
         "jumpable": false,
         "pitch": 0.667419927085017,
         "slide": null,
-        "start_beat": 31.3125
+        "start_beat": 31.3125,
+        "pitch_str": "D4",
+        "idx": 47
       },
       {
         "name": "bass",
@@ -510,7 +604,9 @@
         "jumpable": false,
         "pitch": 0.8908987181403393,
         "slide": null,
-        "start_beat": 32.0
+        "start_beat": 32.0,
+        "pitch_str": "G4",
+        "idx": 48
       },
       {
         "name": "bass",
@@ -520,7 +616,9 @@
         "jumpable": false,
         "pitch": 0.8408964152537144,
         "slide": null,
-        "start_beat": 32.5
+        "start_beat": 32.5,
+        "pitch_str": "Gb4",
+        "idx": 49
       }
     ],
     "lead": [
@@ -532,7 +630,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 1
       },
       {
         "name": "lead",
@@ -542,7 +642,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 2
       },
       {
         "name": "lead",
@@ -552,7 +654,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 3
       },
       {
         "name": "lead",
@@ -562,7 +666,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 4
       },
       {
         "name": "lead",
@@ -572,7 +678,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 5
       },
       {
         "name": "lead",
@@ -582,7 +690,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 6
       },
       {
         "name": "lead",
@@ -592,7 +702,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.0,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A4",
+        "idx": 7
       },
       {
         "name": "lead",
@@ -602,7 +714,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 8
       },
       {
         "name": "lead",
@@ -612,7 +726,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 9
       },
       {
         "name": "lead",
@@ -622,7 +738,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 10
       },
       {
         "name": "lead",
@@ -632,7 +750,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 11
       },
       {
         "name": "lead",
@@ -642,7 +762,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 12
       },
       {
         "name": "lead",
@@ -652,7 +774,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 13
       },
       {
         "name": "lead",
@@ -662,7 +786,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.6817928305074297,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Gb5",
+        "idx": 14
       },
       {
         "name": "lead",
@@ -672,7 +798,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.7817974362806794,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G5",
+        "idx": 15
       },
       {
         "name": "lead",
@@ -682,7 +810,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.6817928305074297,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Gb5",
+        "idx": 16
       },
       {
         "name": "lead",
@@ -692,7 +822,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 17
       },
       {
         "name": "lead",
@@ -702,7 +834,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 18
       },
       {
         "name": "lead",
@@ -712,7 +846,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 19
       },
       {
         "name": "lead",
@@ -722,7 +858,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 20
       },
       {
         "name": "lead",
@@ -732,7 +870,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 21
       },
       {
         "name": "lead",
@@ -742,7 +882,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 22
       },
       {
         "name": "lead",
@@ -752,7 +894,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.0,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A4",
+        "idx": 23
       },
       {
         "name": "lead",
@@ -762,7 +906,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 24
       },
       {
         "name": "lead",
@@ -772,7 +918,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 25
       },
       {
         "name": "lead",
@@ -782,7 +930,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 26
       },
       {
         "name": "lead",
@@ -792,7 +942,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 27
       },
       {
         "name": "lead",
@@ -802,7 +954,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 28
       },
       {
         "name": "lead",
@@ -812,7 +966,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 29
       },
       {
         "name": "lead",
@@ -822,7 +978,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.6817928305074297,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Gb5",
+        "idx": 30
       },
       {
         "name": "lead",
@@ -832,7 +990,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 1.7817974362806794,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G5",
+        "idx": 31
       },
       {
         "name": "lead",
@@ -842,7 +1002,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 2.000000000000001,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A5",
+        "idx": 32
       },
       {
         "name": "lead",
@@ -852,7 +1014,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 2.2449240966187474,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B5",
+        "idx": 33
       }
     ],
     "chords": [
@@ -867,7 +1031,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 1
       },
       {
         "name": "chords",
@@ -880,7 +1046,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 2
       },
       {
         "name": "chords",
@@ -893,7 +1061,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 3
       },
       {
         "name": "chords",
@@ -906,7 +1076,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 4
       },
       {
         "name": "chords",
@@ -919,7 +1091,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 5
       },
       {
         "name": "chords",
@@ -932,7 +1106,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 6
       },
       {
         "name": "chords",
@@ -945,7 +1121,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 7
       },
       {
         "name": "chords",
@@ -958,7 +1136,9 @@
         },
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 8
       },
       {
         "name": "chords",
@@ -971,7 +1151,9 @@
         },
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 9
       },
       {
         "name": "chords",
@@ -981,7 +1163,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 10
       },
       {
         "name": "chords",
@@ -991,7 +1175,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 11
       },
       {
         "name": "chords",
@@ -1001,7 +1187,9 @@
         "band": 2,
         "jumpable": false,
         "pitch": 1.0,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A4",
+        "idx": 12
       },
       {
         "name": "chords",
@@ -1011,7 +1199,9 @@
         "band": 2,
         "jumpable": false,
         "pitch": 0.8908987181403393,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G4",
+        "idx": 13
       },
       {
         "name": "chords",
@@ -1024,7 +1214,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 14
       },
       {
         "name": "chords",
@@ -1037,7 +1229,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 15
       },
       {
         "name": "chords",
@@ -1050,7 +1244,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 16
       },
       {
         "name": "chords",
@@ -1063,7 +1259,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 17
       },
       {
         "name": "chords",
@@ -1076,7 +1274,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 18
       },
       {
         "name": "chords",
@@ -1089,7 +1289,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 19
       },
       {
         "name": "chords",
@@ -1102,7 +1304,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 20
       },
       {
         "name": "chords",
@@ -1115,7 +1319,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 21
       },
       {
         "name": "chords",
@@ -1128,7 +1334,9 @@
         },
         "jumpable": false,
         "pitch": 1.6817928305074297,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Gb5",
+        "idx": 22
       },
       {
         "name": "chords",
@@ -1141,7 +1349,9 @@
         },
         "jumpable": false,
         "pitch": 1.7817974362806794,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G5",
+        "idx": 23
       },
       {
         "name": "chords",
@@ -1154,7 +1364,9 @@
         },
         "jumpable": false,
         "pitch": 1.6817928305074297,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Gb5",
+        "idx": 24
       },
       {
         "name": "chords",
@@ -1167,7 +1379,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 25
       },
       {
         "name": "chords",
@@ -1180,7 +1394,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 26
       },
       {
         "name": "chords",
@@ -1193,7 +1409,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 27
       },
       {
         "name": "chords",
@@ -1206,7 +1424,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 28
       },
       {
         "name": "chords",
@@ -1219,7 +1439,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 29
       },
       {
         "name": "chords",
@@ -1232,7 +1454,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 30
       },
       {
         "name": "chords",
@@ -1245,7 +1469,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 31
       },
       {
         "name": "chords",
@@ -1258,7 +1484,9 @@
         },
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 32
       },
       {
         "name": "chords",
@@ -1271,7 +1499,9 @@
         },
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 33
       },
       {
         "name": "chords",
@@ -1281,7 +1511,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.122462048309373,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B4",
+        "idx": 34
       },
       {
         "name": "chords",
@@ -1291,7 +1523,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.2599210498948734,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db5",
+        "idx": 35
       },
       {
         "name": "chords",
@@ -1301,7 +1535,9 @@
         "band": 2,
         "jumpable": false,
         "pitch": 1.0,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A4",
+        "idx": 36
       },
       {
         "name": "chords",
@@ -1311,7 +1547,9 @@
         "band": 2,
         "jumpable": false,
         "pitch": 0.8908987181403393,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G4",
+        "idx": 37
       },
       {
         "name": "chords",
@@ -1324,7 +1562,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 38
       },
       {
         "name": "chords",
@@ -1337,7 +1577,9 @@
         },
         "jumpable": false,
         "pitch": 1.498307076876682,
-        "slide": null
+        "slide": null,
+        "pitch_str": "E5",
+        "idx": 39
       },
       {
         "name": "chords",
@@ -1350,7 +1592,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 40
       },
       {
         "name": "chords",
@@ -1363,7 +1607,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 41
       },
       {
         "name": "chords",
@@ -1376,7 +1622,9 @@
         },
         "jumpable": false,
         "pitch": 1.3348398541700346,
-        "slide": null
+        "slide": null,
+        "pitch_str": "D5",
+        "idx": 42
       },
       {
         "name": "chords",
@@ -1386,7 +1634,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.7817974362806794,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G5",
+        "idx": 43
       },
       {
         "name": "chords",
@@ -1396,7 +1646,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 2.000000000000001,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A5",
+        "idx": 44
       },
       {
         "name": "chords",
@@ -1406,7 +1658,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 2.2449240966187474,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B5",
+        "idx": 45
       },
       {
         "name": "chords",
@@ -1416,7 +1670,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 2.519842099789748,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db6",
+        "idx": 46
       },
       {
         "name": "chords",
@@ -1426,7 +1682,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 2.2449240966187474,
-        "slide": null
+        "slide": null,
+        "pitch_str": "B5",
+        "idx": 47
       },
       {
         "name": "chords",
@@ -1436,7 +1694,9 @@
         "band": 4,
         "jumpable": false,
         "pitch": 2.519842099789748,
-        "slide": null
+        "slide": null,
+        "pitch_str": "Db6",
+        "idx": 48
       },
       {
         "name": "chords",
@@ -1446,7 +1706,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 2.000000000000001,
-        "slide": null
+        "slide": null,
+        "pitch_str": "A5",
+        "idx": 49
       },
       {
         "name": "chords",
@@ -1456,7 +1718,9 @@
         "band": 3,
         "jumpable": false,
         "pitch": 1.7817974362806794,
-        "slide": null
+        "slide": null,
+        "pitch_str": "G5",
+        "idx": 50
       }
     ]
   }

@@ -68,6 +68,8 @@ class Note:
     band: Optional[Union[float, NoteBand]] = None
     jumpable: bool = False
     pitch: Optional[float] = None
+    pitch_str: Optional[str] = None
+    idx: Optional[int] = None
     slide: Optional[list[NoteSlide]] = None
 
     def __post_init__(self):

@@ -67,14 +67,23 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
             # print(f"starting loop. {level_idx=}, {tuning_idx=}")
             level_note = safe_get(level_inst_notes, level_idx)
             tuning_note = safe_get(tuning_inst_notes, tuning_idx)
-            eq_keys = list([n for n in ["name", "start", "pitch"] if n not in force_update_note_props])
+
+            # copy over any properties not yet in the tuning note
+            if level_note and tuning_note:
+                for key, value in level_note.items():
+                    if key not in tuning_note:
+                        tuning_note[key] = value
+
+            # check if the notes are equal
+            DEFAULT_EQ_KEYS = ["name", "start", "pitch"]
+            eq_keys = list([n for n in DEFAULT_EQ_KEYS if n not in force_update_note_props])
             if level_note and tuning_note and eq_by_keys(level_note, tuning_note, eq_keys):
                 # same note in tuning and level
                 # force-update any props requested by the user
                 for prop_name in force_update_note_props:
                     tuning_note[prop_name] = level_note[prop_name]
                 # copy over other properties
-                for prop_name in ["start_beat", "end", "band", "jumpable", "slide"]:
+                for prop_name in [n for n in tuning_note.keys() if n not in DEFAULT_EQ_KEYS]:
                     level_note[prop_name] = tuning_note[prop_name]
 
             elif merging_different_lengths:
@@ -172,6 +181,8 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
             start_beat=(midi_note.start / midi_obj.ticks_per_beat) + 1,
             end=end_time,
             pitch=ratio_to_A4(midi_note.pitch),
+            pitch_str=display_name(midi_note.pitch),
+            idx=len(notes)+1,
         ))
         # print(midi_note.start)
 
