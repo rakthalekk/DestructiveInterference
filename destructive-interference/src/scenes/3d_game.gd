@@ -24,22 +24,20 @@ func _ready() -> void:
 
 
 func hide_start_text():
-	GameManager.current_hud.start_text.hide()
+	if GameManager.current_hud is GameHUD:
+		GameManager.current_hud.start_text.hide()
 
 
 func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
-	match to:
-		GameManager.GAME_STATE.IN_GAME:
-			if from == GameManager.GAME_STATE.PAUSED:
-				transition_animations.play("unpause")
-			else:
-				transition_animations.play("intro")
-		GameManager.GAME_STATE.PAUSED:
-			transition_animations.play("pause")
-		GameManager.GAME_STATE.GAME_OVER:
-			transition_animations.play("pause")
-	
-	
+	if [GameManager.GAME_STATE.PAUSED, GameManager.GAME_STATE.GAME_OVER].has(from):
+		if to == GameManager.GAME_STATE.IN_GAME:
+			transition_animations.play("unpause")
+		else:
+			transition_animations.play("outro")
+	elif from == GameManager.GAME_STATE.LEVEL_SELECT && to == GameManager.GAME_STATE.IN_GAME:
+		transition_animations.play("intro")
+	elif from == GameManager.GAME_STATE.IN_GAME:
+		transition_animations.play("pause")
 
 
 func _create_beat(note: Note):

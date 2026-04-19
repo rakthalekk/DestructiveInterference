@@ -36,9 +36,9 @@ func _ready() -> void:
 	add_child(warmup_timer)
 
 
-func start_level():
+func start_level(skip_warmup := false):
 	level_active = true
-	current_time = -warmup_time
+	current_time = 0.0 if skip_warmup else -warmup_time
 	current_note_idx = 0
 	time_to_next_beat = 60.0 / bpm / subdivisions_per_beat
 	
@@ -51,6 +51,13 @@ func _on_warmup_timer_timeout():
 
 
 func load_data_from_json(level_json: String):
+	notes.clear()
+	wave_goals.clear()
+	wave_interferences.clear()
+	
+	var beat_map: BeatMap = get_tree().get_first_node_in_group("beat_map") as BeatMap
+	beat_map.clear_notes_and_lines()
+	
 	var json_as_text = FileAccess.get_file_as_string(level_json)
 	var level_data: Dictionary = JSON.parse_string(json_as_text)
 	
@@ -90,7 +97,7 @@ func load_data_from_json(level_json: String):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if !level_active:
+	if !level_active || !GameManager.can_move:
 		return
 	
 	# first beat line should be for timestamp 0
@@ -138,7 +145,7 @@ func _process(delta: float) -> void:
 			current_note = notes[current_note_idx]
 		else:
 			print("no more notes!")
-			start_level()
+			start_level(true)
 			break
 	
 	current_time += delta
@@ -150,6 +157,7 @@ func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1):
 
 func win():
 	level_active = false
+	GameManager.transition_to(GameManager.GAME_STATE.GAME_OVER)
 	print("Win!!!!")
 
 

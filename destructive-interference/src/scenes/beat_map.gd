@@ -59,7 +59,7 @@ func spawn_beat(note: Note, wave_type: GameManager.WAVE_TYPE):
 	
 	lanes[lane_idx].add_child(beat)
 	beat.progress_ratio = 0.0
-	beat.dispatch_beat(wave_type, current_lookahead_time_seconds)
+	beat.dispatch_beat(wave_type, LevelManager.view_range)
 
 
 func get_player_position_for_lane(in_lane_idx: int):
@@ -68,3 +68,12 @@ func get_player_position_for_lane(in_lane_idx: int):
 
 func is_valid_lane(in_lane_idx: int):
 	return in_lane_idx >= LANE_MIN && in_lane_idx <= LANE_MAX
+
+
+func clear_notes_and_lines():
+	for child in $Lines.get_children():
+		child.queue_free()
+	
+	for lane in lanes:
+		for child in lane.get_children():
+			child.queue_free()

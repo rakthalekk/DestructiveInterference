@@ -7,6 +7,9 @@ const SCREEN_HEIGHT = 980
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if !GameManager.can_move:
+		return
+	
 	var lifetime = LevelManager.view_range
 	var speed = SCREEN_HEIGHT / lifetime
 	position.y += speed * delta

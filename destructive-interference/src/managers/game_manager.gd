@@ -69,27 +69,21 @@ var current_hud: GameMenu
 var in_game_hud_cache: GameMenu
 
 
+var can_move: bool:
+	get():
+		return current_game_state == GAME_STATE.IN_GAME
+
+
 @onready var ui_canvas := $UICanvas as CanvasLayer
 
 
 
 ## Function for transitioning between game states
 func transition_to(to_game_state: GAME_STATE):
-	if !GAME_STATE_TRANSITIONS[current_game_state].has(to_game_state):
+	if current_game_state == to_game_state || !GAME_STATE_TRANSITIONS[current_game_state].has(to_game_state):
 		return
 	
 	var old_game_state = current_game_state
-	
-	if current_game_state == GAME_STATE.IN_GAME:
-		current_hud.transition_pause()
-	elif [GAME_STATE.PAUSED, GAME_STATE.GAME_OVER].has(current_game_state):
-		if to_game_state == GAME_STATE.IN_GAME:
-			current_hud.transition_out()
-			await current_hud.transition_complete
-			current_hud = in_game_hud_cache
-			current_hud.transition_resume()
-			transitioned_game_state.emit(old_game_state, current_game_state)
-			return
 	
 	if is_instance_valid(current_hud):
 		current_hud.transition_out()

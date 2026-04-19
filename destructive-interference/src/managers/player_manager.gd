@@ -23,7 +23,7 @@ enum BUFFER_STATE {
 var curr_buffer = BUFFER_STATE.NONE
 
 ## interfere buffer type
-@onready var interfere_buffer_type: GameManager.WAVE_TYPE = GameManager.WAVE_TYPE.NONE
+var interfere_buffer_type: GameManager.WAVE_TYPE = GameManager.WAVE_TYPE.NONE
 
 ## Current lane player is in
 var current_lane_idx = 2
@@ -59,11 +59,21 @@ var current_gain := 0.0
 @onready var interfere_cooldown := $InterfereCooldown as Timer
 
 
+## whether player is DEAD
+var dead = false
+
+
+func _ready() -> void:
+	GameManager.transitioned_game_state.connect(_on_state_transition)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if GameManager.current_game_state != GameManager.GAME_STATE.IN_GAME:
+	if dead || GameManager.current_game_state != GameManager.GAME_STATE.IN_GAME:
 		return
+	
+	if Input.is_action_just_pressed("pause"):
+		GameManager.transition_to(GameManager.GAME_STATE.PAUSED)
 	
 	_process_move_inputs()
 	_process_interfere_inputs()
@@ -179,6 +189,9 @@ func on_player_missed_beat(_beat: Beat):
 
 
 func player_take_damage(in_damage := 10.0):
+	if dead || GameManager.current_game_state != GameManager.GAME_STATE.IN_GAME:
+		return
+	
 	if !damage_cooldown.is_stopped():
 		return
 	
@@ -200,6 +213,8 @@ func player_take_damage(in_damage := 10.0):
 func _defeat():
 	print("player die now wahoo")
 	LevelManager.lose()
+	GameManager.transition_to(GameManager.GAME_STATE.GAME_OVER)
+	dead = true
 
 
 func _on_interfere_cooldown_timeout() -> void:
@@ -214,3 +229,9 @@ func _on_buffer_timer_timeout() -> void:
 	print("buffer end")
 	curr_buffer = BUFFER_STATE.NONE
 	interfere_buffer_type = GameManager.WAVE_TYPE.NONE
+
+
+func _on_state_transition(_from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
+	if to == GameManager.GAME_STATE.IN_GAME:
+		dead = false
+		current_gain = 0.0
