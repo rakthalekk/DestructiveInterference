@@ -273,7 +273,7 @@ def build(
         master_audio_from_raw = raw_mp3_files[0]
         master_audio_output = output_dir / f"{master_audio_from_raw.stem}.mp3"
         shutil.copy2(master_audio_from_raw, master_audio_output)
-        print(f"Copied master MP3 file from {master_audio_from_raw} to {master_audio_output}")
+        print(f"Copied master MP3 file\n    from {master_audio_from_raw}\n    to {master_audio_output}")
 
 
     # pretty display the beat map
