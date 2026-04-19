@@ -57,6 +57,7 @@ func change_lane(in_direction: Vector2i):
 
 ## Dodge function for player
 func dodge_input():
+	dodge_anim.stop()
 	dodge_anim.play("dodge")
 
 

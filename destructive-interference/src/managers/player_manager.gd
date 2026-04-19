@@ -74,11 +74,14 @@ func _process(delta: float) -> void:
 ## helper for processing player inputs
 func _process_move_inputs():
 	# allow move to be held
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_just_pressed("move_left"):
+		_change_lane(Vector2.LEFT, true)
+	elif Input.is_action_pressed("move_left"):
 		_change_lane(Vector2.LEFT)
 	
-	# allow move to be held
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_just_pressed("move_right"):
+		_change_lane(Vector2.RIGHT, true)
+	elif Input.is_action_pressed("move_right"):
 		_change_lane(Vector2.RIGHT)
 	
 	if !interfere_cooldown.is_stopped():
@@ -89,6 +92,9 @@ func _process_move_inputs():
 
 
 func _process_interfere_inputs():
+	if !dodge_timer.is_stopped():
+		return
+	
 	if Input.is_action_just_pressed("interfere_triangle"):
 		_interfere(GameManager.WAVE_TYPE.TRIANGLE)
 	
@@ -103,8 +109,8 @@ func _process_interfere_inputs():
 
 
 ## Change lane wahoopo
-func _change_lane(in_direction: Vector2i):
-	if !move_cooldown.is_stopped():
+func _change_lane(in_direction: Vector2i, force := false):
+	if !move_cooldown.is_stopped() && !force:
 		return
 	
 	if is_instance_valid(player_2d):
@@ -117,8 +123,8 @@ func _change_lane(in_direction: Vector2i):
 
 
 ## Dodge function for player
-func _dodge_input():
-	if !dodge_timer.is_stopped():
+func _dodge_input(force := false):
+	if !dodge_timer.is_stopped() && !force:
 		curr_buffer = BUFFER_STATE.DODGE
 		buffer_timer.start()
 		print('buffer_dodge')
@@ -136,10 +142,15 @@ func _dodge_input():
 func _on_dodge_timer_timeout() -> void:
 	if is_instance_valid(player_2d):
 		player_2d.on_dodge_timer_timeout()
+	
+	if !buffer_timer.is_stopped() && curr_buffer == BUFFER_STATE.DODGE:
+		print("dodge from buffer")
+		curr_buffer = BUFFER_STATE.NONE
+		_dodge_input(true)
 
 
-func _interfere(in_interfere_type: GameManager.WAVE_TYPE):
-	if !interfere_cooldown.is_stopped() || !damage_cooldown.is_stopped(): # don't allow attack while in hitstun
+func _interfere(in_interfere_type: GameManager.WAVE_TYPE, force := false):
+	if !interfere_cooldown.is_stopped() && !force:
 		curr_buffer = BUFFER_STATE.INTERFERE
 		interfere_buffer_type = in_interfere_type
 		buffer_timer.start()
@@ -191,7 +202,7 @@ func _on_interfere_cooldown_timeout() -> void:
 	if !buffer_timer.is_stopped() && curr_buffer == BUFFER_STATE.INTERFERE:
 		print("interfere from buffer")
 		curr_buffer = BUFFER_STATE.NONE
-		_interfere(interfere_buffer_type)
+		_interfere(interfere_buffer_type, true)
 		interfere_buffer_type = GameManager.WAVE_TYPE.NONE
 
 
@@ -199,10 +210,3 @@ func _on_buffer_timer_timeout() -> void:
 	print("buffer end")
 	curr_buffer = BUFFER_STATE.NONE
 	interfere_buffer_type = GameManager.WAVE_TYPE.NONE
-
-
-func _on_dodge_cooldown_timeout() -> void:
-	if !buffer_timer.is_stopped() && curr_buffer == BUFFER_STATE.DODGE:
-		print("dodge from buffer")
-		curr_buffer = BUFFER_STATE.NONE
-		_dodge_input()
