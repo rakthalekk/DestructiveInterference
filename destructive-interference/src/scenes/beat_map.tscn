@@ -30,6 +30,8 @@ script = ExtResource("1_t435w")
 position = Vector2(957, 538)
 texture = SubResource("GradientTexture2D_5v5fa")
 
+[node name="Lines" type="Node2D" parent="." unique_id=903762524]
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=361389988]
 position = Vector2(960, 540)
 

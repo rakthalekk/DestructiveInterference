@@ -12,6 +12,14 @@ var wave_type: GameManager.WAVE_TYPE
 ## Speed value used by this beat
 var speed: float
 
+var width := 1:
+	set(val):
+		width = val
+		$Icon.scale = Vector2(width, 1)
+		$DespawnBox.scale = Vector2(width, 1)
+		$Icon.position = Vector2((width - 1) * 72, 0)
+		$DespawnBox.position = Vector2((width - 1) * 72, 0)
+
 ## icon used by sprite
 @onready var icon := $Icon/Icon as Sprite2D
 
