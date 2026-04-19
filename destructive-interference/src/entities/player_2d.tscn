@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://cll2il63rnafb"]
 
 [ext_resource type="Script" uid="uid://cy1tjhrc0e36y" path="res://src/entities/player_2d.gd" id="1_gptfg"]
-[ext_resource type="Texture2D" uid="uid://dt4edkn6codtp" path="res://icon.svg" id="2_jox5q"]
+[ext_resource type="Texture2D" uid="uid://b1wl63p1kmycu" path="res://assets/player.png" id="2_2ep6d"]
 [ext_resource type="PackedScene" uid="uid://c7ue2wk7jxw17" path="res://src/entities/interfere_box.tscn" id="3_2ep6d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ep6d"]
-size = Vector2(128, 7)
+size = Vector2(60, 7)
 
 [node name="Player2D" type="Node2D" unique_id=78814872]
 script = ExtResource("1_gptfg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1310384517]
 visible = false
-modulate = Color(0, 0.32156864, 1, 1)
-texture = ExtResource("2_jox5q")
+position = Vector2(5, -32)
+texture = ExtResource("2_2ep6d")
 
 [node name="HurtBox" type="Area2D" parent="." unique_id=1853254392]
 position = Vector2(0, 20)

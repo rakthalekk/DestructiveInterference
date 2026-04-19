@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://g67lg4j8466y"]
 
-[ext_resource type="Texture2D" uid="uid://dt4edkn6codtp" path="res://icon.svg" id="1_1jxdp"]
 [ext_resource type="Script" uid="uid://sbu8k5hj6tm3" path="res://src/entities/player_3d.gd" id="1_d427q"]
+[ext_resource type="Texture2D" uid="uid://b1wl63p1kmycu" path="res://assets/player.png" id="2_d427q"]
 
 [sub_resource type="Animation" id="Animation_d427q"]
 length = 0.001
@@ -352,8 +352,8 @@ script = ExtResource("1_d427q")
 [node name="SpriteParent" type="Node3D" parent="." unique_id=1104986265]
 
 [node name="Sprite3D" type="Sprite3D" parent="SpriteParent" unique_id=2031816693]
-transform = Transform3D(0.3, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
-texture = ExtResource("1_1jxdp")
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+texture = ExtResource("2_d427q")
 
 [node name="DodgeAnimation" type="AnimationPlayer" parent="." unique_id=1778379133]
 libraries/ = SubResource("AnimationLibrary_fxd0i")

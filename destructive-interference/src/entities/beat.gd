@@ -15,8 +15,8 @@ var width := 1:
 		width = val
 		$Icon.scale = Vector2(width, 1)
 		$DespawnBox.scale = Vector2(width, 1)
-		$Icon.position = Vector2((width - 1) * 72, 0)
-		$DespawnBox.position = Vector2((width - 1) * 72, 0)
+		$Icon.position = Vector2((width - 1) * 35, 0)
+		$DespawnBox.position = Vector2((width - 1) * 35, 0)
 
 
 var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
