@@ -1,18 +1,14 @@
 extends Line2D
 
 
-## Const ref of screen height
-const SCREEN_HEIGHT = 980
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !GameManager.can_move:
 		return
 	
 	var lifetime = LevelManager.view_range
-	var speed = SCREEN_HEIGHT / lifetime
+	var speed = LevelManager.SCREEN_HEIGHT / lifetime
 	position.y += speed * delta
 	
-	if position.y >= SCREEN_HEIGHT:
+	if position.y >= LevelManager.SCREEN_HEIGHT:
 		queue_free()
