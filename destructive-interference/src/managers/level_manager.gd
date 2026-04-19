@@ -8,6 +8,8 @@ signal create_subdivision_line(width: float)
 ## y position of "current_time" in the song
 const SCREEN_HEIGHT = 980
 
+var current_level_json_file: String
+
 var level_title: String
 var bpm: float = 120.0
 var beats_per_measure: float = 4.0
