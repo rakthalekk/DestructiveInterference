@@ -19,6 +19,14 @@ var width := 1:
 		$DespawnBox.position = Vector2((width - 1) * 72, 0)
 
 
+var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
+	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
+	GameManager.WAVE_TYPE.SQUARE: Color("40ba22"),
+	GameManager.WAVE_TYPE.SAW: Color("ba228c"),
+	GameManager.WAVE_TYPE.SINE: Color("2250ba"),
+	GameManager.WAVE_TYPE.NOISE: Color("ffffff")
+}
+
 ## icon used by sprite
 @onready var icon := $Icon/Icon as Sprite2D
 
@@ -43,6 +51,7 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	note_data = note
 	wave_type = note.instrument.type
 	icon.frame = int(wave_type)
+	$Icon/Bkgd.modulate = wave_colors[in_wave_type]
 	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
 
 

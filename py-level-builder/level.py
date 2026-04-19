@@ -19,29 +19,26 @@ OUTPUT_LEVELS_FOLDER = (pathlib.Path(__file__) / ".." / ".." / "destructive-inte
 # TODO: allow each instrument to set its reference pitch
 
 
-def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: list[str], ignore_checks: list[str]) -> dict:
-    # metadata should be totally overwritten, just check instrument count matches first
-    if "instruments" in ignore_checks:
-        # metadata.instruments
-        if len(level_dict["metadata"]["instruments"]) > len(tuning_dict["metadata"]["instruments"]):
-            for idx, inst in enumerate(level_dict["metadata"]["instruments"]):
-                if inst["name"] not in {i["name"] for i in tuning_dict["metadata"]["instruments"]}:
-                    print(f"INFO: copying instrument metadata for {inst["name"]}")
-                    tuning_dict["metadata"]["instruments"].insert(idx, inst)
-        elif len(level_dict["metadata"]["instruments"]) < len(tuning_dict["metadata"]["instruments"]):
-            raise ValueError("ERROR: Tuning file metadata has more instruments than actual midi files parsed. Problem, go fix it manually.")
-
-        # notes_by_instrument
-        if len(level_dict["notes_by_instrument"]) > len(tuning_dict["notes_by_instrument"]):
-            for inst_name, inst_notes in level_dict["notes_by_instrument"].items():
-                if inst_name not in tuning_dict["notes_by_instrument"]:
-                    print(f"INFO: copying notes_by_instrument for {inst_name}")
-                    tuning_dict["notes_by_instrument"][inst_name] = inst_notes
-        elif len(level_dict["notes_by_instrument"]) < len(tuning_dict["notes_by_instrument"]):
-            raise ValueError("ERROR: Tuning file notes_by_instrument has more instruments than actual midi files parsed. Problem, go fix it manually.")
-    else:
-        assert len(level_dict["metadata"]["instruments"]) == len(tuning_dict["metadata"]["instruments"]), f"expected tuning.json file to have same number of instruments in metadata as generated from midi files, but didn't match. {len(level_dict["metadata"]["instruments"])=}, {len(tuning_dict["metadata"]["instruments"])=}. consider using --ignore-checks=instruments to copy new instruments into the tuning.json file."
-        assert len(level_dict["notes_by_instrument"]) == len(tuning_dict["notes_by_instrument"]), f"expected tuning.json file to have same number of instruments in notes_by_instrument as generated from midi files, but didn't match. {len(level_dict["notes_by_instrument"])=}, {len(tuning_dict["notes_by_instrument"])=} consider using --ignore-checks=instruments to copy new instruments into the tuning.json file."
+def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: list[str]) -> dict:
+    # metadata should be mostly overwritten, just check instrument count matches first
+    # metadata.instruments
+    if len(level_dict["metadata"]["instruments"]) > len(tuning_dict["metadata"]["instruments"]):
+        for idx, inst in enumerate(level_dict["metadata"]["instruments"]):
+            if inst["name"] not in {i["name"] for i in tuning_dict["metadata"]["instruments"]}:
+                print(f"INFO: copying instrument metadata for {inst["name"]}")
+                tuning_dict["metadata"]["instruments"].insert(idx, inst)
+    elif len(level_dict["metadata"]["instruments"]) < len(tuning_dict["metadata"]["instruments"]):
+        raise ValueError("ERROR: Tuning file metadata has more instruments than actual midi files parsed. Problem, go fix it manually.")
+    # notes_by_instrument
+    if len(level_dict["notes_by_instrument"]) > len(tuning_dict["notes_by_instrument"]):
+        for inst_name, inst_notes in level_dict["notes_by_instrument"].items():
+            if inst_name not in tuning_dict["notes_by_instrument"]:
+                print(f"INFO: copying notes_by_instrument for {inst_name}")
+                tuning_dict["notes_by_instrument"][inst_name] = inst_notes
+    elif len(level_dict["notes_by_instrument"]) < len(tuning_dict["notes_by_instrument"]):
+        raise ValueError("ERROR: Tuning file notes_by_instrument has more instruments than actual midi files parsed. Problem, go fix it manually.")
+    # assert len(level_dict["metadata"]["instruments"]) == len(tuning_dict["metadata"]["instruments"]), f"expected tuning.json file to have same number of instruments in metadata as generated from midi files, but didn't match. {len(level_dict["metadata"]["instruments"])=}, {len(tuning_dict["metadata"]["instruments"])=}. consider using --ignore-checks=instruments to copy new instruments into the tuning.json file."
+    # assert len(level_dict["notes_by_instrument"]) == len(tuning_dict["notes_by_instrument"]), f"expected tuning.json file to have same number of instruments in notes_by_instrument as generated from midi files, but didn't match. {len(level_dict["notes_by_instrument"])=}, {len(tuning_dict["notes_by_instrument"])=} consider using --ignore-checks=instruments to copy new instruments into the tuning.json file."
     if set(level_dict["notes_by_instrument"].keys()) != set(tuning_dict["notes_by_instrument"]):
         raise ValueError("ERROR: midi files and tuning file have different instrument names in notes_by_instrument. Problem, go fix it manually.")
     level_dict["metadata"] = tuning_dict["metadata"]
@@ -52,13 +49,11 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
 
         # expect to have same length
         merging_different_lengths = False
-        if "notes" in ignore_checks:
-            if len(level_inst_notes) != len(tuning_inst_notes):
-                print(f"INFO: I see you've used --ignore-checks=notes, but the tuning file has a different number of notes.\n"
-                    f"I'll try to re-use existing notes from the tuning file, but I'll bail out if I get confused <3")
-                merging_different_lengths = True
-        else:
-            assert len(level_inst_notes) == len(tuning_inst_notes), f"expected tuning.json file to have same number of notes as generated from midi files, but didn't match. {len(level_inst_notes)=}, {len(tuning_inst_notes)=}. consider using --ignore-checks=notes to copy new notes into the tuning.json file."
+        if len(level_inst_notes) != len(tuning_inst_notes):
+            print(f"INFO: I see the tuning file has a different number of notes than found in the MIDI files.\n"
+                f"I'll try to re-use existing notes from the tuning file, but I'll bail out if I get confused <3")
+            merging_different_lengths = True
+        # assert len(level_inst_notes) == len(tuning_inst_notes), f"expected tuning.json file to have same number of notes as generated from midi files, but didn't match. {len(level_inst_notes)=}, {len(tuning_inst_notes)=}. consider using --ignore-checks=notes to copy new notes into the tuning.json file."
         level_idx = 0
         tuning_idx = 0
         while level_idx < len(level_inst_notes) or tuning_idx < len(tuning_inst_notes):
@@ -117,13 +112,13 @@ def safe_get(l: list, i: int, default=None):
     else:
         return default
 
-def parse_raw_dir(raw_dir: pathlib.Path, min_hold_duration: float) -> Level:
+def parse_level_dir(level_dir: pathlib.Path, min_hold_duration: float) -> Level:
 
     instruments: list[Instrument] = []
     notes_by_instrument: dict[str, list[Note]] = {}
 
     # list all instrument folders
-    for inst_dir in [p for p in raw_dir.iterdir() if p.is_dir()]:
+    for inst_dir in [p for p in level_dir.iterdir() if p.is_dir()]:
         # get midi file
         midi_files = list(inst_dir.glob("*.mid"))
         midi_file = get_one_or(midi_files, lambda: raise_(click.BadParameter(f"expected 1 midi file in {inst_dir}, but instead got {len(midi_files)}")))
@@ -208,52 +203,41 @@ def cli():
     default="start_beat",
     help="comma-separated list of Note properties to force-update in the tuning file, even if they differ"
 )
-@click.option(
-    '-i',
-    '--ignore-checks',
-    'ignore_checks_raw',
-    default="",
-    help="comma-separated list of data validation checks to skip, e.g. when including new instruments or changing data. WARNING: this may make unwanted modifications in your tuning file. use with care! valid options: instruments, notes"
-)
 def build(
     level_dir: pathlib.Path,
     min_hold_duration: float,
     force_update_note_props_raw: str,
-    ignore_checks_raw: str,
 ):
     """
     Process raw level data in LEVEL_DIR into a JSON beatmap ready for Godot.
 
-    LEVEL_DIR is the path to the level directory,
-    itself containing a directory called `raw` with all midi and mp3 files necessary to make a level file.
+    LEVEL_DIR is the path to the level directory
+    with all midi and mp3 files necessary to make a level file.
     """
 
     force_update_note_props = [s for s in force_update_note_props_raw.split(',') if s] # strip empty
-    ignore_checks = [s for s in ignore_checks_raw.split(',') if s] # strip empty
 
     # start making model
     level_name = level_dir.stem
 
-    # expect `raw` folder
-    raw_dir = level_dir / "raw"
-    if not raw_dir.exists():
-        raise click.BadParameter(f"Directory {level_dir} should contain a directory `raw`, but it does not.")
-
     # parse raw level data
-    level = parse_raw_dir(raw_dir, min_hold_duration)
+    level = parse_level_dir(level_dir, min_hold_duration)
     level_dict = asdict(level)
     # remove sort_index from notes
     for inst_note_list in level_dict["notes_by_instrument"].values():
         for note_dict in inst_note_list:
             del note_dict["sort_index"]
+    print(f"Raw MIDI files parsed. "
+          f"Total instruments: {len(level_dict["metadata"]["instruments"])} "
+          f"Total notes: {sum((len(notes) for notes in level_dict["notes_by_instrument"].values()))}")
 
     # check for existing level-tuning.json file
-    level_tuning_file = raw_dir / "tuning.json"
+    level_tuning_file = level_dir / "tuning.json"
     if level_tuning_file.exists():
         # load it and overwrite level data
         with open(level_tuning_file, 'r') as f:
             tuning_dict = json.load(f)
-        merge_tuning(level_dict, tuning_dict, force_update_note_props, ignore_checks)
+        merge_tuning(level_dict, tuning_dict, force_update_note_props)
         # write back any modifications made
         with open(level_tuning_file, 'w') as f:
             json.dump(tuning_dict, fp=f, indent='  ')
@@ -261,6 +245,7 @@ def build(
         # create a dummy version for the user to edit
         with open(level_tuning_file, 'w') as f:
             f.write(json.dumps(level_dict, indent='  '))
+    print("Tuning file updated!")
 
     # zip all notes together
     all_notes: list[dict] = []
@@ -278,19 +263,35 @@ def build(
     output_beatmap = output_dir / f"{level_name}.json"
     with open(output_beatmap, 'w') as f:
         f.write(json.dumps(level_dict, indent='  ' if PRETTY_JSON else None))
+    print(f"Wrote output level JSON file to {output_beatmap.resolve()}")
 
-    # copy raw/*.mp3 if it exists
-    raw_mp3_files = list(raw_dir.glob("*.mp3"))
+    # copy level_dir/*.mp3 if it exists
+    raw_mp3_files = list(level_dir.glob("*.mp3"))
     if len(raw_mp3_files) > 1:
-        print(f"WARN: Multiple mp3 files seen in {raw_dir}: {raw_mp3_files}. Please include only one top-level mp3 file; this will be used as the master recording played during the level.")
+        print(f"WARN: Multiple mp3 files seen in {level_dir}: {raw_mp3_files}. Please include only one top-level mp3 file; this will be used as the master recording played during the level.")
     elif len(raw_mp3_files) == 1:
         master_audio_from_raw = raw_mp3_files[0]
-        shutil.copy2(master_audio_from_raw, output_dir / f"{master_audio_from_raw.stem}.mp3")
+        master_audio_output = output_dir / f"{master_audio_from_raw.stem}.mp3"
+        shutil.copy2(master_audio_from_raw, master_audio_output)
+        print(f"Copied master MP3 file from {master_audio_from_raw} to {master_audio_output}")
 
 
     # pretty display the beat map
+    try:
+        display_level(level_dict)
+    except MissingTuningDataError as e:
+        print("WARN: Can't display beat map due to missing fields in tuning file.\n" + str(e))
+
+class MissingTuningDataError(ValueError): ...
+
+def display_level(level_dict: dict) -> None:
     lines: list[str] = []
     active: dict[str, float] = {}
+    required_props = ("bpm", "subdivisions_per_beat", "beats_per_measure")
+    missing_required_props = [p for p in required_props if level_dict["metadata"][p] == None]
+    if len(missing_required_props) > 0:
+        raise MissingTuningDataError(f"Missing these properties required to display beatmap: {missing_required_props}")
+
     time_per_line: float = (60.0 / level_dict["metadata"]["bpm"]) / level_dict["metadata"]["subdivisions_per_beat"]
     instruments = [inst["name"] for inst in level_dict["metadata"]["instruments"]]
     base_line = "║ " + ' │ '.join(' '*len(instruments) for _ in range(5)) + " ║"
@@ -341,7 +342,6 @@ def build(
     lines.append(cur_line)
     for line in reversed(lines):
         print(line)
-
 
 
 
