@@ -11,6 +11,7 @@ from models import *
 
 MINIMUM_DURATION_FOR_HOLD_NOTE_DEFAULT = 0.2
 PRETTY_JSON = True
+OUTPUT_LEVELS_FOLDER = (pathlib.Path(__file__) / ".." / ".." / "destructive-interference" / "levels").resolve()
 
 
 # TODO: copy instrument sample mp3 files into output folder
@@ -269,8 +270,8 @@ def build(
     all_notes = sorted(all_notes, key=lambda note_dict: (note_dict["start"], note_dict["name"]))
     level_dict["notes"] = all_notes
 
-    # make level_dir / level_dir folder if not yet
-    output_dir = level_dir / level_name
+    # make level_dir in output_levels if not yet
+    output_dir = OUTPUT_LEVELS_FOLDER / level_name
     output_dir.mkdir(exist_ok=True)
 
     # write to output
