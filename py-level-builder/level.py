@@ -78,7 +78,7 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
 
             # check if the notes are equal
             DEFAULT_EQ_KEYS = ["name", "start_beat", "pitch_str"]
-            ALWAYS_COPIED_FROM_LEVEL_DICT = ["start", "end", "pitch"]
+            ALWAYS_COPIED_FROM_LEVEL_DICT = ["start", "end", "end_beat", "pitch"]
             eq_keys = list([n for n in DEFAULT_EQ_KEYS if n not in force_update_note_props])
             if level_note and tuning_note and eq_by_keys(level_note, tuning_note, eq_keys):
                 # same note in tuning and level
@@ -179,14 +179,16 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
     for midi_note in midi_instrument.notes:
         start_time: float = time_for[midi_note.start]
         end_time: Optional[float] = time_for[midi_note.end]
+        end_beat = (midi_note.end / midi_obj.ticks_per_beat) + 1
         if time_for[midi_note.end] - start_time < min_hold_duration:
             end_time = None
+            end_beat = None
         notes.append(Note(
             name=instrument.name,
             start=start_time,
             start_beat=(midi_note.start / midi_obj.ticks_per_beat) + 1,
             end=end_time,
-            end_beat=(midi_note.end / midi_obj.ticks_per_beat) + 1,
+            end_beat=end_beat,
             pitch=ratio_to_A4(midi_note.pitch),
             pitch_str=display_name(midi_note.pitch),
             idx=len(notes),

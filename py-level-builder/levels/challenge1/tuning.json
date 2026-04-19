@@ -43,7 +43,7 @@
         "idx": 1,
         "name": "bass",
         "start_beat": 1.8125,
-        "end_beat": 2.0625,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -52,7 +52,7 @@
         "idx": 2,
         "name": "bass",
         "start_beat": 2.5,
-        "end_beat": 2.75,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -70,7 +70,7 @@
         "idx": 4,
         "name": "bass",
         "start_beat": 3.8125,
-        "end_beat": 4.0625,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -79,7 +79,7 @@
         "idx": 5,
         "name": "bass",
         "start_beat": 4.5,
-        "end_beat": 4.625,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -97,7 +97,7 @@
         "idx": 7,
         "name": "bass",
         "start_beat": 5.8125,
-        "end_beat": 5.9375,
+        "end_beat": null,
         "pitch_str": "D3",
         "band": 0,
         "jumpable": false
@@ -115,7 +115,7 @@
         "idx": 9,
         "name": "bass",
         "start_beat": 7.5,
-        "end_beat": 7.625,
+        "end_beat": null,
         "pitch_str": "Bb2",
         "band": 0,
         "jumpable": false
@@ -124,7 +124,7 @@
         "idx": 10,
         "name": "bass",
         "start_beat": 8.0,
-        "end_beat": 8.125,
+        "end_beat": null,
         "pitch_str": "B2",
         "band": 0,
         "jumpable": false
@@ -142,7 +142,7 @@
         "idx": 12,
         "name": "bass",
         "start_beat": 9.8125,
-        "end_beat": 10.0625,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -151,7 +151,7 @@
         "idx": 13,
         "name": "bass",
         "start_beat": 10.5,
-        "end_beat": 10.75,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -169,7 +169,7 @@
         "idx": 15,
         "name": "bass",
         "start_beat": 11.8125,
-        "end_beat": 12.0625,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -178,7 +178,7 @@
         "idx": 16,
         "name": "bass",
         "start_beat": 12.5,
-        "end_beat": 12.75,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -187,7 +187,7 @@
         "idx": 17,
         "name": "bass",
         "start_beat": 13.0,
-        "end_beat": 13.125,
+        "end_beat": null,
         "pitch_str": "A3",
         "band": 2,
         "jumpable": false
@@ -196,7 +196,7 @@
         "idx": 18,
         "name": "bass",
         "start_beat": 13.3125,
-        "end_beat": 13.4375,
+        "end_beat": null,
         "pitch_str": "A3",
         "band": 2,
         "jumpable": false
@@ -205,7 +205,7 @@
         "idx": 19,
         "name": "bass",
         "start_beat": 13.8125,
-        "end_beat": 13.9375,
+        "end_beat": null,
         "pitch_str": "Bb3",
         "band": 2,
         "jumpable": false
@@ -214,7 +214,7 @@
         "idx": 20,
         "name": "bass",
         "start_beat": 14.3125,
-        "end_beat": 14.4375,
+        "end_beat": null,
         "pitch_str": "Bb3",
         "band": 2,
         "jumpable": false
@@ -223,7 +223,7 @@
         "idx": 21,
         "name": "bass",
         "start_beat": 14.8125,
-        "end_beat": 14.9375,
+        "end_beat": null,
         "pitch_str": "B3",
         "band": 2,
         "jumpable": false
@@ -232,7 +232,7 @@
         "idx": 22,
         "name": "bass",
         "start_beat": 15.3125,
-        "end_beat": 15.4375,
+        "end_beat": null,
         "pitch_str": "B3",
         "band": 2,
         "jumpable": false
@@ -241,7 +241,7 @@
         "idx": 23,
         "name": "bass",
         "start_beat": 15.5,
-        "end_beat": 15.75,
+        "end_beat": null,
         "pitch_str": "Db4",
         "band": 2,
         "jumpable": false
@@ -250,7 +250,7 @@
         "idx": 24,
         "name": "bass",
         "start_beat": 16.0,
-        "end_beat": 16.25,
+        "end_beat": null,
         "pitch_str": "D4",
         "band": 2,
         "jumpable": false
@@ -259,7 +259,7 @@
         "idx": 25,
         "name": "bass",
         "start_beat": 16.5,
-        "end_beat": 16.75,
+        "end_beat": null,
         "pitch_str": "E4",
         "band": 2,
         "jumpable": false
@@ -277,7 +277,7 @@
         "idx": 27,
         "name": "bass",
         "start_beat": 17.8125,
-        "end_beat": 17.9375,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -286,7 +286,7 @@
         "idx": 28,
         "name": "bass",
         "start_beat": 18.5,
-        "end_beat": 18.75,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -304,7 +304,7 @@
         "idx": 30,
         "name": "bass",
         "start_beat": 19.8125,
-        "end_beat": 20.0625,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -313,7 +313,7 @@
         "idx": 31,
         "name": "bass",
         "start_beat": 20.5,
-        "end_beat": 20.625,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -331,7 +331,7 @@
         "idx": 33,
         "name": "bass",
         "start_beat": 21.8125,
-        "end_beat": 21.9375,
+        "end_beat": null,
         "pitch_str": "D3",
         "band": 0,
         "jumpable": false
@@ -349,7 +349,7 @@
         "idx": 35,
         "name": "bass",
         "start_beat": 23.5,
-        "end_beat": 23.625,
+        "end_beat": null,
         "pitch_str": "Bb2",
         "band": 0,
         "jumpable": false
@@ -358,7 +358,7 @@
         "idx": 36,
         "name": "bass",
         "start_beat": 24.0,
-        "end_beat": 24.125,
+        "end_beat": null,
         "pitch_str": "B2",
         "band": 0,
         "jumpable": false
@@ -376,7 +376,7 @@
         "idx": 38,
         "name": "bass",
         "start_beat": 25.8125,
-        "end_beat": 26.0625,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -385,7 +385,7 @@
         "idx": 39,
         "name": "bass",
         "start_beat": 26.5,
-        "end_beat": 26.75,
+        "end_beat": null,
         "pitch_str": "E3",
         "band": 1,
         "jumpable": false
@@ -403,7 +403,7 @@
         "idx": 41,
         "name": "bass",
         "start_beat": 27.8125,
-        "end_beat": 28.0625,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -412,7 +412,7 @@
         "idx": 42,
         "name": "bass",
         "start_beat": 28.5,
-        "end_beat": 28.75,
+        "end_beat": null,
         "pitch_str": "G3",
         "band": 1,
         "jumpable": false
@@ -421,7 +421,7 @@
         "idx": 43,
         "name": "bass",
         "start_beat": 29.0,
-        "end_beat": 29.25,
+        "end_beat": null,
         "pitch_str": "A3",
         "band": 2,
         "jumpable": false
@@ -430,7 +430,7 @@
         "idx": 44,
         "name": "bass",
         "start_beat": 29.8125,
-        "end_beat": 30.0625,
+        "end_beat": null,
         "pitch_str": "Bb3",
         "band": 2,
         "jumpable": false
@@ -439,7 +439,7 @@
         "idx": 45,
         "name": "bass",
         "start_beat": 30.5,
-        "end_beat": 30.75,
+        "end_beat": null,
         "pitch_str": "B3",
         "band": 2,
         "jumpable": false
@@ -448,7 +448,7 @@
         "idx": 46,
         "name": "bass",
         "start_beat": 31.3125,
-        "end_beat": 31.5625,
+        "end_beat": null,
         "pitch_str": "D4",
         "band": 2,
         "jumpable": false
@@ -457,7 +457,7 @@
         "idx": 47,
         "name": "bass",
         "start_beat": 32.0,
-        "end_beat": 32.25,
+        "end_beat": null,
         "pitch_str": "G4",
         "band": 2,
         "jumpable": false
@@ -466,7 +466,7 @@
         "idx": 48,
         "name": "bass",
         "start_beat": 32.5,
-        "end_beat": 32.75,
+        "end_beat": null,
         "pitch_str": "Gb4",
         "band": 2,
         "jumpable": false
@@ -522,7 +522,7 @@
         "idx": 5,
         "name": "lead",
         "start_beat": 7.5,
-        "end_beat": 7.75,
+        "end_beat": null,
         "pitch_str": "B4",
         "band": 3,
         "jumpable": false
@@ -531,7 +531,7 @@
         "idx": 6,
         "name": "lead",
         "start_beat": 8.0,
-        "end_beat": 8.25,
+        "end_beat": null,
         "pitch_str": "A4",
         "band": 3,
         "jumpable": false
@@ -567,7 +567,7 @@
         "idx": 10,
         "name": "lead",
         "start_beat": 13.0,
-        "end_beat": 13.25,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 4,
         "jumpable": false
@@ -576,7 +576,7 @@
         "idx": 11,
         "name": "lead",
         "start_beat": 13.8125,
-        "end_beat": 14.0625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": 4,
         "jumpable": false
@@ -585,7 +585,7 @@
         "idx": 12,
         "name": "lead",
         "start_beat": 14.5,
-        "end_beat": 14.75,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": 4,
         "jumpable": false
@@ -594,7 +594,7 @@
         "idx": 13,
         "name": "lead",
         "start_beat": 15.3125,
-        "end_beat": 15.5625,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -603,7 +603,7 @@
         "idx": 14,
         "name": "lead",
         "start_beat": 16.0,
-        "end_beat": 16.25,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -612,7 +612,7 @@
         "idx": 15,
         "name": "lead",
         "start_beat": 16.5,
-        "end_beat": 16.75,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -666,7 +666,7 @@
         "idx": 21,
         "name": "lead",
         "start_beat": 23.5,
-        "end_beat": 23.75,
+        "end_beat": null,
         "pitch_str": "B4",
         "band": 3,
         "jumpable": false
@@ -675,7 +675,7 @@
         "idx": 22,
         "name": "lead",
         "start_beat": 24.0,
-        "end_beat": 24.25,
+        "end_beat": null,
         "pitch_str": "A4",
         "band": 3,
         "jumpable": false
@@ -711,7 +711,7 @@
         "idx": 26,
         "name": "lead",
         "start_beat": 29.0,
-        "end_beat": 29.25,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 4,
         "jumpable": false
@@ -720,7 +720,7 @@
         "idx": 27,
         "name": "lead",
         "start_beat": 29.8125,
-        "end_beat": 30.0625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": 4,
         "jumpable": false
@@ -729,7 +729,7 @@
         "idx": 28,
         "name": "lead",
         "start_beat": 30.5,
-        "end_beat": 30.75,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": 4,
         "jumpable": false
@@ -738,7 +738,7 @@
         "idx": 29,
         "name": "lead",
         "start_beat": 31.0,
-        "end_beat": 31.25,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -747,7 +747,7 @@
         "idx": 30,
         "name": "lead",
         "start_beat": 31.5,
-        "end_beat": 31.75,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -756,7 +756,7 @@
         "idx": 31,
         "name": "lead",
         "start_beat": 32.0,
-        "end_beat": 32.25,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -765,7 +765,7 @@
         "idx": 32,
         "name": "lead",
         "start_beat": 32.5,
-        "end_beat": 32.75,
+        "end_beat": null,
         "pitch_str": "B5",
         "band": 4,
         "jumpable": false
@@ -776,7 +776,7 @@
         "idx": 0,
         "name": "chords",
         "start_beat": 1.5,
-        "end_beat": 1.75,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -788,7 +788,7 @@
         "idx": 1,
         "name": "chords",
         "start_beat": 2.0,
-        "end_beat": 2.25,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -800,7 +800,7 @@
         "idx": 2,
         "name": "chords",
         "start_beat": 2.8125,
-        "end_beat": 3.0625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -812,7 +812,7 @@
         "idx": 3,
         "name": "chords",
         "start_beat": 3.3125,
-        "end_beat": 3.5625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -824,7 +824,7 @@
         "idx": 4,
         "name": "chords",
         "start_beat": 4.0,
-        "end_beat": 4.25,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -836,7 +836,7 @@
         "idx": 5,
         "name": "chords",
         "start_beat": 5.5,
-        "end_beat": 5.75,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -848,7 +848,7 @@
         "idx": 6,
         "name": "chords",
         "start_beat": 6.0,
-        "end_beat": 6.25,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -860,7 +860,7 @@
         "idx": 7,
         "name": "chords",
         "start_beat": 6.8125,
-        "end_beat": 7.0625,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
@@ -872,7 +872,7 @@
         "idx": 8,
         "name": "chords",
         "start_beat": 7.5,
-        "end_beat": 7.75,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
@@ -884,7 +884,7 @@
         "idx": 9,
         "name": "chords",
         "start_beat": 8.0,
-        "end_beat": 8.25,
+        "end_beat": null,
         "pitch_str": "B4",
         "band": 3,
         "jumpable": false
@@ -893,7 +893,7 @@
         "idx": 10,
         "name": "chords",
         "start_beat": 8.3125,
-        "end_beat": 8.5625,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 3,
         "jumpable": false
@@ -902,7 +902,7 @@
         "idx": 11,
         "name": "chords",
         "start_beat": 8.5,
-        "end_beat": 8.75,
+        "end_beat": null,
         "pitch_str": "A4",
         "band": 2,
         "jumpable": false
@@ -911,7 +911,7 @@
         "idx": 12,
         "name": "chords",
         "start_beat": 8.8125,
-        "end_beat": 9.0625,
+        "end_beat": null,
         "pitch_str": "G4",
         "band": 2,
         "jumpable": false
@@ -920,7 +920,7 @@
         "idx": 13,
         "name": "chords",
         "start_beat": 9.5,
-        "end_beat": 9.75,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -932,7 +932,7 @@
         "idx": 14,
         "name": "chords",
         "start_beat": 10.0,
-        "end_beat": 10.25,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -944,7 +944,7 @@
         "idx": 15,
         "name": "chords",
         "start_beat": 10.8125,
-        "end_beat": 11.0625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -956,7 +956,7 @@
         "idx": 16,
         "name": "chords",
         "start_beat": 11.3125,
-        "end_beat": 11.5625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -968,7 +968,7 @@
         "idx": 17,
         "name": "chords",
         "start_beat": 12.0,
-        "end_beat": 12.25,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -980,7 +980,7 @@
         "idx": 18,
         "name": "chords",
         "start_beat": 13.3125,
-        "end_beat": 13.5625,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -992,7 +992,7 @@
         "idx": 19,
         "name": "chords",
         "start_beat": 14.0,
-        "end_beat": 14.25,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -1004,7 +1004,7 @@
         "idx": 20,
         "name": "chords",
         "start_beat": 15.0,
-        "end_beat": 15.25,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -1016,7 +1016,7 @@
         "idx": 21,
         "name": "chords",
         "start_beat": 15.5,
-        "end_beat": 15.75,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": {
           "start": 2,
@@ -1028,7 +1028,7 @@
         "idx": 22,
         "name": "chords",
         "start_beat": 16.0,
-        "end_beat": 16.25,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": {
           "start": 2,
@@ -1040,7 +1040,7 @@
         "idx": 23,
         "name": "chords",
         "start_beat": 16.5,
-        "end_beat": 16.75,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": {
           "start": 2,
@@ -1052,7 +1052,7 @@
         "idx": 24,
         "name": "chords",
         "start_beat": 17.5,
-        "end_beat": 17.75,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -1064,7 +1064,7 @@
         "idx": 25,
         "name": "chords",
         "start_beat": 18.0,
-        "end_beat": 18.25,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -1076,7 +1076,7 @@
         "idx": 26,
         "name": "chords",
         "start_beat": 18.8125,
-        "end_beat": 19.0625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1088,7 +1088,7 @@
         "idx": 27,
         "name": "chords",
         "start_beat": 19.3125,
-        "end_beat": 19.5625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1100,7 +1100,7 @@
         "idx": 28,
         "name": "chords",
         "start_beat": 20.0,
-        "end_beat": 20.25,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1112,7 +1112,7 @@
         "idx": 29,
         "name": "chords",
         "start_beat": 21.5,
-        "end_beat": 21.75,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1124,7 +1124,7 @@
         "idx": 30,
         "name": "chords",
         "start_beat": 22.0,
-        "end_beat": 22.25,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1136,7 +1136,7 @@
         "idx": 31,
         "name": "chords",
         "start_beat": 22.8125,
-        "end_beat": 23.0625,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
@@ -1148,7 +1148,7 @@
         "idx": 32,
         "name": "chords",
         "start_beat": 23.5,
-        "end_beat": 23.75,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
@@ -1160,7 +1160,7 @@
         "idx": 33,
         "name": "chords",
         "start_beat": 24.0,
-        "end_beat": 24.25,
+        "end_beat": null,
         "pitch_str": "B4",
         "band": 3,
         "jumpable": false
@@ -1169,7 +1169,7 @@
         "idx": 34,
         "name": "chords",
         "start_beat": 24.3125,
-        "end_beat": 24.5625,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 3,
         "jumpable": false
@@ -1178,7 +1178,7 @@
         "idx": 35,
         "name": "chords",
         "start_beat": 24.5,
-        "end_beat": 24.75,
+        "end_beat": null,
         "pitch_str": "A4",
         "band": 2,
         "jumpable": false
@@ -1187,7 +1187,7 @@
         "idx": 36,
         "name": "chords",
         "start_beat": 24.8125,
-        "end_beat": 25.0625,
+        "end_beat": null,
         "pitch_str": "G4",
         "band": 2,
         "jumpable": false
@@ -1196,7 +1196,7 @@
         "idx": 37,
         "name": "chords",
         "start_beat": 25.5,
-        "end_beat": 25.75,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -1208,7 +1208,7 @@
         "idx": 38,
         "name": "chords",
         "start_beat": 26.0,
-        "end_beat": 26.25,
+        "end_beat": null,
         "pitch_str": "E5",
         "band": {
           "start": 2,
@@ -1220,7 +1220,7 @@
         "idx": 39,
         "name": "chords",
         "start_beat": 26.8125,
-        "end_beat": 27.0625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1232,7 +1232,7 @@
         "idx": 40,
         "name": "chords",
         "start_beat": 27.3125,
-        "end_beat": 27.5625,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1244,7 +1244,7 @@
         "idx": 41,
         "name": "chords",
         "start_beat": 28.0,
-        "end_beat": 28.25,
+        "end_beat": null,
         "pitch_str": "D5",
         "band": {
           "start": 2,
@@ -1256,7 +1256,7 @@
         "idx": 42,
         "name": "chords",
         "start_beat": 29.0,
-        "end_beat": 29.25,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 3,
         "jumpable": false
@@ -1265,7 +1265,7 @@
         "idx": 43,
         "name": "chords",
         "start_beat": 29.8125,
-        "end_beat": 30.0625,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 3,
         "jumpable": false
@@ -1274,7 +1274,7 @@
         "idx": 44,
         "name": "chords",
         "start_beat": 30.5,
-        "end_beat": 30.75,
+        "end_beat": null,
         "pitch_str": "B5",
         "band": 4,
         "jumpable": false
@@ -1283,7 +1283,7 @@
         "idx": 45,
         "name": "chords",
         "start_beat": 31.3125,
-        "end_beat": 31.5625,
+        "end_beat": null,
         "pitch_str": "Db6",
         "band": 4,
         "jumpable": false
@@ -1292,7 +1292,7 @@
         "idx": 46,
         "name": "chords",
         "start_beat": 32.0,
-        "end_beat": 32.25,
+        "end_beat": null,
         "pitch_str": "B5",
         "band": 4,
         "jumpable": false
@@ -1301,7 +1301,7 @@
         "idx": 47,
         "name": "chords",
         "start_beat": 32.3125,
-        "end_beat": 32.5625,
+        "end_beat": null,
         "pitch_str": "Db6",
         "band": 4,
         "jumpable": false
@@ -1310,7 +1310,7 @@
         "idx": 48,
         "name": "chords",
         "start_beat": 32.5,
-        "end_beat": 32.75,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 3,
         "jumpable": false
@@ -1319,7 +1319,7 @@
         "idx": 49,
         "name": "chords",
         "start_beat": 32.8125,
-        "end_beat": 32.98958333333333,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 3,
         "jumpable": false
