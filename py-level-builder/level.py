@@ -67,7 +67,7 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
                 for prop_name in force_update_note_props:
                     tuning_note[prop_name] = level_note[prop_name]
                 # copy over other properties
-                for prop_name in ["end", "band", "jumpable", "slide"]:
+                for prop_name in ["start_beat", "end", "band", "jumpable", "slide"]:
                     level_note[prop_name] = tuning_note[prop_name]
 
             elif merging_different_lengths:
@@ -162,7 +162,7 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
         notes.append(Note(
             name=instrument.name,
             start=start_time,
-            start_beat=midi_note.start / midi_obj.ticks_per_beat,
+            start_beat=(midi_note.start / midi_obj.ticks_per_beat) + 1,
             end=end_time,
             pitch=ratio_to_A4(midi_note.pitch),
         ))
