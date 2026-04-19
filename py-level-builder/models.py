@@ -23,10 +23,13 @@ class LeveLMetadata:
     instruments: list[Instrument]
     title: Optional[str] = None
     bpm: Optional[float] = None
-    view_range: Optional[float] = None # based on bpm
+    view_range: Optional[float] = None # only present in output file, computed from view_range_beats and bpm
+    view_range_beats: Optional[float] = None # only present in tuning file
     warmup_time: float = 3.0
     beats_per_measure: int = 4
     subdivisions_per_beat: int = 4
+    song_end: Optional[float] = None # base
+    song_end_beat: Optional[float] = None
 
 
 @dataclass
