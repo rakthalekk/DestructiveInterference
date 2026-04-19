@@ -3,7 +3,7 @@ extends Node2D
 
 
 var JSON_SONGS: Dictionary[String, AudioStream] = {
-	"res://levels/example/example.json": preload("res://levels/example/example.wav"),
+	"res://levels/example/example.json": preload("res://levels/example/city.wav"),
 	"res://levels/challenge1/challenge1.json": preload("res://levels/challenge1/challenge1.mp3")
 }
 
@@ -82,18 +82,6 @@ func fade_out(player: AudioStreamPlayer):
 	tween.tween_callback(player.stop)
 
 
-## one shot helper function used to play SFX
-func _sfx_one_shot(in_stream: AudioStream, volume_mod := 1.0, pitch_mod := 1.0):
-	var sfx_player := AudioStreamPlayer.new()
-	get_tree().root.add_child(sfx_player)
-	sfx_player.stream = in_stream
-	sfx_player.bus = "SFX"
-	sfx_player.volume_linear = 1 * master_volume_linear * volume_mod
-	sfx_player.pitch_scale = pitch_mod
-	sfx_player.play()
-	sfx_player.finished.connect(sfx_player.queue_free)
-
-
 func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
 	AudioServer.set_bus_effect_enabled(0, 0, [GameManager.GAME_STATE.PAUSED, GameManager.GAME_STATE.GAME_OVER].has(to))
 	
@@ -129,3 +117,15 @@ func _loop_player(in_player: AudioStreamPlayer):
 	
 	in_player.stop()
 	in_player.play()
+
+
+## one shot helper function used to play SFX
+func _sfx_one_shot(in_stream: AudioStream, volume_mod := 1.0, pitch_mod := 1.0):
+	var sfx_player := AudioStreamPlayer.new()
+	get_tree().root.add_child(sfx_player)
+	sfx_player.stream = in_stream
+	sfx_player.bus = "SFX"
+	sfx_player.volume_linear = 1 * master_volume_linear * volume_mod
+	sfx_player.pitch_scale = pitch_mod
+	sfx_player.play()
+	sfx_player.finished.connect(sfx_player.queue_free)
