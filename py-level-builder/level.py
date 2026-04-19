@@ -296,6 +296,7 @@ def display_level(level_dict: dict) -> None:
     instruments = [inst["name"] for inst in level_dict["metadata"]["instruments"]]
     base_line = "║ " + ' │ '.join(' '*len(instruments) for _ in range(5)) + " ║"
     cur_line = base_line + f" b1    m1"
+    unassigned_notes: list[str] = []
     # print(f"setup for display. {time_per_line=}")
     def put_chr_at_idx(s: str, c: str, i: int):
         return s[:i] + c + s[i+1:]
@@ -305,6 +306,8 @@ def display_level(level_dict: dict) -> None:
         # print(f"processing note with start={note['start']}, name={note['name']}, diff={note["start"] - ((len(lines) + 1) * time_per_line)}")
         while (note["start"] - ((len(lines) + 1) * time_per_line)) > -0.01:
             # print(f"    starting new line, crossed threshold of {(len(lines) + 1) * time_per_line}")
+
+            # add dots for sustained notes
             done_insts = []
             for inst_key, end_time in active.items():
                 inst_name = inst_key[:-1]
@@ -317,6 +320,11 @@ def display_level(level_dict: dict) -> None:
             for inst_key in done_insts:
                 del active[inst_key]
 
+            # add a "unassigned" suffix for unassigned notes
+            if len(unassigned_notes) > 0:
+                cur_line = cur_line + f" unassigned: {unassigned_notes}"
+            unassigned_notes = []
+
             lines.append(cur_line)
             cur_line = base_line
             if len(lines) % level_dict["metadata"]["subdivisions_per_beat"] == 0:
@@ -327,7 +335,9 @@ def display_level(level_dict: dict) -> None:
                     cur_line = cur_line + f" m{measure_num+1:<4}"
             # print(f"    line added. new diff={note["start"] - ((len(lines) + 1) * time_per_line)}")
         # print(f"  adding note(start={note["start"]}) to current line(start={(len(lines)) * time_per_line}, end={(len(lines)+1) * time_per_line})")
-        if isinstance(note["band"], int):
+        if note["band"] == None:
+            unassigned_notes.append(note["name"])
+        elif isinstance(note["band"], int):
             str_idx = get_idx(note["band"], note["name"])
             cur_line = put_chr_at_idx(cur_line, note["name"][0], str_idx)
             if note["end"] is not None:
