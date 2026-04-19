@@ -5,7 +5,8 @@ signal send_note(note: Note)
 signal game_over(is_win: bool)
 signal create_subdivision_line(width: float)
 
-var current_level_json_file: String
+## y position of "current_time" in the song
+const SCREEN_HEIGHT = 980
 
 var level_title: String
 var bpm: float = 120.0
@@ -82,7 +83,7 @@ func load_data_from_json(level_json: String):
 	for data in instrument_data:
 		var instrument = Instrument.new(data.name, data.type, Color(data.color), data.goal)
 		instruments[data.name] = instrument
-		var type = GameManager.STRING_TO_WAVE_TYPE[instrument.type]
+		var type = instrument.type
 		wave_goals[type] = instrument.goal
 		wave_interferences[type] = 0
 	

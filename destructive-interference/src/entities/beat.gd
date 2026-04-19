@@ -1,8 +1,6 @@
 class_name Beat
 extends PathFollow2D
 
-## Const ref of screen height
-const SCREEN_HEIGHT = 980
 
 
 ## Wave type for this beat
@@ -37,7 +35,7 @@ func _physics_process(delta: float) -> void:
 func dispatch_beat(in_wave_type: GameManager.WAVE_TYPE, in_lookahead_time_seconds: float):
 	wave_type = in_wave_type
 	icon.frame = int(in_wave_type)
-	speed = SCREEN_HEIGHT / in_lookahead_time_seconds
+	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
 
 
 ## kill thyself
