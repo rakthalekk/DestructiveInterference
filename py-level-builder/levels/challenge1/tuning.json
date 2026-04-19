@@ -22,10 +22,13 @@
     ],
     "title": "1",
     "bpm": 130,
-    "view_range": 1.84615385,
     "warmup_time": 3.0,
     "beats_per_measure": 4,
-    "subdivisions_per_beat": 6
+    "subdivisions_per_beat": 6,
+    "view_range": null,
+    "view_range_beats": 4,
+    "song_end": null,
+    "song_end_beat": 33
   },
   "notes_by_instrument": {
     "bass": [

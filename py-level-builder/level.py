@@ -41,7 +41,14 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
     # assert len(level_dict["notes_by_instrument"]) == len(tuning_dict["notes_by_instrument"]), f"expected tuning.json file to have same number of instruments in notes_by_instrument as generated from midi files, but didn't match. {len(level_dict["notes_by_instrument"])=}, {len(tuning_dict["notes_by_instrument"])=} consider using --ignore-checks=instruments to copy new instruments into the tuning.json file."
     if set(level_dict["notes_by_instrument"].keys()) != set(tuning_dict["notes_by_instrument"]):
         raise ValueError("ERROR: midi files and tuning file have different instrument names in notes_by_instrument. Problem, go fix it manually.")
+    # if some fields are entirely missing from tuning_dict, add them in
+    # print(f"{level_dict["metadata"]=}\n{tuning_dict["metadata"]=}")
+    for key, value in level_dict["metadata"].items():
+        if key not in tuning_dict["metadata"]:
+            # print(f"copying {key} from level_dict to tuning_dict")
+            tuning_dict["metadata"][key] = value
     level_dict["metadata"] = tuning_dict["metadata"]
+    # print(f"{level_dict["metadata"]=}")
 
     for inst_name in level_dict["notes_by_instrument"].keys():
         level_inst_notes = level_dict["notes_by_instrument"][inst_name]
@@ -247,6 +254,7 @@ def build(
             f.write(json.dumps(level_dict, indent='  '))
     print("Tuning file updated!")
 
+    # prepare the output level_dict
     # zip all notes together
     all_notes: list[dict] = []
     for inst_note_list in level_dict["notes_by_instrument"].values():
@@ -254,6 +262,27 @@ def build(
             all_notes.append(note_dict)
     all_notes = sorted(all_notes, key=lambda note_dict: (note_dict["start"], note_dict["name"]))
     level_dict["notes"] = all_notes
+    # convert "beat" units to seconds
+    if level_dict["metadata"]["song_end"] is None:
+        bpm = level_dict["metadata"]["bpm"]
+        song_end_beat: float = level_dict["metadata"]["song_end_beat"]
+        if song_end_beat != None and bpm != None:
+            song_end_beat_0_indexed = song_end_beat - 1
+            song_end_min = song_end_beat_0_indexed / bpm
+            song_end_sec = song_end_min * 60
+            level_dict["metadata"]["song_end"] = song_end_sec
+        else:
+            print("WARN: metadata song_end is empty. I can fill it in from song_end_beat and bpm, but at least one of those is misisng. Please fill them in!")
+    if level_dict["metadata"]["view_range"] is None:
+        bpm = level_dict["metadata"]["bpm"]
+        view_range_beats = level_dict["metadata"]["view_range_beats"]
+        if view_range_beats != None and bpm != None:
+            view_range_min = view_range_beats / bpm
+            view_range_sec = view_range_min * 60
+            level_dict["metadata"]["view_range"] = view_range_sec # 1.84615385
+        else:
+            print("WARN: metadata view_range is empty. I can fill it in from view_range_beats and bpm, but at least one of those is misisng. Please fill them in!")
+
 
     # make level_dir in output_levels if not yet
     output_dir = OUTPUT_LEVELS_FOLDER / level_name
