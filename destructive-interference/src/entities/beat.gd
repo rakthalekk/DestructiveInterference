@@ -27,8 +27,11 @@ var width := 1:
 @onready var anim_player := $AnimationPlayer as AnimationPlayer
 
 
-func _physics_process(_delta: float) -> void:
-	progress += speed * _delta
+func _physics_process(delta: float) -> void:
+	if !GameManager.can_move:
+		return
+	
+	progress += speed * delta
 
 
 func dispatch_beat(in_wave_type: GameManager.WAVE_TYPE, in_lookahead_time_seconds: float):

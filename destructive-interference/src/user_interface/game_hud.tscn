@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d0tyx2gifpnsd"]
+[gd_scene format=3 uid="uid://ctgvir8kooaap"]
 
 [ext_resource type="Texture2D" uid="uid://dv37rv6tn6f5t" path="res://assets/dev_waveforms/triangle.png" id="1_2alen"]
 [ext_resource type="Script" uid="uid://c417v1wq435f1" path="res://src/user_interface/game_hud.gd" id="1_41fu4"]
@@ -9,10 +9,235 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_maobv"]
 bg_color = Color(0.5211406, 0.5211406, 0.5211405, 1)
 
-[node name="GameHUD" type="CanvasLayer" unique_id=1140594258]
+[sub_resource type="Animation" id="Animation_41fu4"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameHUD/PlayerHUD:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GameHUD/PlayerHUD:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GameHUD/EnemyHUD:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GameHUD/EnemyHUD:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GameHUD/Controls:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(698, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GameHUD/Controls:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(860, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_1wc61"]
+resource_name = "intro"
+length = 0.5
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameHUD/PlayerHUD:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GameHUD/PlayerHUD:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(-1078, 0, 0, 0.083333336, 179.66667, 0, -0.4, 372.34177, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GameHUD/EnemyHUD:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GameHUD/EnemyHUD:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(-1078, 0, 0, 0.083333336, 179.66667, 0, -0.4, 358.88675, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GameHUD/Controls:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(698, 0, 0, 0.083333336, 0, 698, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GameHUD/Controls:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(1083, 0, 0, 0.3, -421.6895, 860, -0.19999999, 52.872314, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+
+[sub_resource type="Animation" id="Animation_ts7hy"]
+resource_name = "outro"
+length = 0.5
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameHUD/PlayerHUD:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GameHUD/PlayerHUD:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.4, 372.34177, 0.25, 0, -1078, 0, 0, 0.083333336, 179.66667),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GameHUD/EnemyHUD:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GameHUD/EnemyHUD:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.4, 358.88675, 0.25, 0, -1078, 0, 0, 0.083333336, 179.66667),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GameHUD/Controls:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(698, -0.25, 0, 0.25, 0, 698, 0, 0, 0.083333336, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GameHUD/Controls:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(860, -0.19999999, 52.872314, 0.25, 0, 1083, 0, 0, 0.3, -421.6895),
+"times": PackedFloat32Array(0, 0.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ts7hy"]
+_data = {
+&"RESET": SubResource("Animation_41fu4"),
+&"intro": SubResource("Animation_1wc61"),
+&"outro": SubResource("Animation_ts7hy")
+}
+
+[node name="GameHUD" type="Control" unique_id=1582989719]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_41fu4")
 
-[node name="StartText" type="Label" parent="." unique_id=1131417434]
+[node name="StartText" type="Label" parent="." unique_id=1857590302]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -29,7 +254,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_maobv")
 text = "Get Ready..."
 horizontal_alignment = 1
 
-[node name="Controls" type="HBoxContainer" parent="." unique_id=1060409292]
+[node name="Controls" type="HBoxContainer" parent="." unique_id=1602735099]
+layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -41,75 +267,75 @@ offset_right = 262.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Controls" unique_id=97290527]
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls" unique_id=1632853432]
 layout_mode = 2
 theme_override_constants/separation = -16
 
-[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer" unique_id=86383994]
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer" unique_id=516388825]
 layout_mode = 2
 texture = ExtResource("1_2alen")
 
-[node name="Label" type="Label" parent="Controls/VBoxContainer" unique_id=2100305217]
+[node name="Label" type="Label" parent="Controls/VBoxContainer" unique_id=2138737344]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "H"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Controls" unique_id=1929684916]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Controls" unique_id=920389975]
 layout_mode = 2
 theme_override_constants/separation = -16
 
-[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer2" unique_id=129405862]
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer2" unique_id=197205119]
 layout_mode = 2
 texture = ExtResource("2_41fu4")
 
-[node name="Label" type="Label" parent="Controls/VBoxContainer2" unique_id=521659746]
+[node name="Label" type="Label" parent="Controls/VBoxContainer2" unique_id=86375504]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "J"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="Controls" unique_id=1344197718]
+[node name="VBoxContainer3" type="VBoxContainer" parent="Controls" unique_id=1638704008]
 layout_mode = 2
 theme_override_constants/separation = -16
 
-[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer3" unique_id=281100815]
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer3" unique_id=1755212244]
 layout_mode = 2
 texture = ExtResource("3_1wc61")
 
-[node name="Label" type="Label" parent="Controls/VBoxContainer3" unique_id=254400724]
+[node name="Label" type="Label" parent="Controls/VBoxContainer3" unique_id=1721335662]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "K"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer4" type="VBoxContainer" parent="Controls" unique_id=1371139538]
+[node name="VBoxContainer4" type="VBoxContainer" parent="Controls" unique_id=104536960]
 layout_mode = 2
 theme_override_constants/separation = -16
 
-[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer4" unique_id=360987241]
+[node name="TextureRect" type="TextureRect" parent="Controls/VBoxContainer4" unique_id=1762239631]
 layout_mode = 2
 texture = ExtResource("4_ts7hy")
 
-[node name="Label" type="Label" parent="Controls/VBoxContainer4" unique_id=586627205]
+[node name="Label" type="Label" parent="Controls/VBoxContainer4" unique_id=907203940]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "L"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PlayerHUD" type="Control" parent="." unique_id=1533138244]
-layout_mode = 3
+[node name="PlayerHUD" type="Control" parent="." unique_id=1748660193]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GainMeter" type="ProgressBar" parent="PlayerHUD" unique_id=564719031]
+[node name="GainMeter" type="ProgressBar" parent="PlayerHUD" unique_id=143310445]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 4
@@ -123,7 +349,7 @@ grow_vertical = 2
 fill_mode = 3
 show_percentage = false
 
-[node name="GainLabel" type="Label" parent="PlayerHUD" unique_id=1259818867]
+[node name="GainLabel" type="Label" parent="PlayerHUD" unique_id=1381751083]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -136,15 +362,15 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 64
 text = "GAIN"
 
-[node name="EnemyHUD" type="Control" parent="." unique_id=1275605333]
-layout_mode = 3
+[node name="EnemyHUD" type="Control" parent="." unique_id=1097620332]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ProgressBars" type="HBoxContainer" parent="EnemyHUD" unique_id=956369354]
+[node name="ProgressBars" type="HBoxContainer" parent="EnemyHUD" unique_id=813754612]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -159,10 +385,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_constants/separation = 37
 
-[node name="VBoxContainer" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=591594299]
+[node name="VBoxContainer" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=556658164]
 layout_mode = 2
 
-[node name="TriProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer" unique_id=1792753130]
+[node name="TriProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer" unique_id=1262137994]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 778)
 layout_mode = 2
@@ -170,15 +396,15 @@ size_flags_horizontal = 3
 fill_mode = 3
 show_percentage = false
 
-[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer" unique_id=484472875]
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer" unique_id=494298964]
 layout_mode = 2
 texture = ExtResource("1_2alen")
 expand_mode = 4
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=328357000]
+[node name="VBoxContainer2" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=1009607826]
 layout_mode = 2
 
-[node name="SqProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer2" unique_id=1607089844]
+[node name="SqProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer2" unique_id=1745671767]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 778)
 layout_mode = 2
@@ -186,15 +412,15 @@ size_flags_horizontal = 3
 fill_mode = 3
 show_percentage = false
 
-[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer2" unique_id=1249489043]
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer2" unique_id=579791633]
 layout_mode = 2
 texture = ExtResource("2_41fu4")
 expand_mode = 4
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=932916117]
+[node name="VBoxContainer3" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=1569544419]
 layout_mode = 2
 
-[node name="SawProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer3" unique_id=454555607]
+[node name="SawProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer3" unique_id=892147651]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 778)
 layout_mode = 2
@@ -202,15 +428,15 @@ size_flags_horizontal = 3
 fill_mode = 3
 show_percentage = false
 
-[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer3" unique_id=1124815689]
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer3" unique_id=1667309812]
 layout_mode = 2
 texture = ExtResource("3_1wc61")
 expand_mode = 4
 
-[node name="VBoxContainer4" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=657972328]
+[node name="VBoxContainer4" type="VBoxContainer" parent="EnemyHUD/ProgressBars" unique_id=1407457458]
 layout_mode = 2
 
-[node name="SinProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer4" unique_id=1279005647]
+[node name="SinProg" type="ProgressBar" parent="EnemyHUD/ProgressBars/VBoxContainer4" unique_id=554375980]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 778)
 layout_mode = 2
@@ -218,7 +444,11 @@ size_flags_horizontal = 3
 fill_mode = 3
 show_percentage = false
 
-[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer4" unique_id=762026653]
+[node name="TextureRect1" type="TextureRect" parent="EnemyHUD/ProgressBars/VBoxContainer4" unique_id=528991404]
 layout_mode = 2
 texture = ExtResource("4_ts7hy")
 expand_mode = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1702827694]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_ts7hy")

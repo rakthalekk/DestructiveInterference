@@ -2,6 +2,7 @@ extends Node
 
 signal warmup_finished
 signal send_note(note: Note)
+signal game_over(is_win: bool)
 signal create_subdivision_line(width: float)
 
 var level_title: String
@@ -24,12 +25,8 @@ var beat_num = 1
 
 var warmup_timer = Timer.new()
 
-@onready var wave_tolerances: Dictionary[GameManager.WAVE_TYPE, float] = {
-	GameManager.WAVE_TYPE.TRIANGLE: 0.0,
-	GameManager.WAVE_TYPE.SQUARE: 0.0,
-	GameManager.WAVE_TYPE.SAW: 0.0,
-	GameManager.WAVE_TYPE.SINE: 0.0,
-}
+var wave_goals: Dictionary[GameManager.WAVE_TYPE, int]
+var wave_interferences: Dictionary[GameManager.WAVE_TYPE, int]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -39,9 +36,9 @@ func _ready() -> void:
 	add_child(warmup_timer)
 
 
-func start_level():
+func start_level(skip_warmup := false):
 	level_active = true
-	current_time = -warmup_time
+	current_time = 0.0 if skip_warmup else -warmup_time
 	current_note_idx = 0
 	time_to_next_beat = 60.0 / bpm / subdivisions_per_beat
 	
@@ -54,6 +51,13 @@ func _on_warmup_timer_timeout():
 
 
 func load_data_from_json(level_json: String):
+	notes.clear()
+	wave_goals.clear()
+	wave_interferences.clear()
+	
+	var beat_map: BeatMap = get_tree().get_first_node_in_group("beat_map") as BeatMap
+	beat_map.clear_notes_and_lines()
+	
 	var json_as_text = FileAccess.get_file_as_string(level_json)
 	var level_data: Dictionary = JSON.parse_string(json_as_text)
 	
@@ -71,6 +75,9 @@ func load_data_from_json(level_json: String):
 	for data in instrument_data:
 		var instrument = Instrument.new(data.name, data.type, Color(data.color), data.goal)
 		instruments[data.name] = instrument
+		var type = GameManager.STRING_TO_WAVE_TYPE[instrument.type]
+		wave_goals[type] = instrument.goal
+		wave_interferences[type] = 0
 	
 	var notes_data: Array = level_data.notes
 	for data in notes_data:
@@ -90,7 +97,7 @@ func load_data_from_json(level_json: String):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if !level_active:
+	if !level_active || !GameManager.can_move:
 		return
 	
 	# first beat line should be for timestamp 0
@@ -120,6 +127,16 @@ func _process(delta: float) -> void:
 		current_time += delta
 		return
 	
+	var is_player_win = true
+	for key in wave_interferences.keys():
+		if wave_interferences[key] < wave_goals[key]:
+			is_player_win = false
+			break
+	
+	if is_player_win:
+		win()
+		return
+	
 	var current_note = notes[current_note_idx]
 	while current_time >= current_note.start_time - view_range:
 		send_note.emit(current_note)
@@ -128,10 +145,22 @@ func _process(delta: float) -> void:
 			current_note = notes[current_note_idx]
 		else:
 			print("no more notes!")
+			start_level(true)
 			break
 	
 	current_time += delta
 
 
-func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 10.0):
-	wave_tolerances[wave_type] += amount
+func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1):
+	wave_interferences[wave_type] += amount
+
+
+func win():
+	level_active = false
+	GameManager.transition_to(GameManager.GAME_STATE.GAME_OVER)
+	print("Win!!!!")
+
+
+func lose():
+	level_active = false
+	print("Lose :(")

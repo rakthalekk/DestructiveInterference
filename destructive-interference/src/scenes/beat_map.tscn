@@ -23,7 +23,7 @@ point_count = 2
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t435w"]
 size = Vector2(761, 227.5)
 
-[node name="BeatMap" type="Node2D" unique_id=1022691104]
+[node name="BeatMap" type="Node2D" unique_id=1022691104 groups=["beat_map"]]
 script = ExtResource("1_t435w")
 
 [node name="bkgd" type="Sprite2D" parent="." unique_id=278162803]

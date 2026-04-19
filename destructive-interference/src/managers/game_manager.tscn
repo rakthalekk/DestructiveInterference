@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://6dge5k2xwb85"]
 
 [ext_resource type="Script" uid="uid://sy1v2u73bqko" path="res://src/managers/game_manager.gd" id="1_dqhu4"]
-[ext_resource type="PackedScene" uid="uid://d0tyx2gifpnsd" path="res://src/user_interface/game_hud.tscn" id="2_ykvi4"]
 
 [node name="GameManager" type="Node" unique_id=864061608]
 script = ExtResource("1_dqhu4")
 
-[node name="GameHUD" parent="." unique_id=1140594258 instance=ExtResource("2_ykvi4")]
+[node name="UICanvas" type="CanvasLayer" parent="." unique_id=316796260]

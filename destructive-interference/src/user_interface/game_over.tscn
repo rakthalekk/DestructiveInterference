@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://c3biucmqrtn3m"]
+
+[ext_resource type="Script" uid="uid://05xrjkapm3tl" path="res://src/user_interface/game_over.gd" id="1_5q23e"]
+
+[sub_resource type="Animation" id="Animation_ko6ql"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_ty413"]
+resource_name = "intro"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(-1078, 0, 0, 0.23333333, 766.1937, 0, -0.16666666, 138.30675, 0.25, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+
+[sub_resource type="Animation" id="Animation_0o6nh"]
+resource_name = "outro"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.16666666, 138.30675, 0.16666667, 337.65344, -1078, 0, 0, 0.23333333, 766.1937),
+"times": PackedFloat32Array(0, 0.4)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8o3m4"]
+_data = {
+&"RESET": SubResource("Animation_ko6ql"),
+&"intro": SubResource("Animation_ty413"),
+&"outro": SubResource("Animation_0o6nh")
+}
+
+[node name="GameOver" type="Control" unique_id=697179766]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5q23e")
+
+[node name="Control" type="Control" parent="." unique_id=56319342]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=2133642411]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -402.5
+offset_top = -402.5
+offset_right = 402.5
+offset_bottom = 402.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WinLabel" type="Label" parent="Control/PanelContainer" unique_id=1465258188]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 128
+text = "You Win !"
+horizontal_alignment = 1
+
+[node name="LoseLabel" type="Label" parent="Control/PanelContainer" unique_id=1712863012]
+visible = false
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 128
+text = "You Lose :("
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/PanelContainer" unique_id=1420302994]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 32
+
+[node name="Retry" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=255699588]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Retry !"
+
+[node name="LevelSelect" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=1020688749]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Level Select !"
+
+[node name="MainMenu" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=775467035]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Main Menu !"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1860044134]
+libraries/ = SubResource("AnimationLibrary_8o3m4")
+autoplay = &"intro"
+
+[connection signal="pressed" from="Control/PanelContainer/VBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="Control/PanelContainer/VBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="Control/PanelContainer/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
