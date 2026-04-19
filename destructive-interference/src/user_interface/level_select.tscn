@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://yga88pky2qyg"]
+
+[ext_resource type="Script" uid="uid://cecysokwvrek8" path="res://src/user_interface/level_select.gd" id="1_gmixf"]
+
+[sub_resource type="Animation" id="Animation_7lkuf"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_gmixf"]
+resource_name = "intro"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(1922, 0, 0, 0.3, -9.008667, 0, -0.19999999, -394.2603, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+
+[sub_resource type="Animation" id="Animation_rjgcb"]
+resource_name = "outro"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.19999999, -394.2603, 0.25, 0, 1922, 0, 0, 0.3, -9.008667),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rjgcb"]
+_data = {
+&"RESET": SubResource("Animation_7lkuf"),
+&"intro": SubResource("Animation_gmixf"),
+&"outro": SubResource("Animation_rjgcb")
+}
+
+[node name="LevelSelect" type="Control" unique_id=1663173345]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gmixf")
+
+[node name="Control" type="Control" parent="." unique_id=38663695]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.00048828125
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Label" type="Label" parent="Control" unique_id=326408958]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -530.5
+offset_top = 33.0
+offset_right = 530.5
+offset_bottom = 208.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 128
+text = "Select a Level ! :D"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1667857177]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.5
+offset_top = -244.0
+offset_right = 226.5
+offset_bottom = 328.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 23
+
+[node name="Song" type="Button" parent="Control/VBoxContainer" unique_id=1139252566]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Song 1"
+
+[node name="Song2" type="Button" parent="Control/VBoxContainer" unique_id=1952402775]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Song 2"
+
+[node name="Song3" type="Button" parent="Control/VBoxContainer" unique_id=1489763]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Song 3"
+
+[node name="Song4" type="Button" parent="Control/VBoxContainer" unique_id=794709813]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+text = "Song 4"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1300042190]
+libraries/ = SubResource("AnimationLibrary_rjgcb")
+
+[connection signal="pressed" from="Control/VBoxContainer/Song" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/VBoxContainer/Song2" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/VBoxContainer/Song3" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/VBoxContainer/Song4" to="." method="_on_song_pressed" flags=18]

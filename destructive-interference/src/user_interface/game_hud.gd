@@ -17,6 +17,12 @@ extends CanvasLayer
 
 func _process(_delta: float) -> void:
 	gain_meter.value = PlayerManager.current_gain
+	gain_meter.max_value = PlayerManager.MAX_GAIN
 	
 	for key: ProgressBar in interfere_meters.keys():
-		key.value = LevelManager.wave_tolerances[interfere_meters[key]]
+		if LevelManager.wave_goals.has(interfere_meters[key]):
+			key.visible = true
+			key.value = LevelManager.wave_interferences[interfere_meters[key]]
+			key.max_value = LevelManager.wave_goals[interfere_meters[key]]
+		else:
+			key.visible = false

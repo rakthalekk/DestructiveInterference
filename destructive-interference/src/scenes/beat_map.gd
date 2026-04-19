@@ -54,7 +54,3 @@ func get_player_position_for_lane(in_lane_idx: int):
 
 func is_valid_lane(in_lane_idx: int):
 	return in_lane_idx >= LANE_MIN && in_lane_idx <= LANE_MAX
-
-
-#func _on_timer_timeout() -> void:
-	#spawn_beat([0, 1, 2, 3, 4].pick_random())

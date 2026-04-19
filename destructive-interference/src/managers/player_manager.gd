@@ -7,7 +7,7 @@ extends Node
 ###############################
 
 ## maximum allowed decay
-const MAX_GAIN = 100
+const MAX_GAIN = 5
 
 ## amount gain decays over time per second
 const GAIN_DECAY_RATE = 2.5
@@ -196,6 +196,7 @@ func player_take_damage(in_damage := 10.0):
 
 func _defeat():
 	print("player die now wahoo")
+	LevelManager.lose()
 
 
 func _on_interfere_cooldown_timeout() -> void:

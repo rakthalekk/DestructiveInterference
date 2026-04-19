@@ -2,6 +2,7 @@ extends Node
 
 signal warmup_finished
 signal send_note(note: Note)
+signal game_over(is_win: bool)
 
 var level_title: String
 var bpm: float = 120.0
@@ -19,12 +20,8 @@ var current_note_idx = 0
 
 var warmup_timer = Timer.new()
 
-@onready var wave_tolerances: Dictionary[GameManager.WAVE_TYPE, float] = {
-	GameManager.WAVE_TYPE.TRIANGLE: 0.0,
-	GameManager.WAVE_TYPE.SQUARE: 0.0,
-	GameManager.WAVE_TYPE.SAW: 0.0,
-	GameManager.WAVE_TYPE.SINE: 0.0,
-}
+var wave_goals: Dictionary[GameManager.WAVE_TYPE, int]
+var wave_interferences: Dictionary[GameManager.WAVE_TYPE, int]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -65,6 +62,9 @@ func load_data_from_json(level_json: String):
 	for data in instrument_data:
 		var instrument = Instrument.new(data.name, data.type, Color(data.color), data.goal)
 		instruments[data.name] = instrument
+		var type = GameManager.STRING_TO_WAVE_TYPE[instrument.type]
+		wave_goals[type] = instrument.goal
+		wave_interferences[type] = 0
 	
 	var notes_data: Array = level_data.notes
 	for data in notes_data:
@@ -87,6 +87,16 @@ func _process(delta: float) -> void:
 		current_time += delta
 		return
 	
+	var is_player_win = true
+	for key in wave_interferences.keys():
+		if wave_interferences[key] < wave_goals[key]:
+			is_player_win = false
+			break
+	
+	if is_player_win:
+		win()
+		return
+	
 	var current_note = notes[current_note_idx]
 	while current_time >= current_note.start_time - view_range:
 		send_note.emit(current_note)
@@ -95,10 +105,21 @@ func _process(delta: float) -> void:
 			current_note = notes[current_note_idx]
 		else:
 			print("no more notes!")
+			start_level()
 			break
 	
 	current_time += delta
 
 
-func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 10.0):
-	wave_tolerances[wave_type] += amount
+func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1):
+	wave_interferences[wave_type] += amount
+
+
+func win():
+	level_active = false
+	print("Win!!!!")
+
+
+func lose():
+	level_active = false
+	print("Lose :(")

@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://oghlab6pqruj"]
 
 [ext_resource type="Script" uid="uid://cqulc4ml0j2sg" path="res://src/scenes/beat_map.gd" id="1_t435w"]
-[ext_resource type="PackedScene" uid="uid://d3570u27thlk2" path="res://src/entities/beat.tscn" id="3_p61wa"]
 [ext_resource type="PackedScene" uid="uid://cll2il63rnafb" path="res://src/entities/player_2d.tscn" id="4_43db8"]
 
 [sub_resource type="Gradient" id="Gradient_x8dl8"]
@@ -43,10 +42,6 @@ unique_name_in_owner = true
 [node name="Lane1" type="Path2D" parent="LaneContainer" unique_id=210007051]
 position = Vector2(669, 0)
 curve = SubResource("Curve2D_t435w")
-
-[node name="Beat" parent="LaneContainer/Lane1" unique_id=479963804 instance=ExtResource("3_p61wa")]
-position = Vector2(0.15, 1168.9999)
-progress = 1206.9998
 
 [node name="Lane2" type="Path2D" parent="LaneContainer" unique_id=1312751122]
 position = Vector2(812, 0)
