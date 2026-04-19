@@ -1,5 +1,5 @@
 class_name GameHUD
-extends CanvasLayer
+extends GameMenu
 
 
 @onready var start_text := $StartText as Label

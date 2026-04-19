@@ -62,6 +62,9 @@ var current_gain := 0.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if GameManager.current_game_state != GameManager.GAME_STATE.IN_GAME:
+		return
+	
 	_process_move_inputs()
 	_process_interfere_inputs()
 	

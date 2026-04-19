@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://wwr7x61wuu0b"]
+
+[sub_resource type="Gradient" id="Gradient_plqfe"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5in4t"]
+gradient = SubResource("Gradient_plqfe")
+
+[sub_resource type="GDScript" id="GDScript_6dpkp"]
+script/source = "class_name BeatTest
+extends Sprite2D
+
+
+var instrument_name: String
+var lifespan: float
+
+
+func _ready() -> void:
+	$InstrumentName.text = instrument_name
+	$Lifespan.wait_time = lifespan
+	$Lifespan.start()
+
+
+func load_data(note: Note):
+	instrument_name = note.instrument.instrument_name
+	lifespan = LevelManager.view_range
+
+
+func _process(delta: float) -> void:
+	var vspeed = 1080 / LevelManager.view_range
+	position += Vector2(0, vspeed) * delta
+
+
+func _on_lifespan_timeout() -> void:
+	print(LevelManager.current_time)
+	queue_free()
+"
+
+[node name="BeatTest" type="Sprite2D" unique_id=1556156093]
+texture = SubResource("GradientTexture2D_5in4t")
+script = SubResource("GDScript_6dpkp")
+
+[node name="InstrumentName" type="Label" parent="." unique_id=1710466900]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -34.0
+offset_right = -31.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "asdasd"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Lifespan" type="Timer" parent="." unique_id=1584179737]
+one_shot = true
+
+[connection signal="timeout" from="Lifespan" to="." method="_on_lifespan_timeout"]

@@ -137,13 +137,13 @@ theme_override_constants/separation = 23
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 64
-text = "Song 1"
+text = "example"
 
 [node name="Song2" type="Button" parent="Control/VBoxContainer" unique_id=1952402775]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 64
-text = "Song 2"
+text = "challenge 1"
 
 [node name="Song3" type="Button" parent="Control/VBoxContainer" unique_id=1489763]
 layout_mode = 2

@@ -34,6 +34,7 @@ const STRING_TO_WAVE_TYPE: Dictionary[String, WAVE_TYPE] = {
 
 ## enum representing possible game states
 enum GAME_STATE {
+	STARTUP,
 	MAIN_MENU,
 	LEVEL_SELECT,
 	PAUSED,
@@ -43,6 +44,7 @@ enum GAME_STATE {
 
 ## List of UI transitions for game states
 var GAME_STATE_TRANSITIONS: Dictionary[GAME_STATE, Array] = {
+	GAME_STATE.STARTUP: [GAME_STATE.MAIN_MENU],
 	GAME_STATE.MAIN_MENU: [GAME_STATE.LEVEL_SELECT, GAME_STATE.IN_GAME],
 	GAME_STATE.LEVEL_SELECT: [GAME_STATE.IN_GAME, GAME_STATE.MAIN_MENU],
 	GAME_STATE.PAUSED: [GAME_STATE.LEVEL_SELECT, GAME_STATE.MAIN_MENU, GAME_STATE.IN_GAME],
@@ -60,14 +62,14 @@ var GAME_STATE_SCENES: Dictionary[GAME_STATE, PackedScene] = {
 }
 
 
-var current_game_state: GAME_STATE
+var current_game_state := GAME_STATE.STARTUP
 
-var current_hud: Control
+var current_hud: GameMenu
 
-var in_game_hud_cache: Control
+var in_game_hud_cache: GameMenu
 
 
-@onready var game_hud := $GameHUD as GameHUD
+@onready var ui_canvas := $UICanvas as CanvasLayer
 
 
 
@@ -89,11 +91,13 @@ func transition_to(to_game_state: GAME_STATE):
 			transitioned_game_state.emit(old_game_state, current_game_state)
 			return
 	
-	current_hud.transition_out()
-	await current_hud.transition_complete
+	if is_instance_valid(current_hud):
+		current_hud.transition_out()
+		await current_hud.transition_complete
 	
 	current_game_state = to_game_state
 	current_hud = GAME_STATE_SCENES[current_game_state].instantiate() # anim player should auto-play in-transition
+	ui_canvas.add_child(current_hud)
 	
 	transitioned_game_state.emit(old_game_state, current_game_state)
 
