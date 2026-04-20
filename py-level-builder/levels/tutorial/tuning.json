@@ -1,0 +1,1887 @@
+{
+  "metadata": {
+    "instruments": [
+      {
+        "name": "Tutorial saw",
+        "type": "saw",
+        "color": "#abffff",
+        "goal": 50,
+        "default_band": null
+      },
+      {
+        "name": "Tutorial square",
+        "type": "square",
+        "color": "#70faba",
+        "goal": 10,
+        "default_band": null
+      },
+      {
+        "name": "Tutorial sine",
+        "type": "sine",
+        "color": "#fff7a1",
+        "goal": 50,
+        "default_band": null
+      },
+      {
+        "name": "Tutorial Triangle",
+        "type": "triangle",
+        "color": "#f595b4",
+        "goal": 16,
+        "default_band": null
+      }
+    ],
+    "title": "novatutorial",
+    "bpm": 120,
+    "beats_per_measure": 4,
+    "subdivisions_per_beat": 4,
+    "view_range_beats": 4.0,
+    "warmup_time": 3.0,
+    "song_end_beat": 149.0
+  },
+  "notes_by_instrument": {
+    "Tutorial saw": [
+      {
+        "idx": 0,
+        "name": "Tutorial saw",
+        "start_beat": 85.0,
+        "end_beat": 86.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 1,
+        "name": "Tutorial saw",
+        "start_beat": 86.0,
+        "end_beat": 86.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 2,
+        "name": "Tutorial saw",
+        "start_beat": 87.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 3,
+        "name": "Tutorial saw",
+        "start_beat": 87.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 4,
+        "name": "Tutorial saw",
+        "start_beat": 87.75,
+        "end_beat": 88.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 5,
+        "name": "Tutorial saw",
+        "start_beat": 89.5,
+        "end_beat": 90.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 6,
+        "name": "Tutorial saw",
+        "start_beat": 90.0,
+        "end_beat": 91.0,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 7,
+        "name": "Tutorial saw",
+        "start_beat": 91.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 8,
+        "name": "Tutorial saw",
+        "start_beat": 91.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 9,
+        "name": "Tutorial saw",
+        "start_beat": 91.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 10,
+        "name": "Tutorial saw",
+        "start_beat": 93.0,
+        "end_beat": 94.0,
+        "pitch_str": "C5",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 11,
+        "name": "Tutorial saw",
+        "start_beat": 94.0,
+        "end_beat": 94.5,
+        "pitch_str": "Bb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 12,
+        "name": "Tutorial saw",
+        "start_beat": 94.5,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 13,
+        "name": "Tutorial saw",
+        "start_beat": 95.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 14,
+        "name": "Tutorial saw",
+        "start_beat": 95.25,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 15,
+        "name": "Tutorial saw",
+        "start_beat": 95.75,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 16,
+        "name": "Tutorial saw",
+        "start_beat": 97.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 17,
+        "name": "Tutorial saw",
+        "start_beat": 97.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 18,
+        "name": "Tutorial saw",
+        "start_beat": 98.0,
+        "end_beat": 98.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 19,
+        "name": "Tutorial saw",
+        "start_beat": 98.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 20,
+        "name": "Tutorial saw",
+        "start_beat": 101.0,
+        "end_beat": 102.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 21,
+        "name": "Tutorial saw",
+        "start_beat": 102.0,
+        "end_beat": 102.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 22,
+        "name": "Tutorial saw",
+        "start_beat": 103.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 23,
+        "name": "Tutorial saw",
+        "start_beat": 103.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 24,
+        "name": "Tutorial saw",
+        "start_beat": 103.75,
+        "end_beat": 104.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 25,
+        "name": "Tutorial saw",
+        "start_beat": 105.5,
+        "end_beat": 106.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 26,
+        "name": "Tutorial saw",
+        "start_beat": 106.0,
+        "end_beat": 107.0,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 27,
+        "name": "Tutorial saw",
+        "start_beat": 107.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 28,
+        "name": "Tutorial saw",
+        "start_beat": 107.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 29,
+        "name": "Tutorial saw",
+        "start_beat": 107.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 30,
+        "name": "Tutorial saw",
+        "start_beat": 109.0,
+        "end_beat": 110.0,
+        "pitch_str": "C5",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 31,
+        "name": "Tutorial saw",
+        "start_beat": 110.0,
+        "end_beat": 110.5,
+        "pitch_str": "Bb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 32,
+        "name": "Tutorial saw",
+        "start_beat": 110.5,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 33,
+        "name": "Tutorial saw",
+        "start_beat": 111.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 34,
+        "name": "Tutorial saw",
+        "start_beat": 111.25,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 35,
+        "name": "Tutorial saw",
+        "start_beat": 111.75,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 36,
+        "name": "Tutorial saw",
+        "start_beat": 113.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 37,
+        "name": "Tutorial saw",
+        "start_beat": 113.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 38,
+        "name": "Tutorial saw",
+        "start_beat": 114.0,
+        "end_beat": 114.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 39,
+        "name": "Tutorial saw",
+        "start_beat": 114.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 40,
+        "name": "Tutorial saw",
+        "start_beat": 117.0,
+        "end_beat": 118.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 41,
+        "name": "Tutorial saw",
+        "start_beat": 118.0,
+        "end_beat": 118.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 42,
+        "name": "Tutorial saw",
+        "start_beat": 119.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 43,
+        "name": "Tutorial saw",
+        "start_beat": 119.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 44,
+        "name": "Tutorial saw",
+        "start_beat": 119.75,
+        "end_beat": 120.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 45,
+        "name": "Tutorial saw",
+        "start_beat": 121.5,
+        "end_beat": 122.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 46,
+        "name": "Tutorial saw",
+        "start_beat": 122.0,
+        "end_beat": 123.0,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 47,
+        "name": "Tutorial saw",
+        "start_beat": 123.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 48,
+        "name": "Tutorial saw",
+        "start_beat": 123.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 49,
+        "name": "Tutorial saw",
+        "start_beat": 123.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 50,
+        "name": "Tutorial saw",
+        "start_beat": 125.0,
+        "end_beat": 126.0,
+        "pitch_str": "C5",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 51,
+        "name": "Tutorial saw",
+        "start_beat": 126.0,
+        "end_beat": 126.5,
+        "pitch_str": "Bb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 52,
+        "name": "Tutorial saw",
+        "start_beat": 126.5,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 53,
+        "name": "Tutorial saw",
+        "start_beat": 127.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 54,
+        "name": "Tutorial saw",
+        "start_beat": 127.25,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 55,
+        "name": "Tutorial saw",
+        "start_beat": 127.75,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 56,
+        "name": "Tutorial saw",
+        "start_beat": 129.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 57,
+        "name": "Tutorial saw",
+        "start_beat": 129.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 58,
+        "name": "Tutorial saw",
+        "start_beat": 130.0,
+        "end_beat": 130.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 59,
+        "name": "Tutorial saw",
+        "start_beat": 130.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 60,
+        "name": "Tutorial saw",
+        "start_beat": 133.0,
+        "end_beat": 134.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 61,
+        "name": "Tutorial saw",
+        "start_beat": 134.0,
+        "end_beat": 134.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 62,
+        "name": "Tutorial saw",
+        "start_beat": 135.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 63,
+        "name": "Tutorial saw",
+        "start_beat": 135.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 64,
+        "name": "Tutorial saw",
+        "start_beat": 135.75,
+        "end_beat": 136.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 65,
+        "name": "Tutorial saw",
+        "start_beat": 137.5,
+        "end_beat": 138.0,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 66,
+        "name": "Tutorial saw",
+        "start_beat": 138.0,
+        "end_beat": 139.0,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 67,
+        "name": "Tutorial saw",
+        "start_beat": 139.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 68,
+        "name": "Tutorial saw",
+        "start_beat": 139.25,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 69,
+        "name": "Tutorial saw",
+        "start_beat": 139.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 70,
+        "name": "Tutorial saw",
+        "start_beat": 141.0,
+        "end_beat": 142.0,
+        "pitch_str": "C5",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 71,
+        "name": "Tutorial saw",
+        "start_beat": 142.0,
+        "end_beat": 142.5,
+        "pitch_str": "Bb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 72,
+        "name": "Tutorial saw",
+        "start_beat": 142.5,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 73,
+        "name": "Tutorial saw",
+        "start_beat": 143.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 74,
+        "name": "Tutorial saw",
+        "start_beat": 143.25,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 75,
+        "name": "Tutorial saw",
+        "start_beat": 143.75,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 76,
+        "name": "Tutorial saw",
+        "start_beat": 145.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 77,
+        "name": "Tutorial saw",
+        "start_beat": 145.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 78,
+        "name": "Tutorial saw",
+        "start_beat": 146.0,
+        "end_beat": 146.5,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 79,
+        "name": "Tutorial saw",
+        "start_beat": 146.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      }
+    ],
+    "Tutorial square": [
+      {
+        "idx": 0,
+        "name": "Tutorial square",
+        "start_beat": 21.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 1,
+        "name": "Tutorial square",
+        "start_beat": 22.0,
+        "end_beat": 22.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 2,
+        "name": "Tutorial square",
+        "start_beat": 22.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 3,
+        "name": "Tutorial square",
+        "start_beat": 25.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 4,
+        "name": "Tutorial square",
+        "start_beat": 25.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 5,
+        "name": "Tutorial square",
+        "start_beat": 26.0,
+        "end_beat": 26.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 6,
+        "name": "Tutorial square",
+        "start_beat": 26.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 7,
+        "name": "Tutorial square",
+        "start_beat": 29.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 8,
+        "name": "Tutorial square",
+        "start_beat": 30.0,
+        "end_beat": 30.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 9,
+        "name": "Tutorial square",
+        "start_beat": 30.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 10,
+        "name": "Tutorial square",
+        "start_beat": 33.0,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 11,
+        "name": "Tutorial square",
+        "start_beat": 33.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 12,
+        "name": "Tutorial square",
+        "start_beat": 34.0,
+        "end_beat": 34.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 13,
+        "name": "Tutorial square",
+        "start_beat": 34.75,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      }
+    ],
+    "Tutorial sine": [
+      {
+        "idx": 0,
+        "name": "Tutorial sine",
+        "start_beat": 85.0,
+        "end_beat": 86.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 1,
+        "name": "Tutorial sine",
+        "start_beat": 86.5,
+        "end_beat": 87.0,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 2,
+        "name": "Tutorial sine",
+        "start_beat": 87.0,
+        "end_beat": 87.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 3,
+        "name": "Tutorial sine",
+        "start_beat": 88.0,
+        "end_beat": 88.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 4,
+        "name": "Tutorial sine",
+        "start_beat": 89.0,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 5,
+        "name": "Tutorial sine",
+        "start_beat": 89.5,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 6,
+        "name": "Tutorial sine",
+        "start_beat": 90.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 7,
+        "name": "Tutorial sine",
+        "start_beat": 90.25,
+        "end_beat": null,
+        "pitch_str": "Bb3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 8,
+        "name": "Tutorial sine",
+        "start_beat": 90.75,
+        "end_beat": 91.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 9,
+        "name": "Tutorial sine",
+        "start_beat": 92.0,
+        "end_beat": 93.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 10,
+        "name": "Tutorial sine",
+        "start_beat": 93.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 11,
+        "name": "Tutorial sine",
+        "start_beat": 94.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 12,
+        "name": "Tutorial sine",
+        "start_beat": 94.25,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 13,
+        "name": "Tutorial sine",
+        "start_beat": 95.0,
+        "end_beat": 95.5,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 14,
+        "name": "Tutorial sine",
+        "start_beat": 95.75,
+        "end_beat": 96.25,
+        "pitch_str": "E4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 15,
+        "name": "Tutorial sine",
+        "start_beat": 97.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 16,
+        "name": "Tutorial sine",
+        "start_beat": 97.5,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 17,
+        "name": "Tutorial sine",
+        "start_beat": 98.0,
+        "end_beat": 98.5,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 18,
+        "name": "Tutorial sine",
+        "start_beat": 98.75,
+        "end_beat": 99.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 19,
+        "name": "Tutorial sine",
+        "start_beat": 99.5,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 20,
+        "name": "Tutorial sine",
+        "start_beat": 100.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 21,
+        "name": "Tutorial sine",
+        "start_beat": 100.5,
+        "end_beat": null,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 22,
+        "name": "Tutorial sine",
+        "start_beat": 101.0,
+        "end_beat": 102.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 23,
+        "name": "Tutorial sine",
+        "start_beat": 102.5,
+        "end_beat": 103.0,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 24,
+        "name": "Tutorial sine",
+        "start_beat": 103.0,
+        "end_beat": 103.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 25,
+        "name": "Tutorial sine",
+        "start_beat": 104.0,
+        "end_beat": 104.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 26,
+        "name": "Tutorial sine",
+        "start_beat": 105.0,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 27,
+        "name": "Tutorial sine",
+        "start_beat": 105.5,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 28,
+        "name": "Tutorial sine",
+        "start_beat": 106.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 29,
+        "name": "Tutorial sine",
+        "start_beat": 106.25,
+        "end_beat": null,
+        "pitch_str": "Bb3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 30,
+        "name": "Tutorial sine",
+        "start_beat": 106.75,
+        "end_beat": 107.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 31,
+        "name": "Tutorial sine",
+        "start_beat": 108.0,
+        "end_beat": 109.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 32,
+        "name": "Tutorial sine",
+        "start_beat": 109.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 33,
+        "name": "Tutorial sine",
+        "start_beat": 110.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 34,
+        "name": "Tutorial sine",
+        "start_beat": 110.25,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 35,
+        "name": "Tutorial sine",
+        "start_beat": 111.0,
+        "end_beat": 111.5,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 36,
+        "name": "Tutorial sine",
+        "start_beat": 111.75,
+        "end_beat": 112.25,
+        "pitch_str": "E4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 37,
+        "name": "Tutorial sine",
+        "start_beat": 113.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 38,
+        "name": "Tutorial sine",
+        "start_beat": 113.5,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 39,
+        "name": "Tutorial sine",
+        "start_beat": 114.0,
+        "end_beat": 114.5,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 40,
+        "name": "Tutorial sine",
+        "start_beat": 114.75,
+        "end_beat": 115.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 41,
+        "name": "Tutorial sine",
+        "start_beat": 115.5,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 42,
+        "name": "Tutorial sine",
+        "start_beat": 116.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 43,
+        "name": "Tutorial sine",
+        "start_beat": 116.5,
+        "end_beat": null,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 44,
+        "name": "Tutorial sine",
+        "start_beat": 117.0,
+        "end_beat": 118.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 45,
+        "name": "Tutorial sine",
+        "start_beat": 118.5,
+        "end_beat": 119.0,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 46,
+        "name": "Tutorial sine",
+        "start_beat": 119.0,
+        "end_beat": 119.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 47,
+        "name": "Tutorial sine",
+        "start_beat": 120.0,
+        "end_beat": 120.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 48,
+        "name": "Tutorial sine",
+        "start_beat": 121.0,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 49,
+        "name": "Tutorial sine",
+        "start_beat": 121.5,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 50,
+        "name": "Tutorial sine",
+        "start_beat": 122.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 51,
+        "name": "Tutorial sine",
+        "start_beat": 122.25,
+        "end_beat": null,
+        "pitch_str": "Bb3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 52,
+        "name": "Tutorial sine",
+        "start_beat": 122.75,
+        "end_beat": 123.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 53,
+        "name": "Tutorial sine",
+        "start_beat": 124.0,
+        "end_beat": 125.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 54,
+        "name": "Tutorial sine",
+        "start_beat": 125.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 55,
+        "name": "Tutorial sine",
+        "start_beat": 126.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 56,
+        "name": "Tutorial sine",
+        "start_beat": 126.25,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 57,
+        "name": "Tutorial sine",
+        "start_beat": 127.0,
+        "end_beat": 127.5,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 58,
+        "name": "Tutorial sine",
+        "start_beat": 127.75,
+        "end_beat": 128.25,
+        "pitch_str": "E4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 59,
+        "name": "Tutorial sine",
+        "start_beat": 129.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 60,
+        "name": "Tutorial sine",
+        "start_beat": 129.5,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 61,
+        "name": "Tutorial sine",
+        "start_beat": 130.0,
+        "end_beat": 130.5,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 62,
+        "name": "Tutorial sine",
+        "start_beat": 130.75,
+        "end_beat": 131.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 63,
+        "name": "Tutorial sine",
+        "start_beat": 131.5,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 64,
+        "name": "Tutorial sine",
+        "start_beat": 132.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 65,
+        "name": "Tutorial sine",
+        "start_beat": 132.5,
+        "end_beat": null,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 66,
+        "name": "Tutorial sine",
+        "start_beat": 133.0,
+        "end_beat": 134.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 67,
+        "name": "Tutorial sine",
+        "start_beat": 134.5,
+        "end_beat": 135.0,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 68,
+        "name": "Tutorial sine",
+        "start_beat": 135.0,
+        "end_beat": 135.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 69,
+        "name": "Tutorial sine",
+        "start_beat": 136.0,
+        "end_beat": 136.5,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 70,
+        "name": "Tutorial sine",
+        "start_beat": 137.0,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 71,
+        "name": "Tutorial sine",
+        "start_beat": 137.5,
+        "end_beat": null,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 72,
+        "name": "Tutorial sine",
+        "start_beat": 138.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 73,
+        "name": "Tutorial sine",
+        "start_beat": 138.25,
+        "end_beat": null,
+        "pitch_str": "Bb3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 74,
+        "name": "Tutorial sine",
+        "start_beat": 138.75,
+        "end_beat": 139.75,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 75,
+        "name": "Tutorial sine",
+        "start_beat": 140.0,
+        "end_beat": 141.0,
+        "pitch_str": "F3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 76,
+        "name": "Tutorial sine",
+        "start_beat": 141.5,
+        "end_beat": null,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 77,
+        "name": "Tutorial sine",
+        "start_beat": 142.0,
+        "end_beat": null,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 78,
+        "name": "Tutorial sine",
+        "start_beat": 142.25,
+        "end_beat": null,
+        "pitch_str": "Ab4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 79,
+        "name": "Tutorial sine",
+        "start_beat": 143.0,
+        "end_beat": 143.5,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 80,
+        "name": "Tutorial sine",
+        "start_beat": 143.75,
+        "end_beat": 144.25,
+        "pitch_str": "E4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 81,
+        "name": "Tutorial sine",
+        "start_beat": 145.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 82,
+        "name": "Tutorial sine",
+        "start_beat": 145.5,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 83,
+        "name": "Tutorial sine",
+        "start_beat": 146.0,
+        "end_beat": 146.5,
+        "pitch_str": "G4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 84,
+        "name": "Tutorial sine",
+        "start_beat": 146.75,
+        "end_beat": 147.25,
+        "pitch_str": "F4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 85,
+        "name": "Tutorial sine",
+        "start_beat": 147.5,
+        "end_beat": null,
+        "pitch_str": "Eb4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 86,
+        "name": "Tutorial sine",
+        "start_beat": 148.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 87,
+        "name": "Tutorial sine",
+        "start_beat": 148.5,
+        "end_beat": null,
+        "pitch_str": "Ab3",
+        "band": null,
+        "jumpable": false
+      }
+    ],
+    "Tutorial Triangle": [
+      {
+        "idx": 0,
+        "name": "Tutorial Triangle",
+        "start_beat": 53.0,
+        "end_beat": 53.5,
+        "pitch_str": "C3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 1,
+        "name": "Tutorial Triangle",
+        "start_beat": 54.0,
+        "end_beat": 54.5,
+        "pitch_str": "C3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 2,
+        "name": "Tutorial Triangle",
+        "start_beat": 55.0,
+        "end_beat": null,
+        "pitch_str": "C3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 3,
+        "name": "Tutorial Triangle",
+        "start_beat": 55.75,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 4,
+        "name": "Tutorial Triangle",
+        "start_beat": 56.25,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 5,
+        "name": "Tutorial Triangle",
+        "start_beat": 57.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 6,
+        "name": "Tutorial Triangle",
+        "start_beat": 58.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 7,
+        "name": "Tutorial Triangle",
+        "start_beat": 58.75,
+        "end_beat": null,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 8,
+        "name": "Tutorial Triangle",
+        "start_beat": 59.5,
+        "end_beat": null,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 9,
+        "name": "Tutorial Triangle",
+        "start_beat": 60.0,
+        "end_beat": null,
+        "pitch_str": "Bb3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 10,
+        "name": "Tutorial Triangle",
+        "start_beat": 60.5,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 11,
+        "name": "Tutorial Triangle",
+        "start_beat": 61.0,
+        "end_beat": 61.5,
+        "pitch_str": "C3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 12,
+        "name": "Tutorial Triangle",
+        "start_beat": 62.0,
+        "end_beat": 62.5,
+        "pitch_str": "C3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 13,
+        "name": "Tutorial Triangle",
+        "start_beat": 63.0,
+        "end_beat": null,
+        "pitch_str": "C3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 14,
+        "name": "Tutorial Triangle",
+        "start_beat": 63.75,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 15,
+        "name": "Tutorial Triangle",
+        "start_beat": 64.25,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 16,
+        "name": "Tutorial Triangle",
+        "start_beat": 65.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 17,
+        "name": "Tutorial Triangle",
+        "start_beat": 66.0,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 18,
+        "name": "Tutorial Triangle",
+        "start_beat": 66.75,
+        "end_beat": null,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 19,
+        "name": "Tutorial Triangle",
+        "start_beat": 67.5,
+        "end_beat": null,
+        "pitch_str": "G3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 20,
+        "name": "Tutorial Triangle",
+        "start_beat": 68.0,
+        "end_beat": null,
+        "pitch_str": "Bb3",
+        "band": null,
+        "jumpable": false
+      },
+      {
+        "idx": 21,
+        "name": "Tutorial Triangle",
+        "start_beat": 68.5,
+        "end_beat": null,
+        "pitch_str": "C4",
+        "band": null,
+        "jumpable": false
+      }
+    ]
+  }
+}
