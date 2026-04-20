@@ -8,6 +8,9 @@ enum STATE {
 	TAPPED
 }
 
+
+const HURT_ON_MISS = true
+
 var current_state := STATE.RELEASED
 
 var interfere_type: GameManager.WAVE_TYPE = GameManager.WAVE_TYPE.NONE
@@ -16,6 +19,7 @@ var interfere_type_2: GameManager.WAVE_TYPE = GameManager.WAVE_TYPE.NONE
 
 var required_hold_type := 0.0
 
+var has_hit_note = false
 
 ## its a timer. it times things
 @onready var timer := $Timer as Timer
@@ -55,6 +59,7 @@ func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	
 	update_interfere_icons()
 	
+	has_hit_note = false
 	collision_box.disabled = false
 	icon.visible = true
 	
@@ -90,6 +95,7 @@ func _on_area_entered(area: Area2D) -> void:
 func _hold_beat_logic(beat: Beat):
 	if (beat.wave_type == interfere_type || beat.wave_type == interfere_type_2) && current_state == STATE.TAPPED:
 		beat.being_held = true
+		has_hit_note = true
 	else:
 		return
 		#PlayerManager.on_player_missed_beat(beat)
@@ -99,6 +105,7 @@ func _hold_beat_logic(beat: Beat):
 func _tap_beat_logic(beat: Beat):
 	if (beat.wave_type == interfere_type || beat.wave_type == interfere_type_2) && current_state == STATE.TAPPED:
 		PlayerManager.on_player_killed_beat(beat)
+		has_hit_note = true
 	else:
 		return
 		#PlayerManager.on_player_missed_beat(beat)
@@ -129,6 +136,9 @@ func end_interfere(in_interfere_type: GameManager.WAVE_TYPE):
 		update_interfere_icons()
 	elif interfere_type == in_interfere_type:
 		stop_interfere()
+	
+	if HURT_ON_MISS && !has_hit_note:
+		PlayerManager.on_player_missed_beat(null)
 
 
 func _on_game_over(_is_win: bool):
