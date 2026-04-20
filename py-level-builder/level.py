@@ -296,6 +296,9 @@ def build(
     print("Tuning file updated!")
 
     # prepare the output level_dict
+    # TODO: check for any data entry errors:
+    # - notes missing a band assignment
+    # - sustain note on one track has another note of the same instrument start during its duration
     # zip all notes together
     all_notes: list[dict] = []
     for inst_note_list in level_dict["notes_by_instrument"].values():
