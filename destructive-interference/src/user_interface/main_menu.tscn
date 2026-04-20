@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cl7yxvsowis03"]
 
 [ext_resource type="Script" uid="uid://1f44eimvundv" path="res://src/user_interface/main_menu.gd" id="1_3gghf"]
+[ext_resource type="PackedScene" uid="uid://dbbcuuixvmmje" path="res://src/user_interface/game_button.tscn" id="2_hkrp4"]
+[ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="3_m6eng"]
 
 [sub_resource type="Animation" id="Animation_3gghf"]
 length = 0.001
@@ -118,47 +120,99 @@ grow_horizontal = 2
 theme_override_font_sizes/font_size = 128
 text = "Destructive Interference !"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1667857177]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 81.0
-offset_top = -239.0
-offset_right = 534.0
-offset_bottom = 329.44604
-grow_vertical = 2
-theme_override_constants/separation = 23
-
-[node name="Start" type="Button" parent="Control/VBoxContainer" unique_id=1139252566]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Start!"
-
-[node name="Options" type="Button" parent="Control/VBoxContainer" unique_id=924880231]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Options!"
-
-[node name="Credits" type="Button" parent="Control/VBoxContainer" unique_id=957321411]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Credits!"
-
-[node name="Quit" type="Button" parent="Control/VBoxContainer" unique_id=1776530076]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Quit!"
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1106827985]
 libraries/ = SubResource("AnimationLibrary_3gghf")
 autoplay = &"intro"
 
-[connection signal="pressed" from="Control/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[node name="WomanHole" parent="." unique_id=999594193 instance=ExtResource("3_m6eng")]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+grow_horizontal = 1
+
+[node name="Options" parent="." unique_id=2040855931 instance=ExtResource("2_hkrp4")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -617.0
+offset_top = -693.0
+offset_right = -117.0
+offset_bottom = -193.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Start")
+focus_neighbor_top = NodePath("../Quit")
+focus_neighbor_right = NodePath("../Start")
+focus_neighbor_bottom = NodePath("../Quit")
+button_text = "Options"
+text_val = "Options"
+
+[node name="Start" parent="." unique_id=334889834 instance=ExtResource("2_hkrp4")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1119.0
+offset_top = -686.0
+offset_right = -619.0
+offset_bottom = -186.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Options")
+focus_neighbor_top = NodePath("../Credits")
+focus_neighbor_right = NodePath("../Options")
+focus_neighbor_bottom = NodePath("../Credits")
+button_text = "Start Game"
+text_val = "Start Game"
+
+[node name="Quit" parent="." unique_id=1520698509 instance=ExtResource("2_hkrp4")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -505.0
+offset_top = -413.0
+offset_right = -5.0
+offset_bottom = 87.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Credits")
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_right = NodePath("../Credits")
+focus_neighbor_bottom = NodePath("../Options")
+button_text = "Quit Game"
+text_val = "Quit Game"
+
+[node name="Credits" parent="." unique_id=1090024639 instance=ExtResource("2_hkrp4")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1009.0
+offset_top = -392.0
+offset_right = -509.0
+offset_bottom = 108.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Quit")
+focus_neighbor_top = NodePath("../Start")
+focus_neighbor_right = NodePath("../Quit")
+focus_neighbor_bottom = NodePath("../Start")
+button_text = "Credits"
+text_val = "Credits"
+
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]

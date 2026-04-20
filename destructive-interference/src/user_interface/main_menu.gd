@@ -4,7 +4,7 @@ extends GameMenu
 
 
 func _ready() -> void:
-	$Control/VBoxContainer/Start.grab_focus()
+	$Start.grab_focus()
 
 
 func _on_start_pressed() -> void:
