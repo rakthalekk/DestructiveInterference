@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c7ue2wk7jxw17"]
 
 [ext_resource type="Script" uid="uid://d1f0m1ry5k7ru" path="res://src/entities/interfere_box.gd" id="1_8mpo6"]
-[ext_resource type="Texture2D" uid="uid://b0dipsnd8iv5k" path="res://assets/dev_waveforms/wave_forms.png" id="2_fx8te"]
+[ext_resource type="Texture2D" uid="uid://mrqoxkgb0muq" path="res://assets/timing_indicator.png" id="2_fx8te"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jox5q"]
-size = Vector2(55, 80)
+size = Vector2(55, 64)
 
 [sub_resource type="Gradient" id="Gradient_fx8te"]
 interpolation_mode = 1
@@ -24,22 +24,22 @@ collision_mask = 2
 script = ExtResource("1_8mpo6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1049234824]
-position = Vector2(0.5, 21)
+position = Vector2(0.5, 25)
 shape = SubResource("RectangleShape2D_jox5q")
 disabled = true
 
 [node name="Icon" type="Node2D" parent="." unique_id=1594390900]
 
 [node name="Bkgd" type="Sprite2D" parent="Icon" unique_id=966165949]
+visible = false
 position = Vector2(0, 22.5)
 scale = Vector2(1, 2.125)
 texture = SubResource("GradientTexture2D_7l8ip")
 
 [node name="Icon" type="Sprite2D" parent="Icon" unique_id=168413470]
-visible = false
-scale = Vector2(0.44531253, 0.44531253)
+position = Vector2(0, 25.999998)
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_fx8te")
-hframes = 4
 
 [node name="Timer" type="Timer" parent="." unique_id=685520992]
 wait_time = 0.2

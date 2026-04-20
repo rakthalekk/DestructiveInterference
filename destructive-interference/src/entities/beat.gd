@@ -32,15 +32,18 @@ var height := 1:
 		height = val
 
 var wave_symbols: Dictionary[GameManager.WAVE_TYPE, Texture2D] = {
-	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
+	GameManager.WAVE_TYPE.TRIANGLE: preload("res://assets/triangle.png"),
+	GameManager.WAVE_TYPE.SQUARE: preload("res://assets/square.png"),
+	GameManager.WAVE_TYPE.SAW: preload("res://assets/saw.png"),
+	GameManager.WAVE_TYPE.SINE: preload("res://assets/sine.png"),
 }
 
 
 var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
-	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
-	GameManager.WAVE_TYPE.SQUARE: Color("40ba22"),
-	GameManager.WAVE_TYPE.SAW: Color("ba228c"),
-	GameManager.WAVE_TYPE.SINE: Color("2250ba"),
+	GameManager.WAVE_TYPE.TRIANGLE: Color("f66593"),
+	GameManager.WAVE_TYPE.SQUARE: Color("3efba3"),
+	GameManager.WAVE_TYPE.SAW: Color("77ffff"),
+	GameManager.WAVE_TYPE.SINE: Color("fff46d"),
 	GameManager.WAVE_TYPE.NOISE: Color("ffffff")
 }
 
@@ -99,7 +102,8 @@ func _physics_process(delta: float) -> void:
 func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	note_data = note
 	wave_type = note.instrument.type
-	icon.frame = int(wave_type)
+	#icon.frame = int(wave_type)
+	icon.texture = wave_symbols[wave_type]
 	$Icon/Bkgd.modulate = wave_colors[wave_type]
 	$Icon/ColorRect.color = wave_colors[wave_type]
 	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
