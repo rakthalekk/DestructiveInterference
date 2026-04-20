@@ -27,10 +27,9 @@ var level_active: bool = false
 
 var instruments: Dictionary[String, Instrument] = {}
 var notes: Array[Note] = []
-var current_note_idx = 0
+var next_note_idx = 0
 
-var time_to_next_beat = 0.0
-var subdivision_num = 0
+var next_subdivision_idx := 0
 var beat_num = 0
 
 var warmup_timer = Timer.new()
@@ -51,8 +50,8 @@ func _ready() -> void:
 func start_level(skip_warmup := false):
 	level_active = true
 	current_time = -view_range if skip_warmup else -warmup_time
-	current_note_idx = 0
-	time_to_next_beat = duration_subdivision
+	next_note_idx = 0
+	next_subdivision_idx = 0
 
 	warmup_timer.wait_time = view_range if skip_warmup else warmup_time
 	warmup_timer.start()
@@ -100,7 +99,7 @@ func load_data_from_json(level_json: String):
 		var type = instrument.type
 		wave_goals[type] = instrument.goal
 		wave_interferences[type] = 0
-	
+
 	# create noise instrument
 	var noise_instrument = Instrument.new("noise", "noise", Color.WHITE, 9999)
 	instruments["noise"] = noise_instrument
@@ -129,38 +128,35 @@ func load_data_from_json(level_json: String):
 
 		notes.append(note)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !level_active || !GameManager.can_move:
 		return
 
-	# first beat line should be for timestamp 0
-	if current_time + view_range >= 0:
-		if time_to_next_beat <= 0:
-			if subdivision_num % int(beats_per_measure * subdivisions_per_beat) == 0:
-				# at a measure line
-				beat_num = 0
-				subdivision_num = 0
-				create_subdivision_line.emit(20)
-			elif subdivision_num % int(subdivisions_per_beat) == 0:
-				# at a beat line
-				beat_num += 1
-				create_subdivision_line.emit(10)
-			else:
-				# at a subdivision line
-				create_subdivision_line.emit(4)
-			subdivision_num += 1
+	current_time += delta
 
-			time_to_next_beat += duration_subdivision
+	# draw horizontal lines for measures / beats / subdivisions
+	# has enough time passed to draw another subdivision line?
+	if current_time + view_range >= next_subdivision_idx * duration_subdivision:
 
-		time_to_next_beat -= delta
+		if next_subdivision_idx % int(beats_per_measure * subdivisions_per_beat) == 0:
+			# at a measure line
+			beat_num = 0
+			create_subdivision_line.emit(20)
+		elif next_subdivision_idx % int(subdivisions_per_beat) == 0:
+			# at a beat line
+			beat_num += 1
+			create_subdivision_line.emit(10)
+		else:
+			# at a subdivision line
+			create_subdivision_line.emit(4)
+		next_subdivision_idx += 1
 
 	# we all outta notes
-	if current_note_idx == notes.size():
-		current_time += delta
+	if next_note_idx == notes.size():
+		#current_time += delta
 
-		if current_time >= song_end + subdivision_offset - view_range:
+		if current_time >= song_end - view_range:
 			start_level(true)
 
 		return
@@ -183,8 +179,8 @@ func _process(delta: float) -> void:
 	# So, the notes have a bit *more* than SCREEN_HEIGHT pixels to traverse
 	# before reaching $Zero.
 	# Solution: look 38 pixels ahead in the beatmap for spawning notes. It's dumb but it works.
-	var current_note: Note = notes[current_note_idx]
-	while current_time >= current_note.start_time - ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range: # magic number dont worry abt it
+	var current_note: Note = notes[next_note_idx]
+	while current_time + ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range >= current_note.start_time:
 		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
 			send_note.emit(current_note)
 		else:
@@ -192,14 +188,12 @@ func _process(delta: float) -> void:
 			noise_note.instrument = instruments["noise"]
 			send_note.emit(noise_note)
 
-		current_note_idx += 1
-		if current_note_idx < notes.size():
-			current_note = notes[current_note_idx]
+		next_note_idx += 1
+		if next_note_idx < notes.size():
+			current_note = notes[next_note_idx]
 		else:
 			print("no more notes!")
 			break
-
-	current_time += delta
 
 
 func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1.0):
@@ -219,14 +213,14 @@ func lose():
 	print("Lose :(")
 
 
+## Fully reset the current level to 0 progress and beginning of the map
 func reset():
 	notes.clear()
 	wave_goals.clear()
 	wave_interferences.clear()
-	time_to_next_beat = 0
-	subdivision_num = 0
+	next_subdivision_idx = 0
 	beat_num = 0
-	current_note_idx = 0
+	next_note_idx = 0
 
 
 func _on_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
