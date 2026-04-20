@@ -162,10 +162,12 @@ func _process(delta: float) -> void:
 		win()
 		return
 	
-	var current_note = notes[current_note_idx]
+	var current_note: Note = notes[current_note_idx]
 	
 	while current_time >= current_note.start_time - view_range:
-		send_note.emit(current_note)
+		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
+			send_note.emit(current_note)
+		
 		current_note_idx += 1
 		if current_note_idx < notes.size():
 			current_note = notes[current_note_idx]
