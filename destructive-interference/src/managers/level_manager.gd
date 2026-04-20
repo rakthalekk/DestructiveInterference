@@ -180,7 +180,6 @@ func _process(delta: float) -> void:
 	# before reaching $Zero.
 	# Solution: look 38 pixels ahead in the beatmap for spawning notes. It's dumb but it works.
 	var current_note: Note = notes[current_note_idx]
-
 	while current_time >= current_note.start_time - ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range: # magic number dont worry abt it
 		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
 			send_note.emit(current_note)
