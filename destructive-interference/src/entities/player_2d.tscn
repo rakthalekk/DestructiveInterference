@@ -12,7 +12,8 @@ script = ExtResource("1_gptfg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1310384517]
 visible = false
-position = Vector2(5, -32)
+position = Vector2(4.7683716e-07, 41.999992)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_2ep6d")
 
 [node name="HurtBox" type="Area2D" parent="." unique_id=1853254392]

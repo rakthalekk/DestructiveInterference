@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d3570u27thlk2"]
 
 [ext_resource type="Script" uid="uid://c3rbjncgal3gq" path="res://src/entities/beat.gd" id="1_xrhn5"]
-[ext_resource type="Texture2D" uid="uid://b0dipsnd8iv5k" path="res://assets/dev_waveforms/wave_forms.png" id="2_xrhn5"]
+[ext_resource type="Texture2D" uid="uid://cn6t1tlif7glj" path="res://assets/triangle.png" id="2_xrhn5"]
 
 [sub_resource type="Gradient" id="Gradient_3r3dn"]
 interpolation_mode = 1
@@ -17,11 +17,11 @@ metadata/_snap_enabled = true
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4troy"]
 resource_local_to_scene = true
-size = Vector2(59.914146, 20)
+size = Vector2(59.914146, 29.457407)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhn5"]
 resource_local_to_scene = true
-size = Vector2(59.914146, 20)
+size = Vector2(59.914146, 29.457407)
 
 [sub_resource type="Animation" id="Animation_4troy"]
 length = 0.001
@@ -126,18 +126,33 @@ rotates = false
 loop = false
 script = ExtResource("1_xrhn5")
 
+[node name="Connectors" type="Node2D" parent="." unique_id=1332598024]
+
+[node name="Connector1" type="Line2D" parent="Connectors" unique_id=733085957]
+points = PackedVector2Array(0, 30, 71, 30)
+default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
+
+[node name="Connector2" type="Line2D" parent="Connectors" unique_id=946947821]
+position = Vector2(71, 0)
+points = PackedVector2Array(0, 30, 71, 30)
+default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
+
+[node name="Connector3" type="Line2D" parent="Connectors" unique_id=388408826]
+position = Vector2(142, 0)
+points = PackedVector2Array(0, 30, 71, 30)
+default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
+
+[node name="Connector4" type="Line2D" parent="Connectors" unique_id=1923081782]
+position = Vector2(213, 0)
+points = PackedVector2Array(0, 30, 71, 30)
+default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
+
 [node name="Icon" type="Node2D" parent="." unique_id=1154701175]
 
 [node name="Bkgd" type="Sprite2D" parent="Icon" unique_id=1509422566]
+visible = false
 position = Vector2(0, 38)
 texture = SubResource("GradientTexture2D_xrhn5")
-
-[node name="Icon" type="Sprite2D" parent="Icon" unique_id=1718302155]
-visible = false
-position = Vector2(0, -26)
-texture = ExtResource("2_xrhn5")
-hframes = 4
-frame = 3
 
 [node name="ColorRect" type="ColorRect" parent="Icon" unique_id=726690125]
 offset_left = 28.0
@@ -146,12 +161,37 @@ offset_right = 83.869995
 offset_bottom = 80.0
 rotation = 3.1415927
 
+[node name="Icon" type="Sprite2D" parent="Icon" unique_id=1718302155]
+position = Vector2(0, 32)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_xrhn5")
+
+[node name="Icon2" type="Sprite2D" parent="Icon" unique_id=1166108853]
+position = Vector2(71, 32)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_xrhn5")
+
+[node name="Icon3" type="Sprite2D" parent="Icon" unique_id=1549002296]
+position = Vector2(142, 32)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_xrhn5")
+
+[node name="Icon4" type="Sprite2D" parent="Icon" unique_id=969086266]
+position = Vector2(213, 32)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_xrhn5")
+
+[node name="Icon5" type="Sprite2D" parent="Icon" unique_id=241252763]
+position = Vector2(284, 32)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_xrhn5")
+
 [node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]
 collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=1670048198]
-position = Vector2(-9.536743e-07, 38)
+position = Vector2(-9.536743e-07, 33.13943)
 scale = Vector2(0.9346707, 1.0278862)
 shape = SubResource("RectangleShape2D_4troy")
 
@@ -159,7 +199,7 @@ shape = SubResource("RectangleShape2D_4troy")
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtThePlayerBox" unique_id=1413559663]
-position = Vector2(-9.536743e-07, 38)
+position = Vector2(-9.536743e-07, 33.13943)
 scale = Vector2(0.9346707, 1.0278862)
 shape = SubResource("RectangleShape2D_xrhn5")
 

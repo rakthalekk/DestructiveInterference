@@ -30,10 +30,10 @@ var required_hold_type := 0.0
 
 
 var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
-	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
-	GameManager.WAVE_TYPE.SQUARE: Color("40ba22"),
-	GameManager.WAVE_TYPE.SAW: Color("ba228c"),
-	GameManager.WAVE_TYPE.SINE: Color("2250ba"),
+	GameManager.WAVE_TYPE.TRIANGLE: Color("f66593"),
+	GameManager.WAVE_TYPE.SQUARE: Color("3efba3"),
+	GameManager.WAVE_TYPE.SAW: Color("77ffff"),
+	GameManager.WAVE_TYPE.SINE: Color("fff46d"),
 	GameManager.WAVE_TYPE.NOISE: Color("ffffff")
 }
 
@@ -46,8 +46,7 @@ func _ready() -> void:
 func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	interfere_type = in_interfere_type
 	collision_box.disabled = false
-	$Icon/Bkgd.modulate = wave_colors[in_interfere_type]
-	preview.frame = int(in_interfere_type)
+	preview.modulate = wave_colors[in_interfere_type]
 	icon.visible = true
 	
 	current_state = STATE.TAPPED

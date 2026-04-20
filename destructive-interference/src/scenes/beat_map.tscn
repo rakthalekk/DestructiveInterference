@@ -37,6 +37,28 @@ position = Vector2(958.00006, 538)
 scale = Vector2(0.27, 0.27)
 texture = ExtResource("2_p61wa")
 
+[node name="TrackLines" type="Node2D" parent="." unique_id=2109694386]
+
+[node name="Track1" type="Line2D" parent="TrackLines" unique_id=62865726]
+points = PackedVector2Array(818, 0, 818, 1080)
+width = 6.0
+
+[node name="Track2" type="Line2D" parent="TrackLines" unique_id=864968670]
+points = PackedVector2Array(889, 0, 889, 1080)
+width = 6.0
+
+[node name="Track3" type="Line2D" parent="TrackLines" unique_id=1822679821]
+points = PackedVector2Array(960, 0, 960, 1080)
+width = 6.0
+
+[node name="Track4" type="Line2D" parent="TrackLines" unique_id=899534155]
+points = PackedVector2Array(1031, 0, 1031, 1080)
+width = 6.0
+
+[node name="Track5" type="Line2D" parent="TrackLines" unique_id=1578079987]
+points = PackedVector2Array(1102, 0, 1102, 1080)
+width = 6.0
+
 [node name="Lines" type="Node2D" parent="." unique_id=903762524]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=361389988]
@@ -85,27 +107,5 @@ shape = SubResource("RectangleShape2D_t435w")
 position = Vector2(0, 980)
 points = PackedVector2Array(816, 0, 1100, 0)
 width = 8.0
-
-[node name="TrackLines" type="Node2D" parent="." unique_id=2109694386]
-
-[node name="Track1" type="Line2D" parent="TrackLines" unique_id=62865726]
-points = PackedVector2Array(818, 0, 818, 1080)
-width = 6.0
-
-[node name="Track2" type="Line2D" parent="TrackLines" unique_id=864968670]
-points = PackedVector2Array(889, 0, 889, 1080)
-width = 6.0
-
-[node name="Track3" type="Line2D" parent="TrackLines" unique_id=1822679821]
-points = PackedVector2Array(960, 0, 960, 1080)
-width = 6.0
-
-[node name="Track4" type="Line2D" parent="TrackLines" unique_id=899534155]
-points = PackedVector2Array(1031, 0, 1031, 1080)
-width = 6.0
-
-[node name="Track5" type="Line2D" parent="TrackLines" unique_id=1578079987]
-points = PackedVector2Array(1102, 0, 1102, 1080)
-width = 6.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

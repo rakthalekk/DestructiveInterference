@@ -25,23 +25,39 @@ var speed: float
 var width := 1:
 	set(val):
 		width = val
-		$Icon.scale = Vector2(width, 1)
+		$Icon/ColorRect.scale = Vector2(width, 1)
 		$DespawnBox.scale = Vector2(width, 1)
-		$Icon.position = Vector2((width - 1) * 35, 0)
 		$DespawnBox.position = Vector2((width - 1) * 35, 0)
 		$HurtThePlayerBox.scale = Vector2(width, 1)
 		$HurtThePlayerBox.position = Vector2((width - 1) * 35, 0)
+		
+		$Connectors/Connector1.visible = width >= 2
+		$Connectors/Connector2.visible = width >= 3
+		$Connectors/Connector3.visible = width >= 4
+		$Connectors/Connector4.visible = width >= 5
+		$Icon/Icon2.visible = width >= 2
+		$Icon/Icon3.visible = width >= 3
+		$Icon/Icon4.visible = width >= 4
+		$Icon/Icon5.visible = width >= 5
 
 
 var height := 1:
 	set(val):
 		height = val
 
+var wave_symbols: Dictionary[GameManager.WAVE_TYPE, Texture2D] = {
+	GameManager.WAVE_TYPE.TRIANGLE: preload("res://assets/triangle.png"),
+	GameManager.WAVE_TYPE.SQUARE: preload("res://assets/square.png"),
+	GameManager.WAVE_TYPE.SAW: preload("res://assets/saw.png"),
+	GameManager.WAVE_TYPE.SINE: preload("res://assets/sine.png"),
+}
+
+
 var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
-	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
-	GameManager.WAVE_TYPE.SQUARE: Color("40ba22"),
-	GameManager.WAVE_TYPE.SAW: Color("ba228c"),
-	GameManager.WAVE_TYPE.SINE: Color("2250ba"),
+	GameManager.WAVE_TYPE.TRIANGLE: Color("f66593"),
+	GameManager.WAVE_TYPE.SQUARE: Color("3efba3"),
+	GameManager.WAVE_TYPE.SAW: Color("77ffff"),
+	GameManager.WAVE_TYPE.SINE: Color("fff46d"),
 	GameManager.WAVE_TYPE.NOISE: Color("ffffff")
 }
 
@@ -100,7 +116,17 @@ func _physics_process(delta: float) -> void:
 func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	note_data = note
 	wave_type = note.instrument.type
-	icon.frame = int(wave_type)
+	#icon.frame = int(wave_type)
+	icon.texture = wave_symbols[wave_type]
+	$Icon/Icon2.texture = wave_symbols[wave_type]
+	$Icon/Icon3.texture = wave_symbols[wave_type]
+	$Icon/Icon4.texture = wave_symbols[wave_type]
+	$Icon/Icon5.texture = wave_symbols[wave_type]
+	$Connectors/Connector1.default_color = wave_colors[wave_type]
+	$Connectors/Connector2.default_color = wave_colors[wave_type]
+	$Connectors/Connector3.default_color = wave_colors[wave_type]
+	$Connectors/Connector4.default_color = wave_colors[wave_type]
+	
 	$Icon/Bkgd.modulate = wave_colors[wave_type]
 	$Icon/ColorRect.color = wave_colors[wave_type]
 	speed = (LevelManager.SCREEN_HEIGHT - 38) / in_lookahead_time_seconds
