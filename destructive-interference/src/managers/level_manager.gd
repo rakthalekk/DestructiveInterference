@@ -202,20 +202,31 @@ func _process(delta: float) -> void:
 
 
 func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1.0):
+	var previously_goal_met := is_equal_approx(wave_interferences[wave_type], wave_goals[wave_type])
 	wave_interferences[wave_type] += amount
+	wave_interferences[wave_type] = clamp(wave_interferences[wave_type], 0.0, wave_goals[wave_type])
+	if !previously_goal_met and is_equal_approx(wave_interferences[wave_type], wave_goals[wave_type]):
+		run_when_goal_met(wave_type)
 
+func run_when_goal_met(wave_type: GameManager.WAVE_TYPE):
+	var wave_type_str = GameManager.WAVE_TYPE_TO_STRING[wave_type]
+	print("u got all the %s u need, good job!" % [wave_type_str])
+	var sfx_for_wave_type_goal = AudioManager.SFX_GOAL[wave_type_str]
+	AudioManager.sfx_one_shot(sfx_for_wave_type_goal, 4.0)
 
 func win():
 	level_active = false
 	GameManager.transition_to(GameManager.GAME_STATE.GAME_OVER)
 	game_over.emit(true)
 	print("Win!!!!")
+	AudioManager.sfx_one_shot(AudioManager.SFX_LEVEL_END_VICTORY, 10.0)
 
 
 func lose():
 	level_active = false
 	game_over.emit(false)
 	print("Lose :(")
+	AudioManager.sfx_one_shot(AudioManager.SFX_LEVEL_END_DEFEAT, 10.0)
 
 
 ## Fully reset the current level to 0 progress and beginning of the map

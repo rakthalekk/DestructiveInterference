@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dokhjloksevn"
+path="res://.godot/imported/miss 1.mp3-e494c8dfc13b115713c457df63295c40.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/level/beat/ouch/miss 1.mp3"
+dest_files=["res://.godot/imported/miss 1.mp3-e494c8dfc13b115713c457df63295c40.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

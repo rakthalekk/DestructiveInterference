@@ -148,7 +148,9 @@ func _change_lane(in_direction: Vector2i, force := false):
 	
 	if is_instance_valid(player_2d):
 		player_2d.change_lane(in_direction)
-	
+		var sfx = AudioManager.SFX_MOVE_LEFT if in_direction == Vector2i.LEFT else AudioManager.SFX_MOVE_RIGHT
+		AudioManager.sfx_one_shot(sfx, 10.0, 1.0, player_2d)
+
 	if is_instance_valid(player_3d):
 		player_3d.change_lane(in_direction)
 	
@@ -164,7 +166,8 @@ func _dodge_input(force := false):
 	
 	if is_instance_valid(player_2d):
 		player_2d.dodge_input()
-	
+		AudioManager.sfx_one_shot(AudioManager.SFX_MOVE_JUMP, 10.0, 1.0, player_2d)
+
 	if is_instance_valid(player_3d):
 		player_3d.dodge_input()
 	
