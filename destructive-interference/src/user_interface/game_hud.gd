@@ -19,6 +19,8 @@ func _process(_delta: float) -> void:
 	gain_meter.max_value = PlayerManager.MAX_GAIN
 	gain_meter.value = clampf(gain_meter.value, 0, gain_meter.max_value)
 	
+	gain_meter.value = remap(gain_meter.value, 0, gain_meter.max_value, gain_meter.max_value * .12, gain_meter.max_value * .7)
+	
 	if old_val < gain_meter.value:
 		$WomanHole/GainMeter/GainHit.stop()
 		$WomanHole/GainMeter/GainHit.play("hit")

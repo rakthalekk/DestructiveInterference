@@ -44,6 +44,8 @@ func _ready() -> void:
 	warmup_timer.one_shot = true
 	warmup_timer.timeout.connect(_on_warmup_timer_timeout)
 	add_child(warmup_timer)
+	
+	GameManager.transitioned_game_state.connect(_on_state_transition)
 
 
 func start_level(skip_warmup := false):
@@ -209,3 +211,9 @@ func reset():
 	subdivision_num = 1
 	beat_num = 1
 	current_note_idx = 0
+
+
+func _on_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
+	if from == GameManager.GAME_STATE.GAME_OVER && to == GameManager.GAME_STATE.IN_GAME:
+		load_data_from_json(current_level_json_file)
+		start_level()

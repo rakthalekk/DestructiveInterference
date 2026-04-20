@@ -24,10 +24,10 @@ const WAVE_TYPE_TO_STRING: Dictionary[WAVE_TYPE, String] = {
 
 
 var wave_colors: Dictionary[WAVE_TYPE, Color] = {
-	WAVE_TYPE.TRIANGLE: Color("e04e4e"),
-	WAVE_TYPE.SQUARE: Color("40ba22"),
-	WAVE_TYPE.SAW: Color("ba228c"),
-	WAVE_TYPE.SINE: Color("2250ba"),
+	WAVE_TYPE.TRIANGLE: Color("f66593"),
+	WAVE_TYPE.SQUARE: Color("3efba3"),
+	WAVE_TYPE.SAW: Color("77ffff"),
+	WAVE_TYPE.SINE: Color("fff46d"),
 	WAVE_TYPE.NOISE: Color("ffffff")
 }
 

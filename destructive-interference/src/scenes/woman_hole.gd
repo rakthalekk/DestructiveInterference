@@ -11,7 +11,7 @@ extends Control
 
 func _ready() -> void:
 	dialogue_anim.animation_started.connect(dialogue_anim.play.bind("yap"))
-	dialogue_anim.animation_started.connect(dialogue_anim.seek.bind(randf_range(0, dialogue_anim.current_animation_length), true))
+	dialogue_anim.animation_started.connect(dialogue_anim.seek.bind(randf_range(0, dialogue_anim.get_animation("yap").length), true))
 	dialogue_anim.animation_finished.connect(dialogue_anim.stop)
 
 
