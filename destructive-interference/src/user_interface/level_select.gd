@@ -11,11 +11,12 @@ const LEVELS = [
 
 
 func _ready() -> void:
-	$Control/VBoxContainer/Song.grab_focus()
+	$Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton.grab_focus()
+	$Control/PanelContainer/AutoScrollBox.scroll_horizontal = 0
 
 
-func _on_song_pressed(source: BaseButton) -> void:
-	var idx = source.get_index()
+func _on_song_pressed(source: GameButton) -> void:
+	var idx = source.get_index() - 1
 	
 	if idx >= 0 && idx < LEVELS.size():
 		print("loading son")

@@ -7,15 +7,14 @@
 [ext_resource type="Texture2D" uid="uid://b1wl63p1kmycu" path="res://assets/player.png" id="5_o5ef8"]
 
 [sub_resource type="Environment" id="Environment_w0lka"]
-background_mode = 2
 background_color = Color(0.27058825, 0.06666667, 0.5372549, 1)
 
-[sub_resource type="Gradient" id="Gradient_dcu7v"]
+[sub_resource type="Gradient" id="Gradient_o5ef8"]
 offsets = PackedFloat32Array(1)
-colors = PackedColorArray(1, 1, 1, 1)
+colors = PackedColorArray(1, 0.9607843, 0.43137255, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_o5ef8"]
-gradient = SubResource("Gradient_dcu7v")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2xj7c"]
+gradient = SubResource("Gradient_o5ef8")
 width = 1920
 height = 1080
 
@@ -74,16 +73,17 @@ tracks/2/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
-tracks/3/type = "bezier"
+tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate:a")
+tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_o5ef8"]
@@ -123,16 +123,17 @@ tracks/2/keys = {
 "points": PackedFloat32Array(4.9952173, 0, 0, 0.083333336, -0.8325362, 0, -0.4, -2.6706855, 0.25, 0),
 "times": PackedFloat32Array(0, 0.5)
 }
-tracks/3/type = "bezier"
+tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate:a")
+tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0.16666667),
-"times": PackedFloat32Array(0, 0.5)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_2xj7c"]
@@ -172,16 +173,17 @@ tracks/2/keys = {
 "points": PackedFloat32Array(0, -0.4, -2.6706855, 0.25, 0, 4.9952173, 0, 0, 0.083333336, -0.8325362),
 "times": PackedFloat32Array(0, 0.5)
 }
-tracks/3/type = "bezier"
+tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate:a")
+tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0.16666667, 1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.5)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_7n8hv"]
@@ -221,16 +223,17 @@ tracks/2/keys = {
 "points": PackedFloat32Array(0, -0.4, -2.6706855, 0.25, 0, 2.5, 0, 0, 0.083333336, -0.8325362),
 "times": PackedFloat32Array(0, 0.5)
 }
-tracks/3/type = "bezier"
+tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate:a")
+tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0.16666667, 0.75, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.5)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_kxpas"]
@@ -270,16 +273,17 @@ tracks/2/keys = {
 "points": PackedFloat32Array(2.5, 0, 0, 0.083333336, -0.8325362, 0, -0.4, -2.6706855, 0.25, 0),
 "times": PackedFloat32Array(0, 0.5)
 }
-tracks/3/type = "bezier"
+tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate:a")
+tracks/3/path = NodePath("Camera3D/CameraBlocker:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0.75, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0.16666667),
-"times": PackedFloat32Array(0, 0.5)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vh2v8"]
@@ -295,18 +299,17 @@ _data = {
 script = ExtResource("1_dcu7v")
 level_json = "res://levels/challenge1/challenge1.json"
 
-[node name="Background" type="Sprite3D" parent="." unique_id=1332922751]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.0111403)
-texture = ExtResource("2_o5ef8")
-
 [node name="Camera3D" type="Camera3D" parent="." unique_id=941378808]
 environment = SubResource("Environment_w0lka")
 near = 0.001
 
-[node name="CameraBlocker" type="Sprite3D" parent="Camera3D" unique_id=1291863035]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.2009865)
-modulate = Color(0.27058825, 0.06666667, 0.5372549, 1)
-texture = SubResource("GradientTexture2D_o5ef8")
+[node name="Background" type="Sprite3D" parent="Camera3D" unique_id=1291863035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.037)
+texture = ExtResource("2_o5ef8")
+
+[node name="CameraBlocker" type="Sprite3D" parent="Camera3D" unique_id=804713900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.9583101)
+texture = SubResource("GradientTexture2D_2xj7c")
 
 [node name="GameContents" type="Node3D" parent="." unique_id=2031753937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08862686, 2.8510294)
