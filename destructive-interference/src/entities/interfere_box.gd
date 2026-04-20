@@ -42,6 +42,7 @@ var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
 
 func _ready() -> void:
 	stop_interfere()
+	LevelManager.game_over.connect(_on_game_over)
 
 
 ## Sets up data for interference & activates collision
@@ -90,15 +91,17 @@ func _hold_beat_logic(beat: Beat):
 	if (beat.wave_type == interfere_type || beat.wave_type == interfere_type_2) && current_state == STATE.TAPPED:
 		beat.being_held = true
 	else:
-		PlayerManager.on_player_missed_beat(beat)
-		beat.die()
+		return
+		#PlayerManager.on_player_missed_beat(beat)
+		#beat.die()
 
 
 func _tap_beat_logic(beat: Beat):
 	if (beat.wave_type == interfere_type || beat.wave_type == interfere_type_2) && current_state == STATE.TAPPED:
 		PlayerManager.on_player_killed_beat(beat)
 	else:
-		PlayerManager.on_player_missed_beat(beat)
+		return
+		#PlayerManager.on_player_missed_beat(beat)
 	
 	PlayerManager.interfere_cooldown.stop()
 	beat.die()
@@ -126,6 +129,10 @@ func end_interfere(in_interfere_type: GameManager.WAVE_TYPE):
 		update_interfere_icons()
 	elif interfere_type == in_interfere_type:
 		stop_interfere()
+
+
+func _on_game_over(_is_win: bool):
+	stop_interfere()
 
 
 func stop_interfere():

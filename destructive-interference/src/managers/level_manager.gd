@@ -193,11 +193,13 @@ func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1.0):
 func win():
 	level_active = false
 	GameManager.transition_to(GameManager.GAME_STATE.GAME_OVER)
+	game_over.emit(true)
 	print("Win!!!!")
 
 
 func lose():
 	level_active = false
+	game_over.emit(false)
 	print("Lose :(")
 
 
