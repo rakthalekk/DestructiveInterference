@@ -3,40 +3,40 @@
     "instruments": [
       {
         "name": "demo a 4 final saw",
-        "type": null,
-        "color": null,
-        "goal": null,
+        "type": "saw",
+        "color": "#abffff",
+        "goal": 50,
         "default_band": null
       },
       {
         "name": "demo a 4 final sine",
-        "type": null,
-        "color": null,
-        "goal": null,
+        "type": "sine",
+        "color": "#fff7a1",
+        "goal": 50,
         "default_band": 0
       },
       {
         "name": "demo a 4 final square",
-        "type": null,
-        "color": null,
-        "goal": null,
+        "type": "square",
+        "color": "#70faba",
+        "goal": 50,
         "default_band": 1
       },
       {
         "name": "demo a 4 final triangle",
-        "type": null,
-        "color": null,
-        "goal": null,
+        "type": "triangle",
+        "color": "#f595b4",
+        "goal": 50,
         "default_band": 2
       }
     ],
-    "title": null,
+    "title": "novaaaaa",
     "bpm": 172.99,
     "beats_per_measure": 4,
     "subdivisions_per_beat": 4,
-    "view_range_beats": null,
+    "view_range_beats": 8.0,
     "warmup_time": 3.0,
-    "song_end_beat": null
+    "song_end_beat": 513.0
   },
   "notes_by_instrument": {
     "demo a 4 final saw": [

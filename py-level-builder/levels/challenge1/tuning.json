@@ -4,21 +4,21 @@
       {
         "name": "bass",
         "type": "saw",
-        "color": "#d62822",
+        "color": "#abffff",
         "goal": 30,
         "default_band": null
       },
       {
         "name": "lead",
         "type": "sine",
-        "color": "#d622b2",
+        "color": "#fff7a1",
         "goal": 20,
         "default_band": null
       },
       {
         "name": "chords",
         "type": "square",
-        "color": "#22cad6",
+        "color": "#70faba",
         "goal": 30,
         "default_band": null
       }

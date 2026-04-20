@@ -1,3 +1,4 @@
 {
-    "black-formatter.cwd": "py-level-builder"
+    "black-formatter.cwd": "py-level-builder",
+    "workbench.colorTheme": "Catppuccin Mocha"
 }
