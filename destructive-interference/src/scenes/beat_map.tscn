@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://40xu17tul1cg" path="res://assets/track.png" id="2_p61wa"]
 [ext_resource type="PackedScene" uid="uid://cll2il63rnafb" path="res://src/entities/player_2d.tscn" id="4_43db8"]
 [ext_resource type="PackedScene" uid="uid://hlcgs4gxxmcu" path="res://src/entities/lane.tscn" id="4_g5uah"]
+[ext_resource type="Texture2D" uid="uid://b0rlblu7pqaci" path="res://assets/track-dither.png" id="5_g5uah"]
 
 [sub_resource type="Gradient" id="Gradient_x8dl8"]
 interpolation_mode = 1
@@ -98,5 +99,10 @@ shape = SubResource("RectangleShape2D_t435w")
 position = Vector2(0, 980)
 points = PackedVector2Array(816, 0, 1100, 0)
 default_color = Color(1, 0.98039216, 0.5529412, 1)
+
+[node name="Track2" type="Sprite2D" parent="." unique_id=2120440983]
+position = Vector2(958.00006, 538)
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("5_g5uah")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

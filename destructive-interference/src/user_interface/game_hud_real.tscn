@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c417v1wq435f1" path="res://src/user_interface/game_hud.gd" id="1_8gkai"]
 [ext_resource type="Texture2D" uid="uid://cjsee88ckv462" path="res://assets/background.png" id="1_twnh5"]
+[ext_resource type="Texture2D" uid="uid://bbea2nif7shvr" path="res://assets/IMG_0094.png" id="2_6gs8f"]
 [ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="3_u8cj3"]
 [ext_resource type="Texture2D" uid="uid://bswjwl8fiixkh" path="res://assets/fun_police.png" id="6_6gs8f"]
 [ext_resource type="Texture2D" uid="uid://ppbiosb84cjl" path="res://assets/gain_meter.png" id="7_upflp"]
@@ -55,7 +56,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.5, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(0.17, -0.25, 0, 0.1, 0.0012517422),
 "times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
@@ -66,7 +67,7 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.5, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(0.17, -0.25, 0, 0, 0.026138991),
 "times": PackedFloat32Array(0)
 }
 
@@ -82,7 +83,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
-"points": PackedFloat32Array(0.5, -0.25, 0, 0, -0.03390917, 0.5, -0.1, -0.09358388, 0, 0, 0.65, -0.09044284, -0.15450424, 0, 0, 0.7, -0.099999994, 0.06273496, 0, 0, 0.5, -0.39999998, -0.079746395, 0.25, 0),
+"points": PackedFloat32Array(0.17, -0.25, 0, 0.1, 0.0012517422, 0.17, 0, 0.0012517422, 0, 0, 0.19, 0, -0.0012742132, 0, 0, 0.2, -0.58283746, 0.06921224, 0, 0, 0.17, -0.16567504, -0.06758541, 0, -0.03390917),
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.8, 1.5)
 }
 tracks/1/type = "bezier"
@@ -93,7 +94,7 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
-"points": PackedFloat32Array(0.5, -0.25, 0, 0.1, -0.08234081, 0.65, -0.1, -0.004885137, 0, 0, 0.65, -0.016666668, 0, 0, 0, 0.7, -0.099999994, 0.063599706, 0, 0, 0.5, -0.39999998, -0.08147606, 0.25, 0),
+"points": PackedFloat32Array(0.17, -0.25, 0, 0, 0.026138991, 0.19, 0, -0.0028627813, 0, 0, 0.19, -0.016666668, 0, 0, 0, 0.2, -0.58283746, 0.068682715, 0, 0, 0.17, -0.25, 0, 0.1, -0.08234081),
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.8, 1.5)
 }
 
@@ -126,6 +127,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8gkai")
 
+[node name="ColorGrading" type="TextureRect" parent="." unique_id=1545319735]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("2_6gs8f")
+
 [node name="Background" type="TextureRect" parent="." unique_id=1643837568]
 visible = false
 layout_mode = 1
@@ -137,21 +145,26 @@ grow_vertical = 2
 texture = ExtResource("1_twnh5")
 
 [node name="WomanHole" parent="." unique_id=1277226185 instance=ExtResource("3_u8cj3")]
-layout_mode = 0
-offset_left = -10.0
-offset_top = -127.0
-offset_right = 2540.0
-offset_bottom = 3173.0
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = -226.0
+offset_right = -19.0
+offset_bottom = -226.0
+grow_horizontal = 1
 
 [node name="GainMeter" type="TextureProgressBar" parent="WomanHole" unique_id=1466343055]
 unique_name_in_owner = true
 layout_mode = 1
-offset_left = 468.0
-offset_top = 200.0
-offset_right = 2516.0
-offset_bottom = 3329.0
+offset_left = -688.9999
+offset_top = -2341.0
+offset_right = 1359.0001
+offset_bottom = 788.0
 rotation = 0.8841349
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.17, 0.17)
 pivot_offset = Vector2(1073.1221, 2640.3374)
 value = 12.0
 fill_mode = 3
@@ -167,15 +180,14 @@ libraries/ = SubResource("AnimationLibrary_eic7m")
 
 [node name="WomanHole2" parent="." unique_id=999594193 instance=ExtResource("3_u8cj3")]
 layout_mode = 1
-anchors_preset = 1
+anchors_preset = 6
 anchor_left = 1.0
-anchor_right = 1.0
-offset_left = 5.0
-offset_top = -145.0
-offset_right = 2555.0
-offset_bottom = 3155.0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -161.0
+offset_bottom = -161.0
 grow_horizontal = 0
-scale = Vector2(-0.25, 0.25)
+scale = Vector2(-1, 1)
 
 [node name="Woman" parent="WomanHole2/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
 texture = ExtResource("6_6gs8f")
@@ -184,33 +196,33 @@ texture = ExtResource("6_6gs8f")
 unique_name_in_owner = true
 layout_mode = 1
 offset_left = 611.0
-offset_top = 209.0
+offset_top = 250.0
 offset_right = 611.0
-offset_bottom = 209.0
+offset_bottom = 250.0
 
 [node name="GoalContainer2" parent="." unique_id=933148968 instance=ExtResource("9_u8cj3")]
 unique_name_in_owner = true
 layout_mode = 1
 offset_left = 797.0
-offset_top = 169.0
+offset_top = 210.0
 offset_right = 797.0
-offset_bottom = 169.0
+offset_bottom = 210.0
 
 [node name="GoalContainer3" parent="." unique_id=391067754 instance=ExtResource("9_u8cj3")]
 unique_name_in_owner = true
 layout_mode = 1
 offset_left = 608.0
-offset_top = 380.0
+offset_top = 421.0
 offset_right = 608.0
-offset_bottom = 380.0
+offset_bottom = 421.0
 
 [node name="GoalContainer4" parent="." unique_id=140231766 instance=ExtResource("9_u8cj3")]
 unique_name_in_owner = true
 layout_mode = 1
 offset_left = 800.0
-offset_top = 341.0
+offset_top = 382.0
 offset_right = 800.0
-offset_bottom = 341.0
+offset_bottom = 382.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=191680022]
 libraries/ = SubResource("AnimationLibrary_0qc7e")

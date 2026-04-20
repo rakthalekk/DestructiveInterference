@@ -67,7 +67,7 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
+"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
 "times": PackedFloat32Array(0, 0.4, 8.5, 9)
 }
 tracks/2/type = "bezier"
@@ -78,7 +78,7 @@ tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
+"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
 "times": PackedFloat32Array(0, 0.4, 8.5, 9)
 }
 
@@ -256,33 +256,46 @@ _data = {
 
 [node name="WomanHole" type="Control" unique_id=999594193]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 2550.0
-offset_bottom = 3300.0
-scale = Vector2(0.25, 0.25)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("2_567w2")
 
 [node name="DialogueBox" type="TextureRect" parent="." unique_id=587406403]
 layout_mode = 1
-offset_left = 1796.0001
-offset_top = -191.99991
-offset_right = 4298.0
-offset_bottom = 2148.0
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 480.0
+offset_top = -480.0
+offset_right = 1020.48193
+offset_bottom = 25.486572
+grow_vertical = 2
 rotation = 0.43432224
 scale = Vector2(1e-05, 1e-05)
-pivot_offset_ratio = Vector2(0.5, 0.5)
+pivot_offset = Vector2(202.18439, 405.6551)
+mouse_filter = 2
 texture = ExtResource("4_bgm0a")
+expand_mode = 3
+stretch_mode = 4
 
 [node name="Speech" type="Label" parent="DialogueBox" unique_id=670603187]
-layout_mode = 0
-offset_left = 169.14052
-offset_top = 792.3958
-offset_right = 2215.3687
-offset_bottom = 1983.3958
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 25.70366
+offset_top = -88.54077
+offset_right = 489.42828
+offset_bottom = 175.44336
+grow_vertical = 2
 rotation = -0.15967329
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_567w2")
-theme_override_font_sizes/font_size = 300
+theme_override_font_sizes/font_size = 64
 text = "abe bebabe ebaobebeaobe tgoa daoemgo e aod awdiou  "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -299,37 +312,48 @@ libraries/ = SubResource("AnimationLibrary_33uqf")
 autoplay = &"speak_idle"
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=833276969]
-layout_mode = 0
-offset_right = 2550.0
-offset_bottom = 3300.0
-pivot_offset = Vector2(1284, 1956)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -412.5
+offset_right = 637.5
+offset_bottom = 412.5
+grow_vertical = 2
+pivot_offset = Vector2(256, 695)
+mouse_filter = 2
 texture = ExtResource("1_0sqt2")
+expand_mode = 3
+stretch_mode = 5
 
 [node name="FrameMask" type="TextureRect" parent="TextureRect" unique_id=204724806]
 clip_children = 1
 clip_contents = true
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -3300.0
-offset_right = 2550.0
-grow_vertical = 0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("2_5puls")
-expand_mode = 3
+expand_mode = 1
 
 [node name="Woman" type="TextureRect" parent="TextureRect/FrameMask" unique_id=428012202]
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -52.0
-offset_top = -3012.0
-offset_right = 2498.0
-offset_bottom = 296.0
-grow_vertical = 0
-pivot_offset = Vector2(900.125, 2752)
+offset_left = -14.473975
+offset_top = 43.871075
+offset_right = -14.473999
+offset_bottom = 43.871094
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(253, 692)
+mouse_filter = 2
 texture = ExtResource("3_bgm0a")
+expand_mode = 1
 
 [node name="idle" type="AnimationPlayer" parent="TextureRect/FrameMask" unique_id=1127219626]
 libraries/ = SubResource("AnimationLibrary_uf770")

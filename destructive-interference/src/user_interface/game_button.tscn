@@ -1,0 +1,325 @@
+[gd_scene format=3 uid="uid://dbbcuuixvmmje"]
+
+[ext_resource type="Texture2D" uid="uid://cayfklbay7a0" path="res://assets/button.png" id="1_0d8ol"]
+[ext_resource type="BitMap" uid="uid://ddgvm8faj26rk" path="res://assets/button_mask.png" id="2_5kehm"]
+[ext_resource type="Script" uid="uid://byvxt3jcchdhk" path="res://src/user_interface/game_button.gd" id="3_grbyh"]
+[ext_resource type="Theme" uid="uid://dxh2rd0qsm7bt" path="res://src/user_interface/ui.tres" id="4_oqqh1"]
+
+[sub_resource type="Animation" id="Animation_qi51b"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_oqqh1"]
+resource_name = "idle"
+length = 4.80001
+loop_mode = 1
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.033333335, -0.077997215, -0.06981317, -0.03333334, 0, 0.03333334, 0, 0, -0.03333336, -0.08009015, 0.0333333, 0.07688009, 0.06981317, -0.03333333, 0, 0.033333343, 0, 0, -0.03333342, 0.06955481, 0.033333242, -0.053928446),
+"times": PackedFloat32Array(0, 1.2, 2.4, 3.6, 4.8)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qi51b"]
+_data = {
+&"RESET": SubResource("Animation_qi51b"),
+&"idle": SubResource("Animation_oqqh1")
+}
+
+[sub_resource type="Animation" id="Animation_mkkcp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LabelParent/Label:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.9647059, 0.39607844, 0.5764706, 1)]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LabelParent:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LabelParent:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_cb8a4"]
+resource_name = "hover"
+length = 0.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LabelParent/Label:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.9647059, 0.39607844, 0.5764706, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LabelParent:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.2, 0, 0.2, 0, 1.3, -0.3, 0.06088996, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LabelParent:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.2, 0, 0.2, 0, 1.3, -0.3, 0.058104277, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+
+[sub_resource type="Animation" id="Animation_tu6mt"]
+resource_name = "hovering"
+length = 2.00001
+loop_mode = 1
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LabelParent:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1.3, -0.25, 0, 0.25, 0, 1.1, -0.25, 0, 0.25, 0, 1.3, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 2)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LabelParent:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1.3, -0.25, 0, 0.25, 0, 1.1, -0.25, 0, 0.25, 0, 1.3, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 2)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LabelParent/Label:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8ad8h"]
+resource_name = "unhover"
+length = 0.4
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LabelParent:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1.3, -0.2, 0, 0.2, 0, 1, -0.2, -0.09921682, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LabelParent:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1.3, -0.2, 0, 0.2, 0, 1, -0.2, -0.09921682, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LabelParent/Label:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.9647059, 0.39607844, 0.5764706, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tu6mt"]
+_data = {
+&"RESET": SubResource("Animation_mkkcp"),
+&"hover": SubResource("Animation_cb8a4"),
+&"hovering": SubResource("Animation_tu6mt"),
+&"unhover": SubResource("Animation_8ad8h")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_oqqh1"]
+animation = &"RESET"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qi51b"]
+animation = &"hover"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mkkcp"]
+animation = &"hovering"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cb8a4"]
+animation = &"unhover"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tu6mt"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4lho3"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "!hovering"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oqqh1"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "hovering"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qi51b"]
+advance_mode = 2
+advance_expression = "!hovering"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mkkcp"]
+advance_mode = 2
+advance_expression = "hovering"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_cb8a4"]
+advance_mode = 2
+advance_expression = "!hovering"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8ad8h"]
+advance_mode = 2
+advance_expression = "hovering"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_oqqh1"]
+states/RESET/node = SubResource("AnimationNodeAnimation_oqqh1")
+states/RESET/position = Vector2(428, 100)
+states/hover/node = SubResource("AnimationNodeAnimation_qi51b")
+states/hover/position = Vector2(428, 228)
+states/hovering/node = SubResource("AnimationNodeAnimation_mkkcp")
+states/hovering/position = Vector2(621, 228)
+states/unhover/node = SubResource("AnimationNodeAnimation_cb8a4")
+states/unhover/position = Vector2(621, 100)
+transitions = ["Start", "RESET", SubResource("AnimationNodeStateMachineTransition_tu6mt"), "unhover", "RESET", SubResource("AnimationNodeStateMachineTransition_4lho3"), "hover", "hovering", SubResource("AnimationNodeStateMachineTransition_oqqh1"), "hovering", "unhover", SubResource("AnimationNodeStateMachineTransition_qi51b"), "RESET", "hover", SubResource("AnimationNodeStateMachineTransition_mkkcp"), "hover", "unhover", SubResource("AnimationNodeStateMachineTransition_cb8a4"), "unhover", "hover", SubResource("AnimationNodeStateMachineTransition_8ad8h")]
+
+[node name="GameButton" type="TextureButton" unique_id=2040855931]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture_normal = ExtResource("1_0d8ol")
+texture_click_mask = ExtResource("2_5kehm")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("3_grbyh")
+text_val = null
+
+[node name="LabelParent" type="Control" parent="." unique_id=1547765151]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="LabelParent" unique_id=1895140739]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = -81.0
+offset_right = 160.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(176.5, 53.5)
+theme = ExtResource("4_oqqh1")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
+theme_override_constants/outline_size = 32
+theme_override_font_sizes/font_size = 128
+text = "Test Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IdlePlayer" type="AnimationPlayer" parent="." unique_id=908182691]
+libraries/ = SubResource("AnimationLibrary_qi51b")
+autoplay = &"idle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1904391885]
+libraries/ = SubResource("AnimationLibrary_tu6mt")
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=1645142128]
+tree_root = SubResource("AnimationNodeStateMachine_oqqh1")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../AnimationPlayer")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
