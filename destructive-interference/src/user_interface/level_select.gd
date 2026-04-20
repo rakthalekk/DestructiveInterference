@@ -20,3 +20,7 @@ func _on_song_pressed(source: BaseButton) -> void:
 	if idx >= 0 && idx < LEVELS.size():
 		print("loading son")
 		GameManager.start_level_sequence(LEVELS[idx])
+
+
+func _on_back_pressed() -> void:
+	GameManager.transition_to(GameManager.GAME_STATE.MAIN_MENU)

@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://yga88pky2qyg"]
 
 [ext_resource type="Script" uid="uid://cecysokwvrek8" path="res://src/user_interface/level_select.gd" id="1_gmixf"]
+[ext_resource type="Theme" uid="uid://cxokgiosp78t8" path="res://src/user_interface/ui.tres" id="1_rjgcb"]
+
+[sub_resource type="Gradient" id="Gradient_rjgcb"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.09980973, 0.4680615, 0.42377824, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_467gw"]
+gradient = SubResource("Gradient_rjgcb")
 
 [sub_resource type="Animation" id="Animation_7lkuf"]
 length = 0.001
@@ -93,7 +101,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_rjgcb")
 script = ExtResource("1_gmixf")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1394312565]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_467gw")
 
 [node name="Control" type="Control" parent="." unique_id=38663695]
 layout_mode = 1
@@ -117,6 +135,8 @@ offset_bottom = 208.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 128
 text = "Select a Level ! :D"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1667857177]
 layout_mode = 1
@@ -135,32 +155,41 @@ theme_override_constants/separation = 23
 
 [node name="Song" type="Button" parent="Control/VBoxContainer" unique_id=1139252566]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
 text = "tutorial"
 
 [node name="Song2" type="Button" parent="Control/VBoxContainer" unique_id=1952402775]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
 text = "level 1"
 
 [node name="Song3" type="Button" parent="Control/VBoxContainer" unique_id=1489763]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
 text = "challenge 1"
 
 [node name="Song4" type="Button" parent="Control/VBoxContainer" unique_id=794709813]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
 text = "dont click me ill c"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1300042190]
 libraries/ = SubResource("AnimationLibrary_rjgcb")
 
+[node name="Back" type="Button" parent="." unique_id=1914977156]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
+
 [connection signal="pressed" from="Control/VBoxContainer/Song" to="." method="_on_song_pressed" flags=18]
 [connection signal="pressed" from="Control/VBoxContainer/Song2" to="." method="_on_song_pressed" flags=18]
 [connection signal="pressed" from="Control/VBoxContainer/Song3" to="." method="_on_song_pressed" flags=18]
 [connection signal="pressed" from="Control/VBoxContainer/Song4" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

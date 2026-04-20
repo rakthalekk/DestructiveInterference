@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c417v1wq435f1" path="res://src/user_interface/game_hud.gd" id="1_8gkai"]
 [ext_resource type="Texture2D" uid="uid://cjsee88ckv462" path="res://assets/background.png" id="1_twnh5"]
 [ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="3_u8cj3"]
+[ext_resource type="Texture2D" uid="uid://bswjwl8fiixkh" path="res://assets/fun_police.png" id="6_6gs8f"]
 [ext_resource type="Texture2D" uid="uid://ppbiosb84cjl" path="res://assets/gain_meter.png" id="7_upflp"]
 [ext_resource type="Texture2D" uid="uid://cm5joicgfcs8c" path="res://assets/gain_pips.png" id="8_u8cj3"]
 [ext_resource type="PackedScene" uid="uid://bcytbb0vpjl3m" path="res://src/user_interface/goal_container.tscn" id="9_u8cj3"]
@@ -176,6 +177,9 @@ offset_bottom = 3155.0
 grow_horizontal = 0
 scale = Vector2(-0.25, 0.25)
 
+[node name="Woman" parent="WomanHole2/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
+texture = ExtResource("6_6gs8f")
+
 [node name="GoalContainer1" parent="." unique_id=1349114661 instance=ExtResource("9_u8cj3")]
 unique_name_in_owner = true
 layout_mode = 1
@@ -210,3 +214,5 @@ offset_bottom = 341.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=191680022]
 libraries/ = SubResource("AnimationLibrary_0qc7e")
+
+[editable path="WomanHole2"]

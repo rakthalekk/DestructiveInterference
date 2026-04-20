@@ -9,7 +9,7 @@ enum STATE {
 }
 
 
-const HURT_ON_MISS = true
+const HURT_ON_MISS = false
 
 var current_state := STATE.RELEASED
 

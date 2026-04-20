@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ccl8t8e1oymqm"]
 
+[ext_resource type="Theme" uid="uid://cxokgiosp78t8" path="res://src/user_interface/ui.tres" id="1_8o3m4"]
 [ext_resource type="Script" uid="uid://dbwfnl681r7hr" path="res://src/user_interface/pause_menu.gd" id="1_ty413"]
 
 [sub_resource type="Animation" id="Animation_ko6ql"]
@@ -107,6 +108,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_8o3m4")
 script = ExtResource("1_ty413")
 
 [node name="Control" type="Control" parent="." unique_id=56319342]
@@ -132,11 +134,13 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="Control/PanelContainer" unique_id=1465258188]
+custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 128
 text = "Paused !"
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/PanelContainer" unique_id=1420302994]
 layout_mode = 2
