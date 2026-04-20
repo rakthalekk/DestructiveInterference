@@ -302,6 +302,7 @@ def build(
     # prepare the output level_dict
     # TODO: check for any data entry errors:
     # - notes missing a band assignment
+    # - multiple notes for same instrument at same start time
     # - sustain note on one track has another note of the same instrument start during its duration
     # zip all notes together
     all_notes: list[dict] = []
