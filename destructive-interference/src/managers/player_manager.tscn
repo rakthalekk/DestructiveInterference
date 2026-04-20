@@ -25,7 +25,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="InterfereCooldown" type="Timer" parent="." unique_id=1071664501]
-wait_time = 0.001
+wait_time = 0.05
 one_shot = true
 
 [connection signal="timeout" from="DodgeTimer" to="." method="_on_dodge_timer_timeout"]

@@ -136,9 +136,6 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 		$HurtThePlayerBox/CollisionShape2D.position.y -= ($Icon/ColorRect.size.y / 2)
 	
 	my_beat_type = BEAT_TYPE.TAP if is_zero_approx(time_to_hold) else BEAT_TYPE.HOLD 
-	
-	print("hold time: ", time_to_hold)
-	print("my beat type: ", BEAT_TYPE.keys()[my_beat_type])
 
 
 ## kill thyself

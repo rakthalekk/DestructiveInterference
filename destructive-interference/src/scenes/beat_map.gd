@@ -8,7 +8,7 @@ extends Node2D
 
 const LANE_MIN = 0
 const LANE_MAX = 4
-const PLAYER_Y = 960
+const PLAYER_Y = 940
 
 ## beat scene ref
 const BEAT_SCENE = preload("res://src/entities/beat.tscn")

@@ -41,6 +41,12 @@ position = Vector2(0, 25.999998)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_fx8te")
 
+[node name="Icon2" type="Sprite2D" parent="Icon" unique_id=598146867]
+visible = false
+position = Vector2(0, 25.999998)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_fx8te")
+
 [node name="Timer" type="Timer" parent="." unique_id=685520992]
 wait_time = 0.2
 one_shot = true

@@ -65,7 +65,7 @@ width = 6.0
 position = Vector2(960, 540)
 
 [node name="Player2D" parent="." unique_id=78814872 instance=ExtResource("4_43db8")]
-position = Vector2(957, 960)
+position = Vector2(960, 940)
 
 [node name="LaneContainer" type="Node2D" parent="." unique_id=2078129335]
 unique_name_in_owner = true
@@ -106,6 +106,6 @@ shape = SubResource("RectangleShape2D_t435w")
 [node name="Zero" type="Line2D" parent="." unique_id=348577242]
 position = Vector2(0, 980)
 points = PackedVector2Array(816, 0, 1100, 0)
-width = 8.0
+default_color = Color(1, 0.98039216, 0.5529412, 1)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
