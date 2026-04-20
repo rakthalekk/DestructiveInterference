@@ -15,6 +15,7 @@ const BEAT_SCENE = preload("res://src/entities/beat.tscn")
 
 const BEAT_LINE_SCENE = preload("res://src/entities/beat_line.tscn")
 
+const PARTICLE = preload("res://src/entities/wave_particle.tscn")
 
 ##########################
 ##    BEATMAP STATES    ##
@@ -60,6 +61,7 @@ func spawn_beat(note: Note):
 	var beat := BEAT_SCENE.instantiate() as Beat
 	beat.width = beat_width
 	beat.note = note
+	beat.i_makea_the_particle.connect(spawn_beat_particle)
 
 	#var subd = LevelManager.subdivisions_per_beat
 	#var bpm = LevelManager.bpm
@@ -71,6 +73,12 @@ func spawn_beat(note: Note):
 		lanes[i].add_beat(beat, false) # inform these other lanes about the beat so they can render waveform squigglies, but don't add it a 2nd time
 	beat.progress_ratio = 0.0
 	beat.dispatch_beat(note, LevelManager.view_range)
+
+
+func spawn_beat_particle(wave_type: GameManager.WAVE_TYPE):
+	var particle: WaveParticle = PARTICLE.instantiate()
+	particle.wave_type = wave_type
+	$Player2D.add_child(particle)
 
 
 func get_player_position_for_lane(in_lane_idx: int):
