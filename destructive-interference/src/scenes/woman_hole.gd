@@ -10,12 +10,23 @@ extends Control
 
 
 func _ready() -> void:
-	dialogue_anim.animation_started.connect(char_yap_anim.play.bind("yap"))
-	dialogue_anim.animation_started.connect(char_yap_anim.seek.bind(randf_range(0, char_yap_anim.get_animation("yap").length), true))
-	dialogue_anim.animation_finished.connect(char_yap_anim.stop)
+	dialogue_anim.animation_started.connect(_play_yap)
+	
+	if scale.x < 0:
+		$DialogueBox/Speech.scale.x *= -1
 
 
-func display_text(in_text: String):
+func _play_yap(_name):
+	char_yap_anim.play("yap")
+	char_yap_anim.seek(randf_range(0, char_yap_anim.get_animation("yap").length), true)
+
+
+func _cease_yap_scale_anim():
+	char_yap_anim.stop()
+
+
+func yap(in_text: String):
 	$DialogueBox/Speech.text = in_text
 	$DialogueBox/Speech.visible_ratio = 0
+	dialogue_anim.stop()
 	dialogue_anim.play("speak")

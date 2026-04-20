@@ -46,7 +46,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_ikahm"]
 resource_name = "speak"
-length = 9.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -54,7 +54,7 @@ tracks/0/path = NodePath("Speech:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.23333333, 2.5),
+"times": PackedFloat32Array(0.23333333, 1.0666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -68,7 +68,7 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(2, 0, 0, 0),
 "points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
-"times": PackedFloat32Array(0, 0.4, 8.5, 9)
+"times": PackedFloat32Array(0, 0.4, 4.4666667, 4.9666667)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
@@ -79,7 +79,21 @@ tracks/2/loop_wrap = true
 tracks/2/keys = {
 "handle_modes": PackedInt32Array(2, 0, 0, 0),
 "points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
-"times": PackedFloat32Array(0, 0.4, 8.5, 9)
+"times": PackedFloat32Array(0, 0.4, 4.4666667, 4.9666667)
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.0666667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_cease_yap_scale_anim"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_246y5"]
@@ -287,12 +301,13 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 25.70366
-offset_top = -88.54077
-offset_right = 489.42828
-offset_bottom = 175.44336
+offset_left = 43.331146
+offset_top = -126.168335
+offset_right = 507.05576
+offset_bottom = 137.8158
 grow_vertical = 2
 rotation = -0.15967329
+pivot_offset = Vector2(226.3388, 128.97633)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_567w2")
 theme_override_font_sizes/font_size = 64

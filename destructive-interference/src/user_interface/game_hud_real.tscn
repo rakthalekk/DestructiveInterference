@@ -301,6 +301,93 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_twnh5")
 
+[node name="WomanHole2" parent="." unique_id=999594193 instance=ExtResource("3_u8cj3")]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -161.0
+offset_bottom = -161.0
+grow_horizontal = 0
+scale = Vector2(-0.9, 0.9)
+
+[node name="Woman" parent="WomanHole2/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
+texture = ExtResource("6_6gs8f")
+
+[node name="GoalContainers" type="Control" parent="WomanHole2" unique_id=408968488]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -4.0
+offset_top = 110.00001
+offset_right = -4.0
+offset_bottom = 110.00001
+grow_horizontal = 0
+scale = Vector2(-0.9, 0.9)
+mouse_filter = 2
+
+[node name="GoalContainer1" parent="WomanHole2/GoalContainers" unique_id=1349114661 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -375.0
+offset_top = 412.0
+offset_right = -375.0
+offset_bottom = 412.0
+grow_horizontal = 0
+grow_vertical = 1
+
+[node name="GoalContainer2" parent="WomanHole2/GoalContainers" unique_id=933148968 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -178.0
+offset_top = 372.0
+offset_right = -178.0
+offset_bottom = 372.0
+grow_horizontal = 0
+grow_vertical = 1
+
+[node name="GoalContainer3" parent="WomanHole2/GoalContainers" unique_id=391067754 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -377.0
+offset_top = 588.0
+offset_right = -377.0
+offset_bottom = 588.0
+grow_horizontal = 0
+grow_vertical = 1
+
+[node name="GoalContainer4" parent="WomanHole2/GoalContainers" unique_id=140231766 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -174.0
+offset_top = 549.0
+offset_right = -174.0
+offset_bottom = 549.0
+grow_horizontal = 0
+grow_vertical = 1
+
 [node name="WomanHole" parent="." unique_id=1277226185 instance=ExtResource("3_u8cj3")]
 layout_mode = 1
 anchors_preset = 4
@@ -338,7 +425,14 @@ libraries/ = SubResource("AnimationLibrary_eic7m")
 
 [node name="Control" type="Control" parent="WomanHole" unique_id=92291385]
 layout_mode = 1
-anchors_preset = 0
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.705883
+offset_top = 34.11765
+offset_right = 24.705883
+offset_bottom = 34.11765
+grow_vertical = 2
 mouse_filter = 2
 
 [node name="TextureRect4" parent="WomanHole/Control" unique_id=1196031790 instance=ExtResource("9_ikahm")]
@@ -407,93 +501,6 @@ grow_vertical = 1
 texture = ExtResource("10_t7jg5")
 button_text = "L"
 text_val = "L"
-
-[node name="WomanHole2" parent="." unique_id=999594193 instance=ExtResource("3_u8cj3")]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -161.0
-offset_bottom = -161.0
-grow_horizontal = 0
-scale = Vector2(-1, 1)
-
-[node name="Woman" parent="WomanHole2/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
-texture = ExtResource("6_6gs8f")
-
-[node name="GoalContainers" type="Control" parent="WomanHole2" unique_id=408968488]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -4.0
-offset_top = 127.000015
-offset_right = -4.0
-offset_bottom = 127.000015
-grow_horizontal = 0
-scale = Vector2(-0.8, 0.8)
-mouse_filter = 2
-
-[node name="GoalContainer1" parent="WomanHole2/GoalContainers" unique_id=1349114661 instance=ExtResource("9_u8cj3")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-offset_left = -375.0
-offset_top = 412.0
-offset_right = -375.0
-offset_bottom = 412.0
-grow_horizontal = 0
-grow_vertical = 1
-
-[node name="GoalContainer2" parent="WomanHole2/GoalContainers" unique_id=933148968 instance=ExtResource("9_u8cj3")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-offset_left = -178.0
-offset_top = 372.0
-offset_right = -178.0
-offset_bottom = 372.0
-grow_horizontal = 0
-grow_vertical = 1
-
-[node name="GoalContainer3" parent="WomanHole2/GoalContainers" unique_id=391067754 instance=ExtResource("9_u8cj3")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-offset_left = -377.0
-offset_top = 588.0
-offset_right = -377.0
-offset_bottom = 588.0
-grow_horizontal = 0
-grow_vertical = 1
-
-[node name="GoalContainer4" parent="WomanHole2/GoalContainers" unique_id=140231766 instance=ExtResource("9_u8cj3")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-offset_left = -174.0
-offset_top = 549.0
-offset_right = -174.0
-offset_bottom = 549.0
-grow_horizontal = 0
-grow_vertical = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=191680022]
 libraries/ = SubResource("AnimationLibrary_0qc7e")
