@@ -66,13 +66,16 @@ class Note:
     name: Optional[str] = None # instrument name
     start: Optional[float] = None # note start time
     start_beat: Optional[float] = None # start time expressed in beat count. mostly for making beatmaps easier
+    start_tick: Optional[int] = None # midi tick. helps for detecting exactly-equal times
     end: Optional[float] = None
     end_beat: Optional[float] = None
+    end_tick: Optional[float] = None
     pitch: Optional[float] = None
     pitch_str: Optional[str] = None
     band: Optional[Union[float, NoteBand]] = None
     jumpable: bool = False
     # slide: Optional[list[NoteSlide]] = None
+    compounds: Optional[dict[int, list[str]]] = None
 
     def __post_init__(self):
         # sort by start time, then instrument name

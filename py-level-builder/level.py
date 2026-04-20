@@ -73,12 +73,12 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
             # copy over any properties not yet in the tuning note
             if level_note and tuning_note:
                 for key, value in level_note.items():
-                    if key not in tuning_note:
+                    if tuning_note.get(key) is None:
                         tuning_note[key] = value
 
             # check if the notes are equal
-            DEFAULT_EQ_KEYS = ["name", "start_beat", "pitch_str"]
-            ALWAYS_COPIED_FROM_LEVEL_DICT = ["start", "end", "end_beat", "pitch"]
+            DEFAULT_EQ_KEYS = ["name", "start_tick", "pitch_str"]
+            ALWAYS_COPIED_FROM_LEVEL_DICT = ["start", "start_beat", "end", "end_beat", "pitch"]
             eq_keys = list([n for n in DEFAULT_EQ_KEYS if n not in force_update_note_props])
             if level_note and tuning_note and eq_by_keys(level_note, tuning_note, eq_keys):
                 # same note in tuning and level
@@ -93,11 +93,11 @@ def merge_tuning(level_dict: dict, tuning_dict: dict, force_update_note_props: l
                     level_note[prop_name] = tuning_note[prop_name]
 
             elif merging_different_lengths:
-                if level_note is not None and (tuning_note is None or (level_note["start_beat"], level_note["name"]) < (tuning_note["start_beat"], level_note["name"])):
+                if level_note is not None and (tuning_note is None or (level_note["start_tick"], level_note["name"]) < (tuning_note["start_tick"], level_note["name"])):
                     # new note from parsed Midi files. add to tuning
-                    print(f"INFO: copying new Note into tuning file (name={level_note["name"]}, start_beat={level_note["start_beat"]})")
+                    print(f"INFO: copying new Note into tuning file (name={level_note["name"]}, start_tick={level_note["start_tick"]})")
                     tuning_inst_notes.insert(tuning_idx, level_note)
-                elif tuning_note is not None and (level_note is None or (tuning_note["start_beat"], tuning_note["name"]) < (level_note["start_beat"], level_note["name"])):
+                elif tuning_note is not None and (level_note is None or (tuning_note["start_tick"], tuning_note["name"]) < (level_note["start_tick"], level_note["name"])):
                     # tuning file has an extra note that's no longer in the Midi sources. warn, and maybe drop it.
                     raise ValueError(f"TODO handle nicer. Tuning file has an extra note that the Midi source files don't have. "
                                     f"{tuning_idx=}, {level_idx=}\n{tuning_note=}\n {level_note=}\n"
@@ -187,8 +187,10 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
             name=instrument.name,
             start=start_time,
             start_beat=(midi_note.start / midi_obj.ticks_per_beat) + 1,
+            start_tick=midi_note.start,
             end=end_time,
             end_beat=end_beat,
+            end_tick=midi_note.end,
             pitch=ratio_to_A4(midi_note.pitch),
             pitch_str=display_name(midi_note.pitch),
             idx=len(notes),
@@ -227,13 +229,20 @@ def cli():
     "-f",
     "--force-update-note-props",
     "force_update_note_props_raw",
-    default="start_beat",
     help="comma-separated list of Note properties to force-update in the tuning file, even if they differ"
+)
+@click.option(
+    "-d",
+    "--display/--no-display",
+    "display",
+    default=True,
+    help="Whether to display the beatmap in stdout"
 )
 def build(
     level_dir: pathlib.Path,
     min_hold_duration: float,
     force_update_note_props_raw: str,
+    display: bool,
 ):
     """
     Process raw level data in LEVEL_DIR into a JSON beatmap ready for Godot.
@@ -242,7 +251,7 @@ def build(
     with all midi and mp3 files necessary to make a level file.
     """
 
-    force_update_note_props = [s for s in force_update_note_props_raw.split(',') if s] # strip empty
+    force_update_note_props = [s for s in force_update_note_props_raw.split(',') if s] if force_update_note_props_raw else [] # strip empty
 
     # start making model
     level_name = level_dir.stem
@@ -287,12 +296,15 @@ def build(
     print("Tuning file updated!")
 
     # prepare the output level_dict
+    # TODO: check for any data entry errors:
+    # - notes missing a band assignment
+    # - sustain note on one track has another note of the same instrument start during its duration
     # zip all notes together
     all_notes: list[dict] = []
     for inst_note_list in level_dict["notes_by_instrument"].values():
         for note_dict in inst_note_list:
             all_notes.append(note_dict)
-    all_notes = sorted(all_notes, key=lambda note_dict: (note_dict["start_beat"], note_dict["name"]))
+    all_notes = sorted(all_notes, key=lambda note_dict: (note_dict["start_tick"], note_dict["name"]))
     level_dict["notes"] = all_notes
     # convert "beat" units to seconds
     if level_dict["metadata"]["song_end"] is None:
@@ -320,6 +332,35 @@ def build(
     for note in level_dict["notes"]:
         del note["idx"]
         del note["sort_index"]
+    # annotate any compound fields
+    import itertools
+    notes_at_same_time = [g for g in [list(group) for start_tick, group in itertools.groupby(level_dict["notes"], lambda d: (d["start_tick"]))] if len(g) > 1]
+    # print(notes_at_same_time[0])
+    for maybe_compound in notes_at_same_time:
+        # notes occur all at same time, but need to check for overlapping bands..
+        # check for compounds one band at a time
+        for band in range(0, 5):
+            notes_in_this_band: list[dict] = []
+            for note in maybe_compound:
+                if note["band"] is None:
+                    # print(f"WARN: Note {note=} doesn't have a band!")
+                    continue
+                if isinstance(note["band"], int):
+                    if note["band"] == band:
+                        notes_in_this_band.append(note)
+                else:
+                    if note["band"]["start"] <= band or note["band"]["end"] >= band:
+                        notes_in_this_band.append(note)
+            if len(notes_in_this_band) > 1:
+                # we have a compound!!
+                instruments_list = [n["name"] for n in notes_in_this_band]
+                # print(f"compound at start_tick={notes_in_this_band[0]["start_tick"]}, size={len(notes_in_this_band)}, instruments={instruments_list}")
+                for note in notes_in_this_band:
+                    if note.get("compounds") is None:
+                        note["compounds"] = {}
+                    note["compounds"][band] = instruments_list
+
+
 
 
     # make level_dir in output_levels if not yet
@@ -344,10 +385,11 @@ def build(
 
 
     # pretty display the beat map
-    try:
-        display_level(level_dict)
-    except MissingTuningDataError as e:
-        print("WARN: Can't display beat map due to missing fields in tuning file.\n" + str(e))
+    if display:
+        try:
+            display_level(level_dict)
+        except MissingTuningDataError as e:
+            print("WARN: Can't display beat map due to missing fields in tuning file.\n" + str(e))
 
 class MissingTuningDataError(ValueError): ...
 
@@ -371,6 +413,7 @@ def display_level(level_dict: dict) -> None:
         return 2 + (len(instruments) + 3) * band + instruments.index(inst_name)
     for note in level_dict["notes"]:
         # print(f"processing note with start={note['start']}, name={note['name']}, diff={note["start"] - ((len(lines) + 1) * time_per_line)}")
+        # TODO: update to use start_tick instead
         while (note["start"] - ((len(lines) + 1) * time_per_line)) > -0.01:
             # print(f"    starting new line, crossed threshold of {(len(lines) + 1) * time_per_line}")
 
@@ -428,7 +471,7 @@ def write_tuning_file(tuning_dict: dict, tuning_filepath: pathlib.Path) -> None:
     del tuning_dict["metadata"]["song_end"]
     for inst_name, inst_notes in tuning_dict["notes_by_instrument"].items():
         for note in inst_notes:
-            for key in ["sort_index", "pitch", "start", "end"]:
+            for key in ["sort_index", "pitch", "compound"]:
                 if key in note:
                     del note[key]
     with open(tuning_filepath, 'w') as f:

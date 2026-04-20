@@ -36,1296 +36,1956 @@
       {
         "idx": 0,
         "name": "bass",
+        "start": 0.0,
         "start_beat": 1.0,
+        "start_tick": 0,
+        "end": 0.23076899999999997,
         "end_beat": 1.5,
+        "end_tick": 48,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 1,
         "name": "bass",
+        "start": 0.37499962499999995,
         "start_beat": 1.8125,
+        "start_tick": 78,
+        "end": null,
         "end_beat": null,
+        "end_tick": 102,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 2,
         "name": "bass",
+        "start": 0.6923069999999999,
         "start_beat": 2.5,
+        "start_tick": 144,
+        "end": null,
         "end_beat": null,
+        "end_tick": 168,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 3,
         "name": "bass",
+        "start": 0.9230759999999999,
         "start_beat": 3.0,
+        "start_tick": 192,
+        "end": 1.1538449999999998,
         "end_beat": 3.5,
+        "end_tick": 240,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 4,
         "name": "bass",
+        "start": 1.2980756249999998,
         "start_beat": 3.8125,
+        "start_tick": 270,
+        "end": null,
         "end_beat": null,
+        "end_tick": 294,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 5,
         "name": "bass",
+        "start": 1.6153829999999998,
         "start_beat": 4.5,
+        "start_tick": 336,
+        "end": null,
         "end_beat": null,
+        "end_tick": 348,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 6,
         "name": "bass",
+        "start": 1.8461519999999998,
         "start_beat": 5.0,
+        "start_tick": 384,
+        "end": 2.0769209999999996,
         "end_beat": 5.5,
+        "end_tick": 432,
         "pitch_str": "D3",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 7,
         "name": "bass",
+        "start": 2.2211516249999996,
         "start_beat": 5.8125,
+        "start_tick": 462,
+        "end": null,
         "end_beat": null,
+        "end_tick": 474,
         "pitch_str": "D3",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 8,
         "name": "bass",
+        "start": 2.5384589999999996,
         "start_beat": 6.5,
+        "start_tick": 528,
+        "end": 2.8846125,
         "end_beat": 7.25,
+        "end_tick": 600,
         "pitch_str": "A2",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 9,
         "name": "bass",
+        "start": 2.9999969999999996,
         "start_beat": 7.5,
+        "start_tick": 624,
+        "end": null,
         "end_beat": null,
+        "end_tick": 636,
         "pitch_str": "Bb2",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 10,
         "name": "bass",
+        "start": 3.2307659999999996,
         "start_beat": 8.0,
+        "start_tick": 672,
+        "end": null,
         "end_beat": null,
+        "end_tick": 684,
         "pitch_str": "B2",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 11,
         "name": "bass",
+        "start": 3.6923039999999996,
         "start_beat": 9.0,
+        "start_tick": 768,
+        "end": 3.9230729999999996,
         "end_beat": 9.5,
+        "end_tick": 816,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 12,
         "name": "bass",
+        "start": 4.067303624999999,
         "start_beat": 9.8125,
+        "start_tick": 846,
+        "end": null,
         "end_beat": null,
+        "end_tick": 870,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 13,
         "name": "bass",
+        "start": 4.384611,
         "start_beat": 10.5,
+        "start_tick": 912,
+        "end": null,
         "end_beat": null,
+        "end_tick": 936,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 14,
         "name": "bass",
+        "start": 4.615379999999999,
         "start_beat": 11.0,
+        "start_tick": 960,
+        "end": 4.846149,
         "end_beat": 11.5,
+        "end_tick": 1008,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 15,
         "name": "bass",
+        "start": 4.990379624999999,
         "start_beat": 11.8125,
+        "start_tick": 1038,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1062,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 16,
         "name": "bass",
+        "start": 5.307687,
         "start_beat": 12.5,
+        "start_tick": 1104,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1128,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 17,
         "name": "bass",
+        "start": 5.538455999999999,
         "start_beat": 13.0,
+        "start_tick": 1152,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1164,
         "pitch_str": "A3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 18,
         "name": "bass",
+        "start": 5.682686625,
         "start_beat": 13.3125,
+        "start_tick": 1182,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1194,
         "pitch_str": "A3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 19,
         "name": "bass",
+        "start": 5.913455624999999,
         "start_beat": 13.8125,
+        "start_tick": 1230,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1242,
         "pitch_str": "Bb3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 20,
         "name": "bass",
+        "start": 6.144224625,
         "start_beat": 14.3125,
+        "start_tick": 1278,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1290,
         "pitch_str": "Bb3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 21,
         "name": "bass",
+        "start": 6.374993624999999,
         "start_beat": 14.8125,
+        "start_tick": 1326,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1338,
         "pitch_str": "B3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 22,
         "name": "bass",
+        "start": 6.605762625,
         "start_beat": 15.3125,
+        "start_tick": 1374,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1386,
         "pitch_str": "B3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 23,
         "name": "bass",
+        "start": 6.692301,
         "start_beat": 15.5,
+        "start_tick": 1392,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1416,
         "pitch_str": "Db4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 24,
         "name": "bass",
+        "start": 6.923069999999999,
         "start_beat": 16.0,
+        "start_tick": 1440,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1464,
         "pitch_str": "D4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 25,
         "name": "bass",
+        "start": 7.153839,
         "start_beat": 16.5,
+        "start_tick": 1488,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1512,
         "pitch_str": "E4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 26,
         "name": "bass",
+        "start": 7.384607999999999,
         "start_beat": 17.0,
+        "start_tick": 1536,
+        "end": 7.615376999999999,
         "end_beat": 17.5,
+        "end_tick": 1584,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 27,
         "name": "bass",
+        "start": 7.759607624999999,
         "start_beat": 17.8125,
+        "start_tick": 1614,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1626,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 28,
         "name": "bass",
+        "start": 8.076915,
         "start_beat": 18.5,
+        "start_tick": 1680,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1704,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 29,
         "name": "bass",
+        "start": 8.307683999999998,
         "start_beat": 19.0,
+        "start_tick": 1728,
+        "end": 8.538452999999999,
         "end_beat": 19.5,
+        "end_tick": 1776,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 30,
         "name": "bass",
+        "start": 8.682683625,
         "start_beat": 19.8125,
+        "start_tick": 1806,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1830,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 31,
         "name": "bass",
+        "start": 8.999991,
         "start_beat": 20.5,
+        "start_tick": 1872,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1884,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 32,
         "name": "bass",
+        "start": 9.230759999999998,
         "start_beat": 21.0,
+        "start_tick": 1920,
+        "end": 9.461528999999999,
         "end_beat": 21.5,
+        "end_tick": 1968,
         "pitch_str": "D3",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 33,
         "name": "bass",
+        "start": 9.605759625,
         "start_beat": 21.8125,
+        "start_tick": 1998,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2010,
         "pitch_str": "D3",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 34,
         "name": "bass",
+        "start": 9.923067,
         "start_beat": 22.5,
+        "start_tick": 2064,
+        "end": 10.2692205,
         "end_beat": 23.25,
+        "end_tick": 2136,
         "pitch_str": "A2",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 35,
         "name": "bass",
+        "start": 10.384604999999999,
         "start_beat": 23.5,
+        "start_tick": 2160,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2172,
         "pitch_str": "Bb2",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 36,
         "name": "bass",
+        "start": 10.615374,
         "start_beat": 24.0,
+        "start_tick": 2208,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2220,
         "pitch_str": "B2",
         "band": 0,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 37,
         "name": "bass",
+        "start": 11.076911999999998,
         "start_beat": 25.0,
+        "start_tick": 2304,
+        "end": 11.307680999999999,
         "end_beat": 25.5,
+        "end_tick": 2352,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 38,
         "name": "bass",
+        "start": 11.451911625,
         "start_beat": 25.8125,
+        "start_tick": 2382,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2406,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 39,
         "name": "bass",
+        "start": 11.769218999999998,
         "start_beat": 26.5,
+        "start_tick": 2448,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2472,
         "pitch_str": "E3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 40,
         "name": "bass",
+        "start": 11.999987999999998,
         "start_beat": 27.0,
+        "start_tick": 2496,
+        "end": 12.230756999999999,
         "end_beat": 27.5,
+        "end_tick": 2544,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 41,
         "name": "bass",
+        "start": 12.374987625,
         "start_beat": 27.8125,
+        "start_tick": 2574,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2598,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 42,
         "name": "bass",
+        "start": 12.692294999999998,
         "start_beat": 28.5,
+        "start_tick": 2640,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2664,
         "pitch_str": "G3",
         "band": 1,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 43,
         "name": "bass",
+        "start": 12.923063999999998,
         "start_beat": 29.0,
+        "start_tick": 2688,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2712,
         "pitch_str": "A3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 44,
         "name": "bass",
+        "start": 13.298063625,
         "start_beat": 29.8125,
+        "start_tick": 2766,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2790,
         "pitch_str": "Bb3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 45,
         "name": "bass",
+        "start": 13.615370999999998,
         "start_beat": 30.5,
+        "start_tick": 2832,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2856,
         "pitch_str": "B3",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 46,
         "name": "bass",
+        "start": 13.990370624999999,
         "start_beat": 31.3125,
+        "start_tick": 2910,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2934,
         "pitch_str": "D4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 47,
         "name": "bass",
+        "start": 14.307678,
         "start_beat": 32.0,
+        "start_tick": 2976,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3000,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 48,
         "name": "bass",
+        "start": 14.538446999999998,
         "start_beat": 32.5,
+        "start_tick": 3024,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3048,
         "pitch_str": "Gb4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       }
     ],
     "lead": [
       {
         "idx": 0,
         "name": "lead",
+        "start": 0.0,
         "start_beat": 1.0,
+        "start_tick": 0,
+        "end": 0.5769224999999999,
         "end_beat": 2.25,
+        "end_tick": 120,
         "pitch_str": "E5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 1,
         "name": "lead",
+        "start": 0.6923069999999999,
         "start_beat": 2.5,
+        "start_tick": 144,
+        "end": 1.2692294999999998,
         "end_beat": 3.75,
+        "end_tick": 264,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 2,
         "name": "lead",
+        "start": 1.3846139999999998,
         "start_beat": 4.0,
+        "start_tick": 288,
+        "end": 1.7307674999999998,
         "end_beat": 4.75,
+        "end_tick": 360,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 3,
         "name": "lead",
+        "start": 1.8461519999999998,
         "start_beat": 5.0,
+        "start_tick": 384,
+        "end": 2.4230745,
         "end_beat": 6.25,
+        "end_tick": 504,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 4,
         "name": "lead",
+        "start": 2.5384589999999996,
         "start_beat": 6.5,
+        "start_tick": 528,
+        "end": 2.8846125,
         "end_beat": 7.25,
+        "end_tick": 600,
         "pitch_str": "Db5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 5,
         "name": "lead",
+        "start": 2.9999969999999996,
         "start_beat": 7.5,
+        "start_tick": 624,
+        "end": null,
         "end_beat": null,
+        "end_tick": 648,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 6,
         "name": "lead",
+        "start": 3.2307659999999996,
         "start_beat": 8.0,
+        "start_tick": 672,
+        "end": null,
         "end_beat": null,
+        "end_tick": 696,
         "pitch_str": "A4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 7,
         "name": "lead",
+        "start": 3.6923039999999996,
         "start_beat": 9.0,
+        "start_tick": 768,
+        "end": 4.269226499999999,
         "end_beat": 10.25,
+        "end_tick": 888,
         "pitch_str": "E5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 8,
         "name": "lead",
+        "start": 4.384611,
         "start_beat": 10.5,
+        "start_tick": 912,
+        "end": 4.9615335,
         "end_beat": 11.75,
+        "end_tick": 1032,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 9,
         "name": "lead",
+        "start": 5.076917999999999,
         "start_beat": 12.0,
+        "start_tick": 1056,
+        "end": 5.4230715,
         "end_beat": 12.75,
+        "end_tick": 1128,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 10,
         "name": "lead",
+        "start": 5.538455999999999,
         "start_beat": 13.0,
+        "start_tick": 1152,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1176,
         "pitch_str": "Db5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 11,
         "name": "lead",
+        "start": 5.913455624999999,
         "start_beat": 13.8125,
+        "start_tick": 1230,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1254,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 12,
         "name": "lead",
+        "start": 6.230763,
         "start_beat": 14.5,
+        "start_tick": 1296,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1320,
         "pitch_str": "E5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 13,
         "name": "lead",
+        "start": 6.605762625,
         "start_beat": 15.3125,
+        "start_tick": 1374,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1398,
         "pitch_str": "Gb5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 14,
         "name": "lead",
+        "start": 6.923069999999999,
         "start_beat": 16.0,
+        "start_tick": 1440,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1464,
         "pitch_str": "G5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 15,
         "name": "lead",
+        "start": 7.153839,
         "start_beat": 16.5,
+        "start_tick": 1488,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1512,
         "pitch_str": "Gb5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 16,
         "name": "lead",
+        "start": 7.384607999999999,
         "start_beat": 17.0,
+        "start_tick": 1536,
+        "end": 7.961530499999999,
         "end_beat": 18.25,
+        "end_tick": 1656,
         "pitch_str": "E5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 17,
         "name": "lead",
+        "start": 8.076915,
         "start_beat": 18.5,
+        "start_tick": 1680,
+        "end": 8.6538375,
         "end_beat": 19.75,
+        "end_tick": 1800,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 18,
         "name": "lead",
+        "start": 8.769222,
         "start_beat": 20.0,
+        "start_tick": 1824,
+        "end": 9.115375499999999,
         "end_beat": 20.75,
+        "end_tick": 1896,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 19,
         "name": "lead",
+        "start": 9.230759999999998,
         "start_beat": 21.0,
+        "start_tick": 1920,
+        "end": 9.807682499999999,
         "end_beat": 22.25,
+        "end_tick": 2040,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 20,
         "name": "lead",
+        "start": 9.923067,
         "start_beat": 22.5,
+        "start_tick": 2064,
+        "end": 10.2692205,
         "end_beat": 23.25,
+        "end_tick": 2136,
         "pitch_str": "Db5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 21,
         "name": "lead",
+        "start": 10.384604999999999,
         "start_beat": 23.5,
+        "start_tick": 2160,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2184,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 22,
         "name": "lead",
+        "start": 10.615374,
         "start_beat": 24.0,
+        "start_tick": 2208,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2232,
         "pitch_str": "A4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 23,
         "name": "lead",
+        "start": 11.076911999999998,
         "start_beat": 25.0,
+        "start_tick": 2304,
+        "end": 11.653834499999999,
         "end_beat": 26.25,
+        "end_tick": 2424,
         "pitch_str": "E5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 24,
         "name": "lead",
+        "start": 11.769218999999998,
         "start_beat": 26.5,
+        "start_tick": 2448,
+        "end": 12.346141499999998,
         "end_beat": 27.75,
+        "end_tick": 2568,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 25,
         "name": "lead",
+        "start": 12.461526,
         "start_beat": 28.0,
+        "start_tick": 2592,
+        "end": 12.807679499999999,
         "end_beat": 28.75,
+        "end_tick": 2664,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 26,
         "name": "lead",
+        "start": 12.923063999999998,
         "start_beat": 29.0,
+        "start_tick": 2688,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2712,
         "pitch_str": "Db5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 27,
         "name": "lead",
+        "start": 13.298063625,
         "start_beat": 29.8125,
+        "start_tick": 2766,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2790,
         "pitch_str": "D5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 28,
         "name": "lead",
+        "start": 13.615370999999998,
         "start_beat": 30.5,
+        "start_tick": 2832,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2856,
         "pitch_str": "E5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 29,
         "name": "lead",
+        "start": 13.846139999999998,
         "start_beat": 31.0,
+        "start_tick": 2880,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2904,
         "pitch_str": "Gb5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 30,
         "name": "lead",
+        "start": 14.076908999999999,
         "start_beat": 31.5,
+        "start_tick": 2928,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2952,
         "pitch_str": "G5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 31,
         "name": "lead",
+        "start": 14.307678,
         "start_beat": 32.0,
+        "start_tick": 2976,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3000,
         "pitch_str": "A5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 32,
         "name": "lead",
+        "start": 14.538446999999998,
         "start_beat": 32.5,
+        "start_tick": 3024,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3048,
         "pitch_str": "B5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       }
     ],
     "chords": [
       {
         "idx": 0,
         "name": "chords",
+        "start": 0.23076899999999997,
         "start_beat": 1.5,
+        "start_tick": 48,
+        "end": null,
         "end_beat": null,
+        "end_tick": 72,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 1,
         "name": "chords",
+        "start": 0.46153799999999995,
         "start_beat": 2.0,
+        "start_tick": 96,
+        "end": null,
         "end_beat": null,
+        "end_tick": 120,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 2,
         "name": "chords",
+        "start": 0.836537625,
         "start_beat": 2.8125,
+        "start_tick": 174,
+        "end": null,
         "end_beat": null,
+        "end_tick": 198,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 3,
         "name": "chords",
+        "start": 1.0673066249999998,
         "start_beat": 3.3125,
+        "start_tick": 222,
+        "end": null,
         "end_beat": null,
+        "end_tick": 246,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 4,
         "name": "chords",
+        "start": 1.3846139999999998,
         "start_beat": 4.0,
+        "start_tick": 288,
+        "end": null,
         "end_beat": null,
+        "end_tick": 312,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 5,
         "name": "chords",
+        "start": 2.0769209999999996,
         "start_beat": 5.5,
+        "start_tick": 432,
+        "end": null,
         "end_beat": null,
+        "end_tick": 456,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 6,
         "name": "chords",
+        "start": 2.3076899999999996,
         "start_beat": 6.0,
+        "start_tick": 480,
+        "end": null,
         "end_beat": null,
+        "end_tick": 504,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 7,
         "name": "chords",
+        "start": 2.6826896249999996,
         "start_beat": 6.8125,
+        "start_tick": 558,
+        "end": null,
         "end_beat": null,
+        "end_tick": 582,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 8,
         "name": "chords",
+        "start": 2.9999969999999996,
         "start_beat": 7.5,
+        "start_tick": 624,
+        "end": null,
         "end_beat": null,
+        "end_tick": 648,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 9,
         "name": "chords",
+        "start": 3.2307659999999996,
         "start_beat": 8.0,
+        "start_tick": 672,
+        "end": null,
         "end_beat": null,
+        "end_tick": 696,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 10,
         "name": "chords",
+        "start": 3.3749966249999996,
         "start_beat": 8.3125,
+        "start_tick": 702,
+        "end": null,
         "end_beat": null,
+        "end_tick": 726,
         "pitch_str": "Db5",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 11,
         "name": "chords",
+        "start": 3.4615349999999996,
         "start_beat": 8.5,
+        "start_tick": 720,
+        "end": null,
         "end_beat": null,
+        "end_tick": 744,
         "pitch_str": "A4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 12,
         "name": "chords",
+        "start": 3.6057656249999996,
         "start_beat": 8.8125,
+        "start_tick": 750,
+        "end": null,
         "end_beat": null,
+        "end_tick": 774,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 13,
         "name": "chords",
+        "start": 3.9230729999999996,
         "start_beat": 9.5,
+        "start_tick": 816,
+        "end": null,
         "end_beat": null,
+        "end_tick": 840,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 14,
         "name": "chords",
+        "start": 4.153841999999999,
         "start_beat": 10.0,
+        "start_tick": 864,
+        "end": null,
         "end_beat": null,
+        "end_tick": 888,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 15,
         "name": "chords",
+        "start": 4.528841624999999,
         "start_beat": 10.8125,
+        "start_tick": 942,
+        "end": null,
         "end_beat": null,
+        "end_tick": 966,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 16,
         "name": "chords",
+        "start": 4.759610625,
         "start_beat": 11.3125,
+        "start_tick": 990,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1014,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 17,
         "name": "chords",
+        "start": 5.076917999999999,
         "start_beat": 12.0,
+        "start_tick": 1056,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1080,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 18,
         "name": "chords",
+        "start": 5.682686625,
         "start_beat": 13.3125,
+        "start_tick": 1182,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1206,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 19,
         "name": "chords",
+        "start": 5.999993999999999,
         "start_beat": 14.0,
+        "start_tick": 1248,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1272,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 20,
         "name": "chords",
+        "start": 6.461531999999999,
         "start_beat": 15.0,
+        "start_tick": 1344,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1368,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 21,
         "name": "chords",
+        "start": 6.692301,
         "start_beat": 15.5,
+        "start_tick": 1392,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1416,
         "pitch_str": "Gb5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 22,
         "name": "chords",
+        "start": 6.923069999999999,
         "start_beat": 16.0,
+        "start_tick": 1440,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1464,
         "pitch_str": "G5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 23,
         "name": "chords",
+        "start": 7.153839,
         "start_beat": 16.5,
+        "start_tick": 1488,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1512,
         "pitch_str": "Gb5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 24,
         "name": "chords",
+        "start": 7.615376999999999,
         "start_beat": 17.5,
+        "start_tick": 1584,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1608,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 25,
         "name": "chords",
+        "start": 7.846145999999999,
         "start_beat": 18.0,
+        "start_tick": 1632,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1656,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 26,
         "name": "chords",
+        "start": 8.221145624999998,
         "start_beat": 18.8125,
+        "start_tick": 1710,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1734,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 27,
         "name": "chords",
+        "start": 8.451914624999999,
         "start_beat": 19.3125,
+        "start_tick": 1758,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1782,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 28,
         "name": "chords",
+        "start": 8.769222,
         "start_beat": 20.0,
+        "start_tick": 1824,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1848,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 29,
         "name": "chords",
+        "start": 9.461528999999999,
         "start_beat": 21.5,
+        "start_tick": 1968,
+        "end": null,
         "end_beat": null,
+        "end_tick": 1992,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 30,
         "name": "chords",
+        "start": 9.692298,
         "start_beat": 22.0,
+        "start_tick": 2016,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2040,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 31,
         "name": "chords",
+        "start": 10.067297624999998,
         "start_beat": 22.8125,
+        "start_tick": 2094,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2118,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 32,
         "name": "chords",
+        "start": 10.384604999999999,
         "start_beat": 23.5,
+        "start_tick": 2160,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2184,
         "pitch_str": "Db5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 33,
         "name": "chords",
+        "start": 10.615374,
         "start_beat": 24.0,
+        "start_tick": 2208,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2232,
         "pitch_str": "B4",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 34,
         "name": "chords",
+        "start": 10.759604624999998,
         "start_beat": 24.3125,
+        "start_tick": 2238,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2262,
         "pitch_str": "Db5",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 35,
         "name": "chords",
+        "start": 10.846143,
         "start_beat": 24.5,
+        "start_tick": 2256,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2280,
         "pitch_str": "A4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 36,
         "name": "chords",
+        "start": 10.990373624999998,
         "start_beat": 24.8125,
+        "start_tick": 2286,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2310,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 37,
         "name": "chords",
+        "start": 11.307680999999999,
         "start_beat": 25.5,
+        "start_tick": 2352,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2376,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 38,
         "name": "chords",
+        "start": 11.53845,
         "start_beat": 26.0,
+        "start_tick": 2400,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2424,
         "pitch_str": "E5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 39,
         "name": "chords",
+        "start": 11.913449624999998,
         "start_beat": 26.8125,
+        "start_tick": 2478,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2502,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 40,
         "name": "chords",
+        "start": 12.144218624999999,
         "start_beat": 27.3125,
+        "start_tick": 2526,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2550,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 41,
         "name": "chords",
+        "start": 12.461526,
         "start_beat": 28.0,
+        "start_tick": 2592,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2616,
         "pitch_str": "D5",
         "band": {
           "start": 2,
           "end": 3
         },
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 42,
         "name": "chords",
+        "start": 12.923063999999998,
         "start_beat": 29.0,
+        "start_tick": 2688,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2712,
         "pitch_str": "G5",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 43,
         "name": "chords",
+        "start": 13.298063625,
         "start_beat": 29.8125,
+        "start_tick": 2766,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2790,
         "pitch_str": "A5",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 44,
         "name": "chords",
+        "start": 13.615370999999998,
         "start_beat": 30.5,
+        "start_tick": 2832,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2856,
         "pitch_str": "B5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 45,
         "name": "chords",
+        "start": 13.990370624999999,
         "start_beat": 31.3125,
+        "start_tick": 2910,
+        "end": null,
         "end_beat": null,
+        "end_tick": 2934,
         "pitch_str": "Db6",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 46,
         "name": "chords",
+        "start": 14.307678,
         "start_beat": 32.0,
+        "start_tick": 2976,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3000,
         "pitch_str": "B5",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 47,
         "name": "chords",
+        "start": 14.451908624999998,
         "start_beat": 32.3125,
+        "start_tick": 3006,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3030,
         "pitch_str": "Db6",
         "band": 4,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 48,
         "name": "chords",
+        "start": 14.538446999999998,
         "start_beat": 32.5,
+        "start_tick": 3024,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3048,
         "pitch_str": "A5",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       },
       {
         "idx": 49,
         "name": "chords",
+        "start": 14.682677624999998,
         "start_beat": 32.8125,
+        "start_tick": 3054,
+        "end": null,
         "end_beat": null,
+        "end_tick": 3071,
         "pitch_str": "G5",
         "band": 3,
-        "jumpable": false
+        "jumpable": false,
+        "compounds": null
       }
     ]
   }
