@@ -1,97 +1,156 @@
 [gd_scene format=3 uid="uid://ccl8t8e1oymqm"]
 
-[ext_resource type="Theme" uid="uid://cxokgiosp78t8" path="res://src/user_interface/ui.tres" id="1_8o3m4"]
+[ext_resource type="Theme" uid="uid://dxh2rd0qsm7bt" path="res://src/user_interface/ui.tres" id="1_8o3m4"]
 [ext_resource type="Script" uid="uid://dbwfnl681r7hr" path="res://src/user_interface/pause_menu.gd" id="1_ty413"]
+[ext_resource type="PackedScene" uid="uid://dbbcuuixvmmje" path="res://src/user_interface/game_button.tscn" id="3_hnsr2"]
+[ext_resource type="PackedScene" uid="uid://dsbctq4yr63r0" path="res://src/user_interface/controls_icon.tscn" id="4_u2idt"]
+[ext_resource type="Texture2D" uid="uid://cn6t1tlif7glj" path="res://assets/triangle.png" id="5_pd4th"]
+[ext_resource type="Texture2D" uid="uid://c07lj6uyewc8j" path="res://assets/square.png" id="6_fubts"]
+[ext_resource type="Texture2D" uid="uid://ccq4xxh57xssk" path="res://assets/sine.png" id="7_73jn1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2idt"]
+bg_color = Color(1, 0.95686275, 0.42745098, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hnsr2"]
 
 [sub_resource type="Animation" id="Animation_ko6ql"]
 length = 0.001
-tracks/0/type = "bezier"
+tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Control:position:x")
+tracks/0/path = NodePath("Control:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
 }
-tracks/1/type = "bezier"
+tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Control:position:y")
+tracks/1/path = NodePath("Control:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ty413"]
 resource_name = "intro"
 length = 0.5
-tracks/0/type = "bezier"
+tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Control:position:x")
+tracks/0/path = NodePath("Control:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(2, 0),
-"points": PackedFloat32Array(0, 0, 0, 0.083333336, 0, 0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.4)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.7, 0.7), Vector2(1, 1)]
 }
-tracks/1/type = "bezier"
+tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Control:position:y")
+tracks/1/path = NodePath("Control:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(2, 0),
-"points": PackedFloat32Array(-1078, 0, 0, 0.23333333, 766.1937, 0, -0.16666666, 138.30675, 0.25, 0),
-"times": PackedFloat32Array(0, 0.4)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_8o3m4"]
 resource_name = "outro"
 length = 0.5
-tracks/0/type = "bezier"
+tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Control:position:x")
+tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0),
-"times": PackedFloat32Array(0, 0.4)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Control:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.16666666, 138.30675, 0.23333333, 279.17664, -1078, 0, 0, 0.23333333, 766.1937),
-"times": PackedFloat32Array(0, 0.4)
-}
-tracks/2/type = "method"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.033333335),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0.033333335, 0.5),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"emit_transition_complete"
+}, {
+"args": [],
+"method": &"queue_free"
 }]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.3, 1.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8o3m4"]
@@ -111,6 +170,15 @@ grow_vertical = 2
 theme = ExtResource("1_8o3m4")
 script = ExtResource("1_ty413")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1209255903]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.26666668, 0.6627451, 0.8627451, 0.5529412)
+
 [node name="Control" type="Control" parent="." unique_id=56319342]
 layout_mode = 1
 anchors_preset = 15
@@ -118,6 +186,22 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1125174131]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -370.5
+offset_top = -473.0
+offset_right = 370.5
+offset_bottom = 473.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u2idt")
 
 [node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=2133642411]
 layout_mode = 1
@@ -126,45 +210,164 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -402.5
-offset_top = -402.5
-offset_right = 402.5
-offset_bottom = 402.5
+offset_left = -308.25
+offset_top = -427.0
+offset_right = 308.25
+offset_bottom = 553.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hnsr2")
 
 [node name="Label" type="Label" parent="Control/PanelContainer" unique_id=1465258188]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_font_sizes/font_size = 128
-text = "Paused !"
+theme_override_colors/font_color = Color(0.24313726, 0.9843137, 0.6392157, 1)
+theme_override_constants/outline_size = 64
+theme_override_font_sizes/font_size = 256
+text = "Paused"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/PanelContainer" unique_id=1420302994]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_constants/separation = 32
+size_flags_vertical = 8
+theme_override_constants/separation = -180
+alignment = 1
 
-[node name="Resume" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=477830486]
+[node name="Resume" parent="Control/PanelContainer/VBoxContainer" unique_id=2040855931 instance=ExtResource("3_hnsr2")]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Resume !"
+button_text = "Resume"
+text_val = "Resume"
 
-[node name="LevelSelect" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=255699588]
+[node name="LevelSelect" parent="Control/PanelContainer/VBoxContainer" unique_id=1005213060 instance=ExtResource("3_hnsr2")]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Level Select !"
+button_text = "Level Select"
+text_val = "Level Select"
 
-[node name="MainMenu" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=775467035]
+[node name="MainMenu" parent="Control/PanelContainer/VBoxContainer" unique_id=1152058139 instance=ExtResource("3_hnsr2")]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 64
-text = "Main Menu !"
+button_text = "Main Menu"
+text_val = "Main Menu"
+
+[node name="CandyJar" type="Control" parent="Control" unique_id=610780261]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" parent="Control/CandyJar" unique_id=835360152 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 502.0
+offset_top = 34.0
+offset_right = 630.0
+offset_bottom = 156.0
+
+[node name="TextureRect18" parent="Control/CandyJar" unique_id=1811641632 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -912.0
+offset_top = -232.0
+offset_right = -784.0
+offset_bottom = -110.0
+
+[node name="TextureRect3" parent="Control/CandyJar" unique_id=1720738126 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -640.0
+offset_top = -163.0
+offset_right = -512.0
+offset_bottom = -41.0
+texture = ExtResource("5_pd4th")
+
+[node name="TextureRect4" parent="Control/CandyJar" unique_id=820840396 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 724.0
+offset_top = 211.0
+offset_right = 852.0
+offset_bottom = 333.0
+texture = ExtResource("5_pd4th")
+
+[node name="TextureRect16" parent="Control/CandyJar" unique_id=20827617 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 461.0
+offset_top = -266.0
+offset_right = 589.0
+offset_bottom = -144.0
+texture = ExtResource("5_pd4th")
+
+[node name="TextureRect13" parent="Control/CandyJar" unique_id=825481678 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -869.0
+offset_top = 321.0
+offset_right = -741.0
+offset_bottom = 443.0
+texture = ExtResource("5_pd4th")
+
+[node name="TextureRect7" parent="Control/CandyJar" unique_id=16556508 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 659.0
+offset_top = -63.0
+offset_right = 787.0
+offset_bottom = 59.0
+texture = ExtResource("6_fubts")
+
+[node name="TextureRect8" parent="Control/CandyJar" unique_id=387108591 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -753.0
+offset_top = 69.0
+offset_right = -625.0
+offset_bottom = 191.0
+texture = ExtResource("6_fubts")
+
+[node name="TextureRect17" parent="Control/CandyJar" unique_id=1848491770 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 555.0
+offset_top = -421.0
+offset_right = 683.0
+offset_bottom = -299.0
+texture = ExtResource("6_fubts")
+
+[node name="TextureRect10" parent="Control/CandyJar" unique_id=1980727626 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 396.0
+offset_top = 294.0
+offset_right = 524.0
+offset_bottom = 416.0
+texture = ExtResource("6_fubts")
+
+[node name="TextureRect11" parent="Control/CandyJar" unique_id=147173502 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -584.0
+offset_top = -426.0
+offset_right = -456.0
+offset_bottom = -304.0
+texture = ExtResource("6_fubts")
+
+[node name="TextureRect5" parent="Control/CandyJar" unique_id=724292857 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = 763.0
+offset_top = -273.0
+offset_right = 891.0
+offset_bottom = -151.0
+texture = ExtResource("7_73jn1")
+
+[node name="TextureRect6" parent="Control/CandyJar" unique_id=344215293 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -513.0
+offset_top = 281.0
+offset_right = -385.0
+offset_bottom = 403.0
+texture = ExtResource("7_73jn1")
+
+[node name="TextureRect9" parent="Control/CandyJar" unique_id=1931209759 instance=ExtResource("4_u2idt")]
+layout_mode = 1
+offset_left = -856.0
+offset_top = -469.0
+offset_right = -728.0
+offset_bottom = -347.0
+texture = ExtResource("7_73jn1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1860044134]
 libraries/ = SubResource("AnimationLibrary_8o3m4")
