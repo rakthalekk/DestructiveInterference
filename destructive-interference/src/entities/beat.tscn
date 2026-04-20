@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c3rbjncgal3gq" path="res://src/entities/beat.gd" id="1_xrhn5"]
 [ext_resource type="Texture2D" uid="uid://cn6t1tlif7glj" path="res://assets/triangle.png" id="2_xrhn5"]
+[ext_resource type="PackedScene" uid="uid://d0itj6xae4lxx" path="res://src/entities/noise_texture.tscn" id="3_4troy"]
+[ext_resource type="Texture2D" uid="uid://d0vmvjyg0gdiu" path="res://assets/noise_1.png" id="5_ltdcr"]
 
 [sub_resource type="Gradient" id="Gradient_3r3dn"]
 interpolation_mode = 1
@@ -183,6 +185,62 @@ texture = ExtResource("2_xrhn5")
 position = Vector2(9.999999, 35)
 scale = Vector2(0.015, 0.015)
 texture = ExtResource("2_xrhn5")
+
+[node name="NoiseContainer" type="VBoxContainer" parent="Icon" unique_id=1715242641]
+offset_left = -30.0
+offset_top = -8952.0
+offset_right = 30.0
+offset_bottom = 48.0
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="NoiseTexture" parent="Icon/NoiseContainer" unique_id=2114646847 instance=ExtResource("3_4troy")]
+layout_mode = 2
+
+[node name="NoiseTexture2" parent="Icon/NoiseContainer" unique_id=1185142449 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture3" parent="Icon/NoiseContainer" unique_id=1939775512 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+texture = ExtResource("5_ltdcr")
+
+[node name="NoiseTexture4" parent="Icon/NoiseContainer" unique_id=947619647 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture5" parent="Icon/NoiseContainer" unique_id=1176431467 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture6" parent="Icon/NoiseContainer" unique_id=1115342675 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture7" parent="Icon/NoiseContainer" unique_id=1139481452 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture8" parent="Icon/NoiseContainer" unique_id=795892588 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture9" parent="Icon/NoiseContainer" unique_id=1466146788 instance=ExtResource("3_4troy")]
+visible = false
+custom_minimum_size = Vector2(40, 90)
+layout_mode = 2
+
+[node name="NoiseTexture10" parent="Icon/NoiseContainer" unique_id=5724269 instance=ExtResource("3_4troy")]
+visible = false
+layout_mode = 2
 
 [node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]
 collision_layer = 2
