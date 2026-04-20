@@ -6,7 +6,7 @@ signal game_over(is_win: bool)
 signal create_subdivision_line(width: float)
 
 ## y position of "current_time" in the song
-const SCREEN_HEIGHT = 980 - 38
+const SCREEN_HEIGHT = 980
 
 var current_level_json_file: String
 

@@ -97,7 +97,7 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	icon.frame = int(wave_type)
 	$Icon/Bkgd.modulate = wave_colors[wave_type]
 	$Icon/ColorRect.color = wave_colors[wave_type]
-	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
+	speed = (LevelManager.SCREEN_HEIGHT - 38) / in_lookahead_time_seconds
 	
 	hold_time = 0.0
 	time_to_hold = note.end_time - note.start_time

@@ -12,7 +12,7 @@ extends Node3D
 
 
 func _ready() -> void:
-	LevelManager.warmup_finished.connect(hide_start_text)
+	#LevelManager.warmup_finished.connect(hide_start_text)
 	LevelManager.send_note.connect(_create_beat)
 	GameManager.transitioned_game_state.connect(_on_game_state_transition)
 	
@@ -23,9 +23,9 @@ func _ready() -> void:
 	camera_blocker.modulate = ProjectSettings.get_setting("rendering/environment/defaults/default_clear_color", Color.WHITE)
 
 
-func hide_start_text():
-	if GameManager.current_hud is GameHUD:
-		GameManager.current_hud.start_text.hide()
+#func hide_start_text():
+	#if GameManager.current_hud is GameHUD:
+		#GameManager.current_hud.start_text.hide()
 
 
 func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):

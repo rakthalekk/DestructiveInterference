@@ -23,6 +23,15 @@ const WAVE_TYPE_TO_STRING: Dictionary[WAVE_TYPE, String] = {
 }
 
 
+var wave_colors: Dictionary[WAVE_TYPE, Color] = {
+	WAVE_TYPE.TRIANGLE: Color("e04e4e"),
+	WAVE_TYPE.SQUARE: Color("40ba22"),
+	WAVE_TYPE.SAW: Color("ba228c"),
+	WAVE_TYPE.SINE: Color("2250ba"),
+	WAVE_TYPE.NOISE: Color("ffffff")
+}
+
+
 const STRING_TO_WAVE_TYPE: Dictionary[String, WAVE_TYPE] = {
 	"none": WAVE_TYPE.NONE,
 	"triangle": WAVE_TYPE.TRIANGLE,
@@ -57,7 +66,7 @@ var GAME_STATE_SCENES: Dictionary[GAME_STATE, PackedScene] = {
 	GAME_STATE.MAIN_MENU: preload("res://src/user_interface/main_menu.tscn"),
 	GAME_STATE.LEVEL_SELECT: preload("res://src/user_interface/level_select.tscn"),
 	GAME_STATE.PAUSED: preload("res://src/user_interface/pause_menu.tscn"),
-	GAME_STATE.IN_GAME: preload("res://src/user_interface/game_hud.tscn"),
+	GAME_STATE.IN_GAME: preload("res://src/user_interface/game_hud_real.tscn"),
 	GAME_STATE.GAME_OVER: preload("res://src/user_interface/game_over.tscn"),
 }
 
@@ -97,6 +106,9 @@ func transition_to(to_game_state: GAME_STATE):
 	
 	if [GAME_STATE.MAIN_MENU, GAME_STATE.LEVEL_SELECT].has(to_game_state):
 		AudioManager.switch_to_menu_song()
+	
+	if current_hud is GameHUD:
+		current_hud.setup_hud()
 
 
 func start_level_sequence(in_level_file: String):
