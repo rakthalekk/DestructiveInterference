@@ -123,6 +123,10 @@ func load_data_from_json(level_json: String):
 			note.end_time = data.end
 		else:
 			note.end_time = note.start_time
+		
+		if data.compounds:
+			for lane in data.compounds.keys():
+				note.compounds[int(lane)] = data.compounds[lane]
 
 		if notes.size() <= 0:
 			note.is_first = true

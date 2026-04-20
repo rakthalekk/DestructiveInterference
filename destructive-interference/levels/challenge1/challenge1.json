@@ -1,4295 +1,4295 @@
 {
   "metadata": {
-    "instruments": [
-      {
-        "name": "bass",
-        "type": "saw",
-        "color": "#abffff",
-        "goal": 30
-      },
-      {
-        "name": "lead",
-        "type": "sine",
-        "color": "#fff7a1",
-        "goal": 20
-      },
-      {
-        "name": "chords",
-        "type": "square",
-        "color": "#70faba",
-        "goal": 30
-      }
-    ],
-    "title": "1",
-    "bpm": 130,
-    "beats_per_measure": 4,
-    "subdivisions_per_beat": 6,
-    "view_range": 1.8461538461538463,
-    "view_range_beats": 4,
-    "warmup_time": 3.0,
-    "song_end": 14.76923076923077,
-    "song_end_beat": 33
+	"instruments": [
+	  {
+		"name": "bass",
+		"type": "saw",
+		"color": "#abffff",
+		"goal": 30
+	  },
+	  {
+		"name": "lead",
+		"type": "sine",
+		"color": "#fff7a1",
+		"goal": 20
+	  },
+	  {
+		"name": "chords",
+		"type": "square",
+		"color": "#70faba",
+		"goal": 30
+	  }
+	],
+	"title": "1",
+	"bpm": 130,
+	"beats_per_measure": 4,
+	"subdivisions_per_beat": 6,
+	"view_range": 1.8461538461538463,
+	"view_range_beats": 4,
+	"warmup_time": 3.0,
+	"song_end": 14.76923076923077,
+	"song_end_beat": 33
   },
   "notes": [
-    {
-      "name": "bass",
-      "start": 0.0,
-      "start_beat": 1.0,
-      "start_tick": 0,
-      "end": 0.23076899999999997,
-      "end_beat": 1.5,
-      "end_tick": 48,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 0.0,
-      "start_beat": 1.0,
-      "start_tick": 0,
-      "end": 0.5769224999999999,
-      "end_beat": 2.25,
-      "end_tick": 120,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 0.23076899999999997,
-      "start_beat": 1.5,
-      "start_tick": 48,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 72,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 0.37499962499999995,
-      "start_beat": 1.8125,
-      "start_tick": 78,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 102,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 0.46153799999999995,
-      "start_beat": 2.0,
-      "start_tick": 96,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 120,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 0.6923069999999999,
-      "start_beat": 2.5,
-      "start_tick": 144,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 168,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 0.6923069999999999,
-      "start_beat": 2.5,
-      "start_tick": 144,
-      "end": 1.2692294999999998,
-      "end_beat": 3.75,
-      "end_tick": 264,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 0.836537625,
-      "start_beat": 2.8125,
-      "start_tick": 174,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 198,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 0.9230759999999999,
-      "start_beat": 3.0,
-      "start_tick": 192,
-      "end": 1.1538449999999998,
-      "end_beat": 3.5,
-      "end_tick": 240,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 1.0673066249999998,
-      "start_beat": 3.3125,
-      "start_tick": 222,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 246,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 1.2980756249999998,
-      "start_beat": 3.8125,
-      "start_tick": 270,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 294,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 1.3846139999999998,
-      "start_beat": 4.0,
-      "start_tick": 288,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 312,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+	{
+	  "name": "bass",
+	  "start": 0.0,
+	  "start_beat": 1.0,
+	  "start_tick": 0,
+	  "end": 0.23076899999999997,
+	  "end_beat": 1.5,
+	  "end_tick": 48,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 0.0,
+	  "start_beat": 1.0,
+	  "start_tick": 0,
+	  "end": 0.5769224999999999,
+	  "end_beat": 2.25,
+	  "end_tick": 120,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 0.23076899999999997,
+	  "start_beat": 1.5,
+	  "start_tick": 48,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 72,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 0.37499962499999995,
+	  "start_beat": 1.8125,
+	  "start_tick": 78,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 102,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 0.46153799999999995,
+	  "start_beat": 2.0,
+	  "start_tick": 96,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 120,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 0.6923069999999999,
+	  "start_beat": 2.5,
+	  "start_tick": 144,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 168,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 0.6923069999999999,
+	  "start_beat": 2.5,
+	  "start_tick": 144,
+	  "end": 1.2692294999999998,
+	  "end_beat": 3.75,
+	  "end_tick": 264,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 0.836537625,
+	  "start_beat": 2.8125,
+	  "start_tick": 174,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 198,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 0.9230759999999999,
+	  "start_beat": 3.0,
+	  "start_tick": 192,
+	  "end": 1.1538449999999998,
+	  "end_beat": 3.5,
+	  "end_tick": 240,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 1.0673066249999998,
+	  "start_beat": 3.3125,
+	  "start_tick": 222,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 246,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 1.2980756249999998,
+	  "start_beat": 3.8125,
+	  "start_tick": 270,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 294,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 1.3846139999999998,
+	  "start_beat": 4.0,
+	  "start_tick": 288,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 312,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 1.3846139999999998,
-      "start_beat": 4.0,
-      "start_tick": 288,
-      "end": 1.7307674999999998,
-      "end_beat": 4.75,
-      "end_tick": 360,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 1.3846139999999998,
+	  "start_beat": 4.0,
+	  "start_tick": 288,
+	  "end": 1.7307674999999998,
+	  "end_beat": 4.75,
+	  "end_tick": 360,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 1.6153829999999998,
-      "start_beat": 4.5,
-      "start_tick": 336,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 348,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 1.8461519999999998,
-      "start_beat": 5.0,
-      "start_tick": 384,
-      "end": 2.0769209999999996,
-      "end_beat": 5.5,
-      "end_tick": 432,
-      "pitch": 0.3337099635425083,
-      "pitch_str": "D3",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 1.8461519999999998,
-      "start_beat": 5.0,
-      "start_tick": 384,
-      "end": 2.4230745,
-      "end_beat": 6.25,
-      "end_tick": 504,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 2.0769209999999996,
-      "start_beat": 5.5,
-      "start_tick": 432,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 456,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 2.2211516249999996,
-      "start_beat": 5.8125,
-      "start_tick": 462,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 474,
-      "pitch": 0.3337099635425083,
-      "pitch_str": "D3",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 2.3076899999999996,
-      "start_beat": 6.0,
-      "start_tick": 480,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 504,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 2.5384589999999996,
-      "start_beat": 6.5,
-      "start_tick": 528,
-      "end": 2.8846125,
-      "end_beat": 7.25,
-      "end_tick": 600,
-      "pitch": 0.24999999999999975,
-      "pitch_str": "A2",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 2.5384589999999996,
-      "start_beat": 6.5,
-      "start_tick": 528,
-      "end": 2.8846125,
-      "end_beat": 7.25,
-      "end_tick": 600,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 2.6826896249999996,
-      "start_beat": 6.8125,
-      "start_tick": 558,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 582,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 2.9999969999999996,
-      "start_beat": 7.5,
-      "start_tick": 624,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 636,
-      "pitch": 0.26486577358982355,
-      "pitch_str": "Bb2",
-      "band": 0,
-      "jumpable": false,
-      "compounds": {
-        "0": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 1.6153829999999998,
+	  "start_beat": 4.5,
+	  "start_tick": 336,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 348,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 1.8461519999999998,
+	  "start_beat": 5.0,
+	  "start_tick": 384,
+	  "end": 2.0769209999999996,
+	  "end_beat": 5.5,
+	  "end_tick": 432,
+	  "pitch": 0.3337099635425083,
+	  "pitch_str": "D3",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 1.8461519999999998,
+	  "start_beat": 5.0,
+	  "start_tick": 384,
+	  "end": 2.4230745,
+	  "end_beat": 6.25,
+	  "end_tick": 504,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 2.0769209999999996,
+	  "start_beat": 5.5,
+	  "start_tick": 432,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 456,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 2.2211516249999996,
+	  "start_beat": 5.8125,
+	  "start_tick": 462,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 474,
+	  "pitch": 0.3337099635425083,
+	  "pitch_str": "D3",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 2.3076899999999996,
+	  "start_beat": 6.0,
+	  "start_tick": 480,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 504,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 2.5384589999999996,
+	  "start_beat": 6.5,
+	  "start_tick": 528,
+	  "end": 2.8846125,
+	  "end_beat": 7.25,
+	  "end_tick": 600,
+	  "pitch": 0.24999999999999975,
+	  "pitch_str": "A2",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 2.5384589999999996,
+	  "start_beat": 6.5,
+	  "start_tick": 528,
+	  "end": 2.8846125,
+	  "end_beat": 7.25,
+	  "end_tick": 600,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 2.6826896249999996,
+	  "start_beat": 6.8125,
+	  "start_tick": 558,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 582,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 2.9999969999999996,
+	  "start_beat": 7.5,
+	  "start_tick": 624,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 636,
+	  "pitch": 0.26486577358982355,
+	  "pitch_str": "Bb2",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": {
+		"0": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 2.9999969999999996,
-      "start_beat": 7.5,
-      "start_tick": 624,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 648,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "0": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 2.9999969999999996,
+	  "start_beat": 7.5,
+	  "start_tick": 624,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 648,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"0": [
+		  "bass",
           "chords"
-        ],
-        "3": [
-          "chords",
+		],
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 2.9999969999999996,
-      "start_beat": 7.5,
-      "start_tick": 624,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 648,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 2.9999969999999996,
+	  "start_beat": 7.5,
+	  "start_tick": 624,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 648,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 3.2307659999999996,
-      "start_beat": 8.0,
-      "start_tick": 672,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 684,
-      "pitch": 0.280615512077343,
-      "pitch_str": "B2",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 3.2307659999999996,
-      "start_beat": 8.0,
-      "start_tick": 672,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 696,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 3.2307659999999996,
+	  "start_beat": 8.0,
+	  "start_tick": 672,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 684,
+	  "pitch": 0.280615512077343,
+	  "pitch_str": "B2",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 3.2307659999999996,
+	  "start_beat": 8.0,
+	  "start_tick": 672,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 696,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 3.2307659999999996,
-      "start_beat": 8.0,
-      "start_tick": 672,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 696,
-      "pitch": 1.0,
-      "pitch_str": "A4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 3.2307659999999996,
+	  "start_beat": 8.0,
+	  "start_tick": 672,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 696,
+	  "pitch": 1.0,
+	  "pitch_str": "A4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 3.3749966249999996,
-      "start_beat": 8.3125,
-      "start_tick": 702,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 726,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": 3,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 3.4615349999999996,
-      "start_beat": 8.5,
-      "start_tick": 720,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 744,
-      "pitch": 1.0,
-      "pitch_str": "A4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 3.6057656249999996,
-      "start_beat": 8.8125,
-      "start_tick": 750,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 774,
-      "pitch": 0.8908987181403393,
-      "pitch_str": "G4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 3.6923039999999996,
-      "start_beat": 9.0,
-      "start_tick": 768,
-      "end": 3.9230729999999996,
-      "end_beat": 9.5,
-      "end_tick": 816,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 3.6923039999999996,
-      "start_beat": 9.0,
-      "start_tick": 768,
-      "end": 4.269226499999999,
-      "end_beat": 10.25,
-      "end_tick": 888,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 3.9230729999999996,
-      "start_beat": 9.5,
-      "start_tick": 816,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 840,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 4.067303624999999,
-      "start_beat": 9.8125,
-      "start_tick": 846,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 870,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 4.153841999999999,
-      "start_beat": 10.0,
-      "start_tick": 864,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 888,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 4.384611,
-      "start_beat": 10.5,
-      "start_tick": 912,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 936,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 4.384611,
-      "start_beat": 10.5,
-      "start_tick": 912,
-      "end": 4.9615335,
-      "end_beat": 11.75,
-      "end_tick": 1032,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 4.528841624999999,
-      "start_beat": 10.8125,
-      "start_tick": 942,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 966,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 4.615379999999999,
-      "start_beat": 11.0,
-      "start_tick": 960,
-      "end": 4.846149,
-      "end_beat": 11.5,
-      "end_tick": 1008,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 4.759610625,
-      "start_beat": 11.3125,
-      "start_tick": 990,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1014,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 4.990379624999999,
-      "start_beat": 11.8125,
-      "start_tick": 1038,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1062,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 5.076917999999999,
-      "start_beat": 12.0,
-      "start_tick": 1056,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1080,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 3.3749966249999996,
+	  "start_beat": 8.3125,
+	  "start_tick": 702,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 726,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 3.4615349999999996,
+	  "start_beat": 8.5,
+	  "start_tick": 720,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 744,
+	  "pitch": 1.0,
+	  "pitch_str": "A4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 3.6057656249999996,
+	  "start_beat": 8.8125,
+	  "start_tick": 750,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 774,
+	  "pitch": 0.8908987181403393,
+	  "pitch_str": "G4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 3.6923039999999996,
+	  "start_beat": 9.0,
+	  "start_tick": 768,
+	  "end": 3.9230729999999996,
+	  "end_beat": 9.5,
+	  "end_tick": 816,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 3.6923039999999996,
+	  "start_beat": 9.0,
+	  "start_tick": 768,
+	  "end": 4.269226499999999,
+	  "end_beat": 10.25,
+	  "end_tick": 888,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 3.9230729999999996,
+	  "start_beat": 9.5,
+	  "start_tick": 816,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 840,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 4.067303624999999,
+	  "start_beat": 9.8125,
+	  "start_tick": 846,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 870,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 4.153841999999999,
+	  "start_beat": 10.0,
+	  "start_tick": 864,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 888,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 4.384611,
+	  "start_beat": 10.5,
+	  "start_tick": 912,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 936,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 4.384611,
+	  "start_beat": 10.5,
+	  "start_tick": 912,
+	  "end": 4.9615335,
+	  "end_beat": 11.75,
+	  "end_tick": 1032,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 4.528841624999999,
+	  "start_beat": 10.8125,
+	  "start_tick": 942,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 966,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 4.615379999999999,
+	  "start_beat": 11.0,
+	  "start_tick": 960,
+	  "end": 4.846149,
+	  "end_beat": 11.5,
+	  "end_tick": 1008,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 4.759610625,
+	  "start_beat": 11.3125,
+	  "start_tick": 990,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1014,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 4.990379624999999,
+	  "start_beat": 11.8125,
+	  "start_tick": 1038,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1062,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 5.076917999999999,
+	  "start_beat": 12.0,
+	  "start_tick": 1056,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1080,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 5.076917999999999,
-      "start_beat": 12.0,
-      "start_tick": 1056,
-      "end": 5.4230715,
-      "end_beat": 12.75,
-      "end_tick": 1128,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 5.076917999999999,
+	  "start_beat": 12.0,
+	  "start_tick": 1056,
+	  "end": 5.4230715,
+	  "end_beat": 12.75,
+	  "end_tick": 1128,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 5.307687,
-      "start_beat": 12.5,
-      "start_tick": 1104,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1128,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 5.538455999999999,
-      "start_beat": 13.0,
-      "start_tick": 1152,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1164,
-      "pitch": 0.4999999999999997,
-      "pitch_str": "A3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 5.538455999999999,
-      "start_beat": 13.0,
-      "start_tick": 1152,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1176,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 5.682686625,
-      "start_beat": 13.3125,
-      "start_tick": 1182,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1194,
-      "pitch": 0.4999999999999997,
-      "pitch_str": "A3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 5.307687,
+	  "start_beat": 12.5,
+	  "start_tick": 1104,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1128,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 5.538455999999999,
+	  "start_beat": 13.0,
+	  "start_tick": 1152,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1164,
+	  "pitch": 0.4999999999999997,
+	  "pitch_str": "A3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 5.538455999999999,
+	  "start_beat": 13.0,
+	  "start_tick": 1152,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1176,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 5.682686625,
+	  "start_beat": 13.3125,
+	  "start_tick": 1182,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1194,
+	  "pitch": 0.4999999999999997,
+	  "pitch_str": "A3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 5.682686625,
-      "start_beat": 13.3125,
-      "start_tick": 1182,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1206,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 5.682686625,
+	  "start_beat": 13.3125,
+	  "start_tick": 1182,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1206,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 5.913455624999999,
-      "start_beat": 13.8125,
-      "start_tick": 1230,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1242,
-      "pitch": 0.5297315471796474,
-      "pitch_str": "Bb3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 5.913455624999999,
-      "start_beat": 13.8125,
-      "start_tick": 1230,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1254,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 5.999993999999999,
-      "start_beat": 14.0,
-      "start_tick": 1248,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1272,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 6.144224625,
-      "start_beat": 14.3125,
-      "start_tick": 1278,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1290,
-      "pitch": 0.5297315471796474,
-      "pitch_str": "Bb3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 6.230763,
-      "start_beat": 14.5,
-      "start_tick": 1296,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1320,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 6.374993624999999,
-      "start_beat": 14.8125,
-      "start_tick": 1326,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1338,
-      "pitch": 0.5612310241546863,
-      "pitch_str": "B3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 6.461531999999999,
-      "start_beat": 15.0,
-      "start_tick": 1344,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1368,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 6.605762625,
-      "start_beat": 15.3125,
-      "start_tick": 1374,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1386,
-      "pitch": 0.5612310241546863,
-      "pitch_str": "B3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 6.605762625,
-      "start_beat": 15.3125,
-      "start_tick": 1374,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1398,
-      "pitch": 1.6817928305074297,
-      "pitch_str": "Gb5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 6.692301,
-      "start_beat": 15.5,
-      "start_tick": 1392,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1416,
-      "pitch": 0.6299605249474364,
-      "pitch_str": "Db4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 5.913455624999999,
+	  "start_beat": 13.8125,
+	  "start_tick": 1230,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1242,
+	  "pitch": 0.5297315471796474,
+	  "pitch_str": "Bb3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 5.913455624999999,
+	  "start_beat": 13.8125,
+	  "start_tick": 1230,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1254,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 5.999993999999999,
+	  "start_beat": 14.0,
+	  "start_tick": 1248,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1272,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 6.144224625,
+	  "start_beat": 14.3125,
+	  "start_tick": 1278,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1290,
+	  "pitch": 0.5297315471796474,
+	  "pitch_str": "Bb3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 6.230763,
+	  "start_beat": 14.5,
+	  "start_tick": 1296,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1320,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 6.374993624999999,
+	  "start_beat": 14.8125,
+	  "start_tick": 1326,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1338,
+	  "pitch": 0.5612310241546863,
+	  "pitch_str": "B3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 6.461531999999999,
+	  "start_beat": 15.0,
+	  "start_tick": 1344,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1368,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 6.605762625,
+	  "start_beat": 15.3125,
+	  "start_tick": 1374,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1386,
+	  "pitch": 0.5612310241546863,
+	  "pitch_str": "B3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 6.605762625,
+	  "start_beat": 15.3125,
+	  "start_tick": 1374,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1398,
+	  "pitch": 1.6817928305074297,
+	  "pitch_str": "Gb5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 6.692301,
+	  "start_beat": 15.5,
+	  "start_tick": 1392,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1416,
+	  "pitch": 0.6299605249474364,
+	  "pitch_str": "Db4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 6.692301,
-      "start_beat": 15.5,
-      "start_tick": 1392,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1416,
-      "pitch": 1.6817928305074297,
-      "pitch_str": "Gb5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 6.692301,
+	  "start_beat": 15.5,
+	  "start_tick": 1392,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1416,
+	  "pitch": 1.6817928305074297,
+	  "pitch_str": "Gb5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 6.923069999999999,
-      "start_beat": 16.0,
-      "start_tick": 1440,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1464,
-      "pitch": 0.667419927085017,
-      "pitch_str": "D4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 6.923069999999999,
+	  "start_beat": 16.0,
+	  "start_tick": 1440,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1464,
+	  "pitch": 0.667419927085017,
+	  "pitch_str": "D4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 6.923069999999999,
-      "start_beat": 16.0,
-      "start_tick": 1440,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1464,
-      "pitch": 1.7817974362806794,
-      "pitch_str": "G5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 6.923069999999999,
+	  "start_beat": 16.0,
+	  "start_tick": 1440,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1464,
+	  "pitch": 1.7817974362806794,
+	  "pitch_str": "G5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ],
-        "4": [
-          "chords",
+		],
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 6.923069999999999,
-      "start_beat": 16.0,
-      "start_tick": 1440,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1464,
-      "pitch": 1.7817974362806794,
-      "pitch_str": "G5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": {
-        "4": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 6.923069999999999,
+	  "start_beat": 16.0,
+	  "start_tick": 1440,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1464,
+	  "pitch": 1.7817974362806794,
+	  "pitch_str": "G5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": {
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 7.153839,
-      "start_beat": 16.5,
-      "start_tick": 1488,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1512,
-      "pitch": 0.7491535384383405,
-      "pitch_str": "E4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 7.153839,
+	  "start_beat": 16.5,
+	  "start_tick": 1488,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1512,
+	  "pitch": 0.7491535384383405,
+	  "pitch_str": "E4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 7.153839,
-      "start_beat": 16.5,
-      "start_tick": 1488,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1512,
-      "pitch": 1.6817928305074297,
-      "pitch_str": "Gb5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "2": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 7.153839,
+	  "start_beat": 16.5,
+	  "start_tick": 1488,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1512,
+	  "pitch": 1.6817928305074297,
+	  "pitch_str": "Gb5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"2": [
+		  "bass",
           "chords"
-        ],
-        "4": [
-          "chords",
+		],
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 7.153839,
-      "start_beat": 16.5,
-      "start_tick": 1488,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1512,
-      "pitch": 1.6817928305074297,
-      "pitch_str": "Gb5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": {
-        "4": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 7.153839,
+	  "start_beat": 16.5,
+	  "start_tick": 1488,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1512,
+	  "pitch": 1.6817928305074297,
+	  "pitch_str": "Gb5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": {
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 7.384607999999999,
-      "start_beat": 17.0,
-      "start_tick": 1536,
-      "end": 7.615376999999999,
-      "end_beat": 17.5,
-      "end_tick": 1584,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 7.384607999999999,
-      "start_beat": 17.0,
-      "start_tick": 1536,
-      "end": 7.961530499999999,
-      "end_beat": 18.25,
-      "end_tick": 1656,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 7.615376999999999,
-      "start_beat": 17.5,
-      "start_tick": 1584,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1608,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 7.759607624999999,
-      "start_beat": 17.8125,
-      "start_tick": 1614,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1626,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 7.846145999999999,
-      "start_beat": 18.0,
-      "start_tick": 1632,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1656,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 8.076915,
-      "start_beat": 18.5,
-      "start_tick": 1680,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1704,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 8.076915,
-      "start_beat": 18.5,
-      "start_tick": 1680,
-      "end": 8.6538375,
-      "end_beat": 19.75,
-      "end_tick": 1800,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 8.221145624999998,
-      "start_beat": 18.8125,
-      "start_tick": 1710,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1734,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 8.307683999999998,
-      "start_beat": 19.0,
-      "start_tick": 1728,
-      "end": 8.538452999999999,
-      "end_beat": 19.5,
-      "end_tick": 1776,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 8.451914624999999,
-      "start_beat": 19.3125,
-      "start_tick": 1758,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1782,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 8.682683625,
-      "start_beat": 19.8125,
-      "start_tick": 1806,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1830,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 8.769222,
-      "start_beat": 20.0,
-      "start_tick": 1824,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1848,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 7.384607999999999,
+	  "start_beat": 17.0,
+	  "start_tick": 1536,
+	  "end": 7.615376999999999,
+	  "end_beat": 17.5,
+	  "end_tick": 1584,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 7.384607999999999,
+	  "start_beat": 17.0,
+	  "start_tick": 1536,
+	  "end": 7.961530499999999,
+	  "end_beat": 18.25,
+	  "end_tick": 1656,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 7.615376999999999,
+	  "start_beat": 17.5,
+	  "start_tick": 1584,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1608,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 7.759607624999999,
+	  "start_beat": 17.8125,
+	  "start_tick": 1614,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1626,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 7.846145999999999,
+	  "start_beat": 18.0,
+	  "start_tick": 1632,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1656,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 8.076915,
+	  "start_beat": 18.5,
+	  "start_tick": 1680,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1704,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 8.076915,
+	  "start_beat": 18.5,
+	  "start_tick": 1680,
+	  "end": 8.6538375,
+	  "end_beat": 19.75,
+	  "end_tick": 1800,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 8.221145624999998,
+	  "start_beat": 18.8125,
+	  "start_tick": 1710,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1734,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 8.307683999999998,
+	  "start_beat": 19.0,
+	  "start_tick": 1728,
+	  "end": 8.538452999999999,
+	  "end_beat": 19.5,
+	  "end_tick": 1776,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 8.451914624999999,
+	  "start_beat": 19.3125,
+	  "start_tick": 1758,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1782,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 8.682683625,
+	  "start_beat": 19.8125,
+	  "start_tick": 1806,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1830,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 8.769222,
+	  "start_beat": 20.0,
+	  "start_tick": 1824,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1848,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 8.769222,
-      "start_beat": 20.0,
-      "start_tick": 1824,
-      "end": 9.115375499999999,
-      "end_beat": 20.75,
-      "end_tick": 1896,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 8.769222,
+	  "start_beat": 20.0,
+	  "start_tick": 1824,
+	  "end": 9.115375499999999,
+	  "end_beat": 20.75,
+	  "end_tick": 1896,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 8.999991,
-      "start_beat": 20.5,
-      "start_tick": 1872,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1884,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 9.230759999999998,
-      "start_beat": 21.0,
-      "start_tick": 1920,
-      "end": 9.461528999999999,
-      "end_beat": 21.5,
-      "end_tick": 1968,
-      "pitch": 0.3337099635425083,
-      "pitch_str": "D3",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 9.230759999999998,
-      "start_beat": 21.0,
-      "start_tick": 1920,
-      "end": 9.807682499999999,
-      "end_beat": 22.25,
-      "end_tick": 2040,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 9.461528999999999,
-      "start_beat": 21.5,
-      "start_tick": 1968,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 1992,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 9.605759625,
-      "start_beat": 21.8125,
-      "start_tick": 1998,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2010,
-      "pitch": 0.3337099635425083,
-      "pitch_str": "D3",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 9.692298,
-      "start_beat": 22.0,
-      "start_tick": 2016,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2040,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 9.923067,
-      "start_beat": 22.5,
-      "start_tick": 2064,
-      "end": 10.2692205,
-      "end_beat": 23.25,
-      "end_tick": 2136,
-      "pitch": 0.24999999999999975,
-      "pitch_str": "A2",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 9.923067,
-      "start_beat": 22.5,
-      "start_tick": 2064,
-      "end": 10.2692205,
-      "end_beat": 23.25,
-      "end_tick": 2136,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 10.067297624999998,
-      "start_beat": 22.8125,
-      "start_tick": 2094,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2118,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 10.384604999999999,
-      "start_beat": 23.5,
-      "start_tick": 2160,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2172,
-      "pitch": 0.26486577358982355,
-      "pitch_str": "Bb2",
-      "band": 0,
-      "jumpable": false,
-      "compounds": {
-        "0": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 8.999991,
+	  "start_beat": 20.5,
+	  "start_tick": 1872,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1884,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 9.230759999999998,
+	  "start_beat": 21.0,
+	  "start_tick": 1920,
+	  "end": 9.461528999999999,
+	  "end_beat": 21.5,
+	  "end_tick": 1968,
+	  "pitch": 0.3337099635425083,
+	  "pitch_str": "D3",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 9.230759999999998,
+	  "start_beat": 21.0,
+	  "start_tick": 1920,
+	  "end": 9.807682499999999,
+	  "end_beat": 22.25,
+	  "end_tick": 2040,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 9.461528999999999,
+	  "start_beat": 21.5,
+	  "start_tick": 1968,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 1992,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 9.605759625,
+	  "start_beat": 21.8125,
+	  "start_tick": 1998,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2010,
+	  "pitch": 0.3337099635425083,
+	  "pitch_str": "D3",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 9.692298,
+	  "start_beat": 22.0,
+	  "start_tick": 2016,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2040,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 9.923067,
+	  "start_beat": 22.5,
+	  "start_tick": 2064,
+	  "end": 10.2692205,
+	  "end_beat": 23.25,
+	  "end_tick": 2136,
+	  "pitch": 0.24999999999999975,
+	  "pitch_str": "A2",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 9.923067,
+	  "start_beat": 22.5,
+	  "start_tick": 2064,
+	  "end": 10.2692205,
+	  "end_beat": 23.25,
+	  "end_tick": 2136,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 10.067297624999998,
+	  "start_beat": 22.8125,
+	  "start_tick": 2094,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2118,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 10.384604999999999,
+	  "start_beat": 23.5,
+	  "start_tick": 2160,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2172,
+	  "pitch": 0.26486577358982355,
+	  "pitch_str": "Bb2",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": {
+		"0": [
+		  "bass",
           "chords"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 10.384604999999999,
-      "start_beat": 23.5,
-      "start_tick": 2160,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2184,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "0": [
-          "bass",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 10.384604999999999,
+	  "start_beat": 23.5,
+	  "start_tick": 2160,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2184,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"0": [
+		  "bass",
           "chords"
-        ],
-        "3": [
-          "chords",
+		],
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 10.384604999999999,
-      "start_beat": 23.5,
-      "start_tick": 2160,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2184,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 10.384604999999999,
+	  "start_beat": 23.5,
+	  "start_tick": 2160,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2184,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 10.615374,
-      "start_beat": 24.0,
-      "start_tick": 2208,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2220,
-      "pitch": 0.280615512077343,
-      "pitch_str": "B2",
-      "band": 0,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 10.615374,
-      "start_beat": 24.0,
-      "start_tick": 2208,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2232,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 10.615374,
+	  "start_beat": 24.0,
+	  "start_tick": 2208,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2220,
+	  "pitch": 0.280615512077343,
+	  "pitch_str": "B2",
+	  "band": 0,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 10.615374,
+	  "start_beat": 24.0,
+	  "start_tick": 2208,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2232,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 10.615374,
-      "start_beat": 24.0,
-      "start_tick": 2208,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2232,
-      "pitch": 1.0,
-      "pitch_str": "A4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 10.615374,
+	  "start_beat": 24.0,
+	  "start_tick": 2208,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2232,
+	  "pitch": 1.0,
+	  "pitch_str": "A4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 10.759604624999998,
-      "start_beat": 24.3125,
-      "start_tick": 2238,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2262,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": 3,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 10.846143,
-      "start_beat": 24.5,
-      "start_tick": 2256,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2280,
-      "pitch": 1.0,
-      "pitch_str": "A4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 10.990373624999998,
-      "start_beat": 24.8125,
-      "start_tick": 2286,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2310,
-      "pitch": 0.8908987181403393,
-      "pitch_str": "G4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 11.076911999999998,
-      "start_beat": 25.0,
-      "start_tick": 2304,
-      "end": 11.307680999999999,
-      "end_beat": 25.5,
-      "end_tick": 2352,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 11.076911999999998,
-      "start_beat": 25.0,
-      "start_tick": 2304,
-      "end": 11.653834499999999,
-      "end_beat": 26.25,
-      "end_tick": 2424,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 11.307680999999999,
-      "start_beat": 25.5,
-      "start_tick": 2352,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2376,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 11.451911625,
-      "start_beat": 25.8125,
-      "start_tick": 2382,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2406,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 11.53845,
-      "start_beat": 26.0,
-      "start_tick": 2400,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2424,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 11.769218999999998,
-      "start_beat": 26.5,
-      "start_tick": 2448,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2472,
-      "pitch": 0.3745767692191701,
-      "pitch_str": "E3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 11.769218999999998,
-      "start_beat": 26.5,
-      "start_tick": 2448,
-      "end": 12.346141499999998,
-      "end_beat": 27.75,
-      "end_tick": 2568,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 11.913449624999998,
-      "start_beat": 26.8125,
-      "start_tick": 2478,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2502,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 11.999987999999998,
-      "start_beat": 27.0,
-      "start_tick": 2496,
-      "end": 12.230756999999999,
-      "end_beat": 27.5,
-      "end_tick": 2544,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 12.144218624999999,
-      "start_beat": 27.3125,
-      "start_tick": 2526,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2550,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 12.374987625,
-      "start_beat": 27.8125,
-      "start_tick": 2574,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2598,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 12.461526,
-      "start_beat": 28.0,
-      "start_tick": 2592,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2616,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": {
-        "start": 2,
-        "end": 3
-      },
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 10.759604624999998,
+	  "start_beat": 24.3125,
+	  "start_tick": 2238,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2262,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 10.846143,
+	  "start_beat": 24.5,
+	  "start_tick": 2256,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2280,
+	  "pitch": 1.0,
+	  "pitch_str": "A4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 10.990373624999998,
+	  "start_beat": 24.8125,
+	  "start_tick": 2286,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2310,
+	  "pitch": 0.8908987181403393,
+	  "pitch_str": "G4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 11.076911999999998,
+	  "start_beat": 25.0,
+	  "start_tick": 2304,
+	  "end": 11.307680999999999,
+	  "end_beat": 25.5,
+	  "end_tick": 2352,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 11.076911999999998,
+	  "start_beat": 25.0,
+	  "start_tick": 2304,
+	  "end": 11.653834499999999,
+	  "end_beat": 26.25,
+	  "end_tick": 2424,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 11.307680999999999,
+	  "start_beat": 25.5,
+	  "start_tick": 2352,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2376,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 11.451911625,
+	  "start_beat": 25.8125,
+	  "start_tick": 2382,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2406,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 11.53845,
+	  "start_beat": 26.0,
+	  "start_tick": 2400,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2424,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 11.769218999999998,
+	  "start_beat": 26.5,
+	  "start_tick": 2448,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2472,
+	  "pitch": 0.3745767692191701,
+	  "pitch_str": "E3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 11.769218999999998,
+	  "start_beat": 26.5,
+	  "start_tick": 2448,
+	  "end": 12.346141499999998,
+	  "end_beat": 27.75,
+	  "end_tick": 2568,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 11.913449624999998,
+	  "start_beat": 26.8125,
+	  "start_tick": 2478,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2502,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 11.999987999999998,
+	  "start_beat": 27.0,
+	  "start_tick": 2496,
+	  "end": 12.230756999999999,
+	  "end_beat": 27.5,
+	  "end_tick": 2544,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 12.144218624999999,
+	  "start_beat": 27.3125,
+	  "start_tick": 2526,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2550,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 12.374987625,
+	  "start_beat": 27.8125,
+	  "start_tick": 2574,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2598,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 12.461526,
+	  "start_beat": 28.0,
+	  "start_tick": 2592,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2616,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": {
+		"start": 2,
+		"end": 3
+	  },
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 12.461526,
-      "start_beat": 28.0,
-      "start_tick": 2592,
-      "end": 12.807679499999999,
-      "end_beat": 28.75,
-      "end_tick": 2664,
-      "pitch": 1.122462048309373,
-      "pitch_str": "B4",
-      "band": 3,
-      "jumpable": false,
-      "compounds": {
-        "3": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 12.461526,
+	  "start_beat": 28.0,
+	  "start_tick": 2592,
+	  "end": 12.807679499999999,
+	  "end_beat": 28.75,
+	  "end_tick": 2664,
+	  "pitch": 1.122462048309373,
+	  "pitch_str": "B4",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": {
+		"3": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "bass",
-      "start": 12.692294999999998,
-      "start_beat": 28.5,
-      "start_tick": 2640,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2664,
-      "pitch": 0.44544935907016936,
-      "pitch_str": "G3",
-      "band": 1,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 12.923063999999998,
-      "start_beat": 29.0,
-      "start_tick": 2688,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2712,
-      "pitch": 0.4999999999999997,
-      "pitch_str": "A3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 12.923063999999998,
-      "start_beat": 29.0,
-      "start_tick": 2688,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2712,
-      "pitch": 1.7817974362806794,
-      "pitch_str": "G5",
-      "band": 3,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 12.923063999999998,
-      "start_beat": 29.0,
-      "start_tick": 2688,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2712,
-      "pitch": 1.2599210498948734,
-      "pitch_str": "Db5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 13.298063625,
-      "start_beat": 29.8125,
-      "start_tick": 2766,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2790,
-      "pitch": 0.5297315471796474,
-      "pitch_str": "Bb3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 13.298063625,
-      "start_beat": 29.8125,
-      "start_tick": 2766,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2790,
-      "pitch": 2.000000000000001,
-      "pitch_str": "A5",
-      "band": 3,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 13.298063625,
-      "start_beat": 29.8125,
-      "start_tick": 2766,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2790,
-      "pitch": 1.3348398541700346,
-      "pitch_str": "D5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 13.615370999999998,
-      "start_beat": 30.5,
-      "start_tick": 2832,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2856,
-      "pitch": 0.5612310241546863,
-      "pitch_str": "B3",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 13.615370999999998,
-      "start_beat": 30.5,
-      "start_tick": 2832,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2856,
-      "pitch": 2.2449240966187474,
-      "pitch_str": "B5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": {
-        "4": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "bass",
+	  "start": 12.692294999999998,
+	  "start_beat": 28.5,
+	  "start_tick": 2640,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2664,
+	  "pitch": 0.44544935907016936,
+	  "pitch_str": "G3",
+	  "band": 1,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 12.923063999999998,
+	  "start_beat": 29.0,
+	  "start_tick": 2688,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2712,
+	  "pitch": 0.4999999999999997,
+	  "pitch_str": "A3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 12.923063999999998,
+	  "start_beat": 29.0,
+	  "start_tick": 2688,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2712,
+	  "pitch": 1.7817974362806794,
+	  "pitch_str": "G5",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 12.923063999999998,
+	  "start_beat": 29.0,
+	  "start_tick": 2688,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2712,
+	  "pitch": 1.2599210498948734,
+	  "pitch_str": "Db5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 13.298063625,
+	  "start_beat": 29.8125,
+	  "start_tick": 2766,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2790,
+	  "pitch": 0.5297315471796474,
+	  "pitch_str": "Bb3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 13.298063625,
+	  "start_beat": 29.8125,
+	  "start_tick": 2766,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2790,
+	  "pitch": 2.000000000000001,
+	  "pitch_str": "A5",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 13.298063625,
+	  "start_beat": 29.8125,
+	  "start_tick": 2766,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2790,
+	  "pitch": 1.3348398541700346,
+	  "pitch_str": "D5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 13.615370999999998,
+	  "start_beat": 30.5,
+	  "start_tick": 2832,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2856,
+	  "pitch": 0.5612310241546863,
+	  "pitch_str": "B3",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 13.615370999999998,
+	  "start_beat": 30.5,
+	  "start_tick": 2832,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2856,
+	  "pitch": 2.2449240966187474,
+	  "pitch_str": "B5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": {
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 13.615370999999998,
-      "start_beat": 30.5,
-      "start_tick": 2832,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2856,
-      "pitch": 1.498307076876682,
-      "pitch_str": "E5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": {
-        "4": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 13.615370999999998,
+	  "start_beat": 30.5,
+	  "start_tick": 2832,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2856,
+	  "pitch": 1.498307076876682,
+	  "pitch_str": "E5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": {
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 13.846139999999998,
-      "start_beat": 31.0,
-      "start_tick": 2880,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2904,
-      "pitch": 1.6817928305074297,
-      "pitch_str": "Gb5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 13.990370624999999,
-      "start_beat": 31.3125,
-      "start_tick": 2910,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2934,
-      "pitch": 0.667419927085017,
-      "pitch_str": "D4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 13.990370624999999,
-      "start_beat": 31.3125,
-      "start_tick": 2910,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2934,
-      "pitch": 2.519842099789748,
-      "pitch_str": "Db6",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 14.076908999999999,
-      "start_beat": 31.5,
-      "start_tick": 2928,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 2952,
-      "pitch": 1.7817974362806794,
-      "pitch_str": "G5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 14.307678,
-      "start_beat": 32.0,
-      "start_tick": 2976,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3000,
-      "pitch": 0.8908987181403393,
-      "pitch_str": "G4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 14.307678,
-      "start_beat": 32.0,
-      "start_tick": 2976,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3000,
-      "pitch": 2.2449240966187474,
-      "pitch_str": "B5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": {
-        "4": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 13.846139999999998,
+	  "start_beat": 31.0,
+	  "start_tick": 2880,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2904,
+	  "pitch": 1.6817928305074297,
+	  "pitch_str": "Gb5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 13.990370624999999,
+	  "start_beat": 31.3125,
+	  "start_tick": 2910,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2934,
+	  "pitch": 0.667419927085017,
+	  "pitch_str": "D4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 13.990370624999999,
+	  "start_beat": 31.3125,
+	  "start_tick": 2910,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2934,
+	  "pitch": 2.519842099789748,
+	  "pitch_str": "Db6",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 14.076908999999999,
+	  "start_beat": 31.5,
+	  "start_tick": 2928,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 2952,
+	  "pitch": 1.7817974362806794,
+	  "pitch_str": "G5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 14.307678,
+	  "start_beat": 32.0,
+	  "start_tick": 2976,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3000,
+	  "pitch": 0.8908987181403393,
+	  "pitch_str": "G4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 14.307678,
+	  "start_beat": 32.0,
+	  "start_tick": 2976,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3000,
+	  "pitch": 2.2449240966187474,
+	  "pitch_str": "B5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": {
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "lead",
-      "start": 14.307678,
-      "start_beat": 32.0,
-      "start_tick": 2976,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3000,
-      "pitch": 2.000000000000001,
-      "pitch_str": "A5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": {
-        "4": [
-          "chords",
+		]
+	  }
+	},
+	{
+	  "name": "lead",
+	  "start": 14.307678,
+	  "start_beat": 32.0,
+	  "start_tick": 2976,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3000,
+	  "pitch": 2.000000000000001,
+	  "pitch_str": "A5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": {
+		"4": [
+		  "chords",
           "lead"
-        ]
-      }
-    },
-    {
-      "name": "chords",
-      "start": 14.451908624999998,
-      "start_beat": 32.3125,
-      "start_tick": 3006,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3030,
-      "pitch": 2.519842099789748,
-      "pitch_str": "Db6",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "bass",
-      "start": 14.538446999999998,
-      "start_beat": 32.5,
-      "start_tick": 3024,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3048,
-      "pitch": 0.8408964152537144,
-      "pitch_str": "Gb4",
-      "band": 2,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 14.538446999999998,
-      "start_beat": 32.5,
-      "start_tick": 3024,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3048,
-      "pitch": 2.000000000000001,
-      "pitch_str": "A5",
-      "band": 3,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "lead",
-      "start": 14.538446999999998,
-      "start_beat": 32.5,
-      "start_tick": 3024,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3048,
-      "pitch": 2.2449240966187474,
-      "pitch_str": "B5",
-      "band": 4,
-      "jumpable": false,
-      "compounds": null
-    },
-    {
-      "name": "chords",
-      "start": 14.682677624999998,
-      "start_beat": 32.8125,
-      "start_tick": 3054,
-      "end": null,
-      "end_beat": null,
-      "end_tick": 3071,
-      "pitch": 1.7817974362806794,
-      "pitch_str": "G5",
-      "band": 3,
-      "jumpable": false,
-      "compounds": null
-    }
+		]
+	  }
+	},
+	{
+	  "name": "chords",
+	  "start": 14.451908624999998,
+	  "start_beat": 32.3125,
+	  "start_tick": 3006,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3030,
+	  "pitch": 2.519842099789748,
+	  "pitch_str": "Db6",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "bass",
+	  "start": 14.538446999999998,
+	  "start_beat": 32.5,
+	  "start_tick": 3024,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3048,
+	  "pitch": 0.8408964152537144,
+	  "pitch_str": "Gb4",
+	  "band": 2,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 14.538446999999998,
+	  "start_beat": 32.5,
+	  "start_tick": 3024,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3048,
+	  "pitch": 2.000000000000001,
+	  "pitch_str": "A5",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "lead",
+	  "start": 14.538446999999998,
+	  "start_beat": 32.5,
+	  "start_tick": 3024,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3048,
+	  "pitch": 2.2449240966187474,
+	  "pitch_str": "B5",
+	  "band": 4,
+	  "jumpable": false,
+	  "compounds": null
+	},
+	{
+	  "name": "chords",
+	  "start": 14.682677624999998,
+	  "start_beat": 32.8125,
+	  "start_tick": 3054,
+	  "end": null,
+	  "end_beat": null,
+	  "end_tick": 3071,
+	  "pitch": 1.7817974362806794,
+	  "pitch_str": "G5",
+	  "band": 3,
+	  "jumpable": false,
+	  "compounds": null
+	}
   ],
   "notes_by_instrument": {
-    "bass": [
-      {
-        "name": "bass",
-        "start": 0.0,
-        "start_beat": 1.0,
-        "start_tick": 0,
-        "end": 0.23076899999999997,
-        "end_beat": 1.5,
-        "end_tick": 48,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 0.37499962499999995,
-        "start_beat": 1.8125,
-        "start_tick": 78,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 102,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 0.6923069999999999,
-        "start_beat": 2.5,
-        "start_tick": 144,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 168,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 0.9230759999999999,
-        "start_beat": 3.0,
-        "start_tick": 192,
-        "end": 1.1538449999999998,
-        "end_beat": 3.5,
-        "end_tick": 240,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 1.2980756249999998,
-        "start_beat": 3.8125,
-        "start_tick": 270,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 294,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 1.6153829999999998,
-        "start_beat": 4.5,
-        "start_tick": 336,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 348,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 1.8461519999999998,
-        "start_beat": 5.0,
-        "start_tick": 384,
-        "end": 2.0769209999999996,
-        "end_beat": 5.5,
-        "end_tick": 432,
-        "pitch": 0.3337099635425083,
-        "pitch_str": "D3",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 2.2211516249999996,
-        "start_beat": 5.8125,
-        "start_tick": 462,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 474,
-        "pitch": 0.3337099635425083,
-        "pitch_str": "D3",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 2.5384589999999996,
-        "start_beat": 6.5,
-        "start_tick": 528,
-        "end": 2.8846125,
-        "end_beat": 7.25,
-        "end_tick": 600,
-        "pitch": 0.24999999999999975,
-        "pitch_str": "A2",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 2.9999969999999996,
-        "start_beat": 7.5,
-        "start_tick": 624,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 636,
-        "pitch": 0.26486577358982355,
-        "pitch_str": "Bb2",
-        "band": 0,
-        "jumpable": false,
-        "compounds": {
-          "0": [
-            "bass",
+	"bass": [
+	  {
+		"name": "bass",
+		"start": 0.0,
+		"start_beat": 1.0,
+		"start_tick": 0,
+		"end": 0.23076899999999997,
+		"end_beat": 1.5,
+		"end_tick": 48,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 0.37499962499999995,
+		"start_beat": 1.8125,
+		"start_tick": 78,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 102,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 0.6923069999999999,
+		"start_beat": 2.5,
+		"start_tick": 144,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 168,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 0.9230759999999999,
+		"start_beat": 3.0,
+		"start_tick": 192,
+		"end": 1.1538449999999998,
+		"end_beat": 3.5,
+		"end_tick": 240,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 1.2980756249999998,
+		"start_beat": 3.8125,
+		"start_tick": 270,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 294,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 1.6153829999999998,
+		"start_beat": 4.5,
+		"start_tick": 336,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 348,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 1.8461519999999998,
+		"start_beat": 5.0,
+		"start_tick": 384,
+		"end": 2.0769209999999996,
+		"end_beat": 5.5,
+		"end_tick": 432,
+		"pitch": 0.3337099635425083,
+		"pitch_str": "D3",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 2.2211516249999996,
+		"start_beat": 5.8125,
+		"start_tick": 462,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 474,
+		"pitch": 0.3337099635425083,
+		"pitch_str": "D3",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 2.5384589999999996,
+		"start_beat": 6.5,
+		"start_tick": 528,
+		"end": 2.8846125,
+		"end_beat": 7.25,
+		"end_tick": 600,
+		"pitch": 0.24999999999999975,
+		"pitch_str": "A2",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 2.9999969999999996,
+		"start_beat": 7.5,
+		"start_tick": 624,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 636,
+		"pitch": 0.26486577358982355,
+		"pitch_str": "Bb2",
+		"band": 0,
+		"jumpable": false,
+		"compounds": {
+		  "0": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "bass",
-        "start": 3.2307659999999996,
-        "start_beat": 8.0,
-        "start_tick": 672,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 684,
-        "pitch": 0.280615512077343,
-        "pitch_str": "B2",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 3.6923039999999996,
-        "start_beat": 9.0,
-        "start_tick": 768,
-        "end": 3.9230729999999996,
-        "end_beat": 9.5,
-        "end_tick": 816,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 4.067303624999999,
-        "start_beat": 9.8125,
-        "start_tick": 846,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 870,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 4.384611,
-        "start_beat": 10.5,
-        "start_tick": 912,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 936,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 4.615379999999999,
-        "start_beat": 11.0,
-        "start_tick": 960,
-        "end": 4.846149,
-        "end_beat": 11.5,
-        "end_tick": 1008,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 4.990379624999999,
-        "start_beat": 11.8125,
-        "start_tick": 1038,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1062,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 5.307687,
-        "start_beat": 12.5,
-        "start_tick": 1104,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1128,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 5.538455999999999,
-        "start_beat": 13.0,
-        "start_tick": 1152,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1164,
-        "pitch": 0.4999999999999997,
-        "pitch_str": "A3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 5.682686625,
-        "start_beat": 13.3125,
-        "start_tick": 1182,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1194,
-        "pitch": 0.4999999999999997,
-        "pitch_str": "A3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "bass",
+		"start": 3.2307659999999996,
+		"start_beat": 8.0,
+		"start_tick": 672,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 684,
+		"pitch": 0.280615512077343,
+		"pitch_str": "B2",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 3.6923039999999996,
+		"start_beat": 9.0,
+		"start_tick": 768,
+		"end": 3.9230729999999996,
+		"end_beat": 9.5,
+		"end_tick": 816,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 4.067303624999999,
+		"start_beat": 9.8125,
+		"start_tick": 846,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 870,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 4.384611,
+		"start_beat": 10.5,
+		"start_tick": 912,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 936,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 4.615379999999999,
+		"start_beat": 11.0,
+		"start_tick": 960,
+		"end": 4.846149,
+		"end_beat": 11.5,
+		"end_tick": 1008,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 4.990379624999999,
+		"start_beat": 11.8125,
+		"start_tick": 1038,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1062,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 5.307687,
+		"start_beat": 12.5,
+		"start_tick": 1104,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1128,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 5.538455999999999,
+		"start_beat": 13.0,
+		"start_tick": 1152,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1164,
+		"pitch": 0.4999999999999997,
+		"pitch_str": "A3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 5.682686625,
+		"start_beat": 13.3125,
+		"start_tick": 1182,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1194,
+		"pitch": 0.4999999999999997,
+		"pitch_str": "A3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "bass",
-        "start": 5.913455624999999,
-        "start_beat": 13.8125,
-        "start_tick": 1230,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1242,
-        "pitch": 0.5297315471796474,
-        "pitch_str": "Bb3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 6.144224625,
-        "start_beat": 14.3125,
-        "start_tick": 1278,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1290,
-        "pitch": 0.5297315471796474,
-        "pitch_str": "Bb3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 6.374993624999999,
-        "start_beat": 14.8125,
-        "start_tick": 1326,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1338,
-        "pitch": 0.5612310241546863,
-        "pitch_str": "B3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 6.605762625,
-        "start_beat": 15.3125,
-        "start_tick": 1374,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1386,
-        "pitch": 0.5612310241546863,
-        "pitch_str": "B3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 6.692301,
-        "start_beat": 15.5,
-        "start_tick": 1392,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1416,
-        "pitch": 0.6299605249474364,
-        "pitch_str": "Db4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "bass",
+		"start": 5.913455624999999,
+		"start_beat": 13.8125,
+		"start_tick": 1230,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1242,
+		"pitch": 0.5297315471796474,
+		"pitch_str": "Bb3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 6.144224625,
+		"start_beat": 14.3125,
+		"start_tick": 1278,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1290,
+		"pitch": 0.5297315471796474,
+		"pitch_str": "Bb3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 6.374993624999999,
+		"start_beat": 14.8125,
+		"start_tick": 1326,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1338,
+		"pitch": 0.5612310241546863,
+		"pitch_str": "B3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 6.605762625,
+		"start_beat": 15.3125,
+		"start_tick": 1374,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1386,
+		"pitch": 0.5612310241546863,
+		"pitch_str": "B3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 6.692301,
+		"start_beat": 15.5,
+		"start_tick": 1392,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1416,
+		"pitch": 0.6299605249474364,
+		"pitch_str": "Db4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "bass",
-        "start": 6.923069999999999,
-        "start_beat": 16.0,
-        "start_tick": 1440,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1464,
-        "pitch": 0.667419927085017,
-        "pitch_str": "D4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "bass",
+		"start": 6.923069999999999,
+		"start_beat": 16.0,
+		"start_tick": 1440,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1464,
+		"pitch": 0.667419927085017,
+		"pitch_str": "D4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "bass",
-        "start": 7.153839,
-        "start_beat": 16.5,
-        "start_tick": 1488,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1512,
-        "pitch": 0.7491535384383405,
-        "pitch_str": "E4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "bass",
+		"start": 7.153839,
+		"start_beat": 16.5,
+		"start_tick": 1488,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1512,
+		"pitch": 0.7491535384383405,
+		"pitch_str": "E4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "bass",
-        "start": 7.384607999999999,
-        "start_beat": 17.0,
-        "start_tick": 1536,
-        "end": 7.615376999999999,
-        "end_beat": 17.5,
-        "end_tick": 1584,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 7.759607624999999,
-        "start_beat": 17.8125,
-        "start_tick": 1614,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1626,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 8.076915,
-        "start_beat": 18.5,
-        "start_tick": 1680,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1704,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 8.307683999999998,
-        "start_beat": 19.0,
-        "start_tick": 1728,
-        "end": 8.538452999999999,
-        "end_beat": 19.5,
-        "end_tick": 1776,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 8.682683625,
-        "start_beat": 19.8125,
-        "start_tick": 1806,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1830,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 8.999991,
-        "start_beat": 20.5,
-        "start_tick": 1872,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1884,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 9.230759999999998,
-        "start_beat": 21.0,
-        "start_tick": 1920,
-        "end": 9.461528999999999,
-        "end_beat": 21.5,
-        "end_tick": 1968,
-        "pitch": 0.3337099635425083,
-        "pitch_str": "D3",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 9.605759625,
-        "start_beat": 21.8125,
-        "start_tick": 1998,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2010,
-        "pitch": 0.3337099635425083,
-        "pitch_str": "D3",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 9.923067,
-        "start_beat": 22.5,
-        "start_tick": 2064,
-        "end": 10.2692205,
-        "end_beat": 23.25,
-        "end_tick": 2136,
-        "pitch": 0.24999999999999975,
-        "pitch_str": "A2",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 10.384604999999999,
-        "start_beat": 23.5,
-        "start_tick": 2160,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2172,
-        "pitch": 0.26486577358982355,
-        "pitch_str": "Bb2",
-        "band": 0,
-        "jumpable": false,
-        "compounds": {
-          "0": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "bass",
+		"start": 7.384607999999999,
+		"start_beat": 17.0,
+		"start_tick": 1536,
+		"end": 7.615376999999999,
+		"end_beat": 17.5,
+		"end_tick": 1584,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 7.759607624999999,
+		"start_beat": 17.8125,
+		"start_tick": 1614,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1626,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 8.076915,
+		"start_beat": 18.5,
+		"start_tick": 1680,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1704,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 8.307683999999998,
+		"start_beat": 19.0,
+		"start_tick": 1728,
+		"end": 8.538452999999999,
+		"end_beat": 19.5,
+		"end_tick": 1776,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 8.682683625,
+		"start_beat": 19.8125,
+		"start_tick": 1806,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1830,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 8.999991,
+		"start_beat": 20.5,
+		"start_tick": 1872,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1884,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 9.230759999999998,
+		"start_beat": 21.0,
+		"start_tick": 1920,
+		"end": 9.461528999999999,
+		"end_beat": 21.5,
+		"end_tick": 1968,
+		"pitch": 0.3337099635425083,
+		"pitch_str": "D3",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 9.605759625,
+		"start_beat": 21.8125,
+		"start_tick": 1998,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2010,
+		"pitch": 0.3337099635425083,
+		"pitch_str": "D3",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 9.923067,
+		"start_beat": 22.5,
+		"start_tick": 2064,
+		"end": 10.2692205,
+		"end_beat": 23.25,
+		"end_tick": 2136,
+		"pitch": 0.24999999999999975,
+		"pitch_str": "A2",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 10.384604999999999,
+		"start_beat": 23.5,
+		"start_tick": 2160,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2172,
+		"pitch": 0.26486577358982355,
+		"pitch_str": "Bb2",
+		"band": 0,
+		"jumpable": false,
+		"compounds": {
+		  "0": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "bass",
-        "start": 10.615374,
-        "start_beat": 24.0,
-        "start_tick": 2208,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2220,
-        "pitch": 0.280615512077343,
-        "pitch_str": "B2",
-        "band": 0,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 11.076911999999998,
-        "start_beat": 25.0,
-        "start_tick": 2304,
-        "end": 11.307680999999999,
-        "end_beat": 25.5,
-        "end_tick": 2352,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 11.451911625,
-        "start_beat": 25.8125,
-        "start_tick": 2382,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2406,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 11.769218999999998,
-        "start_beat": 26.5,
-        "start_tick": 2448,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2472,
-        "pitch": 0.3745767692191701,
-        "pitch_str": "E3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 11.999987999999998,
-        "start_beat": 27.0,
-        "start_tick": 2496,
-        "end": 12.230756999999999,
-        "end_beat": 27.5,
-        "end_tick": 2544,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 12.374987625,
-        "start_beat": 27.8125,
-        "start_tick": 2574,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2598,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 12.692294999999998,
-        "start_beat": 28.5,
-        "start_tick": 2640,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2664,
-        "pitch": 0.44544935907016936,
-        "pitch_str": "G3",
-        "band": 1,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 12.923063999999998,
-        "start_beat": 29.0,
-        "start_tick": 2688,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2712,
-        "pitch": 0.4999999999999997,
-        "pitch_str": "A3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 13.298063625,
-        "start_beat": 29.8125,
-        "start_tick": 2766,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2790,
-        "pitch": 0.5297315471796474,
-        "pitch_str": "Bb3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 13.615370999999998,
-        "start_beat": 30.5,
-        "start_tick": 2832,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2856,
-        "pitch": 0.5612310241546863,
-        "pitch_str": "B3",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 13.990370624999999,
-        "start_beat": 31.3125,
-        "start_tick": 2910,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2934,
-        "pitch": 0.667419927085017,
-        "pitch_str": "D4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 14.307678,
-        "start_beat": 32.0,
-        "start_tick": 2976,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3000,
-        "pitch": 0.8908987181403393,
-        "pitch_str": "G4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "bass",
-        "start": 14.538446999999998,
-        "start_beat": 32.5,
-        "start_tick": 3024,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3048,
-        "pitch": 0.8408964152537144,
-        "pitch_str": "Gb4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      }
-    ],
-    "lead": [
-      {
-        "name": "lead",
-        "start": 0.0,
-        "start_beat": 1.0,
-        "start_tick": 0,
-        "end": 0.5769224999999999,
-        "end_beat": 2.25,
-        "end_tick": 120,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 0.6923069999999999,
-        "start_beat": 2.5,
-        "start_tick": 144,
-        "end": 1.2692294999999998,
-        "end_beat": 3.75,
-        "end_tick": 264,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 1.3846139999999998,
-        "start_beat": 4.0,
-        "start_tick": 288,
-        "end": 1.7307674999999998,
-        "end_beat": 4.75,
-        "end_tick": 360,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "bass",
+		"start": 10.615374,
+		"start_beat": 24.0,
+		"start_tick": 2208,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2220,
+		"pitch": 0.280615512077343,
+		"pitch_str": "B2",
+		"band": 0,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 11.076911999999998,
+		"start_beat": 25.0,
+		"start_tick": 2304,
+		"end": 11.307680999999999,
+		"end_beat": 25.5,
+		"end_tick": 2352,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 11.451911625,
+		"start_beat": 25.8125,
+		"start_tick": 2382,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2406,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 11.769218999999998,
+		"start_beat": 26.5,
+		"start_tick": 2448,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2472,
+		"pitch": 0.3745767692191701,
+		"pitch_str": "E3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 11.999987999999998,
+		"start_beat": 27.0,
+		"start_tick": 2496,
+		"end": 12.230756999999999,
+		"end_beat": 27.5,
+		"end_tick": 2544,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 12.374987625,
+		"start_beat": 27.8125,
+		"start_tick": 2574,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2598,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 12.692294999999998,
+		"start_beat": 28.5,
+		"start_tick": 2640,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2664,
+		"pitch": 0.44544935907016936,
+		"pitch_str": "G3",
+		"band": 1,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 12.923063999999998,
+		"start_beat": 29.0,
+		"start_tick": 2688,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2712,
+		"pitch": 0.4999999999999997,
+		"pitch_str": "A3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 13.298063625,
+		"start_beat": 29.8125,
+		"start_tick": 2766,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2790,
+		"pitch": 0.5297315471796474,
+		"pitch_str": "Bb3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 13.615370999999998,
+		"start_beat": 30.5,
+		"start_tick": 2832,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2856,
+		"pitch": 0.5612310241546863,
+		"pitch_str": "B3",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 13.990370624999999,
+		"start_beat": 31.3125,
+		"start_tick": 2910,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2934,
+		"pitch": 0.667419927085017,
+		"pitch_str": "D4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 14.307678,
+		"start_beat": 32.0,
+		"start_tick": 2976,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3000,
+		"pitch": 0.8908987181403393,
+		"pitch_str": "G4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "bass",
+		"start": 14.538446999999998,
+		"start_beat": 32.5,
+		"start_tick": 3024,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3048,
+		"pitch": 0.8408964152537144,
+		"pitch_str": "Gb4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  }
+	],
+	"lead": [
+	  {
+		"name": "lead",
+		"start": 0.0,
+		"start_beat": 1.0,
+		"start_tick": 0,
+		"end": 0.5769224999999999,
+		"end_beat": 2.25,
+		"end_tick": 120,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 0.6923069999999999,
+		"start_beat": 2.5,
+		"start_tick": 144,
+		"end": 1.2692294999999998,
+		"end_beat": 3.75,
+		"end_tick": 264,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 1.3846139999999998,
+		"start_beat": 4.0,
+		"start_tick": 288,
+		"end": 1.7307674999999998,
+		"end_beat": 4.75,
+		"end_tick": 360,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 1.8461519999999998,
-        "start_beat": 5.0,
-        "start_tick": 384,
-        "end": 2.4230745,
-        "end_beat": 6.25,
-        "end_tick": 504,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 2.5384589999999996,
-        "start_beat": 6.5,
-        "start_tick": 528,
-        "end": 2.8846125,
-        "end_beat": 7.25,
-        "end_tick": 600,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 2.9999969999999996,
-        "start_beat": 7.5,
-        "start_tick": 624,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 648,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 1.8461519999999998,
+		"start_beat": 5.0,
+		"start_tick": 384,
+		"end": 2.4230745,
+		"end_beat": 6.25,
+		"end_tick": 504,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 2.5384589999999996,
+		"start_beat": 6.5,
+		"start_tick": 528,
+		"end": 2.8846125,
+		"end_beat": 7.25,
+		"end_tick": 600,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 2.9999969999999996,
+		"start_beat": 7.5,
+		"start_tick": 624,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 648,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 3.2307659999999996,
-        "start_beat": 8.0,
-        "start_tick": 672,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 696,
-        "pitch": 1.0,
-        "pitch_str": "A4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 3.2307659999999996,
+		"start_beat": 8.0,
+		"start_tick": 672,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 696,
+		"pitch": 1.0,
+		"pitch_str": "A4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 3.6923039999999996,
-        "start_beat": 9.0,
-        "start_tick": 768,
-        "end": 4.269226499999999,
-        "end_beat": 10.25,
-        "end_tick": 888,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 4.384611,
-        "start_beat": 10.5,
-        "start_tick": 912,
-        "end": 4.9615335,
-        "end_beat": 11.75,
-        "end_tick": 1032,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 5.076917999999999,
-        "start_beat": 12.0,
-        "start_tick": 1056,
-        "end": 5.4230715,
-        "end_beat": 12.75,
-        "end_tick": 1128,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 3.6923039999999996,
+		"start_beat": 9.0,
+		"start_tick": 768,
+		"end": 4.269226499999999,
+		"end_beat": 10.25,
+		"end_tick": 888,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 4.384611,
+		"start_beat": 10.5,
+		"start_tick": 912,
+		"end": 4.9615335,
+		"end_beat": 11.75,
+		"end_tick": 1032,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 5.076917999999999,
+		"start_beat": 12.0,
+		"start_tick": 1056,
+		"end": 5.4230715,
+		"end_beat": 12.75,
+		"end_tick": 1128,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 5.538455999999999,
-        "start_beat": 13.0,
-        "start_tick": 1152,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1176,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 5.913455624999999,
-        "start_beat": 13.8125,
-        "start_tick": 1230,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1254,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 6.230763,
-        "start_beat": 14.5,
-        "start_tick": 1296,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1320,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 6.605762625,
-        "start_beat": 15.3125,
-        "start_tick": 1374,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1398,
-        "pitch": 1.6817928305074297,
-        "pitch_str": "Gb5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 6.923069999999999,
-        "start_beat": 16.0,
-        "start_tick": 1440,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1464,
-        "pitch": 1.7817974362806794,
-        "pitch_str": "G5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": {
-          "4": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 5.538455999999999,
+		"start_beat": 13.0,
+		"start_tick": 1152,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1176,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 5.913455624999999,
+		"start_beat": 13.8125,
+		"start_tick": 1230,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1254,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 6.230763,
+		"start_beat": 14.5,
+		"start_tick": 1296,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1320,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 6.605762625,
+		"start_beat": 15.3125,
+		"start_tick": 1374,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1398,
+		"pitch": 1.6817928305074297,
+		"pitch_str": "Gb5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 6.923069999999999,
+		"start_beat": 16.0,
+		"start_tick": 1440,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1464,
+		"pitch": 1.7817974362806794,
+		"pitch_str": "G5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": {
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 7.153839,
-        "start_beat": 16.5,
-        "start_tick": 1488,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1512,
-        "pitch": 1.6817928305074297,
-        "pitch_str": "Gb5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": {
-          "4": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 7.153839,
+		"start_beat": 16.5,
+		"start_tick": 1488,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1512,
+		"pitch": 1.6817928305074297,
+		"pitch_str": "Gb5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": {
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 7.384607999999999,
-        "start_beat": 17.0,
-        "start_tick": 1536,
-        "end": 7.961530499999999,
-        "end_beat": 18.25,
-        "end_tick": 1656,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 8.076915,
-        "start_beat": 18.5,
-        "start_tick": 1680,
-        "end": 8.6538375,
-        "end_beat": 19.75,
-        "end_tick": 1800,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 8.769222,
-        "start_beat": 20.0,
-        "start_tick": 1824,
-        "end": 9.115375499999999,
-        "end_beat": 20.75,
-        "end_tick": 1896,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 7.384607999999999,
+		"start_beat": 17.0,
+		"start_tick": 1536,
+		"end": 7.961530499999999,
+		"end_beat": 18.25,
+		"end_tick": 1656,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 8.076915,
+		"start_beat": 18.5,
+		"start_tick": 1680,
+		"end": 8.6538375,
+		"end_beat": 19.75,
+		"end_tick": 1800,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 8.769222,
+		"start_beat": 20.0,
+		"start_tick": 1824,
+		"end": 9.115375499999999,
+		"end_beat": 20.75,
+		"end_tick": 1896,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 9.230759999999998,
-        "start_beat": 21.0,
-        "start_tick": 1920,
-        "end": 9.807682499999999,
-        "end_beat": 22.25,
-        "end_tick": 2040,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 9.923067,
-        "start_beat": 22.5,
-        "start_tick": 2064,
-        "end": 10.2692205,
-        "end_beat": 23.25,
-        "end_tick": 2136,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 10.384604999999999,
-        "start_beat": 23.5,
-        "start_tick": 2160,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2184,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 9.230759999999998,
+		"start_beat": 21.0,
+		"start_tick": 1920,
+		"end": 9.807682499999999,
+		"end_beat": 22.25,
+		"end_tick": 2040,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 9.923067,
+		"start_beat": 22.5,
+		"start_tick": 2064,
+		"end": 10.2692205,
+		"end_beat": 23.25,
+		"end_tick": 2136,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 10.384604999999999,
+		"start_beat": 23.5,
+		"start_tick": 2160,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2184,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 10.615374,
-        "start_beat": 24.0,
-        "start_tick": 2208,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2232,
-        "pitch": 1.0,
-        "pitch_str": "A4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 10.615374,
+		"start_beat": 24.0,
+		"start_tick": 2208,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2232,
+		"pitch": 1.0,
+		"pitch_str": "A4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 11.076911999999998,
-        "start_beat": 25.0,
-        "start_tick": 2304,
-        "end": 11.653834499999999,
-        "end_beat": 26.25,
-        "end_tick": 2424,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 11.769218999999998,
-        "start_beat": 26.5,
-        "start_tick": 2448,
-        "end": 12.346141499999998,
-        "end_beat": 27.75,
-        "end_tick": 2568,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 12.461526,
-        "start_beat": 28.0,
-        "start_tick": 2592,
-        "end": 12.807679499999999,
-        "end_beat": 28.75,
-        "end_tick": 2664,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 11.076911999999998,
+		"start_beat": 25.0,
+		"start_tick": 2304,
+		"end": 11.653834499999999,
+		"end_beat": 26.25,
+		"end_tick": 2424,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 11.769218999999998,
+		"start_beat": 26.5,
+		"start_tick": 2448,
+		"end": 12.346141499999998,
+		"end_beat": 27.75,
+		"end_tick": 2568,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 12.461526,
+		"start_beat": 28.0,
+		"start_tick": 2592,
+		"end": 12.807679499999999,
+		"end_beat": 28.75,
+		"end_tick": 2664,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 12.923063999999998,
-        "start_beat": 29.0,
-        "start_tick": 2688,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2712,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 13.298063625,
-        "start_beat": 29.8125,
-        "start_tick": 2766,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2790,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 13.615370999999998,
-        "start_beat": 30.5,
-        "start_tick": 2832,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2856,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": {
-          "4": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 12.923063999999998,
+		"start_beat": 29.0,
+		"start_tick": 2688,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2712,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 13.298063625,
+		"start_beat": 29.8125,
+		"start_tick": 2766,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2790,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 13.615370999999998,
+		"start_beat": 30.5,
+		"start_tick": 2832,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2856,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": {
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 13.846139999999998,
-        "start_beat": 31.0,
-        "start_tick": 2880,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2904,
-        "pitch": 1.6817928305074297,
-        "pitch_str": "Gb5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 14.076908999999999,
-        "start_beat": 31.5,
-        "start_tick": 2928,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2952,
-        "pitch": 1.7817974362806794,
-        "pitch_str": "G5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "lead",
-        "start": 14.307678,
-        "start_beat": 32.0,
-        "start_tick": 2976,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3000,
-        "pitch": 2.000000000000001,
-        "pitch_str": "A5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": {
-          "4": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 13.846139999999998,
+		"start_beat": 31.0,
+		"start_tick": 2880,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2904,
+		"pitch": 1.6817928305074297,
+		"pitch_str": "Gb5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 14.076908999999999,
+		"start_beat": 31.5,
+		"start_tick": 2928,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2952,
+		"pitch": 1.7817974362806794,
+		"pitch_str": "G5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "lead",
+		"start": 14.307678,
+		"start_beat": 32.0,
+		"start_tick": 2976,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3000,
+		"pitch": 2.000000000000001,
+		"pitch_str": "A5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": {
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "lead",
-        "start": 14.538446999999998,
-        "start_beat": 32.5,
-        "start_tick": 3024,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3048,
-        "pitch": 2.2449240966187474,
-        "pitch_str": "B5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      }
-    ],
-    "chords": [
-      {
-        "name": "chords",
-        "start": 0.23076899999999997,
-        "start_beat": 1.5,
-        "start_tick": 48,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 72,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 0.46153799999999995,
-        "start_beat": 2.0,
-        "start_tick": 96,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 120,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 0.836537625,
-        "start_beat": 2.8125,
-        "start_tick": 174,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 198,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 1.0673066249999998,
-        "start_beat": 3.3125,
-        "start_tick": 222,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 246,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 1.3846139999999998,
-        "start_beat": 4.0,
-        "start_tick": 288,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 312,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "lead",
+		"start": 14.538446999999998,
+		"start_beat": 32.5,
+		"start_tick": 3024,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3048,
+		"pitch": 2.2449240966187474,
+		"pitch_str": "B5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  }
+	],
+	"chords": [
+	  {
+		"name": "chords",
+		"start": 0.23076899999999997,
+		"start_beat": 1.5,
+		"start_tick": 48,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 72,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 0.46153799999999995,
+		"start_beat": 2.0,
+		"start_tick": 96,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 120,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 0.836537625,
+		"start_beat": 2.8125,
+		"start_tick": 174,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 198,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 1.0673066249999998,
+		"start_beat": 3.3125,
+		"start_tick": 222,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 246,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 1.3846139999999998,
+		"start_beat": 4.0,
+		"start_tick": 288,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 312,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 2.0769209999999996,
-        "start_beat": 5.5,
-        "start_tick": 432,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 456,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 2.3076899999999996,
-        "start_beat": 6.0,
-        "start_tick": 480,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 504,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 2.6826896249999996,
-        "start_beat": 6.8125,
-        "start_tick": 558,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 582,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 2.9999969999999996,
-        "start_beat": 7.5,
-        "start_tick": 624,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 648,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "0": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 2.0769209999999996,
+		"start_beat": 5.5,
+		"start_tick": 432,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 456,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 2.3076899999999996,
+		"start_beat": 6.0,
+		"start_tick": 480,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 504,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 2.6826896249999996,
+		"start_beat": 6.8125,
+		"start_tick": 558,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 582,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 2.9999969999999996,
+		"start_beat": 7.5,
+		"start_tick": 624,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 648,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "0": [
+			"bass",
             "chords"
-          ],
-          "3": [
-            "chords",
+		  ],
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 3.2307659999999996,
-        "start_beat": 8.0,
-        "start_tick": 672,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 696,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 3.2307659999999996,
+		"start_beat": 8.0,
+		"start_tick": 672,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 696,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 3.3749966249999996,
-        "start_beat": 8.3125,
-        "start_tick": 702,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 726,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 3.4615349999999996,
-        "start_beat": 8.5,
-        "start_tick": 720,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 744,
-        "pitch": 1.0,
-        "pitch_str": "A4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 3.6057656249999996,
-        "start_beat": 8.8125,
-        "start_tick": 750,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 774,
-        "pitch": 0.8908987181403393,
-        "pitch_str": "G4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 3.9230729999999996,
-        "start_beat": 9.5,
-        "start_tick": 816,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 840,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 4.153841999999999,
-        "start_beat": 10.0,
-        "start_tick": 864,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 888,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 4.528841624999999,
-        "start_beat": 10.8125,
-        "start_tick": 942,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 966,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 4.759610625,
-        "start_beat": 11.3125,
-        "start_tick": 990,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1014,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 5.076917999999999,
-        "start_beat": 12.0,
-        "start_tick": 1056,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1080,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 3.3749966249999996,
+		"start_beat": 8.3125,
+		"start_tick": 702,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 726,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": 3,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 3.4615349999999996,
+		"start_beat": 8.5,
+		"start_tick": 720,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 744,
+		"pitch": 1.0,
+		"pitch_str": "A4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 3.6057656249999996,
+		"start_beat": 8.8125,
+		"start_tick": 750,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 774,
+		"pitch": 0.8908987181403393,
+		"pitch_str": "G4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 3.9230729999999996,
+		"start_beat": 9.5,
+		"start_tick": 816,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 840,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 4.153841999999999,
+		"start_beat": 10.0,
+		"start_tick": 864,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 888,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 4.528841624999999,
+		"start_beat": 10.8125,
+		"start_tick": 942,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 966,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 4.759610625,
+		"start_beat": 11.3125,
+		"start_tick": 990,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1014,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 5.076917999999999,
+		"start_beat": 12.0,
+		"start_tick": 1056,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1080,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 5.682686625,
-        "start_beat": 13.3125,
-        "start_tick": 1182,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1206,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 5.682686625,
+		"start_beat": 13.3125,
+		"start_tick": 1182,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1206,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 5.999993999999999,
-        "start_beat": 14.0,
-        "start_tick": 1248,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1272,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 6.461531999999999,
-        "start_beat": 15.0,
-        "start_tick": 1344,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1368,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 6.692301,
-        "start_beat": 15.5,
-        "start_tick": 1392,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1416,
-        "pitch": 1.6817928305074297,
-        "pitch_str": "Gb5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 5.999993999999999,
+		"start_beat": 14.0,
+		"start_tick": 1248,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1272,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 6.461531999999999,
+		"start_beat": 15.0,
+		"start_tick": 1344,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1368,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 6.692301,
+		"start_beat": 15.5,
+		"start_tick": 1392,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1416,
+		"pitch": 1.6817928305074297,
+		"pitch_str": "Gb5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 6.923069999999999,
-        "start_beat": 16.0,
-        "start_tick": 1440,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1464,
-        "pitch": 1.7817974362806794,
-        "pitch_str": "G5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 6.923069999999999,
+		"start_beat": 16.0,
+		"start_tick": 1440,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1464,
+		"pitch": 1.7817974362806794,
+		"pitch_str": "G5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ],
-          "4": [
-            "chords",
+		  ],
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 7.153839,
-        "start_beat": 16.5,
-        "start_tick": 1488,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1512,
-        "pitch": 1.6817928305074297,
-        "pitch_str": "Gb5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "2": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 7.153839,
+		"start_beat": 16.5,
+		"start_tick": 1488,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1512,
+		"pitch": 1.6817928305074297,
+		"pitch_str": "Gb5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "2": [
+			"bass",
             "chords"
-          ],
-          "4": [
-            "chords",
+		  ],
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 7.615376999999999,
-        "start_beat": 17.5,
-        "start_tick": 1584,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1608,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 7.846145999999999,
-        "start_beat": 18.0,
-        "start_tick": 1632,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1656,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 8.221145624999998,
-        "start_beat": 18.8125,
-        "start_tick": 1710,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1734,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 8.451914624999999,
-        "start_beat": 19.3125,
-        "start_tick": 1758,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1782,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 8.769222,
-        "start_beat": 20.0,
-        "start_tick": 1824,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1848,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 7.615376999999999,
+		"start_beat": 17.5,
+		"start_tick": 1584,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1608,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 7.846145999999999,
+		"start_beat": 18.0,
+		"start_tick": 1632,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1656,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 8.221145624999998,
+		"start_beat": 18.8125,
+		"start_tick": 1710,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1734,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 8.451914624999999,
+		"start_beat": 19.3125,
+		"start_tick": 1758,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1782,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 8.769222,
+		"start_beat": 20.0,
+		"start_tick": 1824,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1848,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 9.461528999999999,
-        "start_beat": 21.5,
-        "start_tick": 1968,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 1992,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 9.692298,
-        "start_beat": 22.0,
-        "start_tick": 2016,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2040,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 10.067297624999998,
-        "start_beat": 22.8125,
-        "start_tick": 2094,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2118,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 10.384604999999999,
-        "start_beat": 23.5,
-        "start_tick": 2160,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2184,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "0": [
-            "bass",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 9.461528999999999,
+		"start_beat": 21.5,
+		"start_tick": 1968,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 1992,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 9.692298,
+		"start_beat": 22.0,
+		"start_tick": 2016,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2040,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 10.067297624999998,
+		"start_beat": 22.8125,
+		"start_tick": 2094,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2118,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 10.384604999999999,
+		"start_beat": 23.5,
+		"start_tick": 2160,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2184,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "0": [
+			"bass",
             "chords"
-          ],
-          "3": [
-            "chords",
+		  ],
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 10.615374,
-        "start_beat": 24.0,
-        "start_tick": 2208,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2232,
-        "pitch": 1.122462048309373,
-        "pitch_str": "B4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 10.615374,
+		"start_beat": 24.0,
+		"start_tick": 2208,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2232,
+		"pitch": 1.122462048309373,
+		"pitch_str": "B4",
+		"band": 3,
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 10.759604624999998,
-        "start_beat": 24.3125,
-        "start_tick": 2238,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2262,
-        "pitch": 1.2599210498948734,
-        "pitch_str": "Db5",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 10.846143,
-        "start_beat": 24.5,
-        "start_tick": 2256,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2280,
-        "pitch": 1.0,
-        "pitch_str": "A4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 10.990373624999998,
-        "start_beat": 24.8125,
-        "start_tick": 2286,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2310,
-        "pitch": 0.8908987181403393,
-        "pitch_str": "G4",
-        "band": 2,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 11.307680999999999,
-        "start_beat": 25.5,
-        "start_tick": 2352,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2376,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 11.53845,
-        "start_beat": 26.0,
-        "start_tick": 2400,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2424,
-        "pitch": 1.498307076876682,
-        "pitch_str": "E5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 11.913449624999998,
-        "start_beat": 26.8125,
-        "start_tick": 2478,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2502,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 12.144218624999999,
-        "start_beat": 27.3125,
-        "start_tick": 2526,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2550,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 12.461526,
-        "start_beat": 28.0,
-        "start_tick": 2592,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2616,
-        "pitch": 1.3348398541700346,
-        "pitch_str": "D5",
-        "band": {
-          "start": 2,
-          "end": 3
-        },
-        "jumpable": false,
-        "compounds": {
-          "3": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 10.759604624999998,
+		"start_beat": 24.3125,
+		"start_tick": 2238,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2262,
+		"pitch": 1.2599210498948734,
+		"pitch_str": "Db5",
+		"band": 3,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 10.846143,
+		"start_beat": 24.5,
+		"start_tick": 2256,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2280,
+		"pitch": 1.0,
+		"pitch_str": "A4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 10.990373624999998,
+		"start_beat": 24.8125,
+		"start_tick": 2286,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2310,
+		"pitch": 0.8908987181403393,
+		"pitch_str": "G4",
+		"band": 2,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 11.307680999999999,
+		"start_beat": 25.5,
+		"start_tick": 2352,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2376,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 11.53845,
+		"start_beat": 26.0,
+		"start_tick": 2400,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2424,
+		"pitch": 1.498307076876682,
+		"pitch_str": "E5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 11.913449624999998,
+		"start_beat": 26.8125,
+		"start_tick": 2478,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2502,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 12.144218624999999,
+		"start_beat": 27.3125,
+		"start_tick": 2526,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2550,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 12.461526,
+		"start_beat": 28.0,
+		"start_tick": 2592,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2616,
+		"pitch": 1.3348398541700346,
+		"pitch_str": "D5",
+		"band": {
+		  "start": 2,
+		  "end": 3
+		},
+		"jumpable": false,
+		"compounds": {
+		  "3": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 12.923063999999998,
-        "start_beat": 29.0,
-        "start_tick": 2688,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2712,
-        "pitch": 1.7817974362806794,
-        "pitch_str": "G5",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 13.298063625,
-        "start_beat": 29.8125,
-        "start_tick": 2766,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2790,
-        "pitch": 2.000000000000001,
-        "pitch_str": "A5",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 13.615370999999998,
-        "start_beat": 30.5,
-        "start_tick": 2832,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2856,
-        "pitch": 2.2449240966187474,
-        "pitch_str": "B5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": {
-          "4": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 12.923063999999998,
+		"start_beat": 29.0,
+		"start_tick": 2688,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2712,
+		"pitch": 1.7817974362806794,
+		"pitch_str": "G5",
+		"band": 3,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 13.298063625,
+		"start_beat": 29.8125,
+		"start_tick": 2766,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2790,
+		"pitch": 2.000000000000001,
+		"pitch_str": "A5",
+		"band": 3,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 13.615370999999998,
+		"start_beat": 30.5,
+		"start_tick": 2832,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2856,
+		"pitch": 2.2449240966187474,
+		"pitch_str": "B5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": {
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 13.990370624999999,
-        "start_beat": 31.3125,
-        "start_tick": 2910,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 2934,
-        "pitch": 2.519842099789748,
-        "pitch_str": "Db6",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 14.307678,
-        "start_beat": 32.0,
-        "start_tick": 2976,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3000,
-        "pitch": 2.2449240966187474,
-        "pitch_str": "B5",
-        "band": 4,
-        "jumpable": false,
-        "compounds": {
-          "4": [
-            "chords",
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 13.990370624999999,
+		"start_beat": 31.3125,
+		"start_tick": 2910,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 2934,
+		"pitch": 2.519842099789748,
+		"pitch_str": "Db6",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 14.307678,
+		"start_beat": 32.0,
+		"start_tick": 2976,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3000,
+		"pitch": 2.2449240966187474,
+		"pitch_str": "B5",
+		"band": 4,
+		"jumpable": false,
+		"compounds": {
+		  "4": [
+			"chords",
             "lead"
-          ]
-        }
-      },
-      {
-        "name": "chords",
-        "start": 14.451908624999998,
-        "start_beat": 32.3125,
-        "start_tick": 3006,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3030,
-        "pitch": 2.519842099789748,
-        "pitch_str": "Db6",
-        "band": 4,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 14.538446999999998,
-        "start_beat": 32.5,
-        "start_tick": 3024,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3048,
-        "pitch": 2.000000000000001,
-        "pitch_str": "A5",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
-      },
-      {
-        "name": "chords",
-        "start": 14.682677624999998,
-        "start_beat": 32.8125,
-        "start_tick": 3054,
-        "end": null,
-        "end_beat": null,
-        "end_tick": 3071,
-        "pitch": 1.7817974362806794,
-        "pitch_str": "G5",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
-      }
-    ]
+		  ]
+		}
+	  },
+	  {
+		"name": "chords",
+		"start": 14.451908624999998,
+		"start_beat": 32.3125,
+		"start_tick": 3006,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3030,
+		"pitch": 2.519842099789748,
+		"pitch_str": "Db6",
+		"band": 4,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 14.538446999999998,
+		"start_beat": 32.5,
+		"start_tick": 3024,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3048,
+		"pitch": 2.000000000000001,
+		"pitch_str": "A5",
+		"band": 3,
+		"jumpable": false,
+		"compounds": null
+	  },
+	  {
+		"name": "chords",
+		"start": 14.682677624999998,
+		"start_beat": 32.8125,
+		"start_tick": 3054,
+		"end": null,
+		"end_beat": null,
+		"end_tick": 3071,
+		"pitch": 1.7817974362806794,
+		"pitch_str": "G5",
+		"band": 3,
+		"jumpable": false,
+		"compounds": null
+	  }
+	]
   }
 }
