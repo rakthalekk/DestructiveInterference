@@ -191,7 +191,8 @@ func _process(delta: float) -> void:
 	while current_time >= current_note.start_time - ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range: # magic number dont worry abt it
 		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
 			send_note.emit(current_note)
-		else:
+		# do not create a noise note where there would be a compound note
+		elif current_note.compounds.size() == 0:
 			var noise_note = current_note.duplicate()
 			noise_note.instrument = instruments["noise"]
 			send_note.emit(noise_note)

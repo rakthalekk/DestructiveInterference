@@ -171,6 +171,19 @@ position = Vector2(0, 32)
 scale = Vector2(0.02, 0.02)
 texture = ExtResource("2_xrhn5")
 
+[node name="CompoundIcon" type="Node2D" parent="Icon" unique_id=1177549223]
+visible = false
+
+[node name="CIcon1" type="Sprite2D" parent="Icon/CompoundIcon" unique_id=1495126037]
+position = Vector2(-10.999998, 35)
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("2_xrhn5")
+
+[node name="CIcon2" type="Sprite2D" parent="Icon/CompoundIcon" unique_id=76057996]
+position = Vector2(9.999999, 35)
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("2_xrhn5")
+
 [node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]
 collision_layer = 2
 collision_mask = 4

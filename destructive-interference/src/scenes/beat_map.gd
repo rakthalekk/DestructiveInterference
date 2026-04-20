@@ -74,7 +74,7 @@ func spawn_beat(note: Note):
 		#for i in range(note.band_start + 1, note.band_end + 1):
 			#lanes[i].add_beat(beat, false) # inform these other lanes about the beat so they can render waveform squigglies, but don't add it a 2nd time
 		beat.progress_ratio = 0.0
-		beat.dispatch_beat(note, LevelManager.view_range)
+		beat.dispatch_beat(note, LevelManager.view_range, lane_idx)
 		beats_created.append(beat)
 	
 	for beat in beats_created:

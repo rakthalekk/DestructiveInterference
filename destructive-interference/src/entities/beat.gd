@@ -113,11 +113,27 @@ func _physics_process(delta: float) -> void:
 			LevelManager.add_tolerance(wave_type, 0.5)
 
 
-func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
+func dispatch_beat(note: Note, in_lookahead_time_seconds: float, lane_idx: int):
 	note_data = note
 	wave_type = note.instrument.type
-	#icon.frame = int(wave_type)
-	icon.texture = wave_symbols[wave_type]
+	
+	if note.compounds.has(lane_idx):
+		var instruments = note.compounds[lane_idx]
+		var type_1 = LevelManager.instruments[instruments[0]].type
+		var type_2 = LevelManager.instruments[instruments[1]].type
+		
+		# if goal of other instrument has been completed, do not display compound note
+		if LevelManager.wave_interferences[type_1] >= LevelManager.wave_goals[type_1] || \
+				LevelManager.wave_interferences[type_2] >= LevelManager.wave_goals[type_2]:
+			icon.texture = wave_symbols[wave_type]
+		else:
+			icon.visible = false
+			$Icon/CompoundIcon.visible = true
+			$Icon/CompoundIcon/CIcon1.texture = wave_symbols[type_1]
+			$Icon/CompoundIcon/CIcon2.texture = wave_symbols[type_2]
+	else:
+		icon.texture = wave_symbols[wave_type]
+	
 	$Connectors/Connector1.default_color = wave_colors[wave_type]
 	$Connectors/Connector2.default_color = wave_colors[wave_type]
 	$Connectors/Connector3.default_color = wave_colors[wave_type]
