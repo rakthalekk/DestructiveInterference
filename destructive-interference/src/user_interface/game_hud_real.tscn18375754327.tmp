@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://wo5ut3li0e70"]
+
+[ext_resource type="Script" uid="uid://c417v1wq435f1" path="res://src/user_interface/game_hud.gd" id="1_8gkai"]
+[ext_resource type="Texture2D" uid="uid://cjsee88ckv462" path="res://assets/background.png" id="1_twnh5"]
+[ext_resource type="Texture2D" uid="uid://cw4iku6mdrhru" path="res://assets/portrait_frame.png" id="2_242bm"]
+[ext_resource type="Texture2D" uid="uid://v2dbd54bwdef" path="res://assets/portrait_frame_mask.png" id="3_ps3tf"]
+[ext_resource type="Texture2D" uid="uid://bwttlg07fmaa" path="res://assets/player_portrait.png" id="3_yrik1"]
+[ext_resource type="Texture2D" uid="uid://dddogew3wor" path="res://assets/dialogue_box.png" id="5_0pujd"]
+[ext_resource type="FontFile" uid="uid://bitfpl1q67ow0" path="res://assets/fonts/deathrattlebb_reg.ttf" id="6_6gs8f"]
+[ext_resource type="Texture2D" uid="uid://ppbiosb84cjl" path="res://assets/gain_meter.png" id="7_upflp"]
+[ext_resource type="Texture2D" uid="uid://cm5joicgfcs8c" path="res://assets/gain_pips.png" id="8_u8cj3"]
+[ext_resource type="PackedScene" uid="uid://bcytbb0vpjl3m" path="res://src/user_interface/goal_container.tscn" id="9_u8cj3"]
+
+[node name="GameHUD" type="Control" unique_id=1373877530]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8gkai")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1643837568]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_twnh5")
+
+[node name="WomanHole" type="TextureRect" parent="." unique_id=875117670]
+clip_contents = true
+layout_mode = 0
+offset_right = 2550.0
+offset_bottom = 3300.0
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_242bm")
+expand_mode = 3
+
+[node name="WomanContainer" type="TextureRect" parent="WomanHole" unique_id=1886044283]
+clip_children = 1
+clip_contents = true
+layout_mode = 0
+offset_right = 2550.0
+offset_bottom = 3300.0
+texture = ExtResource("3_ps3tf")
+expand_mode = 3
+
+[node name="Woman" type="TextureRect" parent="WomanHole/WomanContainer" unique_id=1268622825]
+layout_mode = 1
+offset_right = 2550.0
+offset_bottom = 3300.0
+texture = ExtResource("3_yrik1")
+
+[node name="WomanHole2" type="TextureRect" parent="." unique_id=1552611669]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -2550.0
+offset_top = -69.0
+offset_bottom = 3231.0
+grow_horizontal = 0
+scale = Vector2(0.25, 0.25)
+pivot_offset_ratio = Vector2(1, 0)
+texture = ExtResource("2_242bm")
+expand_mode = 3
+flip_h = true
+
+[node name="WomanContainer" type="TextureRect" parent="WomanHole2" unique_id=820782123]
+clip_children = 1
+clip_contents = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -2550.0
+offset_bottom = 3300.0
+grow_horizontal = 0
+texture = ExtResource("3_ps3tf")
+expand_mode = 3
+flip_h = true
+
+[node name="Woman" type="TextureRect" parent="WomanHole2/WomanContainer" unique_id=700906810]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -2550.0
+offset_bottom = 3300.0
+grow_horizontal = 0
+texture = ExtResource("3_yrik1")
+flip_h = true
+
+[node name="Larynx" type="TextureRect" parent="." unique_id=465679284]
+layout_mode = 0
+offset_left = 666.0
+offset_top = -77.99998
+offset_right = 3168.0
+offset_bottom = 2262.0
+rotation = 0.43432224
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_0pujd")
+
+[node name="DialogueBox" type="Label" parent="Larynx" unique_id=350918071]
+layout_mode = 0
+offset_left = 169.14052
+offset_top = 792.3958
+offset_right = 2215.3684
+offset_bottom = 1983.3958
+rotation = -0.15967329
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_6gs8f")
+theme_override_font_sizes/font_size = 240
+text = "Shadow the hedgehog is a bitch ass mother-fucker he pissed on my fucking wife. that's right, he took his hedgehog"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="GainMeter" type="TextureProgressBar" parent="." unique_id=1466343055]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 540.0
+offset_top = 430.0
+offset_right = 2588.0
+offset_bottom = 3559.0
+rotation = 0.8841349
+scale = Vector2(0.125, 0.125)
+value = 69.0
+fill_mode = 3
+texture_under = ExtResource("7_upflp")
+texture_progress = ExtResource("8_u8cj3")
+
+[node name="Control" type="Control" parent="." unique_id=893640276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GoalContainer1" parent="Control" unique_id=466606414 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 558.0
+offset_top = -246.0
+offset_right = 2606.0
+offset_bottom = 1802.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="GoalContainer2" parent="Control" unique_id=1355129531 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 755.0
+offset_top = -296.0
+offset_right = 2803.0
+offset_bottom = 1752.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="GoalContainer3" parent="Control" unique_id=2012604002 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 492.0
+offset_top = -57.0
+offset_right = 2540.0
+offset_bottom = 1991.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="GoalContainer4" parent="Control" unique_id=156283006 instance=ExtResource("9_u8cj3")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 703.0
+offset_top = -108.0
+offset_right = 2751.0
+offset_bottom = 1940.0
+grow_horizontal = 1
+grow_vertical = 1

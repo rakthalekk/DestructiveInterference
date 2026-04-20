@@ -428,10 +428,9 @@ def write_tuning_file(tuning_dict: dict, tuning_filepath: pathlib.Path) -> None:
     del tuning_dict["metadata"]["song_end"]
     for inst_name, inst_notes in tuning_dict["notes_by_instrument"].items():
         for note in inst_notes:
-            del note["sort_index"]
-            del note["pitch"]
-            del note["start"]
-            del note["end"]
+            for key in ["sort_index", "pitch", "start", "end"]:
+                if key in note:
+                    del note[key]
     with open(tuning_filepath, 'w') as f:
         json.dump(tuning_dict, fp=f, indent='  ')
 

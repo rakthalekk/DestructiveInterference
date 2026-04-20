@@ -9,8 +9,14 @@ enum BEAT_TYPE {
 
 var my_beat_type: BEAT_TYPE
 
+signal i_die
+
 ## Wave type for this beat
 var wave_type: GameManager.WAVE_TYPE
+
+
+## Note describing this beat
+var note: Note
 
 
 ## Speed value used by this beat
@@ -123,7 +129,7 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	
 	$Icon/Bkgd.modulate = wave_colors[wave_type]
 	$Icon/ColorRect.color = wave_colors[wave_type]
-	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
+	speed = (LevelManager.SCREEN_HEIGHT - 38) / in_lookahead_time_seconds
 	
 	hold_time = 0.0
 	time_to_hold = note.end_time - note.start_time
@@ -154,6 +160,7 @@ func _on_hurt_the_player_box_area_entered(_area: Area2D) -> void:
 
 
 func die():
+	i_die.emit(self)
 	anim_player.play("my_time_has_come")
 
 

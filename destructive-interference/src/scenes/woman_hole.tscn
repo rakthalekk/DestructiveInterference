@@ -1,0 +1,343 @@
+[gd_scene format=3 uid="uid://b6fh5ku65a0aw"]
+
+[ext_resource type="Texture2D" uid="uid://cw4iku6mdrhru" path="res://assets/portrait_frame.png" id="1_0sqt2"]
+[ext_resource type="Texture2D" uid="uid://v2dbd54bwdef" path="res://assets/portrait_frame_mask.png" id="2_5puls"]
+[ext_resource type="Script" uid="uid://bim6v73fjvrme" path="res://src/scenes/woman_hole.gd" id="2_567w2"]
+[ext_resource type="Texture2D" uid="uid://bwttlg07fmaa" path="res://assets/player_portrait.png" id="3_bgm0a"]
+[ext_resource type="Texture2D" uid="uid://dddogew3wor" path="res://assets/dialogue_box.png" id="4_bgm0a"]
+[ext_resource type="FontFile" uid="uid://bitfpl1q67ow0" path="res://assets/fonts/deathrattlebb_reg.ttf" id="5_567w2"]
+
+[sub_resource type="Animation" id="Animation_t7jg5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Speech:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_ikahm"]
+resource_name = "speak"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Speech:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.23333333, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 0, 0, 0),
+"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
+"times": PackedFloat32Array(0, 0.4, 8.5, 9)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(2, 0, 0, 0),
+"points": PackedFloat32Array(1e-05, 0, 0, 0.06666667, 0.03333167, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 1e-05, 0, 0, 0.06666667, 0.03333167),
+"times": PackedFloat32Array(0, 0.4, 8.5, 9)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_246y5"]
+_data = {
+&"RESET": SubResource("Animation_t7jg5"),
+&"speak": SubResource("Animation_ikahm")
+}
+
+[sub_resource type="Animation" id="Animation_eic7m"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.43432224, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_pjovr"]
+resource_name = "speak_idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0.43432224, -0.25, 0, 0.25, 0, 0.42, -0.03333334, 0.014209401, 0, 0, 0.45, -0.061111107, 0.058177643, 0, 0, 0.43432224, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.53333336, 1.4666667, 2)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_33uqf"]
+_data = {
+&"RESET": SubResource("Animation_eic7m"),
+&"speak_idle": SubResource("Animation_pjovr")
+}
+
+[sub_resource type="Animation" id="Animation_246y5"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Woman:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_567w2"]
+resource_name = "idle"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Woman:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.36666667, -0.0269498, 0.08726646, -0.19999999, -0.0057413056, 0, 0, 0.08726646, -0.2840868, 0.01619353, 0.16666663, -0.00950034, 0.017453292, -0.23333347, -0.021311888, 0, 0, 0, -0.25, 0, 0.36666667, -0.0269498, 0.08726646, -0.19999999, -0.0057413056, 0, 0, 0.08726646, -0.2840868, 0.01619353, 0.16666663, -0.00950034, 0.017453292, -0.23333347, -0.021311888, 0, 0, 0, -0.25, 0, 0.36666667, -0.0269498, 0.08726646, -0.19999999, -0.0057413056, 0, 0, 0.08726646, -0.2840868, 0.01619353, 0.16666663, -0.00950034, 0.017453292, -0.23333347, -0.021311888, 0, 0),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5000001, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uf770"]
+_data = {
+&"RESET": SubResource("Animation_246y5"),
+&"idle": SubResource("Animation_567w2")
+}
+
+[sub_resource type="Animation" id="Animation_uf770"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Woman:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Woman:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_33uqf"]
+resource_name = "yap"
+length = 3.5
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Woman:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1, -0.03333334, 0.017500004, 0, 0, 1.05, -0.016666671, -0.008333325, 0, 0, 1.05, -0.016666671, 0, 0, 0, 1.1, -0.016666662, -0.008333346, 0, 0, 1.05, -0.01111111, 0.008333346, 0, 0, 1.2, -0.011111121, -0.025000017, 0, 0, 1, -0.027777772, 0.033333343, 0, 0, 1, -0.03333334, 0.017500004, 0, 0, 1.05, -0.016666671, -0.008333325, 0, 0, 1.05, -0.016666671, 0, 0, 0, 1, -0.25, 0, 0.25, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1.2, -0.011111121, -0.025000017, 0, 0, 1, -0.027777772, 0.033333343, 0, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1.1, -0.016666662, -0.008333346, 0, 0, 1.05, -0.01111111, 0.008333346, 0, 0, 1.2, -0.011111121, -0.025000017, 0, 0, 1, -0.027777772, 0.033333343, 0, 0, 1, -0.03333334, 0.017500004, 0, 0),
+"times": PackedFloat32Array(0, 0.20000002, 0.40000004, 0.6, 0.70000005, 0.8000001, 0.90000004, 0.9666667, 1.0333334, 1.2, 1.5000001, 1.6000001, 1.7000002, 2, 2.2, 2.3000002, 2.4666667, 2.7333336, 2.9, 2.9666667, 3.0333335, 3.2, 3.5000002)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Woman:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1, -0.03333334, 0.017500004, 0, 0, 1, -0.016666671, 0, 0, 0, 1.1, -0.016666671, -0.016666671, 0, 0, 1.1, -0.016666662, 0, 0, 0, 1.05, -0.01111111, 0.008333346, 0, 0, 1.2, -0.011111121, -0.025000017, 0, 0, 1, -0.027777772, 0.033333343, 0, 0, 1, -0.03333334, 0.017500004, 0, 0, 1, -0.016666671, 0, 0, 0, 1.1, -0.016666671, -0.016666671, 0, 0, 1, -0.25, 0, 0.25, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1.2, -0.011111121, -0.025000017, 0, 0, 1, -0.027777772, 0.033333343, 0, 0, 1.105, -0.03333334, -0.017500004, 0, 0, 1.1, -0.016666662, 0, 0, 0, 1.05, -0.01111111, 0.008333346, 0, 0, 1.2, -0.011111121, -0.025000017, 0, 0, 1, -0.027777772, 0.033333343, 0, 0, 1, -0.03333334, 0.017500004, 0, 0),
+"times": PackedFloat32Array(0, 0.20000002, 0.40000004, 0.6, 0.70000005, 0.8000001, 0.90000004, 0.9666667, 1.0333334, 1.2, 1.5000001, 1.6000001, 1.7000002, 2, 2.2, 2.3000002, 2.4666667, 2.7333336, 2.9, 2.9666667, 3.0333335, 3.2, 3.5000002)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_slwvb"]
+_data = {
+&"RESET": SubResource("Animation_uf770"),
+&"yap": SubResource("Animation_33uqf")
+}
+
+[sub_resource type="Animation" id="Animation_slwvb"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_i8qr4"]
+resource_name = "idle"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.04363323, -0.16666667, 0.0072722053, 0, 0, 0, -0.16666667, -0.0072722053, 0, 0, 0.04363323, -0.16666672, -0.0072722053, 0, 0, 0, -0.16666663, 0.0072722053, 0, 0),
+"times": PackedFloat32Array(0, 1, 2, 3.0000002, 4)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lb0ji"]
+_data = {
+&"RESET": SubResource("Animation_slwvb"),
+&"idle": SubResource("Animation_i8qr4")
+}
+
+[node name="WomanHole" type="Control" unique_id=999594193]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2550.0
+offset_bottom = 3300.0
+scale = Vector2(0.25, 0.25)
+script = ExtResource("2_567w2")
+
+[node name="DialogueBox" type="TextureRect" parent="." unique_id=587406403]
+layout_mode = 1
+offset_left = 1796.0001
+offset_top = -191.99991
+offset_right = 4298.0
+offset_bottom = 2148.0
+rotation = 0.43432224
+scale = Vector2(1e-05, 1e-05)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_bgm0a")
+
+[node name="Speech" type="Label" parent="DialogueBox" unique_id=670603187]
+layout_mode = 0
+offset_left = 169.14052
+offset_top = 792.3958
+offset_right = 2215.3687
+offset_bottom = 1983.3958
+rotation = -0.15967329
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_567w2")
+theme_override_font_sizes/font_size = 300
+text = "abe bebabe ebaobebeaobe tgoa daoemgo e aod awdiou  "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="Speaking" type="AnimationPlayer" parent="DialogueBox" unique_id=1223201894]
+libraries/ = SubResource("AnimationLibrary_246y5")
+
+[node name="SpeakIdle" type="AnimationPlayer" parent="DialogueBox" unique_id=1436231518]
+libraries/ = SubResource("AnimationLibrary_33uqf")
+autoplay = &"speak_idle"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=833276969]
+layout_mode = 0
+offset_right = 2550.0
+offset_bottom = 3300.0
+pivot_offset = Vector2(1284, 1956)
+texture = ExtResource("1_0sqt2")
+
+[node name="FrameMask" type="TextureRect" parent="TextureRect" unique_id=204724806]
+clip_children = 1
+clip_contents = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -3300.0
+offset_right = 2550.0
+grow_vertical = 0
+texture = ExtResource("2_5puls")
+expand_mode = 3
+
+[node name="Woman" type="TextureRect" parent="TextureRect/FrameMask" unique_id=428012202]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -52.0
+offset_top = -3012.0
+offset_right = 2498.0
+offset_bottom = 296.0
+grow_vertical = 0
+pivot_offset = Vector2(900.125, 2752)
+texture = ExtResource("3_bgm0a")
+
+[node name="idle" type="AnimationPlayer" parent="TextureRect/FrameMask" unique_id=1127219626]
+libraries/ = SubResource("AnimationLibrary_uf770")
+autoplay = &"idle"
+
+[node name="yap" type="AnimationPlayer" parent="TextureRect/FrameMask" unique_id=1964946078]
+libraries/ = SubResource("AnimationLibrary_slwvb")
+
+[node name="FrameIdle" type="AnimationPlayer" parent="TextureRect" unique_id=840974702]
+libraries/ = SubResource("AnimationLibrary_lb0ji")
+autoplay = &"idle"
