@@ -478,7 +478,7 @@ def write_tuning_file(tuning_dict: dict, tuning_filepath: pathlib.Path) -> None:
     del tuning_dict["metadata"]["song_end"]
     for inst_name, inst_notes in tuning_dict["notes_by_instrument"].items():
         for note in inst_notes:
-            for key in ["sort_index", "pitch", "compound"]:
+            for key in ["sort_index", "pitch", "compounds"]:
                 if key in note:
                     del note[key]
     with open(tuning_filepath, 'w') as f:
