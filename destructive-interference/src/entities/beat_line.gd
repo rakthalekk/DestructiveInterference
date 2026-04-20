@@ -7,7 +7,7 @@ func _process(delta: float) -> void:
 		return
 	
 	var lifetime = LevelManager.view_range
-	var speed = (LevelManager.SCREEN_HEIGHT + 38) / lifetime
+	var speed = (LevelManager.SCREEN_HEIGHT) / lifetime
 	position.y += speed * delta
 	
 	if position.y >= LevelManager.SCREEN_HEIGHT:

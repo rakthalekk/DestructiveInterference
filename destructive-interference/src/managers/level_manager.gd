@@ -171,10 +171,18 @@ func _process(delta: float) -> void:
 	if is_player_win:
 		win()
 		return
-	
+
+	# Explanation for magic number below.
+	# We're positioning $Zero at y=SCREEN_HEIGHT as "current_time",
+	# and y=0 as "current_time + view_range".
+	# i.e. We calculate a beat's speed (in px/sec) as SCREEN_HEIGHT(px) / view_range(s).
+	# But, the Path2Ds start a bit *above* y=0.
+	# So, the notes have a bit *more* than SCREEN_HEIGHT pixels to traverse
+	# before reaching $Zero.
+	# Solution: look 38 pixels ahead in the beatmap for spawning notes. It's dumb but it works.
 	var current_note: Note = notes[current_note_idx]
-	
-	while current_time >= current_note.start_time - view_range:
+
+	while current_time >= current_note.start_time - ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range: # magic number dont worry abt it
 		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
 			send_note.emit(current_note)
 		
