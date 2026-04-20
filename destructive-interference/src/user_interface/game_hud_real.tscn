@@ -10,6 +10,101 @@
 [ext_resource type="Texture2D" uid="uid://cm5joicgfcs8c" path="res://assets/gain_pips.png" id="8_u8cj3"]
 [ext_resource type="PackedScene" uid="uid://bcytbb0vpjl3m" path="res://src/user_interface/goal_container.tscn" id="9_u8cj3"]
 
+[sub_resource type="Animation" id="Animation_ikahm"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.8841349, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_u8cj3"]
+resource_name = "idle"
+length = 4.0
+loop_mode = 1
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0, 0, 0),
+"points": PackedFloat32Array(0.8841349, -0.8333334, 0, 0, 0, 0.9075712, -0.16666667, 0, 0.16666667, 0, 0.8841349, -0.8333334, 0, 0, 0, 0.87266463, -0.16666667, 0, 0.16666667, 0, 0.8841349, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 1, 2, 3, 4)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8gkai"]
+_data = {
+&"RESET": SubResource("Animation_ikahm"),
+&"idle": SubResource("Animation_u8cj3")
+}
+
+[sub_resource type="Animation" id="Animation_eic7m"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_t7jg5"]
+resource_name = "hit"
+length = 1.50001
+step = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0, -0.03390917, 0.5, -0.1, -0.09358388, 0, 0, 0.65, -0.09044284, -0.15450424, 0, 0, 0.7, -0.099999994, 0.06273496, 0, 0, 0.5, -0.39999998, -0.079746395, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.8, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.1, -0.08234081, 0.65, -0.1, -0.004885137, 0, 0, 0.65, -0.016666668, 0, 0, 0, 0.7, -0.099999994, 0.063599706, 0, 0, 0.5, -0.39999998, -0.08147606, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.8, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eic7m"]
+_data = {
+&"RESET": SubResource("Animation_eic7m"),
+&"hit": SubResource("Animation_t7jg5")
+}
+
 [sub_resource type="Animation" id="Animation_8gkai"]
 resource_name = "intro"
 length = 0.4
@@ -45,6 +140,32 @@ texture = ExtResource("1_twnh5")
 
 [node name="WomanHole" parent="." unique_id=1277226185 instance=ExtResource("3_u8cj3")]
 layout_mode = 0
+offset_left = -10.0
+offset_top = -120.0
+offset_right = 2540.0
+offset_bottom = 3180.0
+
+[node name="GainMeter" type="TextureProgressBar" parent="WomanHole" unique_id=1466343055]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 468.0
+offset_top = 200.0
+offset_right = 2516.0
+offset_bottom = 3329.0
+rotation = 0.8841349
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(1073.1221, 2640.3374)
+value = 69.0
+fill_mode = 3
+texture_under = ExtResource("7_upflp")
+texture_progress = ExtResource("8_u8cj3")
+
+[node name="GainIdle" type="AnimationPlayer" parent="WomanHole/GainMeter" unique_id=1553136994]
+libraries/ = SubResource("AnimationLibrary_8gkai")
+autoplay = &"idle"
+
+[node name="GainHit" type="AnimationPlayer" parent="WomanHole/GainMeter" unique_id=1727047166]
+libraries/ = SubResource("AnimationLibrary_eic7m")
 
 [node name="WomanHole2" type="TextureRect" parent="." unique_id=1552611669]
 clip_contents = true
@@ -86,20 +207,6 @@ offset_bottom = 3300.0
 grow_horizontal = 0
 texture = ExtResource("3_yrik1")
 flip_h = true
-
-[node name="GainMeter" type="TextureProgressBar" parent="." unique_id=1466343055]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 540.0
-offset_top = 430.0
-offset_right = 2588.0
-offset_bottom = 3559.0
-rotation = 0.8841349
-scale = Vector2(0.125, 0.125)
-value = 69.0
-fill_mode = 3
-texture_under = ExtResource("7_upflp")
-texture_progress = ExtResource("8_u8cj3")
 
 [node name="GoalContainer1" parent="." unique_id=1349114661 instance=ExtResource("9_u8cj3")]
 unique_name_in_owner = true

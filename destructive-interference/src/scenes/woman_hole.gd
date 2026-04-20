@@ -1,6 +1,6 @@
 # i tried to stop it...
 class_name WomanHole
-extends TextureRect
+extends Control
 
 
 @onready var dialogue_anim := $DialogueBox/Speaking as AnimationPlayer

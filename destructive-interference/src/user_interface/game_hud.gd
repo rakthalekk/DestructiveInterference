@@ -14,8 +14,14 @@ extends GameMenu
 
 
 func _process(_delta: float) -> void:
+	var old_val = gain_meter.value
 	gain_meter.value = PlayerManager.current_gain
 	gain_meter.max_value = PlayerManager.MAX_GAIN
+	gain_meter.value = clampf(gain_meter.value, 0, gain_meter.max_value)
+	
+	if old_val < gain_meter.value:
+		$WomanHole/GainMeter/GainHit.stop()
+		$WomanHole/GainMeter/GainHit.play("hit")
 
 
 func setup_hud():
