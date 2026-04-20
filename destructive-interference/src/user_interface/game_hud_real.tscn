@@ -52,6 +52,40 @@ offset_right = 2474.0
 offset_bottom = 3620.0
 texture = ExtResource("3_yrik1")
 
+[node name="WomanHole2" type="TextureRect" parent="." unique_id=1552611669]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1920.0
+offset_right = 630.0
+offset_bottom = 3300.0
+grow_horizontal = 0
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_242bm")
+expand_mode = 3
+flip_h = true
+
+[node name="WomanContainer" type="TextureRect" parent="WomanHole2" unique_id=820782123]
+clip_children = 1
+clip_contents = true
+layout_mode = 0
+offset_right = 2550.0
+offset_bottom = 3300.0
+texture = ExtResource("3_ps3tf")
+expand_mode = 3
+flip_h = true
+
+[node name="Woman" type="TextureRect" parent="WomanHole2/WomanContainer" unique_id=700906810]
+layout_mode = 0
+offset_left = -76.0
+offset_top = 320.0
+offset_right = 2474.0
+offset_bottom = 3620.0
+texture = ExtResource("3_yrik1")
+flip_h = true
+
 [node name="Larynx" type="TextureRect" parent="." unique_id=465679284]
 layout_mode = 0
 offset_left = 666.0

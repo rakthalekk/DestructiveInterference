@@ -80,7 +80,7 @@ func _on_area_entered(area: Area2D) -> void:
 
 
 func _hold_beat_logic(beat: Beat):
-	if beat.wave_type == interfere_type:
+	if beat.wave_type == interfere_type && current_state == STATE.TAPPED:
 		beat.being_held = true
 	else:
 		PlayerManager.on_player_missed_beat(beat)
@@ -88,7 +88,7 @@ func _hold_beat_logic(beat: Beat):
 
 
 func _tap_beat_logic(beat: Beat):
-	if beat.wave_type == interfere_type:
+	if beat.wave_type == interfere_type && current_state == STATE.TAPPED:
 		PlayerManager.on_player_killed_beat(beat)
 	else:
 		PlayerManager.on_player_missed_beat(beat)
