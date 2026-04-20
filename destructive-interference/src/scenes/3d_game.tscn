@@ -315,6 +315,7 @@ near = 0.001
 
 [node name="CameraBlocker" type="Sprite3D" parent="Camera3D" unique_id=1291863035]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.2009865)
+visible = false
 modulate = Color(0.27058825, 0.06666667, 0.5372549, 1)
 texture = SubResource("GradientTexture2D_o5ef8")
 

@@ -31,6 +31,11 @@ var height := 1:
 	set(val):
 		height = val
 
+var wave_symbols: Dictionary[GameManager.WAVE_TYPE, Texture2D] = {
+	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
+}
+
+
 var wave_colors: Dictionary[GameManager.WAVE_TYPE, Color] = {
 	GameManager.WAVE_TYPE.TRIANGLE: Color("e04e4e"),
 	GameManager.WAVE_TYPE.SQUARE: Color("40ba22"),
