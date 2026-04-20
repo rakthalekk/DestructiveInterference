@@ -231,10 +231,18 @@ def cli():
     "force_update_note_props_raw",
     help="comma-separated list of Note properties to force-update in the tuning file, even if they differ"
 )
+@click.option(
+    "-d",
+    "--display/--no-display",
+    "display",
+    default=True,
+    help="Whether to display the beatmap in stdout"
+)
 def build(
     level_dir: pathlib.Path,
     min_hold_duration: float,
     force_update_note_props_raw: str,
+    display: bool,
 ):
     """
     Process raw level data in LEVEL_DIR into a JSON beatmap ready for Godot.
@@ -374,10 +382,11 @@ def build(
 
 
     # pretty display the beat map
-    try:
-        display_level(level_dict)
-    except MissingTuningDataError as e:
-        print("WARN: Can't display beat map due to missing fields in tuning file.\n" + str(e))
+    if display:
+        try:
+            display_level(level_dict)
+        except MissingTuningDataError as e:
+            print("WARN: Can't display beat map due to missing fields in tuning file.\n" + str(e))
 
 class MissingTuningDataError(ValueError): ...
 
