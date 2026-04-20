@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://hlcgs4gxxmcu"]
+
+[ext_resource type="Script" uid="uid://cwx3m27p6h71t" path="res://src/entities/lane.gd" id="1_2w722"]
+
+[sub_resource type="Curve2D" id="Curve2D_t435w"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, -38, 0, 0, 0, 0, 0, 2980)
+}
+point_count = 2
+
+[node name="Lane1" type="Path2D" unique_id=1639337317]
+curve = SubResource("Curve2D_t435w")
+script = ExtResource("1_2w722")

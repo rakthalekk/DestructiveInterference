@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cqulc4ml0j2sg" path="res://src/scenes/beat_map.gd" id="1_t435w"]
 [ext_resource type="Texture2D" uid="uid://40xu17tul1cg" path="res://assets/track.png" id="2_p61wa"]
 [ext_resource type="PackedScene" uid="uid://cll2il63rnafb" path="res://src/entities/player_2d.tscn" id="4_43db8"]
+[ext_resource type="PackedScene" uid="uid://hlcgs4gxxmcu" path="res://src/entities/lane.tscn" id="4_g5uah"]
 
 [sub_resource type="Gradient" id="Gradient_x8dl8"]
 interpolation_mode = 1
@@ -14,12 +15,6 @@ metadata/_snap_enabled = true
 gradient = SubResource("Gradient_x8dl8")
 width = 720
 height = 1080
-
-[sub_resource type="Curve2D" id="Curve2D_t435w"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, -38, 0, 0, 0, 0, 0, 2980)
-}
-point_count = 2
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t435w"]
 size = Vector2(761, 227.5)
@@ -38,6 +33,7 @@ scale = Vector2(0.27, 0.27)
 texture = ExtResource("2_p61wa")
 
 [node name="TrackLines" type="Node2D" parent="." unique_id=2109694386]
+visible = false
 
 [node name="Track1" type="Line2D" parent="TrackLines" unique_id=62865726]
 points = PackedVector2Array(818, 0, 818, 1080)
@@ -70,25 +66,20 @@ position = Vector2(960, 940)
 [node name="LaneContainer" type="Node2D" parent="." unique_id=2078129335]
 unique_name_in_owner = true
 
-[node name="Lane1" type="Path2D" parent="LaneContainer" unique_id=210007051]
+[node name="Lane1" parent="LaneContainer" unique_id=1639337317 instance=ExtResource("4_g5uah")]
 position = Vector2(818, 0)
-curve = SubResource("Curve2D_t435w")
 
-[node name="Lane2" type="Path2D" parent="LaneContainer" unique_id=1312751122]
+[node name="Lane2" parent="LaneContainer" unique_id=364123247 instance=ExtResource("4_g5uah")]
 position = Vector2(889, 0)
-curve = SubResource("Curve2D_t435w")
 
-[node name="Lane3" type="Path2D" parent="LaneContainer" unique_id=2022381405]
+[node name="Lane3" parent="LaneContainer" unique_id=1586993764 instance=ExtResource("4_g5uah")]
 position = Vector2(960, 0)
-curve = SubResource("Curve2D_t435w")
 
-[node name="Lane4" type="Path2D" parent="LaneContainer" unique_id=860603514]
+[node name="Lane4" parent="LaneContainer" unique_id=1453992030 instance=ExtResource("4_g5uah")]
 position = Vector2(1031, 0)
-curve = SubResource("Curve2D_t435w")
 
-[node name="Lane5" type="Path2D" parent="LaneContainer" unique_id=584336468]
+[node name="Lane5" parent="LaneContainer" unique_id=1120495975 instance=ExtResource("4_g5uah")]
 position = Vector2(1102, 0)
-curve = SubResource("Curve2D_t435w")
 
 [node name="Timer" type="Timer" parent="." unique_id=1240374801]
 wait_time = 0.5
