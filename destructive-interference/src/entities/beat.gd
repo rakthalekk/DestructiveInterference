@@ -19,12 +19,20 @@ var speed: float
 var width := 1:
 	set(val):
 		width = val
-		$Icon.scale = Vector2(width, 1)
+		$Icon/ColorRect.scale = Vector2(width, 1)
 		$DespawnBox.scale = Vector2(width, 1)
-		$Icon.position = Vector2((width - 1) * 35, 0)
 		$DespawnBox.position = Vector2((width - 1) * 35, 0)
 		$HurtThePlayerBox.scale = Vector2(width, 1)
 		$HurtThePlayerBox.position = Vector2((width - 1) * 35, 0)
+		
+		$Connectors/Connector1.visible = width >= 2
+		$Connectors/Connector2.visible = width >= 3
+		$Connectors/Connector3.visible = width >= 4
+		$Connectors/Connector4.visible = width >= 5
+		$Icon/Icon2.visible = width >= 2
+		$Icon/Icon3.visible = width >= 3
+		$Icon/Icon4.visible = width >= 4
+		$Icon/Icon5.visible = width >= 5
 
 
 var height := 1:
@@ -104,6 +112,15 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	wave_type = note.instrument.type
 	#icon.frame = int(wave_type)
 	icon.texture = wave_symbols[wave_type]
+	$Icon/Icon2.texture = wave_symbols[wave_type]
+	$Icon/Icon3.texture = wave_symbols[wave_type]
+	$Icon/Icon4.texture = wave_symbols[wave_type]
+	$Icon/Icon5.texture = wave_symbols[wave_type]
+	$Connectors/Connector1.default_color = wave_colors[wave_type]
+	$Connectors/Connector2.default_color = wave_colors[wave_type]
+	$Connectors/Connector3.default_color = wave_colors[wave_type]
+	$Connectors/Connector4.default_color = wave_colors[wave_type]
+	
 	$Icon/Bkgd.modulate = wave_colors[wave_type]
 	$Icon/ColorRect.color = wave_colors[wave_type]
 	speed = LevelManager.SCREEN_HEIGHT / in_lookahead_time_seconds
