@@ -146,7 +146,23 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float, lane_idx: int):
 	hold_time = 0.0
 	time_to_hold = note.end_time - note.start_time
 	
-	$Icon/ColorRect.size.y = LevelManager.SCREEN_HEIGHT / LevelManager.view_range * time_to_hold
+	var y_height = LevelManager.SCREEN_HEIGHT / LevelManager.view_range * time_to_hold
+	
+	if wave_type == GameManager.WAVE_TYPE.NOISE:
+		var total_wave_distance = 90
+		var next_tex_idx = 1
+		icon.hide()
+		$Icon/NoiseContainer.show()
+		var tex = $Icon/NoiseContainer.get_child(0).pick_random_texture()
+		
+		while total_wave_distance < y_height && $Icon/NoiseContainer.get_child_count() > next_tex_idx:
+			$Icon/NoiseContainer.get_child(next_tex_idx).set_tex(tex)
+			next_tex_idx += 1
+			total_wave_distance += 90
+	else:
+		$Icon/NoiseContainer.hide()
+	
+	$Icon/ColorRect.size.y = y_height
 	
 	if !is_zero_approx(time_to_hold):
 		var shape := $HurtThePlayerBox/CollisionShape2D.shape as RectangleShape2D
