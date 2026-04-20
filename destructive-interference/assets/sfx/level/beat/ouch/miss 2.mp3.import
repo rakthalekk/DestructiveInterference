@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddspna38rw0l7"
+path="res://.godot/imported/miss 2.mp3-6c04f2a51a9b106846d23d74351979f1.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/level/beat/ouch/miss 2.mp3"
+dest_files=["res://.godot/imported/miss 2.mp3-6c04f2a51a9b106846d23d74351979f1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d0itj6xae4lxx"]
+
+[ext_resource type="Texture2D" uid="uid://duuim8i8rdc5t" path="res://assets/noise_3.png" id="1_qjd10"]
+[ext_resource type="Script" uid="uid://cojcwul3at6v" path="res://src/entities/noise_texture.gd" id="2_d68eh"]
+
+[node name="NoiseTexture" type="TextureRect" unique_id=2114646847]
+custom_minimum_size = Vector2(60, 90)
+texture = ExtResource("1_qjd10")
+expand_mode = 1
+script = ExtResource("2_d68eh")
