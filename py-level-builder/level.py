@@ -180,9 +180,11 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
         start_time: float = time_for[midi_note.start]
         end_time: Optional[float] = time_for[midi_note.end]
         end_beat = (midi_note.end / midi_obj.ticks_per_beat) + 1
+        end_tick = midi_note.end
         if time_for[midi_note.end] - start_time < min_hold_duration:
             end_time = None
             end_beat = None
+            end_tick = None
         notes.append(Note(
             name=instrument.name,
             start=start_time,
@@ -190,7 +192,7 @@ def parse_instrument_dir(midi_file: pathlib.Path, min_hold_duration: float) -> t
             start_tick=midi_note.start,
             end=end_time,
             end_beat=end_beat,
-            end_tick=midi_note.end,
+            end_tick=end_tick,
             pitch=ratio_to_A4(midi_note.pitch),
             pitch_str=display_name(midi_note.pitch),
             idx=len(notes),
