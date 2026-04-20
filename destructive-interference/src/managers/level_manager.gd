@@ -14,7 +14,10 @@ var level_title: String
 var bpm: float = 120.0
 var beats_per_measure: float = 4.0
 var subdivisions_per_beat: float = 4.0
+var duration_subdivision: float = 0.0
+var duration_beat: float = 0.0
 var view_range: float = 4.4
+var view_range_beats: float = 4.0
 var warmup_time: float = 6.0
 var song_end: float = 15.0
 var subdivision_offset := 0.0
@@ -77,12 +80,17 @@ func load_data_from_json(level_json: String):
 	beats_per_measure = metadata.beats_per_measure
 	subdivisions_per_beat = metadata.subdivisions_per_beat
 	view_range = metadata.view_range
+	view_range_beats = metadata.view_range_beats
 	warmup_time = metadata.warmup_time
 	song_end = metadata.song_end
 	
 	# why does it need to be divided by 2.............
 	subdivision_offset = (60 / bpm / subdivisions_per_beat / 2)
-	
+
+	# computed fields
+	duration_beat = (60 / bpm)
+	duration_subdivision = duration_beat / subdivisions_per_beat
+
 	var instrument_data: Array = metadata.instruments
 	for data in instrument_data:
 		var instrument = Instrument.new(data.name, data.type, Color(data.color), data.goal)
