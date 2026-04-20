@@ -116,7 +116,7 @@
         "idx": 9,
         "name": "demo a 4 final saw",
         "start_beat": 39.0,
-        "end_beat": 39.5,
+        "end_beat": null,
         "pitch_str": "C5",
         "band": 3,
         "jumpable": false
@@ -125,7 +125,7 @@
         "idx": 10,
         "name": "demo a 4 final saw",
         "start_beat": 39.5,
-        "end_beat": 40.0,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 3,
         "jumpable": false
@@ -134,7 +134,7 @@
         "idx": 11,
         "name": "demo a 4 final saw",
         "start_beat": 40.0,
-        "end_beat": 40.5,
+        "end_beat": null,
         "pitch_str": "Eb5",
         "band": 3,
         "jumpable": false
@@ -143,7 +143,7 @@
         "idx": 12,
         "name": "demo a 4 final saw",
         "start_beat": 40.5,
-        "end_beat": 41.0,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -161,7 +161,7 @@
         "idx": 14,
         "name": "demo a 4 final saw",
         "start_beat": 44.0,
-        "end_beat": 44.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -170,7 +170,7 @@
         "idx": 15,
         "name": "demo a 4 final saw",
         "start_beat": 44.5,
-        "end_beat": 45.0,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -179,7 +179,7 @@
         "idx": 16,
         "name": "demo a 4 final saw",
         "start_beat": 53.0,
-        "end_beat": 53.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -188,7 +188,7 @@
         "idx": 17,
         "name": "demo a 4 final saw",
         "start_beat": 53.5,
-        "end_beat": 54.0,
+        "end_beat": null,
         "pitch_str": "Db6",
         "band": 4,
         "jumpable": false
@@ -197,7 +197,7 @@
         "idx": 18,
         "name": "demo a 4 final saw",
         "start_beat": 54.0,
-        "end_beat": 54.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -206,7 +206,7 @@
         "idx": 19,
         "name": "demo a 4 final saw",
         "start_beat": 54.5,
-        "end_beat": 55.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -215,7 +215,7 @@
         "idx": 20,
         "name": "demo a 4 final saw",
         "start_beat": 55.0,
-        "end_beat": 55.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -224,7 +224,7 @@
         "idx": 21,
         "name": "demo a 4 final saw",
         "start_beat": 55.5,
-        "end_beat": 56.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -233,7 +233,7 @@
         "idx": 22,
         "name": "demo a 4 final saw",
         "start_beat": 56.0,
-        "end_beat": 56.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -242,7 +242,7 @@
         "idx": 23,
         "name": "demo a 4 final saw",
         "start_beat": 56.5,
-        "end_beat": 57.0,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -260,7 +260,7 @@
         "idx": 25,
         "name": "demo a 4 final saw",
         "start_beat": 64.0,
-        "end_beat": 64.5,
+        "end_beat": null,
         "pitch_str": "F5",
         "band": 3,
         "jumpable": false
@@ -269,7 +269,7 @@
         "idx": 26,
         "name": "demo a 4 final saw",
         "start_beat": 64.5,
-        "end_beat": 65.0,
+        "end_beat": null,
         "pitch_str": "Eb5",
         "band": 2,
         "jumpable": false
@@ -278,7 +278,7 @@
         "idx": 27,
         "name": "demo a 4 final saw",
         "start_beat": 71.0,
-        "end_beat": 71.5,
+        "end_beat": null,
         "pitch_str": "C5",
         "band": 3,
         "jumpable": false
@@ -287,7 +287,7 @@
         "idx": 28,
         "name": "demo a 4 final saw",
         "start_beat": 71.5,
-        "end_beat": 72.0,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 3,
         "jumpable": false
@@ -296,7 +296,7 @@
         "idx": 29,
         "name": "demo a 4 final saw",
         "start_beat": 72.0,
-        "end_beat": 72.5,
+        "end_beat": null,
         "pitch_str": "Eb5",
         "band": 3,
         "jumpable": false
@@ -305,7 +305,7 @@
         "idx": 30,
         "name": "demo a 4 final saw",
         "start_beat": 72.5,
-        "end_beat": 73.0,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -323,7 +323,7 @@
         "idx": 32,
         "name": "demo a 4 final saw",
         "start_beat": 76.0,
-        "end_beat": 76.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -341,7 +341,7 @@
         "idx": 34,
         "name": "demo a 4 final saw",
         "start_beat": 85.0,
-        "end_beat": 85.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -350,7 +350,7 @@
         "idx": 35,
         "name": "demo a 4 final saw",
         "start_beat": 85.5,
-        "end_beat": 86.0,
+        "end_beat": null,
         "pitch_str": "Db6",
         "band": 4,
         "jumpable": false
@@ -359,7 +359,7 @@
         "idx": 36,
         "name": "demo a 4 final saw",
         "start_beat": 86.0,
-        "end_beat": 86.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -368,7 +368,7 @@
         "idx": 37,
         "name": "demo a 4 final saw",
         "start_beat": 86.5,
-        "end_beat": 87.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -377,7 +377,7 @@
         "idx": 38,
         "name": "demo a 4 final saw",
         "start_beat": 87.0,
-        "end_beat": 87.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -386,7 +386,7 @@
         "idx": 39,
         "name": "demo a 4 final saw",
         "start_beat": 87.5,
-        "end_beat": 88.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -395,7 +395,7 @@
         "idx": 40,
         "name": "demo a 4 final saw",
         "start_beat": 88.0,
-        "end_beat": 88.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -404,7 +404,7 @@
         "idx": 41,
         "name": "demo a 4 final saw",
         "start_beat": 88.5,
-        "end_beat": 89.0,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -629,7 +629,7 @@
         "idx": 66,
         "name": "demo a 4 final saw",
         "start_beat": 139.0,
-        "end_beat": 139.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -638,7 +638,7 @@
         "idx": 67,
         "name": "demo a 4 final saw",
         "start_beat": 139.5,
-        "end_beat": 140.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -647,7 +647,7 @@
         "idx": 68,
         "name": "demo a 4 final saw",
         "start_beat": 140.0,
-        "end_beat": 140.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -656,7 +656,7 @@
         "idx": 69,
         "name": "demo a 4 final saw",
         "start_beat": 140.5,
-        "end_beat": 141.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -665,7 +665,7 @@
         "idx": 70,
         "name": "demo a 4 final saw",
         "start_beat": 141.0,
-        "end_beat": 141.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -782,7 +782,7 @@
         "idx": 83,
         "name": "demo a 4 final saw",
         "start_beat": 155.0,
-        "end_beat": 155.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -791,7 +791,7 @@
         "idx": 84,
         "name": "demo a 4 final saw",
         "start_beat": 155.5,
-        "end_beat": 156.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -800,7 +800,7 @@
         "idx": 85,
         "name": "demo a 4 final saw",
         "start_beat": 156.0,
-        "end_beat": 156.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -809,7 +809,7 @@
         "idx": 86,
         "name": "demo a 4 final saw",
         "start_beat": 156.5,
-        "end_beat": 157.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -818,7 +818,7 @@
         "idx": 87,
         "name": "demo a 4 final saw",
         "start_beat": 157.0,
-        "end_beat": 157.5,
+        "end_beat": null,
         "pitch_str": "Gb6",
         "band": 4,
         "jumpable": false
@@ -908,7 +908,7 @@
         "idx": 97,
         "name": "demo a 4 final saw",
         "start_beat": 167.0,
-        "end_beat": 167.5,
+        "end_beat": null,
         "pitch_str": "G6",
         "band": 4,
         "jumpable": false
@@ -926,7 +926,7 @@
         "idx": 99,
         "name": "demo a 4 final saw",
         "start_beat": 199.0,
-        "end_beat": 199.5,
+        "end_beat": null,
         "pitch_str": "C5",
         "band": 3,
         "jumpable": false
@@ -935,7 +935,7 @@
         "idx": 100,
         "name": "demo a 4 final saw",
         "start_beat": 199.5,
-        "end_beat": 200.0,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 3,
         "jumpable": false
@@ -944,7 +944,7 @@
         "idx": 101,
         "name": "demo a 4 final saw",
         "start_beat": 200.0,
-        "end_beat": 200.5,
+        "end_beat": null,
         "pitch_str": "Eb5",
         "band": 3,
         "jumpable": false
@@ -953,7 +953,7 @@
         "idx": 102,
         "name": "demo a 4 final saw",
         "start_beat": 200.5,
-        "end_beat": 201.0,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -971,7 +971,7 @@
         "idx": 104,
         "name": "demo a 4 final saw",
         "start_beat": 204.0,
-        "end_beat": 204.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -989,7 +989,7 @@
         "idx": 106,
         "name": "demo a 4 final saw",
         "start_beat": 213.0,
-        "end_beat": 213.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -998,7 +998,7 @@
         "idx": 107,
         "name": "demo a 4 final saw",
         "start_beat": 213.5,
-        "end_beat": 214.0,
+        "end_beat": null,
         "pitch_str": "Db6",
         "band": 4,
         "jumpable": false
@@ -1007,7 +1007,7 @@
         "idx": 108,
         "name": "demo a 4 final saw",
         "start_beat": 214.0,
-        "end_beat": 214.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -1016,7 +1016,7 @@
         "idx": 109,
         "name": "demo a 4 final saw",
         "start_beat": 214.5,
-        "end_beat": 215.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1025,7 +1025,7 @@
         "idx": 110,
         "name": "demo a 4 final saw",
         "start_beat": 215.0,
-        "end_beat": 215.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -1034,7 +1034,7 @@
         "idx": 111,
         "name": "demo a 4 final saw",
         "start_beat": 215.5,
-        "end_beat": 216.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1043,7 +1043,7 @@
         "idx": 112,
         "name": "demo a 4 final saw",
         "start_beat": 216.0,
-        "end_beat": 216.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -1052,7 +1052,7 @@
         "idx": 113,
         "name": "demo a 4 final saw",
         "start_beat": 216.5,
-        "end_beat": 217.0,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -1070,7 +1070,7 @@
         "idx": 115,
         "name": "demo a 4 final saw",
         "start_beat": 224.0,
-        "end_beat": 224.5,
+        "end_beat": null,
         "pitch_str": "F5",
         "band": 3,
         "jumpable": false
@@ -1079,7 +1079,7 @@
         "idx": 116,
         "name": "demo a 4 final saw",
         "start_beat": 224.5,
-        "end_beat": 225.0,
+        "end_beat": null,
         "pitch_str": "Eb5",
         "band": 2,
         "jumpable": false
@@ -1088,7 +1088,7 @@
         "idx": 117,
         "name": "demo a 4 final saw",
         "start_beat": 231.0,
-        "end_beat": 231.5,
+        "end_beat": null,
         "pitch_str": "C5",
         "band": 3,
         "jumpable": false
@@ -1097,7 +1097,7 @@
         "idx": 118,
         "name": "demo a 4 final saw",
         "start_beat": 231.5,
-        "end_beat": 232.0,
+        "end_beat": null,
         "pitch_str": "Db5",
         "band": 3,
         "jumpable": false
@@ -1106,7 +1106,7 @@
         "idx": 119,
         "name": "demo a 4 final saw",
         "start_beat": 232.0,
-        "end_beat": 232.5,
+        "end_beat": null,
         "pitch_str": "Eb5",
         "band": 3,
         "jumpable": false
@@ -1115,7 +1115,7 @@
         "idx": 120,
         "name": "demo a 4 final saw",
         "start_beat": 232.5,
-        "end_beat": 233.0,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -1133,7 +1133,7 @@
         "idx": 122,
         "name": "demo a 4 final saw",
         "start_beat": 236.0,
-        "end_beat": 236.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 3,
         "jumpable": false
@@ -1151,7 +1151,7 @@
         "idx": 124,
         "name": "demo a 4 final saw",
         "start_beat": 245.0,
-        "end_beat": 245.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -1160,7 +1160,7 @@
         "idx": 125,
         "name": "demo a 4 final saw",
         "start_beat": 245.5,
-        "end_beat": 246.0,
+        "end_beat": null,
         "pitch_str": "Db6",
         "band": 4,
         "jumpable": false
@@ -1169,7 +1169,7 @@
         "idx": 126,
         "name": "demo a 4 final saw",
         "start_beat": 246.0,
-        "end_beat": 246.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -1178,7 +1178,7 @@
         "idx": 127,
         "name": "demo a 4 final saw",
         "start_beat": 246.5,
-        "end_beat": 247.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1187,7 +1187,7 @@
         "idx": 128,
         "name": "demo a 4 final saw",
         "start_beat": 247.0,
-        "end_beat": 247.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -1196,7 +1196,7 @@
         "idx": 129,
         "name": "demo a 4 final saw",
         "start_beat": 247.5,
-        "end_beat": 248.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1205,7 +1205,7 @@
         "idx": 130,
         "name": "demo a 4 final saw",
         "start_beat": 248.0,
-        "end_beat": 248.5,
+        "end_beat": null,
         "pitch_str": "A5",
         "band": 4,
         "jumpable": false
@@ -1214,7 +1214,7 @@
         "idx": 131,
         "name": "demo a 4 final saw",
         "start_beat": 248.5,
-        "end_beat": 249.0,
+        "end_beat": null,
         "pitch_str": "G5",
         "band": 4,
         "jumpable": false
@@ -1439,7 +1439,7 @@
         "idx": 156,
         "name": "demo a 4 final saw",
         "start_beat": 299.0,
-        "end_beat": 299.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -1448,7 +1448,7 @@
         "idx": 157,
         "name": "demo a 4 final saw",
         "start_beat": 299.5,
-        "end_beat": 300.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -1457,7 +1457,7 @@
         "idx": 158,
         "name": "demo a 4 final saw",
         "start_beat": 300.0,
-        "end_beat": 300.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -1466,7 +1466,7 @@
         "idx": 159,
         "name": "demo a 4 final saw",
         "start_beat": 300.5,
-        "end_beat": 301.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1475,7 +1475,7 @@
         "idx": 160,
         "name": "demo a 4 final saw",
         "start_beat": 301.0,
-        "end_beat": 301.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -1592,7 +1592,7 @@
         "idx": 173,
         "name": "demo a 4 final saw",
         "start_beat": 315.0,
-        "end_beat": 315.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -1601,7 +1601,7 @@
         "idx": 174,
         "name": "demo a 4 final saw",
         "start_beat": 315.5,
-        "end_beat": 316.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -1610,7 +1610,7 @@
         "idx": 175,
         "name": "demo a 4 final saw",
         "start_beat": 316.0,
-        "end_beat": 316.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -1619,7 +1619,7 @@
         "idx": 176,
         "name": "demo a 4 final saw",
         "start_beat": 316.5,
-        "end_beat": 317.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1718,7 +1718,7 @@
         "idx": 187,
         "name": "demo a 4 final saw",
         "start_beat": 327.0,
-        "end_beat": 327.5,
+        "end_beat": null,
         "pitch_str": "G6",
         "band": 4,
         "jumpable": false
@@ -1745,7 +1745,7 @@
         "idx": 190,
         "name": "demo a 4 final saw",
         "start_beat": 394.5,
-        "end_beat": 395.0,
+        "end_beat": null,
         "pitch_str": "G4",
         "band": 1,
         "jumpable": false
@@ -1754,7 +1754,7 @@
         "idx": 191,
         "name": "demo a 4 final saw",
         "start_beat": 396.0,
-        "end_beat": 396.5,
+        "end_beat": null,
         "pitch_str": "Bb4",
         "band": 2,
         "jumpable": false
@@ -1763,7 +1763,7 @@
         "idx": 192,
         "name": "demo a 4 final saw",
         "start_beat": 397.5,
-        "end_beat": 398.0,
+        "end_beat": null,
         "pitch_str": "A4",
         "band": 2,
         "jumpable": false
@@ -1772,7 +1772,7 @@
         "idx": 193,
         "name": "demo a 4 final saw",
         "start_beat": 399.0,
-        "end_beat": 399.5,
+        "end_beat": null,
         "pitch_str": "G4",
         "band": 1,
         "jumpable": false
@@ -1781,7 +1781,7 @@
         "idx": 194,
         "name": "demo a 4 final saw",
         "start_beat": 400.5,
-        "end_beat": 401.0,
+        "end_beat": null,
         "pitch_str": "F4",
         "band": 1,
         "jumpable": false
@@ -1790,7 +1790,7 @@
         "idx": 195,
         "name": "demo a 4 final saw",
         "start_beat": 402.0,
-        "end_beat": 402.5,
+        "end_beat": null,
         "pitch_str": "Eb4",
         "band": 1,
         "jumpable": false
@@ -1799,7 +1799,7 @@
         "idx": 196,
         "name": "demo a 4 final saw",
         "start_beat": 403.5,
-        "end_beat": 404.0,
+        "end_beat": null,
         "pitch_str": "F4",
         "band": 1,
         "jumpable": false
@@ -1808,7 +1808,7 @@
         "idx": 197,
         "name": "demo a 4 final saw",
         "start_beat": 405.0,
-        "end_beat": 405.5,
+        "end_beat": null,
         "pitch_str": "Ab4",
         "band": 2,
         "jumpable": false
@@ -1817,7 +1817,7 @@
         "idx": 198,
         "name": "demo a 4 final saw",
         "start_beat": 406.5,
-        "end_beat": 407.0,
+        "end_beat": null,
         "pitch_str": "Bb4",
         "band": 2,
         "jumpable": false
@@ -1826,7 +1826,7 @@
         "idx": 199,
         "name": "demo a 4 final saw",
         "start_beat": 408.0,
-        "end_beat": 408.5,
+        "end_beat": null,
         "pitch_str": "C5",
         "band": 2,
         "jumpable": false
@@ -1853,7 +1853,7 @@
         "idx": 202,
         "name": "demo a 4 final saw",
         "start_beat": 412.5,
-        "end_beat": 413.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 3,
         "jumpable": false
@@ -1871,7 +1871,7 @@
         "idx": 204,
         "name": "demo a 4 final saw",
         "start_beat": 415.0,
-        "end_beat": 415.5,
+        "end_beat": null,
         "pitch_str": "Bb6",
         "band": 4,
         "jumpable": false
@@ -1961,7 +1961,7 @@
         "idx": 214,
         "name": "demo a 4 final saw",
         "start_beat": 427.0,
-        "end_beat": 427.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -1970,7 +1970,7 @@
         "idx": 215,
         "name": "demo a 4 final saw",
         "start_beat": 427.5,
-        "end_beat": 428.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -1979,7 +1979,7 @@
         "idx": 216,
         "name": "demo a 4 final saw",
         "start_beat": 428.0,
-        "end_beat": 428.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -1988,7 +1988,7 @@
         "idx": 217,
         "name": "demo a 4 final saw",
         "start_beat": 428.5,
-        "end_beat": 429.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -1997,7 +1997,7 @@
         "idx": 218,
         "name": "demo a 4 final saw",
         "start_beat": 429.0,
-        "end_beat": 429.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -2114,7 +2114,7 @@
         "idx": 231,
         "name": "demo a 4 final saw",
         "start_beat": 443.0,
-        "end_beat": 443.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -2123,7 +2123,7 @@
         "idx": 232,
         "name": "demo a 4 final saw",
         "start_beat": 443.5,
-        "end_beat": 444.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -2132,7 +2132,7 @@
         "idx": 233,
         "name": "demo a 4 final saw",
         "start_beat": 444.0,
-        "end_beat": 444.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -2141,7 +2141,7 @@
         "idx": 234,
         "name": "demo a 4 final saw",
         "start_beat": 444.5,
-        "end_beat": 445.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -2267,7 +2267,7 @@
         "idx": 248,
         "name": "demo a 4 final saw",
         "start_beat": 459.0,
-        "end_beat": 459.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -2276,7 +2276,7 @@
         "idx": 249,
         "name": "demo a 4 final saw",
         "start_beat": 459.5,
-        "end_beat": 460.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -2285,7 +2285,7 @@
         "idx": 250,
         "name": "demo a 4 final saw",
         "start_beat": 460.0,
-        "end_beat": 460.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": null,
         "jumpable": false
@@ -2294,7 +2294,7 @@
         "idx": 251,
         "name": "demo a 4 final saw",
         "start_beat": 460.5,
-        "end_beat": 461.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -2303,7 +2303,7 @@
         "idx": 252,
         "name": "demo a 4 final saw",
         "start_beat": 461.0,
-        "end_beat": 461.5,
+        "end_beat": null,
         "pitch_str": "Gb5",
         "band": 4,
         "jumpable": false
@@ -2420,7 +2420,7 @@
         "idx": 265,
         "name": "demo a 4 final saw",
         "start_beat": 475.0,
-        "end_beat": 475.5,
+        "end_beat": null,
         "pitch_str": "Eb6",
         "band": 4,
         "jumpable": false
@@ -2429,7 +2429,7 @@
         "idx": 266,
         "name": "demo a 4 final saw",
         "start_beat": 475.5,
-        "end_beat": 476.0,
+        "end_beat": null,
         "pitch_str": "D6",
         "band": 4,
         "jumpable": false
@@ -2438,7 +2438,7 @@
         "idx": 267,
         "name": "demo a 4 final saw",
         "start_beat": 476.0,
-        "end_beat": 476.5,
+        "end_beat": null,
         "pitch_str": "C6",
         "band": 4,
         "jumpable": false
@@ -2447,7 +2447,7 @@
         "idx": 268,
         "name": "demo a 4 final saw",
         "start_beat": 476.5,
-        "end_beat": 477.0,
+        "end_beat": null,
         "pitch_str": "Bb5",
         "band": 4,
         "jumpable": false
@@ -2456,7 +2456,7 @@
         "idx": 269,
         "name": "demo a 4 final saw",
         "start_beat": 477.0,
-        "end_beat": 477.5,
+        "end_beat": null,
         "pitch_str": "Gb6",
         "band": 4,
         "jumpable": false
