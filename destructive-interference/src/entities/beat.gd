@@ -9,8 +9,14 @@ enum BEAT_TYPE {
 
 var my_beat_type: BEAT_TYPE
 
+signal i_die
+
 ## Wave type for this beat
 var wave_type: GameManager.WAVE_TYPE
+
+
+## Note describing this beat
+var note: Note
 
 
 ## Speed value used by this beat
@@ -131,6 +137,7 @@ func _on_hurt_the_player_box_area_entered(_area: Area2D) -> void:
 
 
 func die():
+	i_die.emit(self)
 	anim_player.play("my_time_has_come")
 
 
