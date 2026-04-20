@@ -100,6 +100,10 @@ func load_data_from_json(level_json: String):
 		var type = instrument.type
 		wave_goals[type] = instrument.goal
 		wave_interferences[type] = 0
+	
+	# create noise instrument
+	var noise_instrument = Instrument.new("noise", "noise", Color.WHITE, 9999)
+	instruments["noise"] = noise_instrument
 
 	var notes_data: Array = level_data.notes
 	for data in notes_data:
@@ -183,6 +187,10 @@ func _process(delta: float) -> void:
 	while current_time >= current_note.start_time - ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range: # magic number dont worry abt it
 		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
 			send_note.emit(current_note)
+		else:
+			var noise_note = current_note.duplicate()
+			noise_note.instrument = instruments["noise"]
+			send_note.emit(noise_note)
 
 		current_note_idx += 1
 		if current_note_idx < notes.size():
