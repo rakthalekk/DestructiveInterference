@@ -16,6 +16,8 @@ var beats_per_measure: float = 4.0
 var subdivisions_per_beat: float = 4.0
 var view_range: float = 4.4
 var warmup_time: float = 6.0
+var song_end: float = 15.0
+var subdivision_offset := 0.0
 
 var current_time: float = 0.0
 var level_active: bool = false
@@ -30,8 +32,8 @@ var beat_num = 1
 
 var warmup_timer = Timer.new()
 
-var wave_goals: Dictionary[GameManager.WAVE_TYPE, int]
-var wave_interferences: Dictionary[GameManager.WAVE_TYPE, int]
+var wave_goals: Dictionary[GameManager.WAVE_TYPE, float]
+var wave_interferences: Dictionary[GameManager.WAVE_TYPE, float]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -76,6 +78,10 @@ func load_data_from_json(level_json: String):
 	subdivisions_per_beat = metadata.subdivisions_per_beat
 	view_range = metadata.view_range
 	warmup_time = metadata.warmup_time
+	song_end = metadata.song_end
+	
+	# why does it need to be divided by 2.............
+	subdivision_offset = (60 / bpm / subdivisions_per_beat / 2)
 	
 	var instrument_data: Array = metadata.instruments
 	for data in instrument_data:
@@ -98,6 +104,11 @@ func load_data_from_json(level_json: String):
 		elif data.band is Dictionary:
 			note.band_start = data.band.start
 			note.band_end = data.band.end
+		
+		if data.end:
+			note.end_time = data.end
+		else:
+			note.end_time = note.start_time
 		
 		if notes.size() <= 0:
 			note.is_first = true
@@ -135,6 +146,10 @@ func _process(delta: float) -> void:
 	# we all outta notes
 	if current_note_idx == notes.size():
 		current_time += delta
+		
+		if current_time >= song_end + subdivision_offset - view_range:
+			start_level(true)
+		
 		return
 	
 	var is_player_win = true
@@ -161,7 +176,7 @@ func _process(delta: float) -> void:
 	current_time += delta
 
 
-func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1):
+func add_tolerance(wave_type: GameManager.WAVE_TYPE, amount := 1.0):
 	wave_interferences[wave_type] += amount
 
 

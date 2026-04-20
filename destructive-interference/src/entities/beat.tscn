@@ -3,9 +3,6 @@
 [ext_resource type="Script" uid="uid://c3rbjncgal3gq" path="res://src/entities/beat.gd" id="1_xrhn5"]
 [ext_resource type="Texture2D" uid="uid://b0dipsnd8iv5k" path="res://assets/dev_waveforms/wave_forms.png" id="2_xrhn5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhn5"]
-size = Vector2(59.914146, 20)
-
 [sub_resource type="Gradient" id="Gradient_3r3dn"]
 interpolation_mode = 1
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -17,6 +14,14 @@ height = 20
 fill = 2
 fill_from = Vector2(0.5, 0.5)
 metadata/_snap_enabled = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4troy"]
+resource_local_to_scene = true
+size = Vector2(59.914146, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhn5"]
+resource_local_to_scene = true
+size = Vector2(59.914146, 20)
 
 [sub_resource type="Animation" id="Animation_4troy"]
 length = 0.001
@@ -121,15 +126,6 @@ rotates = false
 loop = false
 script = ExtResource("1_xrhn5")
 
-[node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]
-collision_layer = 2
-collision_mask = 5
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=1670048198]
-position = Vector2(-9.536743e-07, 38)
-scale = Vector2(0.9346707, 1.0278862)
-shape = SubResource("RectangleShape2D_xrhn5")
-
 [node name="Icon" type="Node2D" parent="." unique_id=1154701175]
 
 [node name="Bkgd" type="Sprite2D" parent="Icon" unique_id=1509422566]
@@ -143,8 +139,33 @@ texture = ExtResource("2_xrhn5")
 hframes = 4
 frame = 3
 
+[node name="ColorRect" type="ColorRect" parent="Icon" unique_id=726690125]
+offset_left = 28.0
+offset_top = 48.0
+offset_right = 83.869995
+offset_bottom = 80.0
+rotation = 3.1415927
+
+[node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=1670048198]
+position = Vector2(-9.536743e-07, 38)
+scale = Vector2(0.9346707, 1.0278862)
+shape = SubResource("RectangleShape2D_4troy")
+
+[node name="HurtThePlayerBox" type="Area2D" parent="." unique_id=1119840326]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtThePlayerBox" unique_id=1413559663]
+position = Vector2(-9.536743e-07, 38)
+scale = Vector2(0.9346707, 1.0278862)
+shape = SubResource("RectangleShape2D_xrhn5")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=680761029]
 libraries/ = SubResource("AnimationLibrary_4troy")
 
 [connection signal="area_entered" from="DespawnBox" to="." method="_on_despawn_box_area_entered"]
 [connection signal="area_exited" from="DespawnBox" to="." method="_on_despawn_box_area_exited"]
+[connection signal="area_entered" from="HurtThePlayerBox" to="." method="_on_hurt_the_player_box_area_entered"]

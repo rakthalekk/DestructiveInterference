@@ -183,11 +183,11 @@ func _on_dodge_timer_timeout() -> void:
 
 
 func _interfere(in_interfere_type: GameManager.WAVE_TYPE, force := false):
-	if !interfere_cooldown.is_stopped() && !force:
-		curr_buffer = BUFFER_STATE.INTERFERE
-		interfere_buffer_type = in_interfere_type
-		buffer_timer.start()
-		return
+	#if !interfere_cooldown.is_stopped() && !force:
+		#curr_buffer = BUFFER_STATE.INTERFERE
+		#interfere_buffer_type = in_interfere_type
+		#buffer_timer.start()
+		#return
 	
 	if is_instance_valid(player_2d):
 		player_2d.interfere(in_interfere_type)

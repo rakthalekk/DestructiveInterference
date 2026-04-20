@@ -17,7 +17,7 @@ height = 1080
 
 [sub_resource type="Curve2D" id="Curve2D_t435w"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, -38, 0, 0, 0, 0, 0, 1169)
+"points": PackedVector2Array(0, 0, 0, 0, 0, -38, 0, 0, 0, 0, 0, 2980)
 }
 point_count = 2
 
@@ -78,7 +78,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DespawnBox" unique_id=978347010]
-position = Vector2(-1.5, 132.75)
+position = Vector2(-1.5, 1792)
 shape = SubResource("RectangleShape2D_t435w")
 
 [node name="Zero" type="Line2D" parent="." unique_id=348577242]

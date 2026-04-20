@@ -73,12 +73,26 @@ func _on_area_entered(area: Area2D) -> void:
 	
 	beat = beat as Beat
 	
+	if beat.my_beat_type == Beat.BEAT_TYPE.HOLD:
+		_hold_beat_logic(beat)
+	else:
+		_tap_beat_logic(beat)
+
+
+func _hold_beat_logic(beat: Beat):
+	if beat.wave_type == interfere_type:
+		beat.being_held = true
+	else:
+		PlayerManager.on_player_missed_beat(beat)
+		beat.die()
+
+
+func _tap_beat_logic(beat: Beat):
 	if beat.wave_type == interfere_type:
 		PlayerManager.on_player_killed_beat(beat)
 	else:
 		PlayerManager.on_player_missed_beat(beat)
 	
-	end_interfere()
 	PlayerManager.interfere_cooldown.stop()
 	beat.die()
 

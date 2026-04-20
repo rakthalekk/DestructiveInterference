@@ -20,7 +20,7 @@ position = Vector2(0, 20)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=310482770]
-position = Vector2(0, 32.5)
+position = Vector2(0, 80)
 shape = SubResource("RectangleShape2D_2ep6d")
 
 [node name="InterfereBox" parent="." unique_id=1086371767 instance=ExtResource("3_2ep6d")]

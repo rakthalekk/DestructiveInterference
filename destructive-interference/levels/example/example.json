@@ -6,6 +6,7 @@
 		"subdivisions_per_beat": 4,
 		"view_range": 2,
 		"warmup_time": 3,
+		"song_end": 15.0,
 		"instruments": [
 			{
 				"name": "square1",
@@ -17,59 +18,62 @@
 	},
 	"notes": [
 		{
-			"name": "square1",
-			"start": 1.5,
-			"band": 1,
-			"jumpable": false,
-			"pitch": 1.2,
+		  "name": "square1",
+		  "start": 0.0,
+		  "start_beat": 1.0,
+		  "end": 0.23076899999999997,
+		  "end_beat": 1.5,
+		  "pitch": 0.3745767692191701,
+		  "pitch_str": "E3",
+		  "band": 1,
+		  "jumpable": false
 		},
 		{
-			"name": "square1",
-			"start": 3.0,
-			"band": {
-				"start": 2,
-				"end": 3
-			},
-			"jumpable": false,
-			"pitch": 1.2,
+		  "name": "square1",
+		  "start": 2.0,
+		  "start_beat": 1.0,
+		  "end": 2.23076899999999997,
+		  "end_beat": 1.5,
+		  "pitch": 0.3745767692191701,
+		  "pitch_str": "E3",
+		  "band": 0,
+		  "jumpable": false
 		},
 		{
-			"name": "square1",
-			"start": 4.0,
-			"band": 2,
-			"jumpable": false,
-			"pitch": 1.2,
+		  "name": "square1",
+		  "start": 4,
+		  "start_beat": 1.0,
+		  "end": 4.23076899999999997,
+		  "end_beat": 1.5,
+		  "pitch": 0.3745767692191701,
+		  "pitch_str": "E3",
+		  "band": {
+			"start": 2,
+			"end": 3
+		  },
+		  "jumpable": false
 		},
 		{
-			"name": "square1",
-			"start": 4.0,
-			"band": 3,
-			"jumpable": false,
-			"pitch": 1.2,
+		  "name": "square1",
+		  "start": 6,
+		  "start_beat": 1.0,
+		  "end": 6.23076899999999997,
+		  "end_beat": 1.5,
+		  "pitch": 0.3745767692191701,
+		  "pitch_str": "E3",
+		  "band": 2,
+		  "jumpable": false
 		},
 		{
-			"name": "square1",
-			"start": 6.0,
-			"band": {
-				"start": 0,
-				"end": 4
-			},
-			"jumpable": false,
-			"pitch": 1.2,
-		},
-				{
-			"name": "square1",
-			"start": 7.0,
-			"band": 4,
-			"jumpable": false,
-			"pitch": 1.2,
-		},
-				{
-			"name": "square1",
-			"start": 7.0,
-			"band": 4,
-			"jumpable": false,
-			"pitch": 1.2,
+		  "name": "square1",
+		  "start": 8,
+		  "start_beat": 1.0,
+		  "end": 8.23076899999999997,
+		  "end_beat": 1.5,
+		  "pitch": 0.3745767692191701,
+		  "pitch_str": "E3",
+		  "band": 4,
+		  "jumpable": false
 		},
 	]
 }
