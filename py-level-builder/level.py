@@ -259,6 +259,7 @@ def build(
     # parse raw level data
     level = parse_level_dir(level_dir, min_hold_duration)
     level_dict = asdict(level)
+    # print(level_dict["metadata"])
     # print(level_dict)
     # remove sort_index from notes
     for inst_note_list in level_dict["notes_by_instrument"].values():
@@ -292,8 +293,9 @@ def build(
         write_tuning_file(tuning_dict, level_tuning_file)
     else:
         # create a dummy version for the user to edit
-        write_tuning_file(level_dict, level_tuning_file)
+        write_tuning_file(deepcopy(level_dict), level_tuning_file)
     print("Tuning file updated!")
+    # print(level_dict["metadata"])
 
     # prepare the output level_dict
     # TODO: check for any data entry errors:
@@ -328,10 +330,12 @@ def build(
             print("WARN: metadata view_range is empty. I can fill it in from view_range_beats and bpm, but at least one of those is misisng. Please fill them in!")
     # drop useless fields
     for inst in level_dict["metadata"]["instruments"]:
-        del inst["default_band"]
+        if "default_band" in inst:
+            del inst["default_band"]
     for note in level_dict["notes"]:
-        del note["idx"]
-        del note["sort_index"]
+        for unwanted_key in ["idx", "sort_idx"]:
+            if unwanted_key in note:
+                del note[unwanted_key]
     # annotate any compound fields
     import itertools
     notes_at_same_time = [g for g in [list(group) for start_tick, group in itertools.groupby(level_dict["notes"], lambda d: (d["start_tick"]))] if len(g) > 1]
