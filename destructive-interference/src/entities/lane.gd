@@ -18,7 +18,7 @@ const X_AMPLITUDE_PX := 24
 ## width of the track line drawn
 const LINE_WIDTH_PX := 8.0
 
-const COLOR_EMPTY = Color.DARK_GRAY
+const COLOR_EMPTY = Color.WHITE
 
 ## Seconds indicating something occurs at the end of the track
 const END_OF_TRACK_TIME_SENTINEL := INF

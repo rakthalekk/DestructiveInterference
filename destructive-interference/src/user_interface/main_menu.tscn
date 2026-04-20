@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://1f44eimvundv" path="res://src/user_interface/main_menu.gd" id="1_3gghf"]
 [ext_resource type="PackedScene" uid="uid://dbbcuuixvmmje" path="res://src/user_interface/game_button.tscn" id="2_hkrp4"]
 [ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="3_m6eng"]
+[ext_resource type="Texture2D" uid="uid://cd5gwh7jmqex5" path="res://assets/loague_oh_dot_pee_en_gee.png" id="4_m6eng"]
 
 [sub_resource type="Animation" id="Animation_3gghf"]
 length = 0.001
@@ -26,6 +27,28 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(1e-05, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
 "times": PackedFloat32Array(0)
 }
 
@@ -65,9 +88,9 @@ tracks/0/path = NodePath("Control:scale:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(1, -0.16666667, 0.23456037, 0, 0, 2.48, -0.3, -2.3544497, 0, 0),
-"times": PackedFloat32Array(0, 0.4)
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.16666667, 0.23456037, 0, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -76,8 +99,30 @@ tracks/1/path = NodePath("Control:scale:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.98122287, 0, 0.32515556, 0, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
 "handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(0.98122287, 0, 0.32515556, 0, 0, 2.48, -0.3, -2.3031092, 1.2188246, 9.356954),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, 0, -0.06666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, 1073.9999, -0.06666667, -179, 0, 0),
 "times": PackedFloat32Array(0, 0.4)
 }
 
@@ -102,29 +147,13 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 0.00012207031
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1e-05, 1e-05)
 pivot_offset_ratio = Vector2(0.5, 0.5)
 
-[node name="Label" type="Label" parent="Control" unique_id=326408958]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -789.5
-offset_top = 33.0
-offset_right = 789.5
-offset_bottom = 208.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 128
-text = "Destructive Interference !"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1106827985]
-libraries/ = SubResource("AnimationLibrary_3gghf")
-autoplay = &"intro"
-
-[node name="WomanHole" parent="." unique_id=999594193 instance=ExtResource("3_m6eng")]
+[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -132,7 +161,7 @@ anchor_right = 0.0
 anchor_bottom = 0.5
 grow_horizontal = 1
 
-[node name="Options" parent="." unique_id=2040855931 instance=ExtResource("2_hkrp4")]
+[node name="Options" parent="Control" unique_id=2040855931 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -152,7 +181,7 @@ focus_neighbor_bottom = NodePath("../Quit")
 button_text = "Options"
 text_val = "Options"
 
-[node name="Start" parent="." unique_id=334889834 instance=ExtResource("2_hkrp4")]
+[node name="Start" parent="Control" unique_id=334889834 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -172,7 +201,7 @@ focus_neighbor_bottom = NodePath("../Credits")
 button_text = "Start Game"
 text_val = "Start Game"
 
-[node name="Quit" parent="." unique_id=1520698509 instance=ExtResource("2_hkrp4")]
+[node name="Quit" parent="Control" unique_id=1520698509 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -192,7 +221,7 @@ focus_neighbor_bottom = NodePath("../Options")
 button_text = "Quit Game"
 text_val = "Quit Game"
 
-[node name="Credits" parent="." unique_id=1090024639 instance=ExtResource("2_hkrp4")]
+[node name="Credits" parent="Control" unique_id=1090024639 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -212,7 +241,25 @@ focus_neighbor_bottom = NodePath("../Start")
 button_text = "Credits"
 text_val = "Credits"
 
-[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=553122351]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1120.0
+offset_top = 19.0
+offset_right = -222.32031
+offset_bottom = 390.0
+grow_horizontal = 0
+texture = ExtResource("4_m6eng")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1106827985]
+libraries/ = SubResource("AnimationLibrary_3gghf")
+autoplay = &"intro"
+
+[connection signal="pressed" from="Control/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Control/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/Credits" to="." method="_on_credits_pressed"]
