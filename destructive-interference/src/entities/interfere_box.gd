@@ -112,6 +112,7 @@ func _tap_beat_logic(beat: Beat):
 	
 	PlayerManager.interfere_cooldown.stop()
 	beat.die()
+	beat.i_makea_the_particle.emit(beat.wave_type)
 
 
 ## Ends interference when timer times out

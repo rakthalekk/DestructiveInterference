@@ -10,6 +10,8 @@ enum BEAT_TYPE {
 var my_beat_type: BEAT_TYPE
 
 signal i_die
+signal i_makea_the_particle(wave_type: GameManager.WAVE_TYPE)
+
 
 ## Wave type for this beat
 var wave_type: GameManager.WAVE_TYPE
@@ -75,6 +77,7 @@ var hold_time = 0.0
 
 var time_to_hold = 0.0
 
+var why_so_holding_particle_steve_jobs = 0.0
 
 
 var subdivision_timer = 0.0
@@ -100,10 +103,15 @@ func _physics_process(delta: float) -> void:
 	
 	if being_held:
 		hold_time += delta
+		why_so_holding_particle_steve_jobs += delta
 		$Icon/ColorRect.modulate = Color.DARK_RED
 	else:
 		$Icon/ColorRect.modulate = Color.WHITE
 		return
+	
+	if why_so_holding_particle_steve_jobs >= 0.2:
+		why_so_holding_particle_steve_jobs = 0.0
+		i_makea_the_particle.emit(wave_type)
 	
 	if hold_time >= time_to_hold && anim_player.current_animation != "my_time_has_come":
 		die()
