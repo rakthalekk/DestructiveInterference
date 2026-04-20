@@ -30,8 +30,8 @@ var notes: Array[Note] = []
 var current_note_idx = 0
 
 var time_to_next_beat = 0.0
-var subdivision_num = 1
-var beat_num = 1
+var subdivision_num = 0
+var beat_num = 0
 
 var warmup_timer = Timer.new()
 
@@ -44,7 +44,7 @@ func _ready() -> void:
 	warmup_timer.one_shot = true
 	warmup_timer.timeout.connect(_on_warmup_timer_timeout)
 	add_child(warmup_timer)
-	
+
 	GameManager.transitioned_game_state.connect(_on_state_transition)
 
 
@@ -52,8 +52,8 @@ func start_level(skip_warmup := false):
 	level_active = true
 	current_time = -view_range if skip_warmup else -warmup_time
 	current_note_idx = 0
-	time_to_next_beat = 60.0 / bpm / subdivisions_per_beat
-	
+	time_to_next_beat = duration_subdivision
+
 	warmup_timer.wait_time = view_range if skip_warmup else warmup_time
 	warmup_timer.start()
 
@@ -65,19 +65,19 @@ func _on_warmup_timer_timeout():
 
 func load_data_from_json(level_json: String):
 	reset()
-	
+
 	var beat_map: BeatMap = get_tree().get_first_node_in_group("beat_map") as BeatMap
 	beat_map.clear_notes_and_lines()
-	
+
 	current_level_json_file = level_json
-	
+
 	var json_as_text = FileAccess.get_file_as_string(level_json)
 	var level_data: Dictionary = JSON.parse_string(json_as_text)
-	
+
 	var metadata: Dictionary = level_data.metadata
 	if metadata.has("title"):
 		level_title = metadata.title
-	
+
 	bpm = metadata.bpm
 	beats_per_measure = metadata.beats_per_measure
 	subdivisions_per_beat = metadata.subdivisions_per_beat
@@ -85,7 +85,7 @@ func load_data_from_json(level_json: String):
 	view_range_beats = metadata.view_range_beats
 	warmup_time = metadata.warmup_time
 	song_end = metadata.song_end
-	
+
 	# why does it need to be divided by 2.............
 	subdivision_offset = (60 / bpm / subdivisions_per_beat / 2)
 
@@ -100,7 +100,7 @@ func load_data_from_json(level_json: String):
 		var type = instrument.type
 		wave_goals[type] = instrument.goal
 		wave_interferences[type] = 0
-	
+
 	var notes_data: Array = level_data.notes
 	for data in notes_data:
 		var note = Note.new()
@@ -114,15 +114,15 @@ func load_data_from_json(level_json: String):
 		elif data.band is Dictionary:
 			note.band_start = data.band.start
 			note.band_end = data.band.end
-		
+
 		if data.end:
 			note.end_time = data.end
 		else:
 			note.end_time = note.start_time
-		
+
 		if notes.size() <= 0:
 			note.is_first = true
-		
+
 		notes.append(note)
 
 
@@ -130,44 +130,43 @@ func load_data_from_json(level_json: String):
 func _process(delta: float) -> void:
 	if !level_active || !GameManager.can_move:
 		return
-	
+
 	# first beat line should be for timestamp 0
 	if current_time + view_range >= 0:
 		if time_to_next_beat <= 0:
-			# at a beat line
-			if subdivision_num == subdivisions_per_beat:
-				# at a measure linea
-				if beat_num == beats_per_measure:
-					beat_num = 1
-					subdivision_num = 1
-					create_subdivision_line.emit(20)
-				else:
-					subdivision_num = 1
-					beat_num += 1
-					create_subdivision_line.emit(10)
+			if subdivision_num % int(beats_per_measure * subdivisions_per_beat) == 0:
+				# at a measure line
+				beat_num = 0
+				subdivision_num = 0
+				create_subdivision_line.emit(20)
+			elif subdivision_num % int(subdivisions_per_beat) == 0:
+				# at a beat line
+				beat_num += 1
+				create_subdivision_line.emit(10)
 			else:
+				# at a subdivision line
 				create_subdivision_line.emit(4)
-				subdivision_num += 1
-			
-			time_to_next_beat += 60.0 / bpm / subdivisions_per_beat
-		
+			subdivision_num += 1
+
+			time_to_next_beat += duration_subdivision
+
 		time_to_next_beat -= delta
-	
+
 	# we all outta notes
 	if current_note_idx == notes.size():
 		current_time += delta
-		
+
 		if current_time >= song_end + subdivision_offset - view_range:
 			start_level(true)
-		
+
 		return
-	
+
 	var is_player_win = true
 	for key in wave_interferences.keys():
 		if wave_interferences[key] < wave_goals[key]:
 			is_player_win = false
 			break
-	
+
 	if is_player_win:
 		win()
 		return
@@ -185,14 +184,14 @@ func _process(delta: float) -> void:
 	while current_time >= current_note.start_time - ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range: # magic number dont worry abt it
 		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
 			send_note.emit(current_note)
-		
+
 		current_note_idx += 1
 		if current_note_idx < notes.size():
 			current_note = notes[current_note_idx]
 		else:
 			print("no more notes!")
 			break
-	
+
 	current_time += delta
 
 
@@ -218,8 +217,8 @@ func reset():
 	wave_goals.clear()
 	wave_interferences.clear()
 	time_to_next_beat = 0
-	subdivision_num = 1
-	beat_num = 1
+	subdivision_num = 0
+	beat_num = 0
 	current_note_idx = 0
 
 
