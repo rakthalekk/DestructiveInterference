@@ -5,8 +5,8 @@ extends GameMenu
 
 const LEVELS = [
 	"res://levels/tutorial/tutorial.json",
-	"res://levels/level2/level2.json",
 	"res://levels/challenge1/challenge1.json",
+	"res://levels/level2/level2.json",
 ]
 
 

@@ -163,7 +163,7 @@ text = "level 1"
 
 [node name="Song3" type="Button" parent="Control/VBoxContainer" unique_id=1489763]
 layout_mode = 2
-text = "challenge 1"
+text = "level 2"
 
 [node name="Song4" type="Button" parent="Control/VBoxContainer" unique_id=794709813]
 layout_mode = 2

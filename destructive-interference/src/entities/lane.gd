@@ -267,6 +267,8 @@ func eval_beat(x: float, beat: Beat) -> float:
 			return eval_square(x)
 		GameManager.WAVE_TYPE.SAW:
 			return eval_saw(x)
+		GameManager.WAVE_TYPE.NOISE:
+			return 0
 		_:
 			printerr("lane.gd, eval_beat(): Unknown wave type %s" % [type])
 			return 0.0

@@ -50,6 +50,7 @@ var wave_symbols: Dictionary[GameManager.WAVE_TYPE, Texture2D] = {
 	GameManager.WAVE_TYPE.SQUARE: preload("res://assets/square.png"),
 	GameManager.WAVE_TYPE.SAW: preload("res://assets/saw.png"),
 	GameManager.WAVE_TYPE.SINE: preload("res://assets/sine.png"),
+	GameManager.WAVE_TYPE.NOISE: preload("res://assets/noise.png")
 }
 
 
@@ -110,7 +111,7 @@ func _physics_process(delta: float) -> void:
 		subdivision_timer += delta
 		if subdivision_timer >= LevelManager.subdivision_offset * 4:
 			subdivision_timer = 0.0
-			LevelManager.add_tolerance(wave_type, 0.2)
+			LevelManager.add_tolerance(wave_type, 0.5)
 
 
 func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
