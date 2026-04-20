@@ -79,7 +79,7 @@ class Note:
 
     def __post_init__(self):
         # sort by start time, then instrument name
-        self.sort_index = [self.start, self.name]
+        self.sort_index = [self.start_tick, self.name]
 
 
 
