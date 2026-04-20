@@ -51,28 +51,36 @@ func _on_create_subdivision_line(width: float):
 
 
 func spawn_beat(note: Note):
-	var lane_idx = note.band_start
-	var beat_width = note.band_end - note.band_start + 1
+	var beats_created: Array[Beat] = []
+	for lane_idx in range(note.band_start, note.band_end + 1):
+		if !is_valid_lane(lane_idx):
+			push_warning("lane idx ", lane_idx, " out of bounds")
+			return
+	
+		var beat := BEAT_SCENE.instantiate() as Beat
+		beat.width = 1
+		beat.note = note
+		beat.i_makea_the_particle.connect(spawn_beat_particle)
+		
+		if lane_idx == note.band_start:
+			beat.width = note.band_end - note.band_start + 1
 
-	if !is_valid_lane(lane_idx):
-		push_warning("lane idx ", lane_idx, " out of bounds")
-		return
-
-	var beat := BEAT_SCENE.instantiate() as Beat
-	beat.width = beat_width
-	beat.note = note
-	beat.i_makea_the_particle.connect(spawn_beat_particle)
-
-	#var subd = LevelManager.subdivisions_per_beat
-	#var bpm = LevelManager.bpm
-	#var note_length = note.end_time - note.start_time
+		#var subd = LevelManager.subdivisions_per_beat
+		#var bpm = LevelManager.bpm
+		#var note_length = note.end_time - note.start_time
 
 
-	lanes[lane_idx].add_beat(beat)
-	for i in range(note.band_start + 1, note.band_end + 1):
-		lanes[i].add_beat(beat, false) # inform these other lanes about the beat so they can render waveform squigglies, but don't add it a 2nd time
-	beat.progress_ratio = 0.0
-	beat.dispatch_beat(note, LevelManager.view_range)
+		lanes[lane_idx].add_beat(beat)
+		#for i in range(note.band_start + 1, note.band_end + 1):
+			#lanes[i].add_beat(beat, false) # inform these other lanes about the beat so they can render waveform squigglies, but don't add it a 2nd time
+		beat.progress_ratio = 0.0
+		beat.dispatch_beat(note, LevelManager.view_range, lane_idx)
+		beats_created.append(beat)
+	
+	for beat in beats_created:
+		for other_beat in beats_created:
+			if beat != other_beat:
+				beat.add_friend(other_beat)
 
 
 func spawn_beat_particle(wave_type: GameManager.WAVE_TYPE):

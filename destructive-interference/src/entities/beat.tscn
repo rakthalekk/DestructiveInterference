@@ -130,25 +130,25 @@ script = ExtResource("1_xrhn5")
 
 [node name="Connector1" type="Line2D" parent="Connectors" unique_id=733085957]
 points = PackedVector2Array(0, 30, 71, 30)
-width = 4.0
+width = 6.0
 default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 
 [node name="Connector2" type="Line2D" parent="Connectors" unique_id=946947821]
 position = Vector2(71, 0)
 points = PackedVector2Array(0, 30, 71, 30)
-width = 4.0
+width = 6.0
 default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 
 [node name="Connector3" type="Line2D" parent="Connectors" unique_id=388408826]
 position = Vector2(142, 0)
 points = PackedVector2Array(0, 30, 71, 30)
-width = 4.0
+width = 6.0
 default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 
 [node name="Connector4" type="Line2D" parent="Connectors" unique_id=1923081782]
 position = Vector2(213, 0)
 points = PackedVector2Array(0, 30, 71, 30)
-width = 4.0
+width = 6.0
 default_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 
 [node name="Icon" type="Node2D" parent="." unique_id=1154701175]
@@ -171,24 +171,17 @@ position = Vector2(0, 32)
 scale = Vector2(0.02, 0.02)
 texture = ExtResource("2_xrhn5")
 
-[node name="Icon2" type="Sprite2D" parent="Icon" unique_id=1166108853]
-position = Vector2(71, 32)
-scale = Vector2(0.02, 0.02)
+[node name="CompoundIcon" type="Node2D" parent="Icon" unique_id=1177549223]
+visible = false
+
+[node name="CIcon1" type="Sprite2D" parent="Icon/CompoundIcon" unique_id=1495126037]
+position = Vector2(-10.999998, 35)
+scale = Vector2(0.015, 0.015)
 texture = ExtResource("2_xrhn5")
 
-[node name="Icon3" type="Sprite2D" parent="Icon" unique_id=1549002296]
-position = Vector2(142, 32)
-scale = Vector2(0.02, 0.02)
-texture = ExtResource("2_xrhn5")
-
-[node name="Icon4" type="Sprite2D" parent="Icon" unique_id=969086266]
-position = Vector2(213, 32)
-scale = Vector2(0.02, 0.02)
-texture = ExtResource("2_xrhn5")
-
-[node name="Icon5" type="Sprite2D" parent="Icon" unique_id=241252763]
-position = Vector2(284, 32)
-scale = Vector2(0.02, 0.02)
+[node name="CIcon2" type="Sprite2D" parent="Icon/CompoundIcon" unique_id=76057996]
+position = Vector2(9.999999, 35)
+scale = Vector2(0.015, 0.015)
 texture = ExtResource("2_xrhn5")
 
 [node name="DespawnBox" type="Area2D" parent="." unique_id=384991479]

@@ -11,7 +11,7 @@ var my_beat_type: BEAT_TYPE
 
 signal i_die
 signal i_makea_the_particle(wave_type: GameManager.WAVE_TYPE)
-
+signal kill_all_your_friends
 
 ## Wave type for this beat
 var wave_type: GameManager.WAVE_TYPE
@@ -27,25 +27,14 @@ var speed: float
 var width := 1:
 	set(val):
 		width = val
-		$Icon/ColorRect.scale = Vector2(width, 1)
-		$DespawnBox.scale = Vector2(width, 1)
-		$DespawnBox.position = Vector2((width - 1) * 35, 0)
-		$HurtThePlayerBox.scale = Vector2(width, 1)
-		$HurtThePlayerBox.position = Vector2((width - 1) * 35, 0)
-		
 		$Connectors/Connector1.visible = width >= 2
 		$Connectors/Connector2.visible = width >= 3
 		$Connectors/Connector3.visible = width >= 4
 		$Connectors/Connector4.visible = width >= 5
-		$Icon/Icon2.visible = width >= 2
-		$Icon/Icon3.visible = width >= 3
-		$Icon/Icon4.visible = width >= 4
-		$Icon/Icon5.visible = width >= 5
 
 
-var height := 1:
-	set(val):
-		height = val
+var friends: Array[Beat]
+
 
 var wave_symbols: Dictionary[GameManager.WAVE_TYPE, Texture2D] = {
 	GameManager.WAVE_TYPE.TRIANGLE: preload("res://assets/triangle.png"),
@@ -86,6 +75,8 @@ var note_data: Note
 
 var looped_audio = false
 
+var dying = false
+
 
 func _ready() -> void:
 	PlayerManager.switched_lane.connect(_on_lane_changed)
@@ -122,15 +113,27 @@ func _physics_process(delta: float) -> void:
 			LevelManager.add_tolerance(wave_type, 0.5)
 
 
-func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
+func dispatch_beat(note: Note, in_lookahead_time_seconds: float, lane_idx: int):
 	note_data = note
 	wave_type = note.instrument.type
-	#icon.frame = int(wave_type)
-	icon.texture = wave_symbols[wave_type]
-	$Icon/Icon2.texture = wave_symbols[wave_type]
-	$Icon/Icon3.texture = wave_symbols[wave_type]
-	$Icon/Icon4.texture = wave_symbols[wave_type]
-	$Icon/Icon5.texture = wave_symbols[wave_type]
+	
+	if note.compounds.has(lane_idx):
+		var instruments = note.compounds[lane_idx]
+		var type_1 = LevelManager.instruments[instruments[0]].type
+		var type_2 = LevelManager.instruments[instruments[1]].type
+		
+		# if goal of other instrument has been completed, do not display compound note
+		if LevelManager.wave_interferences[type_1] >= LevelManager.wave_goals[type_1] || \
+				LevelManager.wave_interferences[type_2] >= LevelManager.wave_goals[type_2]:
+			icon.texture = wave_symbols[wave_type]
+		else:
+			icon.visible = false
+			$Icon/CompoundIcon.visible = true
+			$Icon/CompoundIcon/CIcon1.texture = wave_symbols[type_1]
+			$Icon/CompoundIcon/CIcon2.texture = wave_symbols[type_2]
+	else:
+		icon.texture = wave_symbols[wave_type]
+	
 	$Connectors/Connector1.default_color = wave_colors[wave_type]
 	$Connectors/Connector2.default_color = wave_colors[wave_type]
 	$Connectors/Connector3.default_color = wave_colors[wave_type]
@@ -153,6 +156,11 @@ func dispatch_beat(note: Note, in_lookahead_time_seconds: float):
 	my_beat_type = BEAT_TYPE.TAP if is_zero_approx(time_to_hold) else BEAT_TYPE.HOLD 
 
 
+func add_friend(friend: Beat):
+	friends.append(friend)
+	friend.kill_all_your_friends.connect(die)
+
+
 ## kill thyself
 func _on_despawn_box_area_entered(_area: Area2D) -> void:
 	if my_beat_type == BEAT_TYPE.TAP:
@@ -169,9 +177,13 @@ func _on_hurt_the_player_box_area_entered(_area: Area2D) -> void:
 
 
 func die():
+	if dying:
+		return
+	
+	dying = true
 	i_die.emit(self)
 	anim_player.play("my_time_has_come")
-
+	kill_all_your_friends.emit()
 
 
 func _on_lane_changed(idx: int):
