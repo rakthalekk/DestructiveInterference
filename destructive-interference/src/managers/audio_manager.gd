@@ -3,10 +3,9 @@ extends Node2D
 
 
 var JSON_SONGS: Dictionary[String, AudioStream] = {
-	"res://levels/example/example.json": preload("res://levels/example/city.wav"),
-	"res://levels/challenge1/challenge1.json": preload("res://levels/challenge1/challenge1.mp3"),
-	"res://levels/level2/level2.json": preload("res://levels/level2/demo a 4.mp3"),
 	"res://levels/tutorial/tutorial.json": preload("res://levels/tutorial/tutorial! (120).mp3"),
+	"res://levels/level2/level2.json": preload("res://levels/level2/demo a 4.mp3"),
+	"res://levels/challenge1/challenge1.json": preload("res://levels/challenge1/challenge1.mp3"),
 }
 
 
