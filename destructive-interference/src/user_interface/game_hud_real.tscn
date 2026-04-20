@@ -504,5 +504,6 @@ text_val = "L"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=191680022]
 libraries/ = SubResource("AnimationLibrary_0qc7e")
+autoplay = &"intro"
 
 [editable path="WomanHole2"]
