@@ -1,14 +1,24 @@
 [gd_scene format=3 uid="uid://yga88pky2qyg"]
 
 [ext_resource type="Script" uid="uid://cecysokwvrek8" path="res://src/user_interface/level_select.gd" id="1_gmixf"]
-[ext_resource type="Theme" uid="uid://cxokgiosp78t8" path="res://src/user_interface/ui.tres" id="1_rjgcb"]
+[ext_resource type="Theme" uid="uid://dxh2rd0qsm7bt" path="res://src/user_interface/ui.tres" id="1_rjgcb"]
+[ext_resource type="PackedScene" uid="uid://dbbcuuixvmmje" path="res://src/user_interface/game_button.tscn" id="3_dyliu"]
+[ext_resource type="Texture2D" uid="uid://cd5gwh7jmqex5" path="res://assets/loague_oh_dot_pee_en_gee.png" id="5_ak362"]
+[ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="6_2lol0"]
+[ext_resource type="Texture2D" uid="uid://bswjwl8fiixkh" path="res://assets/fun_police.png" id="6_ns0jv"]
+[ext_resource type="PackedScene" uid="uid://dsbctq4yr63r0" path="res://src/user_interface/controls_icon.tscn" id="7_8gu80"]
+[ext_resource type="Texture2D" uid="uid://cn6t1tlif7glj" path="res://assets/triangle.png" id="8_fcdvh"]
+[ext_resource type="Texture2D" uid="uid://c07lj6uyewc8j" path="res://assets/square.png" id="9_j4oc5"]
+[ext_resource type="Texture2D" uid="uid://ccq4xxh57xssk" path="res://assets/sine.png" id="10_6lq42"]
 
 [sub_resource type="Gradient" id="Gradient_rjgcb"]
 offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0.09980973, 0.4680615, 0.42377824, 1)
+colors = PackedColorArray(0.26666668, 0.6627451, 0.8627451, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_467gw"]
 gradient = SubResource("Gradient_rjgcb")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_467gw"]
 
 [sub_resource type="Animation" id="Animation_7lkuf"]
 length = 0.001
@@ -33,6 +43,30 @@ tracks/1/keys = {
 "handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_gmixf"]
@@ -64,27 +98,46 @@ tracks/1/keys = {
 [sub_resource type="Animation" id="Animation_rjgcb"]
 resource_name = "outro"
 length = 0.5
-tracks/0/type = "bezier"
+tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Control:position:x")
+tracks/0/path = NodePath("Control:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.19999999, -394.2603, 0.25, 0, 1922, 0, 0, 0.3, -9.008667),
-"times": PackedFloat32Array(0, 0.5)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
 }
-tracks/1/type = "bezier"
+tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Control:position:y")
+tracks/1/path = NodePath("Control:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, 0, 0, 0.083333336, 0),
-"times": PackedFloat32Array(0, 0.5)
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.13333334, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"emit_transition_complete"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rjgcb"]
@@ -104,7 +157,17 @@ grow_vertical = 2
 theme = ExtResource("1_rjgcb")
 script = ExtResource("1_gmixf")
 
-[node name="Background" type="TextureRect" parent="." unique_id=1394312565]
+[node name="Control" type="Control" parent="." unique_id=38663695]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0009765625
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Background" type="TextureRect" parent="Control" unique_id=1394312565]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -113,83 +176,222 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture2D_467gw")
 
-[node name="Control" type="Control" parent="." unique_id=38663695]
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1727267870]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 0.00048828125
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset_ratio = Vector2(0.5, 0.5)
-
-[node name="Label" type="Label" parent="Control" unique_id=326408958]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -530.5
-offset_top = 33.0
-offset_right = 530.5
-offset_bottom = 208.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 128
-text = "Select a Level ! :D"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1667857177]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -226.5
-offset_top = -244.0
-offset_right = 226.5
-offset_bottom = 328.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 23
-
-[node name="Song" type="Button" parent="Control/VBoxContainer" unique_id=1139252566]
-layout_mode = 2
-text = "tutorial"
-
-[node name="Song2" type="Button" parent="Control/VBoxContainer" unique_id=1952402775]
-layout_mode = 2
-text = "level 1"
-
-[node name="Song3" type="Button" parent="Control/VBoxContainer" unique_id=1489763]
-layout_mode = 2
-text = "level 2"
-
-[node name="Song4" type="Button" parent="Control/VBoxContainer" unique_id=794709813]
-layout_mode = 2
-text = "dont click me ill c"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1300042190]
-libraries/ = SubResource("AnimationLibrary_rjgcb")
-
-[node name="Back" type="Button" parent="." unique_id=1914977156]
-custom_minimum_size = Vector2(200, 100)
-layout_mode = 1
-anchors_preset = -1
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -4.0
-offset_top = -8.0
-offset_right = 4.0
-offset_bottom = -50.0
+offset_left = -1048.0002
+offset_top = -368.0
+offset_right = -1008.00024
+offset_bottom = -330.65265
 grow_horizontal = 2
 grow_vertical = 0
-text = "Back"
+scale = Vector2(52.972763, 7.1626735)
+color = Color(1, 0.95686275, 0.42745098, 1)
 
-[connection signal="pressed" from="Control/VBoxContainer/Song" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/VBoxContainer/Song2" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/VBoxContainer/Song3" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/VBoxContainer/Song4" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=1799243954]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -836.75024
+offset_top = -894.0
+offset_right = 836.74976
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_467gw")
+
+[node name="AutoScrollBox" type="ScrollContainer" parent="Control/PanelContainer" unique_id=1841716019]
+clip_contents = false
+custom_minimum_size = Vector2(1080, 200)
+layout_mode = 2
+size_flags_vertical = 8
+follow_focus = true
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/PanelContainer/AutoScrollBox" unique_id=1995574223]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 10
+theme_override_constants/separation = -40
+
+[node name="BackBtn" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1999532276 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+button_text = "Back"
+text_val = "Back"
+
+[node name="GameButton" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=2040855931 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+button_text = "Tutorial"
+text_val = "Tutorial"
+
+[node name="GameButton2" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1291254395 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+button_text = "Song 1"
+text_val = "Song 1"
+
+[node name="GameButton3" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1640027056 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+button_text = "Song 2"
+text_val = "Song 2"
+
+[node name="GameButton4" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=748962039 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+button_text = "Song 3"
+text_val = "Song 3"
+
+[node name="GameButton5" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=154500391 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+button_text = "Song 4"
+text_val = "Song 4"
+
+[node name="GameButton6" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1389297115 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+button_text = "Song 5"
+text_val = "Song 5"
+
+[node name="Logo" type="TextureRect" parent="Control" unique_id=1922737545]
+layout_mode = 1
+offset_left = 100.0
+offset_top = 23.0
+offset_right = 997.6797
+offset_bottom = 394.0
+texture = ExtResource("5_ak362")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="WomanHole2" parent="Control" unique_id=999594193 instance=ExtResource("6_2lol0")]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -56.000366
+offset_top = -198.99997
+offset_right = -56.000366
+offset_bottom = -198.99997
+grow_horizontal = 0
+scale = Vector2(-0.84000003, 0.84000003)
+
+[node name="Woman" parent="Control/WomanHole2/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
+texture = ExtResource("6_ns0jv")
+
+[node name="CandyJar" type="Control" parent="Control" unique_id=1505742083]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" parent="Control/CandyJar" unique_id=835360152 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = 33.99951
+offset_top = -50.0
+offset_right = 161.99951
+offset_bottom = 72.0
+
+[node name="TextureRect18" parent="Control/CandyJar" unique_id=1071803984 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = -625.0005
+offset_top = -122.0
+offset_right = -497.0005
+offset_bottom = 0.0
+
+[node name="TextureRect3" parent="Control/CandyJar" unique_id=50188078 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = -452.0005
+offset_top = -19.0
+offset_right = -324.0005
+offset_bottom = 103.0
+texture = ExtResource("8_fcdvh")
+
+[node name="TextureRect16" parent="Control/CandyJar" unique_id=1901790603 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = 118.99951
+offset_top = -456.0
+offset_right = 246.99951
+offset_bottom = -334.0
+texture = ExtResource("8_fcdvh")
+
+[node name="TextureRect13" parent="Control/CandyJar" unique_id=263782890 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = -846.00037
+offset_top = -19.0
+offset_right = -718.00037
+offset_bottom = 103.0
+texture = ExtResource("8_fcdvh")
+
+[node name="TextureRect7" parent="Control/CandyJar" unique_id=1306125630 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = 184.99951
+offset_top = -246.0
+offset_right = 312.9995
+offset_bottom = -124.0
+texture = ExtResource("9_j4oc5")
+
+[node name="TextureRect17" parent="Control/CandyJar" unique_id=813818243 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = 337.0
+offset_top = -514.0
+offset_right = 465.0
+offset_bottom = -392.0
+texture = ExtResource("9_j4oc5")
+
+[node name="TextureRect10" parent="Control/CandyJar" unique_id=1735198019 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = -231.00049
+offset_top = -97.0
+offset_right = -103.00049
+offset_bottom = 25.0
+texture = ExtResource("9_j4oc5")
+
+[node name="TextureRect5" parent="Control/CandyJar" unique_id=684740787 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = 268.0
+offset_top = -37.0
+offset_right = 396.0
+offset_bottom = 85.0
+texture = ExtResource("10_6lq42")
+
+[node name="TextureRect9" parent="Control/CandyJar" unique_id=465012477 instance=ExtResource("7_8gu80")]
+layout_mode = 1
+offset_left = -833.0005
+offset_top = -208.0
+offset_right = -705.0005
+offset_bottom = -86.0
+texture = ExtResource("10_6lq42")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1300042190]
+libraries/ = SubResource("AnimationLibrary_rjgcb")
+autoplay = &"intro"
+
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/BackBtn" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton2" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton3" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton4" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton5" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton6" to="." method="_on_song_pressed" flags=18]
+
+[editable path="Control/WomanHole2"]

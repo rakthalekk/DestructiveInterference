@@ -258,6 +258,7 @@ states/unhover/position = Vector2(621, 100)
 transitions = ["Start", "RESET", SubResource("AnimationNodeStateMachineTransition_tu6mt"), "unhover", "RESET", SubResource("AnimationNodeStateMachineTransition_4lho3"), "hover", "hovering", SubResource("AnimationNodeStateMachineTransition_oqqh1"), "hovering", "unhover", SubResource("AnimationNodeStateMachineTransition_qi51b"), "RESET", "hover", SubResource("AnimationNodeStateMachineTransition_mkkcp"), "hover", "unhover", SubResource("AnimationNodeStateMachineTransition_cb8a4"), "unhover", "hover", SubResource("AnimationNodeStateMachineTransition_8ad8h")]
 
 [node name="GameButton" type="TextureButton" unique_id=2040855931]
+custom_minimum_size = Vector2(400, 400)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -306,7 +307,7 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 128
-text = "Test Text"
+text = "<null>"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -323,3 +324,4 @@ advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="resized" from="." to="." method="_on_resized"]

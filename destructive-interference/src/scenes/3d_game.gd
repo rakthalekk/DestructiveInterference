@@ -4,7 +4,7 @@ extends Node3D
 @export_file_path var level_json
 
 
-@onready var camera_blocker := $Camera3D/CameraBlocker as Sprite3D
+#@onready var camera_blocker := $Cam as Sprite3D
 
 @onready var beatmap: BeatMap = %BeatMap
 
@@ -20,7 +20,7 @@ func _ready() -> void:
 	
 	GameManager.transition_to(GameManager.GAME_STATE.MAIN_MENU)
 	
-	camera_blocker.modulate = ProjectSettings.get_setting("rendering/environment/defaults/default_clear_color", Color.WHITE)
+	#camera_blocker.modulate = ProjectSettings.get_setting("rendering/environment/defaults/default_clear_color", Color.WHITE)
 
 
 #func hide_start_text():
