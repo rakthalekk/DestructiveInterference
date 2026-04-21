@@ -116,19 +116,19 @@ func _draw() -> void:
 		# render one subdivision at a time
 		var subdivision_idx := 0
 		var initial_y_pos := _time_to_ypos(active_beats[0].note.start_time)
+		var avg_color_for_subdivision = avg_color(active_beats.map(func(beat: Beat) -> Color: return beat.get_appropriate_color()))
+		# make one point to separate the color of this waveform
+		points.append(Vector2(0.0, last_y_drawn))
+		colors.append(avg_color_for_subdivision)
+		#if debug_log: print("      adding new point for start of colored segment at %s with color %s" % [points[-1], colors[-1]])
 		while active_beats.any(func(beat: Beat) -> bool: return (
 					beat.note.end_time == null
 					or is_less_or_equal_approx(beat.note.end_time, next_beat_start_time))):
 			var start_y_pos = initial_y_pos - _beat_duration_to_y_diff(subdivision_idx * beats_per_subdivision)
 			var end_y_pos := initial_y_pos - _beat_duration_to_y_diff((subdivision_idx + 1) * beats_per_subdivision)
 			if debug_log: print("    top of middle while loop. drawing one full subdivision. subdivision_idx=%d, active_beats.size()=%d, start_y_pos=%f, end_y_pos=%f" % [subdivision_idx, active_beats.size(), start_y_pos, end_y_pos])
-
+			avg_color_for_subdivision = avg_color(active_beats.map(func(beat: Beat) -> Color: return beat.get_appropriate_color()))
 			# render all segments for this subdivision
-			var avg_color_for_subdivision = avg_color(active_beats.map(func(beat: Beat) -> Color: return beat.get_appropriate_color()))
-			# make one point to separate the color of this waveform
-			points.append(Vector2(0.0, last_y_drawn))
-			colors.append(avg_color_for_subdivision)
-			#if debug_log: print("      adding new point for start of colored segment at %s with color %s" % [points[-1], colors[-1]])
 			var latest_x_pos := 0.0
 			var period_offset_idx := int(draw_count / DRAWS_TO_CYCLE_WAVE) % int(SEGMENTS_PER_SUBDIVISION)
 			if debug_log: print("      period_offset=%d       AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" % [period_offset_idx])
@@ -165,11 +165,6 @@ func _draw() -> void:
 				last_y_drawn = new_y_pos
 				latest_x_pos = new_x_pos
 
-			# if any saw or square beats, draw the finishing line back to midpoint
-			#if saw_beats.size() > 0 or square_beats.size() > 0:
-			#points.append(Vector2(0.0, last_y_drawn))
-			#colors.append(avg_color_for_subdivision)
-			#if debug_log: print("      adding extra horizontal point for jumpy waveform at end of subdivision at %s with color %s" % [points[-1], colors[-1]])
 			last_y_drawn = end_y_pos
 
 			# clean up notes which end this subdivision
@@ -191,12 +186,17 @@ func _draw() -> void:
 		# check: do we have dead space before the next note start?
 		var latest_secs_rendered := cur_start_time + subdivision_idx * LevelManager.duration_subdivision
 		if !is_greater_or_equal_approx(latest_secs_rendered, next_beat_start_time):
+			# if any saw or square beats, draw the finishing line back to midpoint
+			#if saw_beats.size() > 0 or square_beats.size() > 0:
+			points.append(Vector2(0.0, last_y_drawn))
+			colors.append(avg_color_for_subdivision)
+			#if debug_log: print("      adding extra horizontal point for jumpy waveform at end of subdivision at %s with color %s" % [points[-1], colors[-1]])
 			# render empty space until next note
 			var end_of_empty_y := (_time_to_ypos(next_beat_start_time)
 				if next_beat_start_time != END_OF_TRACK_TIME_SENTINEL
 				else top_of_path.y)
 			points.append_array([
-				Vector2(0, last_y_drawn),
+				Vector2(0, last_y_drawn - _beat_duration_to_y_diff(LevelManager.duration_subdivision * 0.9)),
 				Vector2(0, end_of_empty_y)
 			])
 			colors.append_array([COLOR_EMPTY, COLOR_EMPTY])
