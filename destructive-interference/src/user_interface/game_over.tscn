@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cn6t1tlif7glj" path="res://assets/triangle.png" id="5_6d2kc"]
 [ext_resource type="Texture2D" uid="uid://c07lj6uyewc8j" path="res://assets/square.png" id="6_po7ms"]
 [ext_resource type="Texture2D" uid="uid://ccq4xxh57xssk" path="res://assets/sine.png" id="7_k0n1m"]
+[ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="8_cwpkk"]
+[ext_resource type="Texture2D" uid="uid://bswjwl8fiixkh" path="res://assets/fun_police.png" id="9_6d2kc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udq8p"]
 bg_color = Color(1, 0.95686275, 0.42745098, 1)
@@ -269,34 +271,34 @@ texture = ExtResource("5_6d2kc")
 
 [node name="TextureRect4" parent="Control/CandyJar" unique_id=974162551 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = 724.0
-offset_top = 211.0
-offset_right = 852.0
-offset_bottom = 333.0
+offset_left = 747.0
+offset_top = 337.0
+offset_right = 875.0
+offset_bottom = 459.0
 texture = ExtResource("5_6d2kc")
 
 [node name="TextureRect16" parent="Control/CandyJar" unique_id=355055844 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = 461.0
-offset_top = -266.0
-offset_right = 589.0
-offset_bottom = -144.0
+offset_left = 404.0
+offset_top = -359.0
+offset_right = 532.0
+offset_bottom = -237.0
 texture = ExtResource("5_6d2kc")
 
 [node name="TextureRect13" parent="Control/CandyJar" unique_id=1945676125 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = -869.0
-offset_top = 321.0
-offset_right = -741.0
-offset_bottom = 443.0
+offset_left = -896.0
+offset_top = 257.0
+offset_right = -768.0
+offset_bottom = 379.0
 texture = ExtResource("5_6d2kc")
 
 [node name="TextureRect7" parent="Control/CandyJar" unique_id=452069904 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = 659.0
-offset_top = -63.0
-offset_right = 787.0
-offset_bottom = 59.0
+offset_left = 786.0
+offset_top = -105.0
+offset_right = 914.0
+offset_bottom = 17.0
 texture = ExtResource("6_po7ms")
 
 [node name="TextureRect8" parent="Control/CandyJar" unique_id=341042770 instance=ExtResource("4_cwpkk")]
@@ -309,10 +311,10 @@ texture = ExtResource("6_po7ms")
 
 [node name="TextureRect17" parent="Control/CandyJar" unique_id=1162508127 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = 555.0
-offset_top = -421.0
-offset_right = 683.0
-offset_bottom = -299.0
+offset_left = 651.0
+offset_top = -452.0
+offset_right = 779.0
+offset_bottom = -330.0
 texture = ExtResource("6_po7ms")
 
 [node name="TextureRect10" parent="Control/CandyJar" unique_id=254097305 instance=ExtResource("4_cwpkk")]
@@ -325,40 +327,71 @@ texture = ExtResource("6_po7ms")
 
 [node name="TextureRect11" parent="Control/CandyJar" unique_id=1885884850 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = -584.0
-offset_top = -426.0
-offset_right = -456.0
-offset_bottom = -304.0
+offset_left = -554.0
+offset_top = -445.0
+offset_right = -426.0
+offset_bottom = -323.0
 texture = ExtResource("6_po7ms")
 
 [node name="TextureRect5" parent="Control/CandyJar" unique_id=888125143 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = 763.0
-offset_top = -273.0
-offset_right = 891.0
-offset_bottom = -151.0
+offset_left = 779.0
+offset_top = -285.0
+offset_right = 907.0
+offset_bottom = -163.0
 texture = ExtResource("7_k0n1m")
 
 [node name="TextureRect6" parent="Control/CandyJar" unique_id=1139976027 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = -513.0
-offset_top = 281.0
-offset_right = -385.0
-offset_bottom = 403.0
+offset_left = -690.0
+offset_top = 306.0
+offset_right = -562.0
+offset_bottom = 428.0
 texture = ExtResource("7_k0n1m")
 
 [node name="TextureRect9" parent="Control/CandyJar" unique_id=1990765496 instance=ExtResource("4_cwpkk")]
 layout_mode = 1
-offset_left = -856.0
-offset_top = -469.0
-offset_right = -728.0
-offset_bottom = -347.0
+offset_left = -802.0
+offset_top = -471.0
+offset_right = -674.0
+offset_bottom = -349.0
 texture = ExtResource("7_k0n1m")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1860044134]
 libraries/ = SubResource("AnimationLibrary_8o3m4")
 autoplay = &"intro"
 
+[node name="Enemy" parent="." unique_id=999594193 instance=ExtResource("8_cwpkk")]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -52.99997
+offset_right = -75.0
+offset_bottom = -52.99997
+grow_horizontal = 0
+scale = Vector2(-0.9, 0.9)
+
+[node name="Woman" parent="Enemy/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
+texture = ExtResource("9_6d2kc")
+
+[node name="Woman" parent="." unique_id=998007293 instance=ExtResource("8_cwpkk")]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 70.00001
+offset_top = -68.0
+offset_right = 70.00001
+offset_bottom = -68.0
+grow_horizontal = 1
+scale = Vector2(0.85, 0.85)
+
 [connection signal="pressed" from="Control/PanelContainer/VBoxContainer/Retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="Control/PanelContainer/VBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
 [connection signal="pressed" from="Control/PanelContainer/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
+
+[editable path="Enemy"]

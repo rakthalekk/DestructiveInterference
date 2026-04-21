@@ -24,10 +24,20 @@ func _ready() -> void:
 		header.text = "victory!"
 		header.add_theme_color_override("font_color", geen)
 		bkgd.color = geen
+		$Control/PanelContainer.position += Vector2.RIGHT * 250
+		$Control/Panel.position += Vector2.RIGHT * 250
+		$Woman.visible = true
+		$Enemy.visible = false
+		($Woman as WomanHole).yap(["Great Vibes!", "Nice Tunes!", "Good Job!", "Wishlist Apocalypse Approaches on Steam"].pick_random())
 	else:
 		header.text = "defeat!"
 		header.add_theme_color_override("font_color", red)
 		bkgd.color = red
+		$Control/PanelContainer.position += Vector2.LEFT * 250
+		$Control/Panel.position += Vector2.LEFT * 250
+		$Woman.visible = false
+		$Enemy.visible = true
+		($Enemy as WomanHole).yap(["GET WRECKED!", "I HATE MUSIC ! RAHHHH!!!", "Heh, Nice try, looser", "Wishlist Apocalypse Approaches on Steam"].pick_random())
 
 
 func _on_retry_pressed() -> void:

@@ -194,9 +194,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -836.75024
+offset_left = -905.0
 offset_top = -894.0
-offset_right = 836.74976
+offset_right = 905.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
@@ -207,7 +207,6 @@ clip_contents = false
 custom_minimum_size = Vector2(1080, 200)
 layout_mode = 2
 size_flags_vertical = 8
-follow_focus = true
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 0
 
@@ -216,6 +215,7 @@ layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 10
 theme_override_constants/separation = -40
+alignment = 1
 
 [node name="BackBtn" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1999532276 instance=ExtResource("3_dyliu")]
 layout_mode = 2
@@ -258,6 +258,7 @@ button_text = "Song 3"
 text_val = "Song 3"
 
 [node name="GameButton5" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=154500391 instance=ExtResource("3_dyliu")]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -266,6 +267,7 @@ button_text = "Song 4"
 text_val = "Song 4"
 
 [node name="GameButton6" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1389297115 instance=ExtResource("3_dyliu")]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
