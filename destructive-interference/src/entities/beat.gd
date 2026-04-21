@@ -78,9 +78,15 @@ var looped_audio = false
 var dying = false
 
 
+var random_hit_vector := Vector2.UP
+
+
 func _ready() -> void:
 	PlayerManager.switched_lane.connect(_on_lane_changed)
 	PlayerManager.interfere_released.connect(_on_interfere_released)
+	
+	var random_hit_angle = randf_range(-deg_to_rad(10), deg_to_rad(10))
+	random_hit_vector = Vector2.UP.rotated(random_hit_angle)
 
 
 func _physics_process(delta: float) -> void:
@@ -88,6 +94,13 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	progress += speed * delta
+	
+	if dying && !being_held:
+		$Icon.position += random_hit_vector * speed * delta * 1.75
+	elif being_held && !dying:
+		$Icon.position += Vector2.UP * speed * delta * 1.1
+		$Icon.scale = Vector2.ONE * 1.5
+		modulate = Color.WHITE * 2.5
 	
 	if my_beat_type != BEAT_TYPE.HOLD:
 		return
@@ -220,3 +233,7 @@ func _on_interfere_released():
 	if hold_time < time_to_hold:
 		PlayerManager.player_take_damage()
 		die()
+
+
+func get_appropriate_color():
+	return note.instrument.color if !dying && !being_held else Color.WHITE

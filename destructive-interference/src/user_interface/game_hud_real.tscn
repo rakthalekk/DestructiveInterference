@@ -12,6 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://ccq4xxh57xssk" path="res://assets/sine.png" id="10_t7jg5"]
 [ext_resource type="Texture2D" uid="uid://c07lj6uyewc8j" path="res://assets/square.png" id="11_eic7m"]
 [ext_resource type="Texture2D" uid="uid://cn6t1tlif7glj" path="res://assets/triangle.png" id="12_pjovr"]
+[ext_resource type="Texture2D" uid="uid://bbsnvlixxgjq3" path="res://assets/arrow_side1.png" id="13_pjovr"]
+[ext_resource type="Texture2D" uid="uid://cutub8np2qoj6" path="res://assets/IMG_0138.png" id="14_xw81k"]
+[ext_resource type="Texture2D" uid="uid://8if03pyy57i1" path="res://assets/IMG_0139.png" id="15_ii0ia"]
 
 [sub_resource type="Animation" id="Animation_ikahm"]
 length = 0.001
@@ -501,6 +504,75 @@ grow_vertical = 1
 texture = ExtResource("10_t7jg5")
 button_text = "L"
 text_val = "L"
+
+[node name="TextureRect5" parent="WomanHole/Control" unique_id=1406983442 instance=ExtResource("9_ikahm")]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 5.882351
+offset_top = 610.5882
+offset_right = 133.88234
+offset_bottom = 732.5882
+grow_horizontal = 1
+grow_vertical = 1
+texture = ExtResource("13_pjovr")
+button_text = "A"
+text_val = "A"
+
+[node name="TextureRect7" parent="WomanHole/Control" unique_id=271103057 instance=ExtResource("9_ikahm")]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 124.70589
+offset_top = 609.41174
+offset_right = 252.70589
+offset_bottom = 731.41174
+grow_horizontal = 1
+grow_vertical = 1
+texture = ExtResource("13_pjovr")
+flip_h = true
+button_text = "D"
+text_val = "D"
+
+[node name="TextureRect6" parent="WomanHole/Control" unique_id=435157976 instance=ExtResource("9_ikahm")]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 284.70587
+offset_top = 601.17645
+offset_right = 412.70584
+offset_bottom = 723.17645
+grow_horizontal = 1
+grow_vertical = 1
+texture = ExtResource("14_xw81k")
+button_text = "Space"
+text_val = "Space"
+
+[node name="TextureRect8" parent="WomanHole/Control" unique_id=1129494921 instance=ExtResource("9_ikahm")]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 14.117643
+offset_top = -391.76468
+offset_right = 142.11761
+offset_bottom = -269.76468
+grow_horizontal = 1
+grow_vertical = 1
+texture = ExtResource("15_ii0ia")
+button_text = "esc"
+text_val = "esc"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=191680022]
 libraries/ = SubResource("AnimationLibrary_0qc7e")

@@ -221,16 +221,19 @@ alignment = 1
 
 [node name="Retry" parent="Control/PanelContainer/VBoxContainer" unique_id=2040855931 instance=ExtResource("3_byqky")]
 layout_mode = 2
+is_back_btn = false
 button_text = "Retry"
 text_val = "Retry"
 
 [node name="LevelSelect" parent="Control/PanelContainer/VBoxContainer" unique_id=1224877902 instance=ExtResource("3_byqky")]
 layout_mode = 2
+is_back_btn = true
 button_text = "Level Select"
 text_val = "Level Select"
 
 [node name="MainMenu" parent="Control/PanelContainer/VBoxContainer" unique_id=1056967366 instance=ExtResource("3_byqky")]
 layout_mode = 2
+is_back_btn = true
 button_text = "Main Menu"
 text_val = "Main Menu"
 

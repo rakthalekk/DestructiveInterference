@@ -160,6 +160,7 @@ offset_right = 0.0009765625
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
 
 [node name="Background" type="TextureRect" parent="Control" unique_id=1394312565]
 layout_mode = 1
@@ -198,6 +199,7 @@ offset_top = -894.0
 offset_right = 836.74976
 grow_horizontal = 2
 grow_vertical = 0
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_467gw")
 
 [node name="AutoScrollBox" type="ScrollContainer" parent="Control/PanelContainer" unique_id=1841716019]
@@ -219,6 +221,7 @@ theme_override_constants/separation = -40
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
+is_back_btn = true
 button_text = "Back"
 text_val = "Back"
 
@@ -226,6 +229,7 @@ text_val = "Back"
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
+is_back_btn = false
 button_text = "Tutorial"
 text_val = "Tutorial"
 
@@ -233,6 +237,7 @@ text_val = "Tutorial"
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
+is_back_btn = false
 button_text = "Song 1"
 text_val = "Song 1"
 
@@ -240,6 +245,7 @@ text_val = "Song 1"
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
+is_back_btn = false
 button_text = "Song 2"
 text_val = "Song 2"
 
@@ -247,6 +253,7 @@ text_val = "Song 2"
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
+is_back_btn = false
 button_text = "Song 3"
 text_val = "Song 3"
 
@@ -254,6 +261,7 @@ text_val = "Song 3"
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
+is_back_btn = false
 button_text = "Song 4"
 text_val = "Song 4"
 
@@ -261,6 +269,7 @@ text_val = "Song 4"
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
+is_back_btn = false
 button_text = "Song 5"
 text_val = "Song 5"
 
@@ -297,6 +306,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="TextureRect2" parent="Control/CandyJar" unique_id=835360152 instance=ExtResource("7_8gu80")]
 layout_mode = 1

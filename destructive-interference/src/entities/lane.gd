@@ -118,7 +118,7 @@ func _draw() -> void:
 			if debug_log: print("    top of middle while loop. drawing one full subdivision. subdivision_idx=%d, active_beats.size()=%d, start_y_pos=%f, end_y_pos=%f" % [subdivision_idx, active_beats.size(), start_y_pos, end_y_pos])
 
 			# render all segments for this subdivision
-			var avg_color_for_subdivision = avg_color(active_beats.map(func(beat: Beat) -> Color: return beat.note.instrument.color))
+			var avg_color_for_subdivision = avg_color(active_beats.map(func(beat: Beat) -> Color: return beat.get_appropriate_color()))
 			# make one point to separate the color of this waveform
 			points.append(Vector2(0.0, last_y_drawn))
 			colors.append(avg_color_for_subdivision)

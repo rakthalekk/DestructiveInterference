@@ -3,6 +3,7 @@ class_name GameButton
 extends TextureButton
 
 
+@export var is_back_btn: bool
 
 @export_multiline var button_text: String:
 	set(value):
@@ -45,4 +46,11 @@ func _process(_delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	pass # Replace with function body.
+	if is_back_btn:
+		AudioManager.sfx_one_shot(AudioManager.SFX_MENU_BACK)
+	else:
+		AudioManager.sfx_one_shot(AudioManager.SFX_MENU_SCROLL)
+
+
+func _on_focus_entered() -> void:
+	AudioManager.sfx_one_shot(AudioManager.SFX_MENU_SELECT)
