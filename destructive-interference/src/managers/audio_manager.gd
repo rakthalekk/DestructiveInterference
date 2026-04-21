@@ -6,6 +6,7 @@ var JSON_SONGS: Dictionary[String, AudioStream] = {
 	"res://levels/tutorial/tutorial.json": preload("res://levels/tutorial/tutorial! (120).mp3"),
 	"res://levels/level2/level2.json": preload("res://levels/level2/demo a 4.mp3"),
 	"res://levels/challenge1/challenge1.json": preload("res://levels/challenge1/challenge1.mp3"),
+	"res://levels/level3/level3.json": preload("res://levels/level3/demo b 4.mp3")
 }
 
 
@@ -26,6 +27,13 @@ var SFX_MATCH_BASIC: Dictionary[String, AudioStream] = {
 	"sine": preload("res://assets/sfx/level/beat/match_basic/sine basic.wav"),
 	"square": preload("res://assets/sfx/level/beat/match_basic/square basic.wav"),
 	"triangle": preload("res://assets/sfx/level/beat/match_basic/triangle basic.wav"),
+}
+
+var SFX_MATCH_BASIC_LEVEL : Dictionary[String, float] = {
+	"saw": 1.0,
+	"sine": 0.3,
+	"square": 1.0,
+	"triangle": 0.6,
 }
 
 var SFX_LEVEL_END_DEFEAT = preload("res://assets/sfx/level/end/defeat.mp3")

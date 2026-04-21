@@ -238,16 +238,19 @@ alignment = 1
 
 [node name="Resume" parent="Control/PanelContainer/VBoxContainer" unique_id=2040855931 instance=ExtResource("3_hnsr2")]
 layout_mode = 2
+is_back_btn = false
 button_text = "Resume"
 text_val = "Resume"
 
 [node name="LevelSelect" parent="Control/PanelContainer/VBoxContainer" unique_id=1005213060 instance=ExtResource("3_hnsr2")]
 layout_mode = 2
+is_back_btn = true
 button_text = "Level Select"
 text_val = "Level Select"
 
 [node name="MainMenu" parent="Control/PanelContainer/VBoxContainer" unique_id=1152058139 instance=ExtResource("3_hnsr2")]
 layout_mode = 2
+is_back_btn = true
 button_text = "Main Menu"
 text_val = "Main Menu"
 

@@ -276,7 +276,9 @@ texture_click_mask = ExtResource("2_5kehm")
 ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("3_grbyh")
-text_val = null
+is_back_btn = null
+button_text = " "
+text_val = " "
 
 [node name="LabelParent" type="Control" parent="." unique_id=1547765151]
 layout_mode = 1
@@ -307,7 +309,7 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 128
-text = "<null>"
+text = " "
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -323,5 +325,6 @@ tree_root = SubResource("AnimationNodeStateMachine_oqqh1")
 advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
 
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
 [connection signal="pressed" from="." to="." method="_on_pressed"]
 [connection signal="resized" from="." to="." method="_on_resized"]
