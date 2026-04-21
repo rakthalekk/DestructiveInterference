@@ -6,6 +6,7 @@ var JSON_SONGS: Dictionary[String, AudioStream] = {
 	"res://levels/tutorial/tutorial.json": preload("res://levels/tutorial/tutorial! (120).mp3"),
 	"res://levels/level2/level2.json": preload("res://levels/level2/demo a 4.mp3"),
 	"res://levels/challenge1/challenge1.json": preload("res://levels/challenge1/challenge1.mp3"),
+	"res://levels/level3/level3.json": preload("res://levels/level3/demo b 4.mp3")
 }
 
 
