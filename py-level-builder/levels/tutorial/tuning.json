@@ -51,8 +51,7 @@
         "end_tick": 8160,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 1,
@@ -65,8 +64,7 @@
         "end_tick": 8208,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 2,
@@ -79,8 +77,7 @@
         "end_tick": 8280,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 3,
@@ -93,8 +90,7 @@
         "end_tick": 8304,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 4,
@@ -107,8 +103,7 @@
         "end_tick": 8376,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 5,
@@ -121,8 +116,7 @@
         "end_tick": 8544,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 6,
@@ -135,8 +129,7 @@
         "end_tick": 8640,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 7,
@@ -149,8 +142,7 @@
         "end_tick": 8664,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 8,
@@ -163,8 +155,7 @@
         "end_tick": 8688,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 9,
@@ -177,8 +168,7 @@
         "end_tick": 8736,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 10,
@@ -191,8 +181,7 @@
         "end_tick": 8928,
         "pitch_str": "C5",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 11,
@@ -205,8 +194,7 @@
         "end_tick": 8976,
         "pitch_str": "Bb4",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 12,
@@ -219,8 +207,7 @@
         "end_tick": 9000,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 13,
@@ -233,8 +220,7 @@
         "end_tick": 9048,
         "pitch_str": "G4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 14,
@@ -247,8 +233,7 @@
         "end_tick": 9072,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 15,
@@ -261,8 +246,7 @@
         "end_tick": 9120,
         "pitch_str": "C4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 16,
@@ -275,8 +259,7 @@
         "end_tick": 9240,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 17,
@@ -289,8 +272,7 @@
         "end_tick": 9288,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 18,
@@ -303,8 +285,7 @@
         "end_tick": 9360,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 19,
@@ -317,8 +298,7 @@
         "end_tick": 9408,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 20,
@@ -331,8 +311,7 @@
         "end_tick": 9696,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 21,
@@ -345,8 +324,7 @@
         "end_tick": 9744,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 22,
@@ -359,8 +337,7 @@
         "end_tick": 9816,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 23,
@@ -373,8 +350,7 @@
         "end_tick": 9840,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 24,
@@ -387,8 +363,7 @@
         "end_tick": 9912,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 25,
@@ -401,8 +376,7 @@
         "end_tick": 10080,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 26,
@@ -415,8 +389,7 @@
         "end_tick": 10176,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 27,
@@ -429,8 +402,7 @@
         "end_tick": 10200,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 28,
@@ -443,8 +415,7 @@
         "end_tick": 10224,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 29,
@@ -457,8 +428,7 @@
         "end_tick": 10272,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 30,
@@ -471,8 +441,7 @@
         "end_tick": 10464,
         "pitch_str": "C5",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 31,
@@ -485,8 +454,7 @@
         "end_tick": 10512,
         "pitch_str": "Bb4",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 32,
@@ -499,8 +467,7 @@
         "end_tick": 10536,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 33,
@@ -513,8 +480,7 @@
         "end_tick": 10584,
         "pitch_str": "G4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 34,
@@ -527,8 +493,7 @@
         "end_tick": 10608,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 35,
@@ -541,8 +506,7 @@
         "end_tick": 10656,
         "pitch_str": "C4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 36,
@@ -555,8 +519,7 @@
         "end_tick": 10776,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 37,
@@ -569,8 +532,7 @@
         "end_tick": 10824,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 38,
@@ -583,8 +545,7 @@
         "end_tick": 10896,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 39,
@@ -597,8 +558,7 @@
         "end_tick": 10944,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 40,
@@ -611,8 +571,7 @@
         "end_tick": 11232,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 41,
@@ -625,8 +584,7 @@
         "end_tick": 11280,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 42,
@@ -639,8 +597,7 @@
         "end_tick": 11352,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 43,
@@ -653,8 +610,7 @@
         "end_tick": 11376,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 44,
@@ -667,8 +623,7 @@
         "end_tick": 11448,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 45,
@@ -681,8 +636,7 @@
         "end_tick": 11616,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 46,
@@ -695,8 +649,7 @@
         "end_tick": 11712,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 47,
@@ -709,8 +662,7 @@
         "end_tick": 11736,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 48,
@@ -723,8 +675,7 @@
         "end_tick": 11760,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 49,
@@ -737,8 +688,7 @@
         "end_tick": 11808,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 50,
@@ -751,8 +701,7 @@
         "end_tick": 12000,
         "pitch_str": "C5",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 51,
@@ -765,8 +714,7 @@
         "end_tick": 12048,
         "pitch_str": "Bb4",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 52,
@@ -779,8 +727,7 @@
         "end_tick": 12072,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 53,
@@ -793,8 +740,7 @@
         "end_tick": 12120,
         "pitch_str": "G4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 54,
@@ -807,8 +753,7 @@
         "end_tick": 12144,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 55,
@@ -821,8 +766,7 @@
         "end_tick": 12192,
         "pitch_str": "C4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 56,
@@ -835,8 +779,7 @@
         "end_tick": 12312,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 57,
@@ -849,8 +792,7 @@
         "end_tick": 12360,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 58,
@@ -863,8 +805,7 @@
         "end_tick": 12432,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 59,
@@ -877,8 +818,7 @@
         "end_tick": 12480,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 60,
@@ -891,8 +831,7 @@
         "end_tick": 12768,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 61,
@@ -905,8 +844,7 @@
         "end_tick": 12816,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 62,
@@ -919,8 +857,7 @@
         "end_tick": 12888,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 63,
@@ -933,8 +870,7 @@
         "end_tick": 12912,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 64,
@@ -947,8 +883,7 @@
         "end_tick": 12984,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 65,
@@ -961,8 +896,7 @@
         "end_tick": 13152,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 66,
@@ -975,8 +909,7 @@
         "end_tick": 13248,
         "pitch_str": "Ab4",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 67,
@@ -989,8 +922,7 @@
         "end_tick": 13272,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 68,
@@ -1003,8 +935,7 @@
         "end_tick": 13296,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 69,
@@ -1017,8 +948,7 @@
         "end_tick": 13344,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 70,
@@ -1031,8 +961,7 @@
         "end_tick": 13536,
         "pitch_str": "C5",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 71,
@@ -1045,8 +974,7 @@
         "end_tick": 13584,
         "pitch_str": "Bb4",
         "band": 4,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 72,
@@ -1059,8 +987,7 @@
         "end_tick": 13608,
         "pitch_str": "Ab4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 73,
@@ -1073,8 +1000,7 @@
         "end_tick": 13656,
         "pitch_str": "G4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 74,
@@ -1087,8 +1013,7 @@
         "end_tick": 13680,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 75,
@@ -1101,8 +1026,7 @@
         "end_tick": 13728,
         "pitch_str": "C4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 76,
@@ -1115,8 +1039,7 @@
         "end_tick": 13848,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 77,
@@ -1129,8 +1052,7 @@
         "end_tick": 13896,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 78,
@@ -1143,8 +1065,7 @@
         "end_tick": 13968,
         "pitch_str": "Eb4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 79,
@@ -1157,8 +1078,7 @@
         "end_tick": 14016,
         "pitch_str": "F4",
         "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       }
     ],
     "Tutorial square": [
@@ -1172,9 +1092,8 @@
         "end_beat": null,
         "end_tick": 1932,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 1,
@@ -1186,9 +1105,8 @@
         "end_beat": 22.5,
         "end_tick": 2064,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 2,
@@ -1200,9 +1118,8 @@
         "end_beat": null,
         "end_tick": 2112,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 3,
@@ -1214,9 +1131,8 @@
         "end_beat": null,
         "end_tick": 2316,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 4,
@@ -1228,9 +1144,8 @@
         "end_beat": null,
         "end_tick": 2364,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 5,
@@ -1242,9 +1157,8 @@
         "end_beat": 26.5,
         "end_tick": 2448,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 6,
@@ -1256,9 +1170,8 @@
         "end_beat": null,
         "end_tick": 2484,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 7,
@@ -1270,9 +1183,8 @@
         "end_beat": null,
         "end_tick": 2700,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 8,
@@ -1284,9 +1196,8 @@
         "end_beat": 30.5,
         "end_tick": 2832,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 9,
@@ -1298,9 +1209,8 @@
         "end_beat": null,
         "end_tick": 2880,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 10,
@@ -1312,9 +1222,8 @@
         "end_beat": null,
         "end_tick": 3084,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 11,
@@ -1326,9 +1235,8 @@
         "end_beat": null,
         "end_tick": 3132,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 12,
@@ -1340,9 +1248,8 @@
         "end_beat": 34.5,
         "end_tick": 3216,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       },
       {
         "idx": 13,
@@ -1354,9 +1261,8 @@
         "end_beat": null,
         "end_tick": 3252,
         "pitch_str": "F4",
-        "band": 3,
-        "jumpable": false,
-        "compounds": null
+        "band": 2,
+        "jumpable": false
       }
     ],
     "Tutorial sine": [
@@ -1371,8 +1277,7 @@
         "end_tick": 8160,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 1,
@@ -1385,8 +1290,7 @@
         "end_tick": 8256,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 2,
@@ -1399,8 +1303,7 @@
         "end_tick": 8328,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 3,
@@ -1413,8 +1316,7 @@
         "end_tick": 8400,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 4,
@@ -1427,8 +1329,7 @@
         "end_tick": 8472,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 5,
@@ -1441,8 +1342,7 @@
         "end_tick": 8520,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 6,
@@ -1455,8 +1355,7 @@
         "end_tick": 8568,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 7,
@@ -1469,8 +1368,7 @@
         "end_tick": 8592,
         "pitch_str": "Bb3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 8,
@@ -1483,8 +1381,7 @@
         "end_tick": 8712,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 9,
@@ -1497,8 +1394,7 @@
         "end_tick": 8832,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 10,
@@ -1511,8 +1407,7 @@
         "end_tick": 8904,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 11,
@@ -1525,8 +1420,7 @@
         "end_tick": 8952,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 12,
@@ -1539,8 +1433,7 @@
         "end_tick": 8976,
         "pitch_str": "Ab4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 13,
@@ -1553,8 +1446,7 @@
         "end_tick": 9072,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 14,
@@ -1567,8 +1459,7 @@
         "end_tick": 9144,
         "pitch_str": "E4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 15,
@@ -1581,8 +1472,7 @@
         "end_tick": 9240,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 16,
@@ -1595,8 +1485,7 @@
         "end_tick": 9288,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 17,
@@ -1609,8 +1498,7 @@
         "end_tick": 9360,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 18,
@@ -1623,8 +1511,7 @@
         "end_tick": 9432,
         "pitch_str": "F4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 19,
@@ -1637,8 +1524,7 @@
         "end_tick": 9480,
         "pitch_str": "Eb4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 20,
@@ -1651,8 +1537,7 @@
         "end_tick": 9528,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 21,
@@ -1665,8 +1550,7 @@
         "end_tick": 9576,
         "pitch_str": "Ab3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 22,
@@ -1679,8 +1563,7 @@
         "end_tick": 9696,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 23,
@@ -1693,8 +1576,7 @@
         "end_tick": 9792,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 24,
@@ -1707,8 +1589,7 @@
         "end_tick": 9864,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 25,
@@ -1721,8 +1602,7 @@
         "end_tick": 9936,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 26,
@@ -1735,8 +1615,7 @@
         "end_tick": 10008,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 27,
@@ -1749,8 +1628,7 @@
         "end_tick": 10056,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 28,
@@ -1763,8 +1641,7 @@
         "end_tick": 10104,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 29,
@@ -1777,8 +1654,7 @@
         "end_tick": 10128,
         "pitch_str": "Bb3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 30,
@@ -1791,8 +1667,7 @@
         "end_tick": 10248,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 31,
@@ -1805,8 +1680,7 @@
         "end_tick": 10368,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 32,
@@ -1819,8 +1693,7 @@
         "end_tick": 10440,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 33,
@@ -1833,8 +1706,7 @@
         "end_tick": 10488,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 34,
@@ -1847,8 +1719,7 @@
         "end_tick": 10512,
         "pitch_str": "Ab4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 35,
@@ -1861,8 +1732,7 @@
         "end_tick": 10608,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 36,
@@ -1875,8 +1745,7 @@
         "end_tick": 10680,
         "pitch_str": "E4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 37,
@@ -1889,8 +1758,7 @@
         "end_tick": 10776,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 38,
@@ -1903,8 +1771,7 @@
         "end_tick": 10824,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 39,
@@ -1917,8 +1784,7 @@
         "end_tick": 10896,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 40,
@@ -1931,8 +1797,7 @@
         "end_tick": 10968,
         "pitch_str": "F4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 41,
@@ -1945,8 +1810,7 @@
         "end_tick": 11016,
         "pitch_str": "Eb4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 42,
@@ -1959,8 +1823,7 @@
         "end_tick": 11064,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 43,
@@ -1973,8 +1836,7 @@
         "end_tick": 11112,
         "pitch_str": "Ab3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 44,
@@ -1987,8 +1849,7 @@
         "end_tick": 11232,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 45,
@@ -2001,8 +1862,7 @@
         "end_tick": 11328,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 46,
@@ -2015,8 +1875,7 @@
         "end_tick": 11400,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 47,
@@ -2029,8 +1888,7 @@
         "end_tick": 11472,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 48,
@@ -2043,8 +1901,7 @@
         "end_tick": 11544,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 49,
@@ -2057,8 +1914,7 @@
         "end_tick": 11592,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 50,
@@ -2071,8 +1927,7 @@
         "end_tick": 11640,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 51,
@@ -2085,8 +1940,7 @@
         "end_tick": 11664,
         "pitch_str": "Bb3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 52,
@@ -2099,8 +1953,7 @@
         "end_tick": 11784,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 53,
@@ -2113,8 +1966,7 @@
         "end_tick": 11904,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 54,
@@ -2127,8 +1979,7 @@
         "end_tick": 11976,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 55,
@@ -2141,8 +1992,7 @@
         "end_tick": 12024,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 56,
@@ -2155,8 +2005,7 @@
         "end_tick": 12048,
         "pitch_str": "Ab4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 57,
@@ -2169,8 +2018,7 @@
         "end_tick": 12144,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 58,
@@ -2183,8 +2031,7 @@
         "end_tick": 12216,
         "pitch_str": "E4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 59,
@@ -2197,8 +2044,7 @@
         "end_tick": 12312,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 60,
@@ -2211,8 +2057,7 @@
         "end_tick": 12360,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 61,
@@ -2225,8 +2070,7 @@
         "end_tick": 12432,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 62,
@@ -2239,8 +2083,7 @@
         "end_tick": 12504,
         "pitch_str": "F4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 63,
@@ -2253,8 +2096,7 @@
         "end_tick": 12552,
         "pitch_str": "Eb4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 64,
@@ -2267,8 +2109,7 @@
         "end_tick": 12600,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 65,
@@ -2281,8 +2122,7 @@
         "end_tick": 12648,
         "pitch_str": "Ab3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 66,
@@ -2295,8 +2135,7 @@
         "end_tick": 12768,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 67,
@@ -2309,8 +2148,7 @@
         "end_tick": 12864,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 68,
@@ -2323,8 +2161,7 @@
         "end_tick": 12936,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 69,
@@ -2337,8 +2174,7 @@
         "end_tick": 13008,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 70,
@@ -2351,8 +2187,7 @@
         "end_tick": 13080,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 71,
@@ -2365,8 +2200,7 @@
         "end_tick": 13128,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 72,
@@ -2379,8 +2213,7 @@
         "end_tick": 13176,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 73,
@@ -2393,8 +2226,7 @@
         "end_tick": 13200,
         "pitch_str": "Bb3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 74,
@@ -2407,8 +2239,7 @@
         "end_tick": 13320,
         "pitch_str": "Ab3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 75,
@@ -2421,8 +2252,7 @@
         "end_tick": 13440,
         "pitch_str": "F3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 76,
@@ -2435,8 +2265,7 @@
         "end_tick": 13512,
         "pitch_str": "F4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 77,
@@ -2449,8 +2278,7 @@
         "end_tick": 13560,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 78,
@@ -2463,8 +2291,7 @@
         "end_tick": 13584,
         "pitch_str": "Ab4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 79,
@@ -2477,8 +2304,7 @@
         "end_tick": 13680,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 80,
@@ -2491,8 +2317,7 @@
         "end_tick": 13752,
         "pitch_str": "E4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 81,
@@ -2505,8 +2330,7 @@
         "end_tick": 13848,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 82,
@@ -2519,8 +2343,7 @@
         "end_tick": 13896,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 83,
@@ -2533,8 +2356,7 @@
         "end_tick": 13968,
         "pitch_str": "G4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 84,
@@ -2547,8 +2369,7 @@
         "end_tick": 14040,
         "pitch_str": "F4",
         "band": 2,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 85,
@@ -2561,8 +2382,7 @@
         "end_tick": 14088,
         "pitch_str": "Eb4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 86,
@@ -2575,8 +2395,7 @@
         "end_tick": 14136,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 87,
@@ -2589,8 +2408,7 @@
         "end_tick": 14184,
         "pitch_str": "Ab3",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       }
     ],
     "Tutorial Triangle": [
@@ -2605,8 +2423,7 @@
         "end_tick": 5040,
         "pitch_str": "C3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 1,
@@ -2619,8 +2436,7 @@
         "end_tick": 5136,
         "pitch_str": "C3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 2,
@@ -2633,8 +2449,7 @@
         "end_tick": 5208,
         "pitch_str": "C3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 3,
@@ -2647,8 +2462,7 @@
         "end_tick": 5280,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 4,
@@ -2661,8 +2475,7 @@
         "end_tick": 5328,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 5,
@@ -2675,8 +2488,7 @@
         "end_tick": 5400,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 6,
@@ -2689,8 +2501,7 @@
         "end_tick": 5496,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 7,
@@ -2703,8 +2514,7 @@
         "end_tick": 5568,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 8,
@@ -2717,8 +2527,7 @@
         "end_tick": 5640,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 9,
@@ -2731,8 +2540,7 @@
         "end_tick": 5688,
         "pitch_str": "Bb3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 10,
@@ -2745,8 +2553,7 @@
         "end_tick": 5736,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 11,
@@ -2759,8 +2566,7 @@
         "end_tick": 5808,
         "pitch_str": "C3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 12,
@@ -2773,8 +2579,7 @@
         "end_tick": 5904,
         "pitch_str": "C3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 13,
@@ -2787,8 +2592,7 @@
         "end_tick": 5976,
         "pitch_str": "C3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 14,
@@ -2801,8 +2605,7 @@
         "end_tick": 6048,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 15,
@@ -2815,8 +2618,7 @@
         "end_tick": 6096,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 16,
@@ -2829,8 +2631,7 @@
         "end_tick": 6168,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 17,
@@ -2843,8 +2644,7 @@
         "end_tick": 6264,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 18,
@@ -2857,8 +2657,7 @@
         "end_tick": 6336,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 19,
@@ -2871,8 +2670,7 @@
         "end_tick": 6408,
         "pitch_str": "G3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 20,
@@ -2885,8 +2683,7 @@
         "end_tick": 6456,
         "pitch_str": "Bb3",
         "band": 0,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       },
       {
         "idx": 21,
@@ -2899,8 +2696,7 @@
         "end_tick": 6504,
         "pitch_str": "C4",
         "band": 1,
-        "jumpable": false,
-        "compounds": null
+        "jumpable": false
       }
     ]
   }
