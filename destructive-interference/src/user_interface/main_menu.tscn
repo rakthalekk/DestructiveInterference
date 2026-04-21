@@ -195,6 +195,7 @@ stretch_mode = 4
 
 [node name="Main" type="Control" parent="Control" unique_id=1288667632]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -327,14 +328,15 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -1231.0
-offset_top = -70.00006
-offset_right = -603.0
-offset_bottom = 466.99994
+offset_left = -1099.0
+offset_top = -110.0668
+offset_right = -471.0
+offset_bottom = 426.93317
 grow_horizontal = 0
 grow_vertical = 2
 theme = ExtResource("5_06hqa")
 theme_type_variation = &"HeaderLarge"
+theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 128
 text = "Faye Glynn
 Max Eddington
@@ -346,7 +348,6 @@ vertical_alignment = 1
 
 [node name="Options" type="Control" parent="Control" unique_id=562083598]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -361,14 +362,15 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -1052.0
-offset_top = -114.00006
-offset_right = -424.0
-offset_bottom = 422.99994
+offset_left = -942.0
+offset_top = -252.74591
+offset_right = -314.0
+offset_bottom = 284.2541
 grow_horizontal = 0
 grow_vertical = 2
 theme = ExtResource("5_06hqa")
 theme_type_variation = &"HeaderLarge"
+theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 128
 text = "What Options?"
 horizontal_alignment = 1
@@ -388,13 +390,32 @@ offset_right = -5.0
 offset_bottom = 87.0
 grow_horizontal = 0
 grow_vertical = 0
-focus_neighbor_left = NodePath("../Credits")
-focus_neighbor_top = NodePath("../Options")
-focus_neighbor_right = NodePath("../Credits")
-focus_neighbor_bottom = NodePath("../Options")
+focus_neighbor_left = NodePath("../ToggleFullscreen")
+focus_neighbor_right = NodePath("../ToggleFullscreen")
 is_back_btn = true
 button_text = "Back"
 text_val = "Back"
+
+[node name="ToggleFullscreen" parent="Control/Options" unique_id=1427930911 instance=ExtResource("2_hkrp4")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -992.0
+offset_top = -410.56976
+offset_right = -492.0
+offset_bottom = 89.4303
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../OptionsBack")
+focus_neighbor_right = NodePath("../OptionsBack")
+is_back_btn = false
+button_text = " Toggle
+Fullscreen"
+text_val = " Toggle
+Fullscreen"
 
 [node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
 unique_name_in_owner = true
@@ -415,3 +436,4 @@ autoplay = &"intro"
 [connection signal="pressed" from="Control/Main/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Control/Credits/CreditsBack" to="." method="_on_credits_back_pressed"]
 [connection signal="pressed" from="Control/Options/OptionsBack" to="." method="_on_options_back_pressed"]
+[connection signal="pressed" from="Control/Options/ToggleFullscreen" to="." method="_on_toggle_fullscreen_pressed"]

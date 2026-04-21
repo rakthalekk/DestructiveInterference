@@ -52,3 +52,7 @@ func _on_credits_back_pressed() -> void:
 	%Options.visible = false
 	%Credits.visible = false
 	%Start.grab_focus()
+
+
+func _on_toggle_fullscreen_pressed() -> void:
+	GameManager.toggle_fullscreen()
