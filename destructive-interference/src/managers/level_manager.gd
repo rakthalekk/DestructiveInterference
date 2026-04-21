@@ -219,7 +219,7 @@ func win():
 	GameManager.transition_to(GameManager.GAME_STATE.GAME_OVER)
 	game_over.emit(true)
 	print("Win!!!!")
-	AudioManager.sfx_one_shot(AudioManager.SFX_LEVEL_END_VICTORY, 2.0)
+	AudioManager.sfx_one_shot(AudioManager.SFX_LEVEL_END_VICTORY, 1.0)
 
 
 func lose():

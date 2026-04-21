@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bwttlg07fmaa" path="res://assets/player_portrait.png" id="3_bgm0a"]
 [ext_resource type="AudioStream" uid="uid://ejgga0kps8sm" path="res://assets/sfx/talk/speaking police.mp3" id="3_slwvb"]
 [ext_resource type="Texture2D" uid="uid://dddogew3wor" path="res://assets/dialogue_box.png" id="4_bgm0a"]
-[ext_resource type="AudioStream" uid="uid://cvjspk7gxn1s2" path="res://assets/sfx/talk/evil lady speak.mp3" id="4_i8qr4"]
+[ext_resource type="AudioStream" uid="uid://27j7fnpc84bg" path="res://assets/sfx/talk/evil lady speak.wav" id="4_uf770"]
 [ext_resource type="FontFile" uid="uid://bitfpl1q67ow0" path="res://assets/fonts/deathrattlebb_reg.ttf" id="5_567w2"]
 
 [sub_resource type="Animation" id="Animation_t7jg5"]
@@ -285,7 +285,7 @@ mouse_filter = 2
 script = ExtResource("2_567w2")
 norm_talk = ExtResource("2_uf770")
 polic_talk = ExtResource("3_slwvb")
-bitch_talk = ExtResource("4_i8qr4")
+bitch_talk = ExtResource("4_uf770")
 
 [node name="DialogueBox" type="TextureRect" parent="." unique_id=587406403]
 layout_mode = 1

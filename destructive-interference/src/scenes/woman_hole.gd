@@ -43,7 +43,7 @@ func set_woman():
 
 
 func _play_talk_sfx():
-	var vol_mod = 1 if curr_talk_fx != norm_talk else 2
+	var vol_mod = 1
 	sfx_player_cache = AudioManager.sfx_one_shot(curr_talk_fx, vol_mod, randf_range(0.95, 1.05))
 	sfx_player_cache.seek(randf_range(0, 0.5 * sfx_player_cache.stream.get_length()))
 

@@ -125,7 +125,7 @@ func fade_out(player: AudioStreamPlayer):
 
 
 func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
-	AudioServer.set_bus_effect_enabled(0, 0, [GameManager.GAME_STATE.PAUSED, GameManager.GAME_STATE.GAME_OVER].has(to))
+	AudioServer.set_bus_effect_enabled(1, 0, [GameManager.GAME_STATE.PAUSED, GameManager.GAME_STATE.GAME_OVER].has(to))
 
 	if from == GameManager.GAME_STATE.PAUSED && to == GameManager.GAME_STATE.IN_GAME:
 		level_song_player.stream_paused = false
