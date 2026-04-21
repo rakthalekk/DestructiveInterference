@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dbbcuuixvmmje" path="res://src/user_interface/game_button.tscn" id="2_hkrp4"]
 [ext_resource type="PackedScene" uid="uid://b6fh5ku65a0aw" path="res://src/scenes/woman_hole.tscn" id="3_m6eng"]
 [ext_resource type="Texture2D" uid="uid://cd5gwh7jmqex5" path="res://assets/loague_oh_dot_pee_en_gee.png" id="4_m6eng"]
+[ext_resource type="Theme" uid="uid://dxh2rd0qsm7bt" path="res://src/user_interface/ui.tres" id="5_06hqa"]
 
 [sub_resource type="Animation" id="Animation_3gghf"]
 length = 0.001
@@ -153,28 +154,41 @@ grow_vertical = 2
 scale = Vector2(1e-05, 1e-05)
 pivot_offset_ratio = Vector2(0.5, 0.5)
 
-[node name="Options" parent="Control" unique_id=2040855931 instance=ExtResource("2_hkrp4")]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=553122351]
 layout_mode = 1
-anchors_preset = 3
+anchors_preset = 1
 anchor_left = 1.0
-anchor_top = 1.0
+anchor_right = 1.0
+offset_left = -1120.0
+offset_top = 19.0
+offset_right = -222.32031
+offset_bottom = 390.0
+grow_horizontal = 0
+texture = ExtResource("4_m6eng")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+grow_horizontal = 1
+
+[node name="Main" type="Control" parent="Control" unique_id=1288667632]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -617.0
-offset_top = -693.0
-offset_right = -117.0
-offset_bottom = -193.0
-grow_horizontal = 0
-grow_vertical = 0
-focus_neighbor_left = NodePath("../Start")
-focus_neighbor_top = NodePath("../Quit")
-focus_neighbor_right = NodePath("../Start")
-focus_neighbor_bottom = NodePath("../Quit")
-is_back_btn = false
-button_text = "Options"
-text_val = "Options"
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
-[node name="Start" parent="Control" unique_id=334889834 instance=ExtResource("2_hkrp4")]
+[node name="Start" parent="Control/Main" unique_id=334889834 instance=ExtResource("2_hkrp4")]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -195,28 +209,28 @@ is_back_btn = false
 button_text = "Start Game"
 text_val = "Start Game"
 
-[node name="Quit" parent="Control" unique_id=1520698509 instance=ExtResource("2_hkrp4")]
+[node name="Options" parent="Control/Main" unique_id=2040855931 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -505.0
-offset_top = -413.0
-offset_right = -5.0
-offset_bottom = 87.0
+offset_left = -617.0
+offset_top = -693.0
+offset_right = -117.0
+offset_bottom = -193.0
 grow_horizontal = 0
 grow_vertical = 0
-focus_neighbor_left = NodePath("../Credits")
-focus_neighbor_top = NodePath("../Options")
-focus_neighbor_right = NodePath("../Credits")
-focus_neighbor_bottom = NodePath("../Options")
+focus_neighbor_left = NodePath("../Start")
+focus_neighbor_top = NodePath("../Quit")
+focus_neighbor_right = NodePath("../Start")
+focus_neighbor_bottom = NodePath("../Quit")
 is_back_btn = false
-button_text = "Quit Game"
-text_val = "Quit Game"
+button_text = "Options"
+text_val = "Options"
 
-[node name="Credits" parent="Control" unique_id=1090024639 instance=ExtResource("2_hkrp4")]
+[node name="Credits" parent="Control/Main" unique_id=1090024639 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -237,34 +251,142 @@ is_back_btn = false
 button_text = "Credits"
 text_val = "Credits"
 
-[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
+[node name="Quit" parent="Control/Main" unique_id=1520698509 instance=ExtResource("2_hkrp4")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -505.0
+offset_top = -413.0
+offset_right = -5.0
+offset_bottom = 87.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Credits")
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_right = NodePath("../Credits")
+focus_neighbor_bottom = NodePath("../Options")
+is_back_btn = false
+button_text = "Quit Game"
+text_val = "Quit Game"
+
+[node name="Credits" type="Control" parent="Control" unique_id=1736349052]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CreditsBack" parent="Control/Credits" unique_id=396514660 instance=ExtResource("2_hkrp4")]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_right = 0.0
-anchor_bottom = 0.5
-grow_horizontal = 1
-
-[node name="TextureRect" type="TextureRect" parent="Control" unique_id=553122351]
-layout_mode = 1
-anchors_preset = 1
+anchors_preset = 3
 anchor_left = 1.0
+anchor_top = 1.0
 anchor_right = 1.0
-offset_left = -1120.0
-offset_top = 19.0
-offset_right = -222.32031
-offset_bottom = 390.0
+anchor_bottom = 1.0
+offset_left = -505.0
+offset_top = -413.0
+offset_right = -5.0
+offset_bottom = 87.0
 grow_horizontal = 0
-texture = ExtResource("4_m6eng")
-expand_mode = 3
-stretch_mode = 4
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Credits")
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_right = NodePath("../Credits")
+focus_neighbor_bottom = NodePath("../Options")
+is_back_btn = true
+button_text = "Back"
+text_val = "Back"
+
+[node name="Label" type="Label" parent="Control/Credits" unique_id=1071519866]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1231.0
+offset_top = -70.00006
+offset_right = -603.0
+offset_bottom = 466.99994
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("5_06hqa")
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 128
+text = "Faye Glynn
+Max Eddington
+Thomas Gelman
+Melodysium
+Nova Morgan"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Options" type="Control" parent="Control" unique_id=562083598]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/Options" unique_id=245947546]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1052.0
+offset_top = -114.00006
+offset_right = -424.0
+offset_bottom = 422.99994
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("5_06hqa")
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 128
+text = "What Options?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsBack" parent="Control/Options" unique_id=819113263 instance=ExtResource("2_hkrp4")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -505.0
+offset_top = -413.0
+offset_right = -5.0
+offset_bottom = 87.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_neighbor_left = NodePath("../Credits")
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_right = NodePath("../Credits")
+focus_neighbor_bottom = NodePath("../Options")
+is_back_btn = true
+button_text = "Back"
+text_val = "Back"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1106827985]
 libraries/ = SubResource("AnimationLibrary_3gghf")
 autoplay = &"intro"
 
-[connection signal="pressed" from="Control/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Control/Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="Control/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Control/Main/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Control/Main/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Control/Main/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Control/Main/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/Credits/CreditsBack" to="." method="_on_credits_back_pressed"]
+[connection signal="pressed" from="Control/Options/OptionsBack" to="." method="_on_options_back_pressed"]

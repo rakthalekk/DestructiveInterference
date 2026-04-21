@@ -7,7 +7,7 @@ var timer = 0.0
 var stop := false
 
 func _ready() -> void:
-	$Control/Start.grab_focus()
+	_on_credits_back_pressed()
 
 
 func _process(delta: float) -> void:
@@ -23,12 +23,32 @@ func _on_start_pressed() -> void:
 
 
 func _on_options_pressed() -> void:
-	print("open options!")
+	%Main.visible = false
+	%Options.visible = true
+	%Credits.visible = false
+	%OptionsBack.grab_focus()
 
 
 func _on_credits_pressed() -> void:
-	print("open credits!")
+	%Main.visible = false
+	%Options.visible = false
+	%Credits.visible = true
+	%CreditsBack.grab_focus()
 
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_options_back_pressed() -> void:
+	%Main.visible = true
+	%Options.visible = false
+	%Credits.visible = false
+	%Start.grab_focus()
+
+
+func _on_credits_back_pressed() -> void:
+	%Main.visible = true
+	%Options.visible = false
+	%Credits.visible = false
+	%Start.grab_focus()
