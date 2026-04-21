@@ -168,15 +168,6 @@ texture = ExtResource("4_m6eng")
 expand_mode = 3
 stretch_mode = 4
 
-[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_right = 0.0
-anchor_bottom = 0.5
-grow_horizontal = 1
-
 [node name="Main" type="Control" parent="Control" unique_id=1288667632]
 unique_name_in_owner = true
 layout_mode = 1
@@ -379,6 +370,15 @@ focus_neighbor_bottom = NodePath("../Options")
 is_back_btn = true
 button_text = "Back"
 text_val = "Back"
+
+[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+grow_horizontal = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1106827985]
 libraries/ = SubResource("AnimationLibrary_3gghf")
