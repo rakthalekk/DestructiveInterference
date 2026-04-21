@@ -87,6 +87,13 @@ var can_move: bool:
 
 
 
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("toggle_fullscreen"):
+		var mode := DisplayServer.window_get_mode()
+		var is_window: bool = mode != DisplayServer.WINDOW_MODE_FULLSCREEN
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if is_window else DisplayServer.WINDOW_MODE_WINDOWED)
+
+
 ## Function for transitioning between game states
 func transition_to(to_game_state: GAME_STATE):
 	if current_game_state == to_game_state || !GAME_STATE_TRANSITIONS[current_game_state].has(to_game_state):
