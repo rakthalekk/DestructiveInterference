@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://df1b8k8sff815"
+path="res://.godot/imported/triangle basic.wav-8a4af4123aa06b4ae3b33a0b488e0e91.sample"
+
+[deps]
+
+source_file="res://assets/sfx/level/beat/match_basic/triangle basic.wav"
+dest_files=["res://.godot/imported/triangle basic.wav-8a4af4123aa06b4ae3b33a0b488e0e91.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -218,6 +218,14 @@ func _interfere_release(in_interfere_type: GameManager.WAVE_TYPE):
 	
 	interfere_cooldown.start()
 
+func on_player_started_beat(beat: Beat):
+	# play note match sfx
+	if is_instance_valid(player_2d):
+		var wave_type_str = GameManager.WAVE_TYPE_TO_STRING[beat.wave_type]
+		var wave_type_match_sfx = AudioManager.SFX_MATCH_BASIC[wave_type_str]
+		var freq_ratio_a4_to_note = beat.note.pitch
+		var freq_ratio_c4_to_note = (440.00 / 261.63) * freq_ratio_a4_to_note
+		AudioManager.sfx_one_shot(wave_type_match_sfx, 10.0, freq_ratio_c4_to_note, player_2d)
 
 func on_player_killed_beat(beat: Beat):
 	LevelManager.add_tolerance(beat.wave_type)

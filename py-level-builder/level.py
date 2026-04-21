@@ -270,6 +270,8 @@ def build(
     print(f"Raw MIDI files parsed. "
           f"Total instruments: {len(level_dict["metadata"]["instruments"])} "
           f"Total notes: {sum((len(notes) for notes in level_dict["notes_by_instrument"].values()))}")
+    for inst_name, inst_note_list in level_dict["notes_by_instrument"].items():
+        print(f"  instrument {inst_name:20} has total notes {len(inst_note_list)}")
 
     # check for existing level-tuning.json file
     level_tuning_file = level_dir / "tuning.json"
