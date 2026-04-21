@@ -138,7 +138,7 @@ func _draw() -> void:
 			## if any jumpy waveforms, add an extra horizontal line
 			#if saw_beats.size() > 0 or square_beats.size() > 0:
 			#print("period_offset=%d" % [period_offset])
-			points.append(Vector2(X_AMPLITUDE_PX * eval_avg(period_offset_idx / SEGMENTS_PER_SUBDIVISION, active_beats), last_y_drawn))
+			points.append(Vector2(round(X_AMPLITUDE_PX * eval_avg(period_offset_idx / SEGMENTS_PER_SUBDIVISION, active_beats)), last_y_drawn))
 			colors.append(avg_color_for_subdivision)
 			if debug_log: print("      adding horizontal point for jumpy waveform at beginning of subdivision at %s with color %s" % [points[-1], colors[-1]])
 			for segment_idx in range(int(SEGMENTS_PER_SUBDIVISION)):
@@ -153,13 +153,13 @@ func _draw() -> void:
 				# check if we need to draw any horizontal lines
 				if period_idx % int(SEGMENTS_PER_SUBDIVISION / 2) == 0:
 					var jumped_x_pos := X_AMPLITUDE_PX * eval_avg((period_idx + 0.01) / SEGMENTS_PER_SUBDIVISION, active_beats)
-					points.append(Vector2(jumped_x_pos, last_y_drawn))
+					points.append(Vector2(round(jumped_x_pos), last_y_drawn))
 					colors.append(avg_color_for_subdivision)
 					if debug_log: print("        adding extra horizontal point for jumpy waveform in middle of subdivision at %s with color %s" % [points[-1], colors[-1]])
 					latest_x_pos = new_x_pos
 
 				# add new point for this segment
-				points.append(Vector2(new_x_pos, new_y_pos))
+				points.append(Vector2(round(new_x_pos), new_y_pos))
 				colors.append(avg_color_for_subdivision)
 				if debug_log: print("        adding normal point in subdivision at %s with color %s" % [points[-1], colors[-1]])
 				last_y_drawn = new_y_pos
@@ -306,4 +306,6 @@ func eval_square(x: float) -> float:
 ## Evaluate a saw wave with domain [0, 1] and range [-1, 1], slope positive
 func eval_saw(x: float) -> float:
 	#x = fmod(x, 1.0)
+	if is_zero_approx(x):
+		return -1
 	return x * -2 + 1
