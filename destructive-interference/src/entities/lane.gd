@@ -61,9 +61,9 @@ func _draw() -> void:
 	assert(top_of_path.x == 0)
 	assert(bottom_of_path.x == 0)
 	var debug_log := false
-	if LevelManager.current_time > last_update + 1.0:
-		debug_log = true
-		last_update = LevelManager.current_time
+	#if LevelManager.current_time > last_update + 1.0:
+		#debug_log = true
+		#last_update = LevelManager.current_time
 	
 	#if debug_log: print("draw_count=%d" % [draw_count])
 
