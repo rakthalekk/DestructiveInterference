@@ -23,7 +23,7 @@ var tutorial_dialogue: Array = [
 	[0.0, "RAH!! I HATE MUSIC! I'M GONNA KILL\nMUSIC WITH MUSIC!!!", false],
 	[2.0, "Hey You! I need your help. Let me teach you how to play!", true],
 	[7.0, "In a second, the music police are gonna send some squares", true],
-	[11.0, "To save Music, we need to neutralize them. Press [J] on the beat in lane 4!", true],
+	[11.0, "To save Music, we need to neutralize them. Press [J] on the beat in lane 3!", true],
 	[15.0, "Nice job! In the bottom right, the Green counter went down.", true],
 	[19.0, "Once they hit zero, they're *White Noise*, which you have to dodge!", true],
 	[23.0, "Press [Space] to Jump, and [A] or [D] to move lanes.", true],
