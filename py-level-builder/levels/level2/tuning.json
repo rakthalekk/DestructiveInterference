@@ -34,7 +34,7 @@
     "bpm": 172.99,
     "beats_per_measure": 4,
     "subdivisions_per_beat": 4,
-    "view_range_beats": 4.0,
+    "view_range_beats": 6.0,
     "warmup_time": 3.0,
     "song_end_beat": 513.0
   },
