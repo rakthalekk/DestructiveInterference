@@ -49,6 +49,13 @@ func _ready() -> void:
 	LevelManager.game_over.connect(_on_game_over)
 
 
+func _physics_process(_delta: float) -> void:
+	#if current_state == STATE.RELEASED:
+		#end_interfere(interfere_type)
+		#end_interfere(interfere_type_2)
+	pass
+
+
 ## Sets up data for interference & activates collision
 func interfere(in_interfere_type: GameManager.WAVE_TYPE):
 	if interfere_type != GameManager.WAVE_TYPE.NONE:
@@ -119,7 +126,8 @@ func _tap_beat_logic(beat: Beat):
 
 ## Ends interference when timer times out
 func _on_timer_timeout() -> void:
-	current_state = STATE.HOLDING
+	if current_state == STATE.TAPPED:
+		current_state = STATE.HOLDING
 
 
 func update_interfere_icons():
@@ -130,10 +138,12 @@ func update_interfere_icons():
 
 ## Ends interference 
 func end_interfere(in_interfere_type: GameManager.WAVE_TYPE):
-	if interfere_type == in_interfere_type && interfere_type_2 != GameManager.WAVE_TYPE.NONE:
+	if interfere_type == in_interfere_type && ![GameManager.WAVE_TYPE.NONE, interfere_type].has(interfere_type_2):
 		interfere_type = interfere_type_2
 		interfere_type_2 = GameManager.WAVE_TYPE.NONE
 		update_interfere_icons()
+	elif interfere_type == in_interfere_type && interfere_type == interfere_type_2:
+		stop_interfere()
 	elif interfere_type_2 == in_interfere_type:
 		interfere_type_2 = GameManager.WAVE_TYPE.NONE
 		update_interfere_icons()
