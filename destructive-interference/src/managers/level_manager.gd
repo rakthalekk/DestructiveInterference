@@ -226,7 +226,7 @@ func lose():
 	level_active = false
 	game_over.emit(false)
 	print("Lose :(")
-	AudioManager.sfx_one_shot(AudioManager.SFX_LEVEL_END_DEFEAT, 2.0)
+	AudioManager.sfx_one_shot(AudioManager.SFX_LEVEL_END_DEFEAT, 1.0)
 
 
 ## Fully reset the current level to 0 progress and beginning of the map
