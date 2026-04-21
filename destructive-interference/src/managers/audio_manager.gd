@@ -29,6 +29,13 @@ var SFX_MATCH_BASIC: Dictionary[String, AudioStream] = {
 	"triangle": preload("res://assets/sfx/level/beat/match_basic/triangle basic.wav"),
 }
 
+var SFX_MATCH_BASIC_LEVEL : Dictionary[String, float] = {
+	"saw": 1.0,
+	"sine": 0.3,
+	"square": 1.0,
+	"triangle": 0.6,
+}
+
 var SFX_LEVEL_END_DEFEAT = preload("res://assets/sfx/level/end/defeat.mp3")
 var SFX_LEVEL_END_VICTORY = preload("res://assets/sfx/level/end/victory.mp3")
 

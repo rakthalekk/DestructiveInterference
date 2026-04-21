@@ -69,5 +69,5 @@ func interfere_release(in_interfere_type: GameManager.WAVE_TYPE):
 
 
 func on_take_damage():
-	AudioManager.sfx_one_shot(AudioManager.SFX_BEAT_HITS_PLAYER.pick_random(), 5.0)
+	AudioManager.sfx_one_shot(AudioManager.SFX_BEAT_HITS_PLAYER.pick_random(), 2.0)
 	pass
