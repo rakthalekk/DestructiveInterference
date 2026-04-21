@@ -118,8 +118,8 @@ func transition_to(to_game_state: GAME_STATE):
 		current_hud.setup_hud()
 
 
-func start_level_sequence(in_level_file: String):
-	LevelManager.load_data_from_json(in_level_file)
+func start_level_sequence(in_level_file: String, in_difficulty: LevelManager.DIFFICULTY):
+	LevelManager.load_data_from_json(in_level_file, in_difficulty)
 	transition_to(GAME_STATE.IN_GAME)
-	LevelManager.start_level()
+	LevelManager.start_level(false)
 	AudioManager.fade_menu_song_out()

@@ -2,10 +2,10 @@
   "metadata": {
 	"instruments": [
 	  {
-		"name": "saw",
-		"type": "saw",
-		"color": "#abffff",
-		"goal": 55
+		"name": "sine",
+		"type": "sine",
+		"color": "#fff7a1",
+		"goal": 150
 	  },
 	  {
 		"name": "square",
@@ -14,10 +14,10 @@
 		"goal": 75
 	  },
 	  {
-		"name": "sine",
-		"type": "sine",
-		"color": "#fff7a1",
-		"goal": 150
+		"name": "saw",
+		"type": "saw",
+		"color": "#abffff",
+		"goal": 55
 	  },
 	  {
 		"name": "triangle",

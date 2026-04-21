@@ -8,6 +8,47 @@ signal create_subdivision_line(width: float)
 ## y position of "current_time" in the song
 const SCREEN_HEIGHT = 980
 
+
+enum DIFFICULTY {
+	EASY,
+	MEDIUM,
+	HARD,
+	VERY_HARD
+}
+
+# NOTE: 0.25 indicates subdivision
+var DIFFICULTY_BEAT_MODIFIERS_4: Dictionary[DIFFICULTY, float] = {
+	DIFFICULTY.EASY: 1,
+	DIFFICULTY.MEDIUM: 0.5,
+	DIFFICULTY.HARD: 0.5,
+	DIFFICULTY.VERY_HARD: 0.25,
+}
+
+
+var DIFFICULTY_BEAT_MODIFIERS_6: Dictionary[DIFFICULTY, float] = {
+	DIFFICULTY.EASY: 1,
+	DIFFICULTY.MEDIUM: 0.5,
+	DIFFICULTY.HARD: 0.333333,
+	DIFFICULTY.VERY_HARD: 0.1666667,
+}
+
+
+var DIFFICULTY_GOAL_TYPE_AMOUNTS: Dictionary[DIFFICULTY, int] = {
+	DIFFICULTY.EASY: 2,
+	DIFFICULTY.MEDIUM: 2,
+	DIFFICULTY.HARD: 3,
+	DIFFICULTY.VERY_HARD: 4,
+}
+
+var DIFFICULTY_GOAL_MODIFIERS: Dictionary[DIFFICULTY, float] = {
+	DIFFICULTY.EASY: 0.5,
+	DIFFICULTY.MEDIUM: 0.75,
+	DIFFICULTY.HARD: 0.75,
+	DIFFICULTY.VERY_HARD: 1,
+}
+
+var chosen_difficulty := DIFFICULTY.MEDIUM
+
 var current_level_json_file: String
 
 var level_title: String
@@ -62,8 +103,10 @@ func _on_warmup_timer_timeout():
 	AudioManager.loop_level_song()
 
 
-func load_data_from_json(level_json: String):
+func load_data_from_json(level_json: String, in_difficulty := DIFFICULTY.MEDIUM):
 	reset()
+	
+	chosen_difficulty = in_difficulty
 
 	var beat_map: BeatMap = get_tree().get_first_node_in_group("beat_map") as BeatMap
 	beat_map.clear_notes_and_lines()
@@ -93,12 +136,19 @@ func load_data_from_json(level_json: String):
 	duration_subdivision = duration_beat / subdivisions_per_beat
 
 	var instrument_data: Array = metadata.instruments
+	var idx = 0
 	for data in instrument_data:
 		var instrument = Instrument.new(data.name, data.type, Color(data.color), data.goal)
 		instruments[data.name] = instrument
+		
+		if idx >= DIFFICULTY_GOAL_TYPE_AMOUNTS[chosen_difficulty] && level_title != "novatutorial":
+			continue
+		
 		var type = instrument.type
-		wave_goals[type] = instrument.goal
+		wave_goals[type] = instrument.goal * DIFFICULTY_GOAL_MODIFIERS[chosen_difficulty]
 		wave_interferences[type] = 0
+		
+		idx += 1
 
 	# create noise instrument
 	var noise_instrument = Instrument.new("noise", "noise", Color.WHITE, 9999)
@@ -109,6 +159,7 @@ func load_data_from_json(level_json: String):
 		var note = Note.new()
 		note.instrument = instruments[data.name]
 		note.start_time = data.start
+		note.start_beat = data.start_beat
 		note.jumpable = data.jumpable
 		note.pitch = data.pitch
 		if data.band is float:
@@ -123,9 +174,11 @@ func load_data_from_json(level_json: String):
 		else:
 			note.end_time = note.start_time
 		
-		if data.compounds:
+		if data.compounds && chosen_difficulty == DIFFICULTY.VERY_HARD:
 			for lane in data.compounds.keys():
 				note.compounds[int(lane)] = data.compounds[lane]
+		elif data.compounds:
+			continue # skip compounds if not very hard difficulty
 
 		if notes.size() <= 0:
 			note.is_first = true
@@ -185,13 +238,7 @@ func _process(delta: float) -> void:
 	# Solution: look 38 pixels ahead in the beatmap for spawning notes. It's dumb but it works.
 	var current_note: Note = notes[next_note_idx]
 	while current_time + ((38 + SCREEN_HEIGHT) / SCREEN_HEIGHT) * view_range >= current_note.start_time:
-		if wave_interferences[current_note.instrument.type] < wave_goals[current_note.instrument.type]:
-			send_note.emit(current_note)
-		# do not create a noise note where there would be a compound note
-		elif current_note.compounds.size() == 0:
-			var noise_note = current_note.duplicate()
-			noise_note.instrument = instruments["noise"]
-			send_note.emit(noise_note)
+		_try_send_note(current_note)
 
 		next_note_idx += 1
 		if next_note_idx < notes.size():
@@ -242,4 +289,42 @@ func reset():
 func _on_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
 	if from == GameManager.GAME_STATE.GAME_OVER && to == GameManager.GAME_STATE.IN_GAME:
 		load_data_from_json(current_level_json_file)
-		start_level()
+		start_level(false)
+
+
+func _try_send_note(in_note: Note):
+	if !wave_goals.has(in_note.instrument.type):
+		return
+	
+	var beat_int = int(in_note.start_beat)
+	#var beat_float = in_note.start_beat - float(beat_int)
+	#
+	#var mod_by = DIFFICULTY_BEAT_MODIFIERS_4[chosen_difficulty] if subdivisions_per_beat == 4 else DIFFICULTY_BEAT_MODIFIERS_6[chosen_difficulty]
+	
+	var is_4_ok = is_zero_approx(fmod(in_note.start_beat, DIFFICULTY_BEAT_MODIFIERS_4[chosen_difficulty]))
+	var is_6_ok = is_zero_approx(fmod(in_note.start_beat, DIFFICULTY_BEAT_MODIFIERS_6[chosen_difficulty]))
+	
+	if chosen_difficulty != DIFFICULTY.VERY_HARD:
+		if subdivisions_per_beat == 4 && !is_4_ok:
+			return
+		elif subdivisions_per_beat == 6 && !(is_4_ok || is_6_ok):
+			return
+	
+	#if !is_zero_approx(beat_float) && beat_float / DIFFICULTY_BEAT_MODIFIERS[chosen_difficulty] < 1:
+		#return 
+	
+	# Check if note is divisible & note before isn't?
+	#
+	# example: 1/4s only
+	# should be: .25, .5, 1 ok
+	# should not be .125 or .0625
+	#
+	# need to check if curr beat / disallowed beats >= 1 i think
+	
+	if wave_interferences[in_note.instrument.type] < wave_goals[in_note.instrument.type]:
+		send_note.emit(in_note)
+	# do not create a noise note where there would be a compound note
+	elif in_note.compounds.size() == 0:
+		var noise_note = in_note.duplicate()
+		noise_note.instrument = instruments["noise"]
+		send_note.emit(noise_note)

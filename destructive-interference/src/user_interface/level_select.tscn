@@ -202,7 +202,9 @@ grow_vertical = 0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_467gw")
 
-[node name="AutoScrollBox" type="ScrollContainer" parent="Control/PanelContainer" unique_id=1841716019]
+[node name="MainScrollBox" type="ScrollContainer" parent="Control/PanelContainer" unique_id=1841716019]
+unique_name_in_owner = true
+visible = false
 clip_contents = false
 custom_minimum_size = Vector2(1080, 200)
 layout_mode = 2
@@ -210,14 +212,14 @@ size_flags_vertical = 8
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/PanelContainer/AutoScrollBox" unique_id=1995574223]
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/PanelContainer/MainScrollBox" unique_id=1995574223]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 10
 theme_override_constants/separation = -40
 alignment = 1
 
-[node name="BackBtn" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1999532276 instance=ExtResource("3_dyliu")]
+[node name="BackBtn" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=1999532276 instance=ExtResource("3_dyliu")]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -225,7 +227,8 @@ is_back_btn = true
 button_text = "Back"
 text_val = "Back"
 
-[node name="GameButton" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=2040855931 instance=ExtResource("3_dyliu")]
+[node name="GameButton" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=2040855931 instance=ExtResource("3_dyliu")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -233,7 +236,7 @@ is_back_btn = false
 button_text = "Tutorial"
 text_val = "Tutorial"
 
-[node name="GameButton2" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1291254395 instance=ExtResource("3_dyliu")]
+[node name="GameButton2" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=1291254395 instance=ExtResource("3_dyliu")]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -241,7 +244,7 @@ is_back_btn = false
 button_text = "Song 1"
 text_val = "Song 1"
 
-[node name="GameButton3" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1640027056 instance=ExtResource("3_dyliu")]
+[node name="GameButton3" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=1640027056 instance=ExtResource("3_dyliu")]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -249,7 +252,7 @@ is_back_btn = false
 button_text = "Song 2"
 text_val = "Song 2"
 
-[node name="GameButton4" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=748962039 instance=ExtResource("3_dyliu")]
+[node name="GameButton4" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=748962039 instance=ExtResource("3_dyliu")]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -257,7 +260,7 @@ is_back_btn = false
 button_text = "Song 3"
 text_val = "Song 3"
 
-[node name="GameButton5" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=154500391 instance=ExtResource("3_dyliu")]
+[node name="GameButton5" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=154500391 instance=ExtResource("3_dyliu")]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 6
@@ -266,7 +269,7 @@ is_back_btn = false
 button_text = "Song 4"
 text_val = "Song 4"
 
-[node name="GameButton6" parent="Control/PanelContainer/AutoScrollBox/HBoxContainer" unique_id=1389297115 instance=ExtResource("3_dyliu")]
+[node name="GameButton6" parent="Control/PanelContainer/MainScrollBox/HBoxContainer" unique_id=1389297115 instance=ExtResource("3_dyliu")]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 6
@@ -274,6 +277,63 @@ size_flags_vertical = 4
 is_back_btn = false
 button_text = "Song 5"
 text_val = "Song 5"
+
+[node name="DifficultyScrollBox" type="ScrollContainer" parent="Control/PanelContainer" unique_id=1282577897]
+unique_name_in_owner = true
+clip_contents = false
+custom_minimum_size = Vector2(1080, 200)
+layout_mode = 2
+size_flags_vertical = 8
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/PanelContainer/DifficultyScrollBox" unique_id=377436617]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 10
+theme_override_constants/separation = -40
+alignment = 1
+
+[node name="DifficultyBackButton" parent="Control/PanelContainer/DifficultyScrollBox/HBoxContainer" unique_id=1293747533 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+is_back_btn = true
+button_text = "Back"
+text_val = "Back"
+
+[node name="EasyButton" parent="Control/PanelContainer/DifficultyScrollBox/HBoxContainer" unique_id=2119281993 instance=ExtResource("3_dyliu")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+is_back_btn = false
+button_text = "EASY"
+text_val = "EASY"
+
+[node name="Medium" parent="Control/PanelContainer/DifficultyScrollBox/HBoxContainer" unique_id=1616506500 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+is_back_btn = false
+button_text = "MEDIUM"
+text_val = "MEDIUM"
+
+[node name="Hard" parent="Control/PanelContainer/DifficultyScrollBox/HBoxContainer" unique_id=1071971857 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+is_back_btn = false
+button_text = "hard"
+text_val = "hard"
+
+[node name="Very Hard" parent="Control/PanelContainer/DifficultyScrollBox/HBoxContainer" unique_id=52566551 instance=ExtResource("3_dyliu")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+is_back_btn = false
+button_text = "Very Hard"
+text_val = "Very Hard"
 
 [node name="Logo" type="TextureRect" parent="Control" unique_id=1922737545]
 layout_mode = 1
@@ -392,12 +452,17 @@ texture = ExtResource("10_6lq42")
 libraries/ = SubResource("AnimationLibrary_rjgcb")
 autoplay = &"intro"
 
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/BackBtn" to="." method="_on_back_pressed"]
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton2" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton3" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton4" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton5" to="." method="_on_song_pressed" flags=18]
-[connection signal="pressed" from="Control/PanelContainer/AutoScrollBox/HBoxContainer/GameButton6" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/BackBtn" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/GameButton" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/GameButton2" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/GameButton3" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/GameButton4" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/GameButton5" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/MainScrollBox/HBoxContainer/GameButton6" to="." method="_on_song_pressed" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/DifficultyScrollBox/HBoxContainer/DifficultyBackButton" to="." method="_on_difficulty_back_button_pressed"]
+[connection signal="pressed" from="Control/PanelContainer/DifficultyScrollBox/HBoxContainer/EasyButton" to="." method="_choose_difficulty" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/DifficultyScrollBox/HBoxContainer/Medium" to="." method="_choose_difficulty" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/DifficultyScrollBox/HBoxContainer/Hard" to="." method="_choose_difficulty" flags=18]
+[connection signal="pressed" from="Control/PanelContainer/DifficultyScrollBox/HBoxContainer/Very Hard" to="." method="_choose_difficulty" flags=18]
 
 [editable path="Control/WomanHole2"]

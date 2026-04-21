@@ -3,6 +3,7 @@ extends RefCounted
 
 var instrument: Instrument
 var start_time: float
+var start_beat: float
 var band_start: int
 var band_end: int
 var jumpable: bool
@@ -17,6 +18,7 @@ func duplicate() -> Note:
 	var new_note = Note.new()
 	new_note.instrument = instrument
 	new_note.start_time = start_time
+	new_note.start_beat = start_beat
 	new_note.band_start = band_start
 	new_note.band_end = band_end
 	new_note.jumpable = jumpable
