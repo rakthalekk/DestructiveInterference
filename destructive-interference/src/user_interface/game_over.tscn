@@ -163,6 +163,39 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.9647059, 0.39607844, 0.5764706, 1)
 
+[node name="Enemy" parent="Background" unique_id=999594193 instance=ExtResource("8_cwpkk")]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -52.99997
+offset_right = -75.0
+offset_bottom = -52.99997
+grow_horizontal = 0
+scale = Vector2(-0.9, 0.9)
+
+[node name="Woman" parent="Background/Enemy/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
+texture = ExtResource("9_6d2kc")
+
+[node name="Woman" parent="Background" unique_id=998007293 instance=ExtResource("8_cwpkk")]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 70.00001
+offset_top = -68.0
+offset_right = 70.00001
+offset_bottom = -68.0
+grow_horizontal = 1
+scale = Vector2(0.85, 0.85)
+
 [node name="Control" type="Control" parent="." unique_id=1536306529]
 layout_mode = 1
 anchors_preset = 15
@@ -171,6 +204,263 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="CandyJar" type="Control" parent="Control" unique_id=1066581652]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect21" parent="Control/CandyJar" unique_id=835360152 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1056.0
+offset_top = -504.0
+offset_right = 1184.0
+offset_bottom = -382.0
+
+[node name="TextureRect22" parent="Control/CandyJar" unique_id=1688052105 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1328.0
+offset_top = -435.0
+offset_right = 1456.0
+offset_bottom = -313.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect23" parent="Control/CandyJar" unique_id=1531912477 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1215.0
+offset_top = -203.0
+offset_right = 1343.0
+offset_bottom = -81.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect24" parent="Control/CandyJar" unique_id=246658713 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1065.0
+offset_top = -60.0
+offset_right = 1193.0
+offset_bottom = 62.0
+
+[node name="TextureRect25" parent="Control/CandyJar" unique_id=486055550 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1089.0
+offset_top = 197.0
+offset_right = 1217.0
+offset_bottom = 319.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect26" parent="Control/CandyJar" unique_id=2125632244 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 841.0
+offset_top = 124.0
+offset_right = 969.0
+offset_bottom = 246.0
+texture = ExtResource("7_k0n1m")
+
+[node name="TextureRect33" parent="Control/CandyJar" unique_id=972584305 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1204.0
+offset_top = 376.0
+offset_right = 1332.0
+offset_bottom = 498.0
+texture = ExtResource("7_k0n1m")
+
+[node name="TextureRect20" parent="Control/CandyJar" unique_id=595243494 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -1329.0
+offset_top = -441.0
+offset_right = -1201.0
+offset_bottom = -319.0
+
+[node name="TextureRect2" parent="Control/CandyJar" unique_id=26363122 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 502.0
+offset_top = 34.0
+offset_right = 630.0
+offset_bottom = 156.0
+
+[node name="TextureRect18" parent="Control/CandyJar" unique_id=1177073824 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -912.0
+offset_top = -232.0
+offset_right = -784.0
+offset_bottom = -110.0
+
+[node name="TextureRect3" parent="Control/CandyJar" unique_id=790859799 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -640.0
+offset_top = -163.0
+offset_right = -512.0
+offset_bottom = -41.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect4" parent="Control/CandyJar" unique_id=974162551 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 747.0
+offset_top = 337.0
+offset_right = 875.0
+offset_bottom = 459.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect32" parent="Control/CandyJar" unique_id=11410170 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 1282.0
+offset_top = 67.0
+offset_right = 1410.0
+offset_bottom = 189.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect16" parent="Control/CandyJar" unique_id=355055844 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 404.0
+offset_top = -359.0
+offset_right = 532.0
+offset_bottom = -237.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect13" parent="Control/CandyJar" unique_id=1945676125 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -896.0
+offset_top = 257.0
+offset_right = -768.0
+offset_bottom = 379.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect19" parent="Control/CandyJar" unique_id=1905683071 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -912.0
+offset_top = -232.0
+offset_right = -784.0
+offset_bottom = -110.0
+
+[node name="TextureRect12" parent="Control/CandyJar" unique_id=1106113866 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -640.0
+offset_top = -163.0
+offset_right = -512.0
+offset_bottom = -41.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect14" parent="Control/CandyJar" unique_id=122186324 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 747.0
+offset_top = 337.0
+offset_right = 875.0
+offset_bottom = 459.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect15" parent="Control/CandyJar" unique_id=900721606 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -896.0
+offset_top = 257.0
+offset_right = -768.0
+offset_bottom = 379.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect7" parent="Control/CandyJar" unique_id=452069904 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 786.0
+offset_top = -105.0
+offset_right = 914.0
+offset_bottom = 17.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect27" parent="Control/CandyJar" unique_id=459568988 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -1057.0
+offset_top = -372.0
+offset_right = -929.0
+offset_bottom = -250.0
+texture = ExtResource("5_6d2kc")
+
+[node name="TextureRect28" parent="Control/CandyJar" unique_id=1958359473 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -1170.0
+offset_top = -140.0
+offset_right = -1042.0
+offset_bottom = -18.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect8" parent="Control/CandyJar" unique_id=341042770 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -753.0
+offset_top = 69.0
+offset_right = -625.0
+offset_bottom = 191.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect17" parent="Control/CandyJar" unique_id=1162508127 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 651.0
+offset_top = -452.0
+offset_right = 779.0
+offset_bottom = -330.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect10" parent="Control/CandyJar" unique_id=254097305 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 396.0
+offset_top = 294.0
+offset_right = 524.0
+offset_bottom = 416.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect29" parent="Control/CandyJar" unique_id=1126385361 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -1104.0
+offset_top = 82.0
+offset_right = -976.0
+offset_bottom = 204.0
+
+[node name="TextureRect30" parent="Control/CandyJar" unique_id=1945400829 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -1080.0
+offset_top = 339.0
+offset_right = -952.0
+offset_bottom = 461.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect31" parent="Control/CandyJar" unique_id=1564578111 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -1328.0
+offset_top = 266.0
+offset_right = -1200.0
+offset_bottom = 388.0
+texture = ExtResource("7_k0n1m")
+
+[node name="TextureRect11" parent="Control/CandyJar" unique_id=1885884850 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -554.0
+offset_top = -445.0
+offset_right = -426.0
+offset_bottom = -323.0
+texture = ExtResource("6_po7ms")
+
+[node name="TextureRect5" parent="Control/CandyJar" unique_id=888125143 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = 779.0
+offset_top = -285.0
+offset_right = 907.0
+offset_bottom = -163.0
+texture = ExtResource("7_k0n1m")
+
+[node name="TextureRect6" parent="Control/CandyJar" unique_id=1139976027 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -690.0
+offset_top = 306.0
+offset_right = -562.0
+offset_bottom = 428.0
+texture = ExtResource("7_k0n1m")
+
+[node name="TextureRect9" parent="Control/CandyJar" unique_id=1990765496 instance=ExtResource("4_cwpkk")]
+layout_mode = 1
+offset_left = -802.0
+offset_top = -471.0
+offset_right = -674.0
+offset_bottom = -349.0
+texture = ExtResource("7_k0n1m")
 
 [node name="Panel" type="Panel" parent="Control" unique_id=1607052172]
 layout_mode = 1
@@ -239,159 +529,12 @@ is_back_btn = true
 button_text = "Main Menu"
 text_val = "Main Menu"
 
-[node name="CandyJar" type="Control" parent="Control" unique_id=1066581652]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureRect2" parent="Control/CandyJar" unique_id=835360152 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 502.0
-offset_top = 34.0
-offset_right = 630.0
-offset_bottom = 156.0
-
-[node name="TextureRect18" parent="Control/CandyJar" unique_id=1177073824 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -912.0
-offset_top = -232.0
-offset_right = -784.0
-offset_bottom = -110.0
-
-[node name="TextureRect3" parent="Control/CandyJar" unique_id=790859799 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -640.0
-offset_top = -163.0
-offset_right = -512.0
-offset_bottom = -41.0
-texture = ExtResource("5_6d2kc")
-
-[node name="TextureRect4" parent="Control/CandyJar" unique_id=974162551 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 747.0
-offset_top = 337.0
-offset_right = 875.0
-offset_bottom = 459.0
-texture = ExtResource("5_6d2kc")
-
-[node name="TextureRect16" parent="Control/CandyJar" unique_id=355055844 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 404.0
-offset_top = -359.0
-offset_right = 532.0
-offset_bottom = -237.0
-texture = ExtResource("5_6d2kc")
-
-[node name="TextureRect13" parent="Control/CandyJar" unique_id=1945676125 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -896.0
-offset_top = 257.0
-offset_right = -768.0
-offset_bottom = 379.0
-texture = ExtResource("5_6d2kc")
-
-[node name="TextureRect7" parent="Control/CandyJar" unique_id=452069904 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 786.0
-offset_top = -105.0
-offset_right = 914.0
-offset_bottom = 17.0
-texture = ExtResource("6_po7ms")
-
-[node name="TextureRect8" parent="Control/CandyJar" unique_id=341042770 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -753.0
-offset_top = 69.0
-offset_right = -625.0
-offset_bottom = 191.0
-texture = ExtResource("6_po7ms")
-
-[node name="TextureRect17" parent="Control/CandyJar" unique_id=1162508127 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 651.0
-offset_top = -452.0
-offset_right = 779.0
-offset_bottom = -330.0
-texture = ExtResource("6_po7ms")
-
-[node name="TextureRect10" parent="Control/CandyJar" unique_id=254097305 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 396.0
-offset_top = 294.0
-offset_right = 524.0
-offset_bottom = 416.0
-texture = ExtResource("6_po7ms")
-
-[node name="TextureRect11" parent="Control/CandyJar" unique_id=1885884850 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -554.0
-offset_top = -445.0
-offset_right = -426.0
-offset_bottom = -323.0
-texture = ExtResource("6_po7ms")
-
-[node name="TextureRect5" parent="Control/CandyJar" unique_id=888125143 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = 779.0
-offset_top = -285.0
-offset_right = 907.0
-offset_bottom = -163.0
-texture = ExtResource("7_k0n1m")
-
-[node name="TextureRect6" parent="Control/CandyJar" unique_id=1139976027 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -690.0
-offset_top = 306.0
-offset_right = -562.0
-offset_bottom = 428.0
-texture = ExtResource("7_k0n1m")
-
-[node name="TextureRect9" parent="Control/CandyJar" unique_id=1990765496 instance=ExtResource("4_cwpkk")]
-layout_mode = 1
-offset_left = -802.0
-offset_top = -471.0
-offset_right = -674.0
-offset_bottom = -349.0
-texture = ExtResource("7_k0n1m")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1860044134]
 libraries/ = SubResource("AnimationLibrary_8o3m4")
 autoplay = &"intro"
-
-[node name="Enemy" parent="." unique_id=999594193 instance=ExtResource("8_cwpkk")]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = -75.0
-offset_top = -52.99997
-offset_right = -75.0
-offset_bottom = -52.99997
-grow_horizontal = 0
-scale = Vector2(-0.9, 0.9)
-
-[node name="Woman" parent="Enemy/TextureRect/FrameMask" parent_id_path=PackedInt32Array(999594193, 204724806) index="0" unique_id=428012202]
-texture = ExtResource("9_6d2kc")
-
-[node name="Woman" parent="." unique_id=998007293 instance=ExtResource("8_cwpkk")]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_right = 0.0
-anchor_bottom = 0.5
-offset_left = 70.00001
-offset_top = -68.0
-offset_right = 70.00001
-offset_bottom = -68.0
-grow_horizontal = 1
-scale = Vector2(0.85, 0.85)
 
 [connection signal="pressed" from="Control/PanelContainer/VBoxContainer/Retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="Control/PanelContainer/VBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
 [connection signal="pressed" from="Control/PanelContainer/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
 
-[editable path="Enemy"]
+[editable path="Background/Enemy"]

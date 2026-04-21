@@ -42,6 +42,12 @@ var tutorial_idx = 0
 var tutorial_timer := 0.0
 
 
+func _ready() -> void:
+	if LevelManager.current_level_json_file == AudioManager.JSON_SONGS.keys()[3]:
+		($WomanHole2 as WomanHole).set_bitch()
+	else:
+		$WomanHole2.set_police()
+
 
 func _process(delta: float) -> void:
 	var old_val = gain_meter.value

@@ -171,7 +171,7 @@ func sfx_one_shot(
 		parent: Node=null,
 		## provide a func(AudioStreamPlayer) -> void to modify any properties you want
 		sfx_player_customizer: Callable=func(_sfx_player) -> void: return,
-):
+) -> AudioStreamPlayer:
 	var sfx_player := AudioStreamPlayer.new()
 	if parent == null:
 		parent = get_tree().root
@@ -183,3 +183,4 @@ func sfx_one_shot(
 	sfx_player_customizer.call(sfx_player)
 	sfx_player.play()
 	sfx_player.finished.connect(sfx_player.queue_free)
+	return sfx_player

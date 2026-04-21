@@ -153,14 +153,6 @@ grow_vertical = 2
 scale = Vector2(1e-05, 1e-05)
 pivot_offset_ratio = Vector2(0.5, 0.5)
 
-[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_right = 0.0
-anchor_bottom = 0.5
-grow_horizontal = 1
-
 [node name="Options" parent="Control" unique_id=2040855931 instance=ExtResource("2_hkrp4")]
 layout_mode = 1
 anchors_preset = 3
@@ -178,6 +170,7 @@ focus_neighbor_left = NodePath("../Start")
 focus_neighbor_top = NodePath("../Quit")
 focus_neighbor_right = NodePath("../Start")
 focus_neighbor_bottom = NodePath("../Quit")
+is_back_btn = false
 button_text = "Options"
 text_val = "Options"
 
@@ -198,6 +191,7 @@ focus_neighbor_left = NodePath("../Options")
 focus_neighbor_top = NodePath("../Credits")
 focus_neighbor_right = NodePath("../Options")
 focus_neighbor_bottom = NodePath("../Credits")
+is_back_btn = false
 button_text = "Start Game"
 text_val = "Start Game"
 
@@ -218,6 +212,7 @@ focus_neighbor_left = NodePath("../Credits")
 focus_neighbor_top = NodePath("../Options")
 focus_neighbor_right = NodePath("../Credits")
 focus_neighbor_bottom = NodePath("../Options")
+is_back_btn = false
 button_text = "Quit Game"
 text_val = "Quit Game"
 
@@ -238,8 +233,18 @@ focus_neighbor_left = NodePath("../Quit")
 focus_neighbor_top = NodePath("../Start")
 focus_neighbor_right = NodePath("../Quit")
 focus_neighbor_bottom = NodePath("../Start")
+is_back_btn = false
 button_text = "Credits"
 text_val = "Credits"
+
+[node name="WomanHole" parent="Control" unique_id=999594193 instance=ExtResource("3_m6eng")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+grow_horizontal = 1
 
 [node name="TextureRect" type="TextureRect" parent="Control" unique_id=553122351]
 layout_mode = 1
