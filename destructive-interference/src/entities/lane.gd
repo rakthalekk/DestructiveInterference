@@ -64,7 +64,7 @@ func _draw() -> void:
 	#if LevelManager.current_time > last_update + 1.0:
 		#debug_log = true
 		#last_update = LevelManager.current_time
-	
+
 	#if debug_log: print("draw_count=%d" % [draw_count])
 
 	var beats_per_subdivision := 1 / LevelManager.subdivisions_per_beat
@@ -298,10 +298,14 @@ func eval_sin(x: float) -> float:
 ## Evaluate a square wave with domain [0, 1] and range [-1, 1], initially high
 func eval_square(x: float) -> float:
 	#x = fmod(x, 1.0)
-	if is_less_or_equal_approx(x, 0.5):
-		return 1.0
-	else:
+	if is_less_or_equal_approx(x, 0.0):
 		return -1.0
+	elif is_less_or_equal_approx(x, 0.5):
+		return 1.0
+	elif is_less_or_equal_approx(x, 1.0):
+		return -1.0
+	else:
+		return 1.0
 
 ## Evaluate a saw wave with domain [0, 1] and range [-1, 1], slope positive
 func eval_saw(x: float) -> float:
