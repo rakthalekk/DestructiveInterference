@@ -94,6 +94,7 @@ func _on_area_entered(area: Area2D) -> void:
 
 func _hold_beat_logic(beat: Beat):
 	if (beat.wave_type == interfere_type || beat.wave_type == interfere_type_2) && current_state == STATE.TAPPED:
+		PlayerManager.on_player_started_beat(beat)
 		beat.being_held = true
 		has_hit_note = true
 	else:
@@ -104,6 +105,7 @@ func _hold_beat_logic(beat: Beat):
 
 func _tap_beat_logic(beat: Beat):
 	if (beat.wave_type == interfere_type || beat.wave_type == interfere_type_2) && current_state == STATE.TAPPED:
+		PlayerManager.on_player_started_beat(beat)
 		PlayerManager.on_player_killed_beat(beat)
 		has_hit_note = true
 	else:

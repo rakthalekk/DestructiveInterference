@@ -21,6 +21,13 @@ var SFX_GOAL: Dictionary[String, AudioStream] = {
 	"triangle": preload("res://assets/sfx/level/goal/triangle.mp3"),
 }
 
+var SFX_MATCH_BASIC: Dictionary[String, AudioStream] = {
+	"saw": preload("res://assets/sfx/level/beat/match_basic/saw basic.wav"),
+	"sine": preload("res://assets/sfx/level/beat/match_basic/sine basic.wav"),
+	"square": preload("res://assets/sfx/level/beat/match_basic/square basic.wav"),
+	"triangle": preload("res://assets/sfx/level/beat/match_basic/triangle basic.wav"),
+}
+
 var SFX_LEVEL_END_DEFEAT = preload("res://assets/sfx/level/end/defeat.mp3")
 var SFX_LEVEL_END_VICTORY = preload("res://assets/sfx/level/end/victory.mp3")
 
@@ -163,7 +170,7 @@ func sfx_one_shot(
 	parent.add_child(sfx_player)
 	sfx_player.stream = in_stream
 	sfx_player.bus = "SFX"
-	sfx_player.volume_linear = 1 * master_volume_linear * volume_mod
+	sfx_player.volume_linear = master_volume_linear * volume_mod
 	sfx_player.pitch_scale = pitch_mod
 	sfx_player_customizer.call(sfx_player)
 	sfx_player.play()
