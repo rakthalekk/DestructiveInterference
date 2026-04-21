@@ -6,6 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://cd5gwh7jmqex5" path="res://assets/loague_oh_dot_pee_en_gee.png" id="4_m6eng"]
 [ext_resource type="Theme" uid="uid://dxh2rd0qsm7bt" path="res://src/user_interface/ui.tres" id="5_06hqa"]
 
+[sub_resource type="Gradient" id="Gradient_rjgcb"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.26666668, 0.6627451, 0.8627451, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_06hqa"]
+gradient = SubResource("Gradient_rjgcb")
+
 [sub_resource type="Animation" id="Animation_3gghf"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -144,6 +151,7 @@ grow_vertical = 2
 script = ExtResource("1_3gghf")
 
 [node name="Control" type="Control" parent="." unique_id=100672557]
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -153,6 +161,23 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1e-05, 1e-05)
 pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Background" type="TextureRect" parent="Control" unique_id=285265356]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -2906.0
+offset_top = -746.0001
+offset_right = -1614.9998
+offset_bottom = 1712.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -0.2716553
+scale = Vector2(1.1121243, 1.0181483)
+texture = SubResource("GradientTexture2D_06hqa")
 
 [node name="TextureRect" type="TextureRect" parent="Control" unique_id=553122351]
 layout_mode = 1
