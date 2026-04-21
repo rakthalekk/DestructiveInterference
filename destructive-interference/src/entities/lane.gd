@@ -50,7 +50,7 @@ enum LineStyle { EMPTY, LINEAR, COMPLEX }
 var last_update := 0.0
 
 var draw_count := 0
-const DRAWS_TO_CYCLE_WAVE = 3
+const DRAWS_TO_CYCLE_WAVE = 4
 
 func _draw() -> void:
 	draw_count += 1
@@ -126,28 +126,29 @@ func _draw() -> void:
 			# render all segments for this subdivision
 			var avg_color_for_subdivision = avg_color(active_beats.map(func(beat: Beat) -> Color: return beat.get_appropriate_color()))
 			# make one point to separate the color of this waveform
-			#points.append(Vector2(0.0, last_y_drawn))
-			#colors.append(avg_color_for_subdivision)
+			points.append(Vector2(0.0, last_y_drawn))
+			colors.append(avg_color_for_subdivision)
 			#if debug_log: print("      adding new point for start of colored segment at %s with color %s" % [points[-1], colors[-1]])
 			var latest_x_pos := 0.0
-			var period_offset := int(draw_count / DRAWS_TO_CYCLE_WAVE) % int(SEGMENTS_PER_SUBDIVISION)
+			var period_offset_idx := int(draw_count / DRAWS_TO_CYCLE_WAVE) % int(SEGMENTS_PER_SUBDIVISION)
+			if debug_log: print("      period_offset=%d       AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" % [period_offset_idx])
 			# check for any beats with jumpy waveforms
 			#var saw_beats := active_beats.filter(func(beat: Beat) -> bool: return beat.note.instrument.type == GameManager.WAVE_TYPE.SAW)
 			#var square_beats := active_beats.filter(func(beat: Beat) -> bool: return beat.note.instrument.type == GameManager.WAVE_TYPE.SQUARE)
 			## if any jumpy waveforms, add an extra horizontal line
 			#if saw_beats.size() > 0 or square_beats.size() > 0:
 			#print("period_offset=%d" % [period_offset])
-			points.append(Vector2(X_AMPLITUDE_PX * eval_avg(period_offset, active_beats), last_y_drawn))
+			points.append(Vector2(X_AMPLITUDE_PX * eval_avg(period_offset_idx / SEGMENTS_PER_SUBDIVISION, active_beats), last_y_drawn))
 			colors.append(avg_color_for_subdivision)
 			if debug_log: print("      adding horizontal point for jumpy waveform at beginning of subdivision at %s with color %s" % [points[-1], colors[-1]])
 			for segment_idx in range(int(SEGMENTS_PER_SUBDIVISION)):
 				#var segment_idx := ((i + (draw_count % DRAWS_TO_CYCLE_WAVE)) % int(SEGMENTS_PER_SUBDIVISION))
-				var period_idx := (segment_idx + period_offset) % int(SEGMENTS_PER_SUBDIVISION)
-				if debug_log: print("      top of segment for-loop, segment_idx=%d" % [segment_idx])
+				var period_idx := (segment_idx + period_offset_idx) % int(SEGMENTS_PER_SUBDIVISION)
 				var pct_thru = (period_idx + 1) / SEGMENTS_PER_SUBDIVISION
 				# compute new wave position
 				var new_x_pos = X_AMPLITUDE_PX * eval_avg(pct_thru, active_beats)
 				var new_y_pos = start_y_pos - _beat_duration_to_y_diff(((segment_idx + 1) / SEGMENTS_PER_SUBDIVISION) * beats_per_subdivision)
+				if debug_log: print("      top of segment for-loop, segment_idx=%d, period_idx=%d, pct_thru=%f, new_x_pos=%f, new_y_pos=%f" % [segment_idx, period_idx, pct_thru, new_x_pos, new_y_pos])
 
 				# check if we need to draw any horizontal lines
 				if period_idx % int(SEGMENTS_PER_SUBDIVISION / 2) == 0:
@@ -286,23 +287,23 @@ func eval_beat(x: float, beat: Beat) -> float:
 
 ## Evaluate a triangle wave with domain [0, 1] and range [-1, 1], with f(0) = 0 and iniital slope positive (f(0.25) = 1)
 func eval_triangle(x: float) -> float:
-	x = fmod(x, 1.0)
+	#x = fmod(x, 1.0)
 	return -4 * abs(fmod(x+0.25, 1) - 1.0/2) + 1
 
 ## Evaluate a sin wave with domain [0, 1] and range [-1, 1], with f(0) = 0 and initial slops positive (f(0.25) = 1)
 func eval_sin(x: float) -> float:
-	x = fmod(x, 1.0)
+	#x = fmod(x, 1.0)
 	return sin(x * 2 * PI)
 
 ## Evaluate a square wave with domain [0, 1] and range [-1, 1], initially high
 func eval_square(x: float) -> float:
-	x = fmod(x, 1.0)
-	if ! is_less_or_equal_approx(x, 0.5):
-		return -1.0
-	else:
+	#x = fmod(x, 1.0)
+	if is_less_or_equal_approx(x, 0.5):
 		return 1.0
+	else:
+		return -1.0
 
 ## Evaluate a saw wave with domain [0, 1] and range [-1, 1], slope positive
 func eval_saw(x: float) -> float:
-	x = fmod(x, 1.0)
+	#x = fmod(x, 1.0)
 	return x * -2 + 1
