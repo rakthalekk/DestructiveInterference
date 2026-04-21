@@ -66,6 +66,9 @@ var active_player: AudioStreamPlayer
 @onready var fade_timer := $FadeTimer as Timer
 
 
+var tween_cache_1: Tween = null
+var tween_cache_2: Tween = null
+
 
 ## connect transition state signal for pause effect
 func _ready() -> void:
@@ -109,19 +112,25 @@ func fade_in(player: AudioStreamPlayer, stream: AudioStream = null):
 	player.volume_linear = 0 if player != level_song_player else 1
 
 	active_player = player
+	
+	if is_instance_valid(tween_cache_1):
+		tween_cache_1.stop()
 
-	var tween := get_tree().create_tween()
-	tween.tween_property(player, "volume_linear", 1 * master_volume_linear, .1)
+	tween_cache_1 = get_tree().create_tween()
+	tween_cache_1.tween_property(player, "volume_linear", 1 * master_volume_linear, .1)
 
 
 ## fade a track out
 func fade_out(player: AudioStreamPlayer):
 	if !is_instance_valid(player):
 		return
-
-	var tween := get_tree().create_tween()
-	tween.tween_property(player, "volume_linear", 0, .1)
-	tween.tween_callback(player.stop)
+	
+	if is_instance_valid(tween_cache_2):
+		tween_cache_2.stop()
+		
+	tween_cache_2 = get_tree().create_tween()
+	tween_cache_2.tween_property(player, "volume_linear", 0, .1)
+	tween_cache_2.tween_callback(player.stop)
 
 
 func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
@@ -129,11 +138,11 @@ func _on_game_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAM
 
 	if from == GameManager.GAME_STATE.PAUSED && to == GameManager.GAME_STATE.IN_GAME:
 		level_song_player.stream_paused = false
-		fade_out(menu_song_player)
-		active_player = level_song_player
+		#fade_out(menu_song_player)
+		#active_player = level_song_player
 	elif from == GameManager.GAME_STATE.IN_GAME && to == GameManager.GAME_STATE.PAUSED:
 		level_song_player.stream_paused = true
-		fade_in(menu_song_player)
+		#fade_in(menu_song_player)
 
 
 func _on_warmup_end():
@@ -147,8 +156,7 @@ func _on_song_player_finished() -> void:
 
 
 func _on_menu_player_finished() -> void:
-	#_loop_player(menu_song_player)
-	pass
+	_loop_player(menu_song_player)
 
 
 func loop_level_song():

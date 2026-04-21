@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://753bqq16p55e"]
 
 [ext_resource type="Script" uid="uid://24tnitp8tbja" path="res://src/managers/audio_manager.gd" id="1_6kmkq"]
-[ext_resource type="AudioStream" uid="uid://bxm28a3hbnpja" path="res://assets/menu_music/Destructive Interference 1.mp3" id="2_sq5sn"]
+[ext_resource type="AudioStream" uid="uid://gpmrd2depoxh" path="res://levels/challenge1/challenge1.mp3" id="2_sq5sn"]
 
 [node name="AudioManager" type="Node2D" unique_id=1759781153]
 script = ExtResource("1_6kmkq")

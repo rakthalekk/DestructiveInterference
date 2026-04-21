@@ -288,6 +288,7 @@ func reset():
 
 func _on_state_transition(from: GameManager.GAME_STATE, to: GameManager.GAME_STATE):
 	if from == GameManager.GAME_STATE.GAME_OVER && to == GameManager.GAME_STATE.IN_GAME:
+		AudioManager.level_song_player.stop()
 		load_data_from_json(current_level_json_file)
 		start_level(false)
 
