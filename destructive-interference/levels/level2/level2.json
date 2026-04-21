@@ -5,25 +5,25 @@
         "name": "demo a 4 final saw",
         "type": "saw",
         "color": "#abffff",
-        "goal": 50
+        "goal": 120
       },
       {
         "name": "demo a 4 final sine",
         "type": "sine",
         "color": "#fff7a1",
-        "goal": 50
+        "goal": 160
       },
       {
         "name": "demo a 4 final square",
         "type": "square",
         "color": "#70faba",
-        "goal": 50
+        "goal": 120
       },
       {
         "name": "demo a 4 final triangle",
         "type": "triangle",
         "color": "#f595b4",
-        "goal": 50
+        "goal": 75
       }
     ],
     "title": "novaaaaa",

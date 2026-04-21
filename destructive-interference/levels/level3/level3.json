@@ -5,25 +5,25 @@
         "name": "saw",
         "type": "saw",
         "color": "#abffff",
-        "goal": 50
+        "goal": 55
       },
       {
         "name": "square",
         "type": "square",
         "color": "#70faba",
-        "goal": 50
+        "goal": 75
       },
       {
         "name": "sine",
         "type": "sine",
         "color": "#fff7a1",
-        "goal": 50
+        "goal": 150
       },
       {
         "name": "triangle",
         "type": "triangle",
         "color": "#f595b4",
-        "goal": 50
+        "goal": 220
       }
     ],
     "title": "novab",

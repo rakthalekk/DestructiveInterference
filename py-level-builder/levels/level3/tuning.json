@@ -5,28 +5,28 @@
         "name": "saw",
         "type": "saw",
         "color": "#abffff",
-        "goal": 50,
+        "goal": 55,
         "default_band": 3
       },
       {
         "name": "square",
         "type": "square",
         "color": "#70faba",
-        "goal": 50,
+        "goal": 75,
         "default_band": 4
       },
       {
         "name": "sine",
         "type": "sine",
         "color": "#fff7a1",
-        "goal": 50,
+        "goal": 150,
         "default_band": 0
       },
       {
         "name": "triangle",
         "type": "triangle",
         "color": "#f595b4",
-        "goal": 50,
+        "goal": 220,
         "default_band": 1
       }
     ],

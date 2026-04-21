@@ -5,28 +5,28 @@
         "name": "demo a 4 final saw",
         "type": "saw",
         "color": "#abffff",
-        "goal": 50,
+        "goal": 120,
         "default_band": null
       },
       {
         "name": "demo a 4 final sine",
         "type": "sine",
         "color": "#fff7a1",
-        "goal": 50,
+        "goal": 160,
         "default_band": 0
       },
       {
         "name": "demo a 4 final square",
         "type": "square",
         "color": "#70faba",
-        "goal": 50,
+        "goal": 120,
         "default_band": 1
       },
       {
         "name": "demo a 4 final triangle",
         "type": "triangle",
         "color": "#f595b4",
-        "goal": 50,
+        "goal": 75,
         "default_band": 2
       }
     ],
