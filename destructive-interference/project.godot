@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [audio]
 
 buses/default_bus_layout="uid://bvrejlpq5yxna"
-general/default_playback_type.web=0
 
 [autoload]
 
@@ -26,6 +25,7 @@ GameManager="*uid://6dge5k2xwb85"
 LevelManager="*uid://c7uo1xpaohvsr"
 PlayerManager="*uid://poek7io7bcrd"
 AudioManager="*uid://753bqq16p55e"
+PreloaderGuy="*uid://x4fgyap6k3hf"
 
 [display]
 
